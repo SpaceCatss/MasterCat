@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.t = 0
+            <string>global.incriser = 0.01
+global.t = 0
 global.r = 1
 global.GoldStarMoney = 60
 global.SilverStarMoney = 0

@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>CanMiss = true
+</string>
           </argument>
         </arguments>
       </action>
@@ -47,7 +48,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>if  GPS2.x-80&gt;x  and GPS2.x-100&lt;x and CanMiss = true
+{
+
+instance_create(x,y-200,TapRatingMiss)
+CanMiss = false
+
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -77,12 +85,13 @@ if distance_to_object(GPS2)&gt;200
 {
 
 instance_create(x,y-200,TapRatingMiss)
-
+CanMiss = false
 }
 
 else if distance_to_object(GPS2)&gt;100 and distance_to_object(GPS2)&lt;=200 
 {
 instance_create(x,y,bridgeTap)
+CanMiss = false
 instance_create(x,y-200,TapRatingGood)
 instance_destroy()
 }
@@ -91,12 +100,14 @@ instance_destroy()
 else if distance_to_object(GPS2)&lt;=100 and distance_to_object(GPS2)&gt;=50
 {instance_create(x,y,bridgeTap)
 instance_create(x,y-200,TapRatingExcellent)
+CanMiss = false
 instance_destroy()
 }
 
 else if distance_to_object(GPS2)&lt;50
 {
 instance_create(x,y,bridgeTap)
+CanMiss = false
 instance_create(x,y-200,TapRatingRisky)
 instance_destroy()
 }

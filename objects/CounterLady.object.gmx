@@ -76,8 +76,8 @@ instance_deactivate_object(timerB)
             <kind>1</kind>
             <string>//points - star
 if  
-//(global.points &gt; global.PossiblePoints/3) and 
-(global.points &lt; global.PossiblePoints/1.8)
+//(global.points &gt; global.coinController*100/3) and 
+(global.points &lt; global.coinController*100/1.8)
 {
 switch (global.rm){
 case 1: global.BronzeStar1InRM1 = global.BronzeStar1InRM1 + 1 ; break;
@@ -94,7 +94,7 @@ CanGiveMoney1=false
 }
 /*
 if  
-(global.points &lt;= global.PossiblePoints) and (global.OutOfTime = true)
+(global.points &lt;= global.coinController*100) and (global.OutOfTime = true)
 {
 instance_create(310,160,empty)
 
@@ -102,7 +102,7 @@ instance_create(310,160,empty)
 */
 
 
-if  (global.points &gt; global.PossiblePoints/1.8) and (global.points &lt; global.PossiblePoints/1.2)
+if  (global.points &gt; global.coinController*100/1.8) and (global.points &lt; global.coinController*100/1.2)
 {
 switch (global.rm){
 case 1: global.SilverStar1InRM1 = global.SilverStar1InRM1 + 1 ; break;
@@ -117,7 +117,7 @@ global.money = global.money+10
 CanGiveMoney2=false}
 }
 
-if  (global.points &gt; global.PossiblePoints/1.2)
+if  (global.points &gt; global.coinController*100/1.2)
 {
 switch (global.rm){
 case 1: global.GoldStar1InRM1 = global.GoldStar1InRM1 + 1 ; break;
@@ -295,7 +295,7 @@ draw_set_halign(fa_left)
 draw_set_valign(fa_middle)
 draw_set_font(font0)
 
-draw_text_outline(view_xview[0]+115,view_yview[0]+160,"Points: " + string(global.points) + "/" + string(global.PossiblePoints),1,c_black,10)
+draw_text_outline(view_xview[0]+115,view_yview[0]+160,"Points: " + string(global.points) + "/" + string(global.coinController*100),1,c_black,10)
 
 draw_text_outline(view_xview[0]+115,view_yview[0]+200,"Time: " + string(global.minutes) + ":" + string(global.seconds) + "/" + string(global.PossibleTime1) + ":" + string(global.PossibleTime2),1,c_black,10)
 

@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = 40
+            <string>global.feverMode -=20
+
+alarm[0] = 40
 </string>
           </argument>
         </arguments>

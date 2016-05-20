@@ -63,7 +63,7 @@ instance_deactivate_object(timerB)
             <kind>1</kind>
             <string>draw_set_colour(c_white)
 
-draw_text_outline(view_xview[0]+115,view_yview[0]+120,"Points: " + string(global.points) + "/" + string(global.PossiblePoints),1,c_black,10)
+draw_text_outline(view_xview[0]+115,view_yview[0]+120,"Points: " + string(global.points) + "/" + string(global.coinController*100),1,c_black,10)
 
 draw_text_outline(view_xview[0]+115,view_yview[0]+160,"Time: " + string(global.minutes) + ":" + string(global.seconds) + "/" + string(global.PossibleTime1) + ":" + string(global.PossibleTime2),1,c_black,10)
 

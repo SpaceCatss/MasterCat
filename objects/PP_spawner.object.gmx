@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>GPS2</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,18 +25,86 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>g = 0
+            <string>
 r = irandom_range(1,140)
 if r&gt;=1 and r&lt;=40
 makethis=PowerUpSpawner
-else if r&gt;=41 and r&lt;=100
+else if r&gt;=41 and r&lt;=70
+makethis=coin
+else if r&gt;=71 and r&lt;=140
+makethis=empty
+bomb=instance_create(x+300,irandom_range(-50,-100),makethis)
+
+alarm[0] = 40
+
+
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if global.CoinSpawner = 1
+{
+r = irandom_range(1,140)
+if r&gt;=1 and r&lt;=7
+makethis=PowerUpSpawner
+else if r&gt;=8 and r&lt;=60
+makethis=coin
+else if r&gt;=61 and r&lt;=140
+makethis=empty
+bomb=instance_create(x+800,irandom_range(-50,-100),makethis)
+
+alarm[0] = 40
+}
+
+else if global.CoinSpawner = 2
+{
+
+r = irandom_range(1,140)
+if r&gt;=1 and r&lt;=14
+makethis=PowerUpSpawner
+else if r&gt;=15 and r&lt;=100
 makethis=coin
 else if r&gt;=101 and r&lt;=140
 makethis=empty
-bomb=instance_create(x+g,irandom_range(200,288),makethis)
+bomb=instance_create(x+800,irandom_range(-50,-100),makethis)
 
+alarm[0] = 25
+}
 
+if global.CoinSpawner = 3
 
+{
+r = irandom_range(1,140)
+if r&gt;=1 and r&lt;=25
+makethis=PowerUpSpawner
+else if r&gt;=25 and r&lt;=120
+makethis=coin
+else if r&gt;=121 and r&lt;=140
+makethis=empty
+bomb=instance_create(x+800,irandom_range(-50,-100),makethis)
+
+alarm[0] = 15
+}
 </string>
           </argument>
         </arguments>
@@ -59,22 +127,7 @@ bomb=instance_create(x+g,irandom_range(200,288),makethis)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>g += 100
-
-if g&lt;room_width-200
-{
-r = irandom_range(1,140)
-if r&gt;=1 and r&lt;=7
-makethis=PowerUpSpawner
-else if r&gt;=8 and r&lt;=100
-makethis=coin
-else if r&gt;=101 and r&lt;=140
-makethis=empty
-bomb=instance_create(x+g,irandom_range(200,288),makethis)
-
-}
-
-if g&gt;=room_width-200
+            <string>if GPS2.x&gt;=room_width-200
 {
 instance_create(x,y,PossibleCoin)
 }

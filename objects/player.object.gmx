@@ -37,13 +37,13 @@ global.canSelect = true;
 
 
 /// Variablesy
-incriser = 0.01
+
 grav = 0.5;
 hspNormal = 0;
 hspUp = 20
 vsp = 0;
-jumpspeedNormal = 4;
-jumpspeedUp = 7;
+jumpspeedNormal = 10;
+jumpspeedUp = 15;
 movespeedNormal = 16;
 movespeedUp = 4;
 
@@ -411,10 +411,10 @@ hsp = 0
 
 }
 
-incriser = incriser + 0.01
-if incriser &gt; 5 {
-incriser = 5}
-x += hsp + incriser;
+global.incriser = global.incriser + 0.01
+if global.incriser &gt; 5 {
+global.incriser = 5}
+x += hsp + global.incriser;
 
 if hsp &gt; 20{
 hsp = 20

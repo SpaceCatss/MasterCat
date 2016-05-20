@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.feverMode = 0
+            <string>global.CoinSpawner = 1
+global.feverMode = 0
 
 
 global.mouse3 = true;
@@ -70,30 +71,6 @@ alarm[0] = 10
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>global.feverMode = 250
-alarm[0]=1
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
@@ -111,15 +88,30 @@ alarm[0]=1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.feverMode &lt;500 and global.feverMode &gt;=2
+            <string>if global.feverMode &lt;500 and global.feverMode &gt;=351
 {
 global.feverMode -= 1
+global.CoinSpawner = 3
+
+}
+
+if global.feverMode &lt;350 and global.feverMode &gt;=176
+{
+global.feverMode -= 1
+global.CoinSpawner = 2
+
+}
+
+if global.feverMode &lt;175 and global.feverMode &gt;=2
+{
+global.feverMode -= 1
+global.CoinSpawner = 1
 
 }
 else if global.feverMode &lt; 2
 {
 global.feverMode = 1
-
+global.CoinSpawner = 1
 
 }
 
@@ -128,15 +120,15 @@ else if global.feverMode &gt;= 500
 {
 with GPS2
 {
-if distance_to_object(coin)&lt;300 and distance_to_object(coin)&gt;-300
+if distance_to_object(coin)&lt;1000 and distance_to_object(coin)&gt;-1000
 with coin
 {
-move_towards_point( GPS2.x, GPS2.y, 7 )
+move_towards_point( GPS2.x, GPS2.y, 80 )
 }
 
 //dzieje sie cos ekstra/fever mode
 global.feverMode = 500
-alarm[1] = 40
+
 }
 }
 
@@ -259,7 +251,7 @@ global.OutOfTime = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text_outline(view_xview[0]+300,view_yview[0]+32, "Fevermode: " +string(global.feverMode),1,c_black,10)
+            <string>
 
 
 /// draw timer

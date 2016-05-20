@@ -144,6 +144,8 @@
     <sprite>sprites\costTool</sprite>
     <sprite>sprites\headTool</sprite>
     <sprite>sprites\star1</sprite>
+    <sprite>sprites\star2</sprite>
+    <sprite>sprites\star3</sprite>
     <sprite>sprites\SlideLeft</sprite>
     <sprite>sprites\slideRight</sprite>
     <sprite>sprites\pluss</sprite>

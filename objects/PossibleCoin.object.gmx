@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.PossiblePoints = instance_number(coin)*100;
+            <string>global.PossiblePoints = global.coinController*100;
 
 </string>
           </argument>
