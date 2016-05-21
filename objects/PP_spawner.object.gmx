@@ -69,8 +69,10 @@ if r&gt;=1 and r&lt;=7
 makethis=PowerUpSpawner
 else if r&gt;=8 and r&lt;=60
 makethis=coin
-else if r&gt;=61 and r&lt;=140
+else if r&gt;=61 and r&lt;=130
 makethis=empty
+else if r&gt;=131 and r&lt;=140
+makethis=bombing
 bomb=instance_create(x+800,irandom_range(-50,-100),makethis)
 
 alarm[0] = 40
@@ -79,13 +81,15 @@ alarm[0] = 40
 else if global.CoinSpawner = 2
 {
 
-r = irandom_range(1,140)
+r = irandom_range(1,136)
 if r&gt;=1 and r&lt;=14
 makethis=PowerUpSpawner
 else if r&gt;=15 and r&lt;=100
 makethis=coin
-else if r&gt;=101 and r&lt;=140
+else if r&gt;=101 and r&lt;=120
 makethis=empty
+else if r&gt;=121 and r&lt;=136
+makethis=bombing
 bomb=instance_create(x+800,irandom_range(-50,-100),makethis)
 
 alarm[0] = 25
@@ -94,13 +98,15 @@ alarm[0] = 25
 if global.CoinSpawner = 3
 
 {
-r = irandom_range(1,140)
+r = irandom_range(1,145)
 if r&gt;=1 and r&lt;=25
 makethis=PowerUpSpawner
 else if r&gt;=25 and r&lt;=120
 makethis=coin
-else if r&gt;=121 and r&lt;=140
+else if r&gt;=121 and r&lt;=130
 makethis=empty
+else if r&gt;=131 and r&lt;=145
+makethis=bombing
 bomb=instance_create(x+800,irandom_range(-50,-100),makethis)
 
 alarm[0] = 15
