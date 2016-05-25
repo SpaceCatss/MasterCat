@@ -435,7 +435,7 @@ y += vsp;
 
 
 
-//
+// vlack hole collision
 
 if place_meeting(x,y,BlackHoleEnd)
 {move_towards_point( BlackHoleEnd.x,BlackHoleEnd.y,0); 

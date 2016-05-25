@@ -323,6 +323,10 @@ if (place_meeting(x,y+1,bridge))
 vsp = -3
 image_index = catDifferent1
 }
+if (place_meeting(x,y+1,bridgeTap))
+{
+vsp = -3
+}
 if (place_meeting(x,y+1,bridgeD))
 {
 vsp = key_jump * -jumpspeed
@@ -377,7 +381,13 @@ y += vsp;
 
 
 
+// vlack hole collision
 
+if place_meeting(x,y,BlackHoleEnd)
+{move_towards_point( BlackHoleEnd.x,BlackHoleEnd.y,0); 
+instance_destroy()
+instance_create(BlackHoleEnd.x,BlackHoleEnd.y,BlackHoleSpawner)
+}
 </string>
           </argument>
         </arguments>

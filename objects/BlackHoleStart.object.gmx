@@ -32,113 +32,40 @@ if r &gt;= 1 and r  &lt;=65
 {
 with player
 {
-player.visible = true
+player.visible = false
 player.movespeed = 0 ; player.grav = 0 
 instance_create(irandom_range(GPS2.x-400,GPS2.x-200),180,BlackHoleEnd)
 move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
-if place_meeting(x,y,BlackHoleEnd)
-{move_towards_point( BlackHoleEnd.x,BlackHoleEnd.y,0);   instance_destroy()}
-}
-with Player2
-{
-
-Player2.visible = true
-instance_create(irandom_range(GPS2.x-400,GPS2.x-200),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
-if place_meeting(x,y,BlackHoleEnd)
-{move_towards_point( BlackHoleEnd.x,BlackHoleEnd.y,0);   instance_destroy()}
-}
-with Player3
-{
-Player3.visible = true
-instance_create(irandom_range(GPS2.x-400,GPS2.x-200),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
-if place_meeting(x,y,BlackHoleEnd)
-{move_towards_point( BlackHoleEnd.x,BlackHoleEnd.y,0);   instance_destroy()}
 }
 }
 else if r &gt; 65 and r &lt;= 70
 {
 with player
 {
-player.visible = true
+player.visible = false
 player.movespeed = 0 ; player.grav = 0 
 instance_create(irandom_range(GPS2.x-400,GPS2.x-1000),180,BlackHoleEnd)
 move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
-if place_meeting(x,y,BlackHoleEnd)
-{move_towards_point( BlackHoleEnd.x,BlackHoleEnd.y,0);   instance_destroy()}
-}
-with Player2
-{
-Player2.visible = true
-instance_create(irandom_range(GPS2.x-400,GPS2.x-1000),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
-if place_meeting(x,y,BlackHoleEnd)
-{move_towards_point( BlackHoleEnd.x,BlackHoleEnd.y,0);   instance_destroy()}
-}
-with Player3
-{
-Player3.visible = true
-instance_create(irandom_range(GPS2.x-400,GPS2.x-1000),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
-if place_meeting(x,y,BlackHoleEnd)
-{move_towards_point( BlackHoleEnd.x,BlackHoleEnd.y,0);   instance_destroy()}
 }
 }
 else if r &gt;=71 and r &lt;=95
 {
 with player
 {
-player.visible = true
+player.visible = false
 player.movespeed = 0 ; player.grav = 0 
 instance_create(irandom_range(GPS2.x+300,GPS2.x+600),180,BlackHoleEnd)
 move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
-if place_meeting(x,y,BlackHoleEnd)
-{move_towards_point( BlackHoleEnd.x,BlackHoleEnd.y,0);   instance_destroy()}
-}
-with Player2
-{
-Player2.visible = true
-instance_create(irandom_range(GPS2.x+300,GPS2.x+600),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
-if place_meeting(x,y,BlackHoleEnd)
-{move_towards_point( BlackHoleEnd.x,BlackHoleEnd.y,0);   instance_destroy()}
-}
-with Player3
-{
-Player3.visible = true
-instance_create(irandom_range(GPS2.x+300,GPS2.x+600),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
-if place_meeting(x,y,BlackHoleEnd)
-{move_towards_point( BlackHoleEnd.x,BlackHoleEnd.y,0);   instance_destroy()}
 }
 }
 else if r &gt;=96 and r &lt;=100
 {
 with player
 {
-player.visible = true
+player.visible = false
 player.movespeed = 0 ; player.grav = 0 
 instance_create(irandom_range(GPS2.x+600,GPS2.x+1000),180,BlackHoleEnd)
 move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
-if place_meeting(x,y,BlackHoleEnd)
-{move_towards_point( BlackHoleEnd.x,BlackHoleEnd.y,0);   instance_destroy()}
-}
-with Player2
-{
-Player2.visible = true
-instance_create(irandom_range(GPS2.x+600,GPS2.x+1000),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
-if place_meeting(x,y,BlackHoleEnd)
-{move_towards_point( BlackHoleEnd.x,BlackHoleEnd.y,0);   instance_destroy()}
-}
-with Player3
-{
-Player3.visible = true
-instance_create(irandom_range(GPS2.x+600,GPS2.x+1000),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
-if place_meeting(x,y,BlackHoleEnd)
-{move_towards_point( BlackHoleEnd.x,BlackHoleEnd.y,0);   instance_destroy()}
 }
 }
 instance_destroy()
@@ -151,8 +78,125 @@ if place_meeting(x,y,BlackHoleEnd)
 instance_destroy()
 instance_create(BlackHoleEnd.x,BlackHoleEnd.y,BlackHoleSpawner)
 }
-
 }
+
+
+//player2
+
+
+if place_meeting(x,y,Player2)
+{
+r = irandom_range(1,100)
+if r &gt;= 1 and r  &lt;=65
+{
+with Player2
+{
+Player2.visible = false
+Player2.movespeed = 0 ; Player2.grav = 0 
+instance_create(irandom_range(GPS2.x-400,GPS2.x-200),180,BlackHoleEnd)
+move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+}
+}
+else if r &gt; 65 and r &lt;= 70
+{
+with Player2
+{
+Player2.visible = false
+Player2.movespeed = 0 ; Player2.grav = 0 
+instance_create(irandom_range(GPS2.x-400,GPS2.x-1000),180,BlackHoleEnd)
+move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+}
+}
+else if r &gt;=71 and r &lt;=95
+{
+with Player2
+{
+Player2.visible = false
+Player2.movespeed = 0 ; Player2.grav = 0 
+instance_create(irandom_range(GPS2.x+300,GPS2.x+600),180,BlackHoleEnd)
+move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+}
+}
+else if r &gt;=96 and r &lt;=100
+{
+with Player2
+{
+Player2.visible = false
+Player2.movespeed = 0 ; Player2.grav = 0 
+instance_create(irandom_range(GPS2.x+600,GPS2.x+1000),180,BlackHoleEnd)
+move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+}
+}
+instance_destroy()
+}
+
+with Player2
+{
+if place_meeting(x,y,BlackHoleEnd)
+{move_towards_point( BlackHoleEnd.x,BlackHoleEnd.y,0); 
+instance_destroy()
+instance_create(BlackHoleEnd.x,BlackHoleEnd.y,BlackHoleSpawner)
+}
+}
+
+
+//player3
+
+if place_meeting(x,y,Player3)
+{
+r = irandom_range(1,100)
+if r &gt;= 1 and r  &lt;=65
+{
+with Player3
+{
+Player3.visible = false
+Player3.movespeed = 0 ; Player3.grav = 0 
+instance_create(irandom_range(GPS2.x-400,GPS2.x-200),180,BlackHoleEnd)
+move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+}
+}
+else if r &gt; 65 and r &lt;= 70
+{
+with Player3
+{
+Player3.visible = false
+Player3.movespeed = 0 ; Player3.grav = 0 
+instance_create(irandom_range(GPS2.x-400,GPS2.x-1000),180,BlackHoleEnd)
+move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+}
+}
+else if r &gt;=71 and r &lt;=95
+{
+with Player3
+{
+Player3.visible = false
+Player3.movespeed = 0 ; Player3.grav = 0 
+instance_create(irandom_range(GPS2.x+300,GPS2.x+600),180,BlackHoleEnd)
+move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+}
+}
+else if r &gt;=96 and r &lt;=100
+{
+with Player3
+{
+Player3.visible = false
+Player3.movespeed = 0 ; Player3.grav = 0 
+instance_create(irandom_range(GPS2.x+600,GPS2.x+1000),180,BlackHoleEnd)
+move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+}
+}
+instance_destroy()
+}
+
+with Player3
+{
+if place_meeting(x,y,BlackHoleEnd)
+{move_towards_point( BlackHoleEnd.x,BlackHoleEnd.y,0); 
+instance_destroy()
+instance_create(BlackHoleEnd.x,BlackHoleEnd.y,BlackHoleSpawner)
+}
+}
+
 </string>
           </argument>
         </arguments>
