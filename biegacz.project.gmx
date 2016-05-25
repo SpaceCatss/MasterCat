@@ -222,6 +222,14 @@
     <sprite>sprites\sprite158</sprite>
     <sprite>sprites\hole</sprite>
     <sprite>sprites\Ring_09</sprite>
+    <sprite>sprites\pien</sprite>
+    <sprite>sprites\pien2</sprite>
+    <sprite>sprites\slonik</sprite>
+    <sprite>sprites\wooda</sprite>
+    <sprite>sprites\sprite167</sprite>
+    <sprite>sprites\sprite168</sprite>
+    <sprite>sprites\sprite169</sprite>
+    <sprite>sprites\poisonGas</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -239,6 +247,8 @@
     <path>paths\path0</path>
     <path>paths\path1</path>
     <path>paths\path2</path>
+    <path>paths\KnockBack</path>
+    <path>paths\KnockUp</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\script_death.gml</script>
@@ -374,6 +384,8 @@
     <script>scripts\rope_segment_get_instance.gml</script>
     <script>scripts\ground_spawner.gml</script>
     <script>scripts\ground_spawner_ink.gml</script>
+    <script>scripts\script105.gml</script>
+    <script>scripts\script_lives.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
@@ -697,6 +709,9 @@
     <object>objects\BlackHoleStart</object>
     <object>objects\BlackHoleEnd</object>
     <object>objects\BlackHoleSpawner</object>
+    <object>objects\object284</object>
+    <object>objects\SmokerGround</object>
+    <object>objects\PoisonGasCollision</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room10</room>

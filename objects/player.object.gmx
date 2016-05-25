@@ -38,7 +38,9 @@ global.canSelect = true;
 
 /// Variablesy
 
-grav = 0.5;
+
+grav0 = 0;
+gravNormal = 0.5;
 hspNormal = 0;
 hspUp = 20
 vsp = 0;
@@ -46,7 +48,7 @@ jumpspeedNormal = 10;
 jumpspeedUp = 15;
 movespeedNormal = 16;
 movespeedUp = 4;
-
+grav = gravNormal;
 
 
 
@@ -154,6 +156,7 @@ alarm[6]=60;
             <kind>1</kind>
             <string>sprite_index = sprite5;
 grav = 0.5;
+movespeed = movespeedNormal
 </string>
           </argument>
         </arguments>
@@ -447,36 +450,6 @@ instance_create(BlackHoleEnd.x,BlackHoleEnd.y,BlackHoleSpawner)
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="bombing">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>
-with (bombing)
-{
-instance_destroy()
-}
-
-global.LifeCount -=1
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="enemy_slicable">
       <action>
         <libid>1</libid>
@@ -505,6 +478,7 @@ instance_destroy()
 
 global.LifeCount -=1
 }
+script_lives()
 </string>
           </argument>
         </arguments>
@@ -538,6 +512,7 @@ instance_destroy()
 }
 
 global.LifeCount -=1
+script_lives()
 
 </string>
           </argument>
@@ -608,6 +583,30 @@ if (jumpspeed &lt; 1) hsp = x
           <argument>
             <kind>1</kind>
             <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="ground2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.LifeCount -=1
+script_death()
+</string>
           </argument>
         </arguments>
       </action>

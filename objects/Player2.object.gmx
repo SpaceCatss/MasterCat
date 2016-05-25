@@ -421,6 +421,8 @@ instance_destroy()
 
 global.LifeCount -=1
 
+script_lives()
+
 </string>
           </argument>
         </arguments>
@@ -454,7 +456,7 @@ instance_destroy()
 
 global.life[global.LifeCount] = global.life[global.LifeCount] - 1
 }
-
+script_lives()
 </string>
           </argument>
         </arguments>
@@ -488,7 +490,7 @@ instance_destroy()
 
 global.life[global.LifeCount] = global.life[global.LifeCount] - 1
 }
-
+script_lives()
 </string>
           </argument>
         </arguments>
