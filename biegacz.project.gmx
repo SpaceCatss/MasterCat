@@ -220,6 +220,8 @@
     <sprite>sprites\sprite155</sprite>
     <sprite>sprites\sprite156</sprite>
     <sprite>sprites\sprite158</sprite>
+    <sprite>sprites\hole</sprite>
+    <sprite>sprites\Ring_09</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -692,6 +694,9 @@
     <object>objects\InkFillUp</object>
     <object>objects\InkSpawner</object>
     <object>objects\StarToFill</object>
+    <object>objects\BlackHoleStart</object>
+    <object>objects\BlackHoleEnd</object>
+    <object>objects\BlackHoleSpawner</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room10</room>

@@ -14,6 +14,6 @@ part_type_orientation(particle1,0,0,10,3,1);
 part_type_blend(particle1,0);
 part_type_life(particle1,30,30);
 
-emitter1 = part_emitter_create(Sname);
-part_emitter_region(Sname,emitter1,x,x,y,y,0,0);
-part_emitter_stream(Sname,emitter1,particle1,1);
+emitter1 = part_emitter_create(particle1);
+part_emitter_region(particle1,emitter1,x,x,y,y,0,0);
+part_emitter_stream(particle1,emitter1,particle1,1);

@@ -71,6 +71,7 @@ global.coinController = 0</code>
     <instance objName="PossiblePointsss" x="256" y="64" name="inst_5F3F7C49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="StarToFill" x="544" y="96" name="inst_81976FEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="meta" x="24896" y="320" name="inst_96260E45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="BlackHoleStart" x="1312" y="256" name="inst_3A2114DA" locked="0" code="" scaleX="1.29999995231628" scaleY="1.29999995231628" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
