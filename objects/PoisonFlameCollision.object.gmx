@@ -166,7 +166,7 @@ CanWork = false
 }
 
 
-with player
+with Player2
 {
 Player2.movespeed = 0
 global.incriser = 0

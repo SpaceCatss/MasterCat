@@ -707,14 +707,20 @@
     <object>objects\InkFillUp</object>
     <object>objects\InkSpawner</object>
     <object>objects\StarToFill</object>
-    <object>objects\BlackHoleStart</object>
-    <object>objects\BlackHoleEnd</object>
-    <object>objects\BlackHoleSpawner</object>
-    <object>objects\object284</object>
-    <object>objects\SmokerGround</object>
-    <object>objects\SmokerConstGround</object>
-    <object>objects\PoisonGasCollision</object>
-    <object>objects\PoisonFlameCollision</object>
+    <objects name="Obstacles">
+      <object>objects\BlackHoleEnd</object>
+      <object>objects\Log</object>
+      <object>objects\Log2</object>
+      <object>objects\stoneCalm</object>
+      <object>objects\StoneLeftRight</object>
+      <object>objects\stoneUpDown</object>
+      <object>objects\BlackHoleStart</object>
+      <object>objects\BlackHoleSpawner</object>
+      <object>objects\SmokerConstGround</object>
+      <object>objects\SmokerGround</object>
+      <object>objects\PoisonGasCollision</object>
+      <object>objects\PoisonFlameCollision</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room10</room>
