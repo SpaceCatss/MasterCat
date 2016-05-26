@@ -230,6 +230,7 @@
     <sprite>sprites\sprite168</sprite>
     <sprite>sprites\sprite169</sprite>
     <sprite>sprites\poisonGas</sprite>
+    <sprite>sprites\PoisonFlame</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -711,7 +712,9 @@
     <object>objects\BlackHoleSpawner</object>
     <object>objects\object284</object>
     <object>objects\SmokerGround</object>
+    <object>objects\SmokerConstGround</object>
     <object>objects\PoisonGasCollision</object>
+    <object>objects\PoisonFlameCollision</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room10</room>

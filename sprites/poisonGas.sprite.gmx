@@ -3,12 +3,12 @@
   <type>0</type>
   <xorig>44</xorig>
   <yorigin>34</yorigin>
-  <colkind>1</colkind>
-  <coltolerance>0</coltolerance>
-  <sepmasks>0</sepmasks>
+  <colkind>0</colkind>
+  <coltolerance>103</coltolerance>
+  <sepmasks>-1</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>2</bbox_left>
-  <bbox_right>87</bbox_right>
+  <bbox_right>86</bbox_right>
   <bbox_top>0</bbox_top>
   <bbox_bottom>64</bbox_bottom>
   <HTile>0</HTile>
