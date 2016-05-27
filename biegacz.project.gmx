@@ -178,6 +178,7 @@
     <sprite>sprites\sprite106</sprite>
     <sprite>sprites\charaback</sprite>
     <sprite>sprites\charalight</sprite>
+    <sprite>sprites\UfoLight</sprite>
     <sprite>sprites\sideLeft</sprite>
     <sprite>sprites\sideRight</sprite>
     <sprite>sprites\sprite111</sprite>
@@ -231,6 +232,9 @@
     <sprite>sprites\sprite169</sprite>
     <sprite>sprites\poisonGas</sprite>
     <sprite>sprites\PoisonFlame</sprite>
+    <sprite>sprites\stain</sprite>
+    <sprite>sprites\sprite174</sprite>
+    <sprite>sprites\sprite175</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -250,6 +254,8 @@
     <path>paths\path2</path>
     <path>paths\KnockBack</path>
     <path>paths\KnockUp</path>
+    <path>paths\UfoArrive</path>
+    <path>paths\UfoOut</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\script_death.gml</script>
@@ -410,6 +416,7 @@
   </fonts>
   <objects name="objects">
     <object>objects\ground</object>
+    <object>objects\GroundImposter</object>
     <object>objects\ground3</object>
     <objects name="WalutaExchange">
       <object>objects\underWaluta</object>
@@ -582,6 +589,7 @@
     <object>objects\blocker</object>
     <object>objects\wyrzutnia</object>
     <object>objects\SpeedUp</object>
+    <object>objects\SlowDown</object>
     <object>objects\SpeedDown</object>
     <object>objects\BridgeUp</object>
     <object>objects\inviCat</object>
@@ -708,18 +716,32 @@
     <object>objects\InkSpawner</object>
     <object>objects\StarToFill</object>
     <objects name="Obstacles">
-      <object>objects\BlackHoleEnd</object>
+      <object>objects\BagnoSlowDown</object>
+      <object>objects\GroundFlameLeft</object>
+      <object>objects\GroundFlameRight</object>
+      <object>objects\GroundFlamerUp</object>
       <object>objects\Log</object>
       <object>objects\Log2</object>
+      <object>objects\Ufo</object>
+      <object>objects\UfoLightPlayerSwitch</object>
+      <object>objects\UfoCreator</object>
       <object>objects\stoneCalm</object>
+      <object>objects\PoisonPot</object>
+      <object>objects\drawInk</object>
       <object>objects\StoneLeftRight</object>
+      <object>objects\stoneGoRound</object>
       <object>objects\stoneUpDown</object>
+      <object>objects\BlackHoleEnd</object>
       <object>objects\BlackHoleStart</object>
       <object>objects\BlackHoleSpawner</object>
       <object>objects\SmokerConstGround</object>
+      <object>objects\SmokerConstLeft</object>
+      <object>objects\SmokerConstRight</object>
       <object>objects\SmokerGround</object>
       <object>objects\PoisonGasCollision</object>
       <object>objects\PoisonFlameCollision</object>
+      <object>objects\PoisonFlameLeft</object>
+      <object>objects\PoisonFlameRight</object>
     </objects>
   </objects>
   <rooms name="rooms">

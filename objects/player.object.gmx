@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_xscale = 1.5
+            <string>CanMove = true
+
+image_xscale = 1.5
 image_yscale = 1.5
 
 draw_set_alpha(1)
@@ -157,6 +159,8 @@ alarm[6]=60;
             <string>sprite_index = sprite5;
 grav = 0.5;
 movespeed = movespeedNormal
+
+CanMove = true
 </string>
           </argument>
         </arguments>
@@ -293,6 +297,10 @@ GPS2.x=player.x
 GPS2.y=player.y
 }
 
+// uwalnianie sie z bloku
+
+ if mouse_check_button(mb_right){
+CanMove = true}
 
 // global.selected
 
@@ -319,6 +327,7 @@ mouse = mouse_check_button_pressed(mb_left);
 mouse2 = mouse_check_button_released(mb_left);
 key_move = keyboard_check_pressed(vk_space);
 key_jump = mouse_check_button(mb_right);
+
 
 // Reakcje na mysz
 if (mouse) and (global.mouse3) &amp;&amp; mouse_x&gt;x-sprite_width/2 &amp;&amp; mouse_x&lt;x+sprite_width/2 &amp;&amp; mouse_y&gt;y-sprite_height/2 &amp;&amp; mouse_y&lt;y+sprite_height/2
@@ -366,7 +375,7 @@ vsp = -3
 }
 if (place_meeting(x,y+1,bridgeTap))
 {
-vsp = -3
+vsp = key_jump * -jumpspeed
 }
 if (place_meeting(x,y+1,bridgeD))
 {
@@ -397,9 +406,10 @@ while(!place_meeting(x+sign(hsp),y,ground))
 x += sign(hsp)
 
 }
-hsp = 0
-
+CanMove = false
 }
+
+
 
 
 if (place_meeting(x+hsp,y,ground2))
@@ -413,7 +423,7 @@ x += sign(hsp)
 hsp = 0
 
 }
-
+if CanMove = true{
 global.incriser = global.incriser + 0.01
 if global.incriser &gt; 5 {
 global.incriser = 5}
@@ -421,6 +431,7 @@ x += hsp + global.incriser;
 
 if hsp &gt; 20{
 hsp = 20
+}
 }
 
 //Vertical Collision
@@ -445,6 +456,21 @@ if place_meeting(x,y,BlackHoleEnd)
 instance_destroy()
 instance_create(BlackHoleEnd.x,BlackHoleEnd.y,BlackHoleSpawner)
 }
+
+//blocker collicion
+/*
+if place_meeting(x-1,y,blocker){
+CanMove = false
+}
+
+if !place_meeting(x-2,y,blocker){
+CanMove = true
+}
+else if place_meeting(x,y+1,blocker)
+{
+CanMove = true
+}
+
 </string>
           </argument>
         </arguments>
@@ -537,30 +563,6 @@ script_lives()
           <argument>
             <kind>11</kind>
             <room>room02</room>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="blocker">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>hsp = 0;
-if (jumpspeed &lt; 1) hsp = x
-</string>
           </argument>
         </arguments>
       </action>

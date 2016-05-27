@@ -51,7 +51,15 @@
             <string>draw_set_alpha(1)
 if (place_meeting(x,y,player))
 {
-player.y +=10
+player.y -=10
+}
+if (place_meeting(x,y,Player2))
+{
+Player2.y -=10
+}
+if (place_meeting(x,y,Player3))
+{
+Player3.y -=10
 }
 </string>
           </argument>
