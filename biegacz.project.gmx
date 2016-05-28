@@ -235,6 +235,9 @@
     <sprite>sprites\stain</sprite>
     <sprite>sprites\sprite174</sprite>
     <sprite>sprites\sprite175</sprite>
+    <sprite>sprites\sprite177</sprite>
+    <sprite>sprites\sprite178</sprite>
+    <sprite>sprites\sprite179</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -687,7 +690,6 @@
     <object>objects\obj_ship_red</object>
     <object>objects\obj_ship_gray</object>
     <object>objects\obj_trail</object>
-    <object>objects\bombing</object>
     <object>objects\spawnbombs</object>
     <object>objects\o_rope_segment</object>
     <object>objects\o_static</object>
@@ -716,6 +718,8 @@
     <object>objects\InkSpawner</object>
     <object>objects\StarToFill</object>
     <objects name="Obstacles">
+      <object>objects\bombing</object>
+      <object>objects\FireBall</object>
       <object>objects\BagnoSlowDown</object>
       <object>objects\GroundFlameLeft</object>
       <object>objects\GroundFlameRight</object>
@@ -738,10 +742,12 @@
       <object>objects\SmokerConstLeft</object>
       <object>objects\SmokerConstRight</object>
       <object>objects\SmokerGround</object>
+      <object>objects\FireBallSpawner</object>
       <object>objects\PoisonGasCollision</object>
       <object>objects\PoisonFlameCollision</object>
       <object>objects\PoisonFlameLeft</object>
       <object>objects\PoisonFlameRight</object>
+      <object>objects\Komar</object>
     </objects>
   </objects>
   <rooms name="rooms">

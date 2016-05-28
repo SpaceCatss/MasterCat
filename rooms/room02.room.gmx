@@ -65,16 +65,16 @@ global.coinController = 0</code>
     <instance objName="microplayer" x="60" y="470" name="inst_07046996" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="GPS2" x="160" y="128" name="inst_BC7588C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="spawnbombs" x="448" y="64" name="inst_5DDF8C2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="meta" x="29056" y="320" name="inst_CE3CA4D0" locked="0" code="" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
     <instance objName="timerB" x="224" y="160" name="inst_BE8F29AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="PP_spawner" x="512" y="-96" name="inst_CCAFF29E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="PossiblePointsss" x="256" y="64" name="inst_5F3F7C49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="StarToFill" x="544" y="96" name="inst_81976FEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="meta" x="24896" y="320" name="inst_96260E45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="BlackHoleStart" x="1312" y="256" name="inst_3A2114DA" locked="0" code="" scaleX="1.29999995231628" scaleY="1.29999995231628" colour="4294967295" rotation="0"/>
-    <instance objName="SlowDown" x="896" y="288" name="inst_639D1328" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="PoisonPot" x="1120" y="320" name="inst_721BCF6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SlowDown" x="1056" y="64" name="inst_639D1328" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="PoisonPot" x="1120" y="96" name="inst_721BCF6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="UfoCreator" x="768" y="-32" name="inst_C5076BCC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="FireBallSpawner" x="608" y="192" name="inst_DD0C04EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Komar" x="64" y="32" name="inst_5D50F9DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

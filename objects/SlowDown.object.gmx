@@ -51,7 +51,10 @@
             <kind>1</kind>
             <string>
 global.MoveAddCount += 3
+with player
+{
 sprite_index = sprite5;
+}
 </string>
           </argument>
         </arguments>
@@ -78,17 +81,17 @@ sprite_index = sprite5;
 {
 
 
-if global.MoveAddCount &gt; 2
+if global.MoveAddCount &gt; 3
 {
 global.MoveAddCount -= 3
 }
 
-if global.MoveAddCount = 2
+if global.MoveAddCount = 3
 {
 global.MoveAddCount -= 2
 }
 
-if global.MoveAddCount = 1
+if global.MoveAddCount = 2
 {
 global.MoveAddCount -= 1
 }
@@ -126,22 +129,22 @@ instance_destroy();
 {
 
 
-if global.MoveAddCount &gt; 2
+if global.MoveAddCount &gt; 3
 {
 global.MoveAddCount -= 3
 }
 
-if global.MoveAddCount = 2
+if global.MoveAddCount = 3
 {
 global.MoveAddCount -= 2
 }
 
-if global.MoveAddCount = 1
+if global.MoveAddCount = 2
 {
 global.MoveAddCount -= 1
 }
 
-sprite_index = sprite6;
+
 Player3.y = Player3.y - 3
 alarm[3] = 120;
 }
