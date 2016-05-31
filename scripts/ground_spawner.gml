@@ -31,6 +31,17 @@ else
 instance_create(0 +(n*i), 384, GroundSpawner)
 }
 
+var i
+for
+( i = 1; i < k+1; i += 1)
+{
+if i = j 
+{global.hardship = 1}
+else if i = l 
+{global.hardship = 2}
+else if i = m
+{global.hardship = 3}
+}
 
 }
 }
