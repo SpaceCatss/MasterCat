@@ -165,7 +165,7 @@ if r&gt;=62 and r&lt;=63
 //Flamer na skalce UP easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,288,GroundFlamerUp)
+instance_create(x+96,305,GroundFlamerUp)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -176,7 +176,7 @@ if r&gt;=64 and r&lt;=66
 //Flamer na skalce LEfteasy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,288,GroundFlameLeft)
+instance_create(x+96,305,GroundFlameLeft)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -187,7 +187,7 @@ if r&gt;=67 and r&lt;=69
 //Flamer na skalce Righteasy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,288,GroundFlameRight)
+instance_create(x+96,305,GroundFlameRight)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -198,7 +198,7 @@ if r&gt;=70 and r&lt;=75
 // Ground Imposter easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,288,GroundImposter)
+instance_create(x+96,305,GroundImposter)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -209,7 +209,7 @@ if r&gt;=76 and r&lt;=78
 // FireBall Spawner easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,224,FireBallSpawner)
+instance_create(x+96,200,FireBallSpawner)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -431,7 +431,7 @@ if r&gt;=62 and r&lt;=63
 //Flamer na skalce UP easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,288,GroundFlamerUp)
+instance_create(x+96,305,GroundFlamerUp)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -442,7 +442,7 @@ if r&gt;=64 and r&lt;=66
 //Flamer na skalce LEfteasy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,288,GroundFlameLeft)
+instance_create(x+96,305,GroundFlameLeft)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -453,7 +453,7 @@ if r&gt;=67 and r&lt;=69
 //Flamer na skalce Righteasy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,288,GroundFlameRight)
+instance_create(x+96,305,GroundFlameRight)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -464,7 +464,7 @@ if r&gt;=70 and r&lt;=75
 // Ground Imposter easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,288,GroundImposter)
+instance_create(x+96,305,GroundImposter)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -475,7 +475,7 @@ if r&gt;=76 and r&lt;=78
 // FireBall Spawner easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,224,FireBallSpawner)
+instance_create(x+96,200,FireBallSpawner)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -545,7 +545,6 @@ instance_create(x+96,224,stoneLeftRight)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
-
 
 }
 
@@ -692,7 +691,7 @@ if r&gt;=62 and r&lt;=63
 //Flamer na skalce UP easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,288,GroundFlamerUp)
+instance_create(x+96,305,GroundFlamerUp)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -703,7 +702,7 @@ if r&gt;=64 and r&lt;=66
 //Flamer na skalce LEfteasy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,288,GroundFlameLeft)
+instance_create(x+96,305,GroundFlameLeft)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -714,7 +713,7 @@ if r&gt;=67 and r&lt;=69
 //Flamer na skalce Righteasy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,288,GroundFlameRight)
+instance_create(x+96,305,GroundFlameRight)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -725,7 +724,7 @@ if r&gt;=70 and r&lt;=75
 // Ground Imposter easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,288,GroundImposter)
+instance_create(x+96,305,GroundImposter)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -736,7 +735,7 @@ if r&gt;=76 and r&lt;=78
 // FireBall Spawner easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,224,FireBallSpawner)
+instance_create(x+96,200,FireBallSpawner)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -951,7 +950,7 @@ if r&gt;=62 and r&lt;=63
 //Flamer na skalce UP easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,288,GroundFlamerUp)
+instance_create(x+96,305,GroundFlamerUp)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -962,7 +961,7 @@ if r&gt;=64 and r&lt;=66
 //Flamer na skalce LEfteasy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,288,GroundFlameLeft)
+instance_create(x+96,305,GroundFlameLeft)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -973,7 +972,7 @@ if r&gt;=67 and r&lt;=69
 //Flamer na skalce Righteasy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,288,GroundFlameRight)
+instance_create(x+96,305,GroundFlameRight)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -984,7 +983,7 @@ if r&gt;=70 and r&lt;=75
 // Ground Imposter easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,288,GroundImposter)
+instance_create(x+96,305,GroundImposter)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -995,7 +994,7 @@ if r&gt;=76 and r&lt;=78
 // FireBall Spawner easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,224,FireBallSpawner)
+instance_create(x+96,200,FireBallSpawner)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -1065,7 +1064,6 @@ instance_create(x+96,224,stoneLeftRight)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
-
 
 }
 </string>
