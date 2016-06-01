@@ -732,7 +732,7 @@
       <object>objects\stoneCalm</object>
       <object>objects\PoisonPot</object>
       <object>objects\drawInk</object>
-      <object>objects\StoneLeftRight</object>
+      <object>objects\stoneLeftRight</object>
       <object>objects\stoneGoRound</object>
       <object>objects\stoneUpDown</object>
       <object>objects\BlackHoleEnd</object>

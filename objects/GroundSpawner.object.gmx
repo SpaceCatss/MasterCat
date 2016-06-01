@@ -31,9 +31,11 @@
 
 r = irandom_range(1,155)
 
-if r&gt;=1 and r&lt;=10
+
+if r&gt;=1 and r&lt;=20
+or r&gt;=97 and r&lt;=120
 {
-//full ground
+//full ground easy
 
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
@@ -41,137 +43,47 @@ instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
 
-if r&gt;=11 and r&lt;=20
+if r&gt;=20 and r&lt;=25
+or r&gt;=121 and r&lt;=130
 {
-// 1hole1
+// 1hole1 easy
 instance_create(x,384,objectTap)
 instance_create(x+96,384,ground)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
 
-if r&gt;=21 and r&lt;=30
+if r&gt;=26 and r&lt;=30
+or r&gt;=131 and r&lt;=138
 {
-//1jole2
+//1jole2 easy
 instance_create(x,384,ground)
 instance_create(x+96,384,objectTap)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
 
-if r&gt;=31 and r&lt;=40
+if r&gt;=31 and r&lt;=35
+or r&gt;=139 and r&lt;=146
 {
-//1hole3
+//1hole3 easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
 instance_create(x+192,384,objectTap)
 instance_create(x+288,384,ground)
 }
 
-if r&gt;=41 and r&lt;=50
+if r&gt;=36 and r&lt;=40
+or r&gt;=147 and r&lt;=155
 {
-//1hole4
+//1hole4 easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,objectTap)
 }
 
-
-if r&gt;=51 and r&lt;=57
-{
-//2holenazmiane
-instance_create(x,384,ground)
-instance_create(x+96,384,objectTap)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,objectTap)
-}
-
-if r&gt;=58 and r&lt;=65
-{
-//2hole2
-instance_create(x,384,objectTap)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,objectTap)
-}
-
-if r&gt;=66 and r&lt;=73
-{
-//2hole2
-instance_create(x,384,objectTap)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,objectTap)
-instance_create(x+288,384,ground)
-}
-
-if r&gt;=74 and r&lt;=80
-{
-//2 z zrzedu
-instance_create(x,384,objectTap)
-instance_create(x+96,384,objectTap)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
-}
-
-if r&gt;=81 and r&lt;=88
-{
-//2 z zrzedu 2
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,objectTap)
-instance_create(x+288,384,objectTap)
-}
-
-if r&gt;=89 and r&lt;=95
-{
-//2 z zrzedu 3
-instance_create(x,384,ground)
-instance_create(x+96,384,objectTap)
-instance_create(x+192,384,objectTap)
-instance_create(x+288,384,ground)
-}
-
-if r&gt;=96 and r&lt;=99
-{
-//trudne
-instance_create(x,384,objectTap)
-instance_create(x+96,384,objectTap)
-instance_create(x+192,384,objectTap)
-instance_create(x+288,384,ground)
-}
-
-
-if r&gt;=100 and r&lt;=103
-{
-//trudne 2
-instance_create(x,384,objectTap)
-instance_create(x+96,384,objectTap)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,objectTap)
-}
-
-if r&gt;=104 and r&lt;=107
-{
-//trudne 3
-instance_create(x,384,objectTap)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,objectTap)
-instance_create(x+288,384,objectTap)
-}
-
-if r&gt;=108 and r&lt;=113
-{
-//enemy 1
-instance_create(x,384,objectTap)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+192,288,enemy_spider_touchable)
-instance_create(x+288,384,ground)
-}
-
-
-if r&gt;=114 and r&lt;=128
+if r&gt;=41 and r&lt;=43
 {
 //enemy 2 easy
 instance_create(x,384,ground)
@@ -181,29 +93,9 @@ instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
 
-if r&gt;=129 and r&lt;=145
-{
-//enemy 2 hard
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,288,enemy_spider_touchable)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,objectTap)
-}
 
-if r&gt;=146 and r&lt;=155
+if r&gt;=44 and r&lt;=46
 {
-//enemy 2 hardx2
-instance_create(x,384,ground)
-instance_create(x,288,enemy_spider_touchable)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,objectTap)
-instance_create(x+288,384,objectTap)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
 //slowdown easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
@@ -212,85 +104,7 @@ instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
 
-if r&gt;=156 and r&lt;=166
-{
-
-//slowdown hard
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,358,BagnoSlowDown)
-instance_create(x+192,384,objectTap)
-instance_create(x+288,384,ground)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//slowdown hard 2
-instance_create(x,384,ground)
-instance_create(x+96,384,objectTap)
-instance_create(x+96,358,BagnoSlowDown)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//slowdown really hard
-instance_create(x,384,ground)
-instance_create(x+96,384,objectTap)
-instance_create(x+192,384,ground)
-instance_create(x+192,358,BagnoSlowDown)
-instance_create(x+288,384,objectTap)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//slowdown really hard 2
-instance_create(x,384,objectTap)
-instance_create(x+96,384,objectTap)
-instance_create(x+192,384,ground)
-instance_create(x+192,358,BagnoSlowDown)
-instance_create(x+288,384,objectTap)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//slowdown medium
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,358,BagnoSlowDown)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,objectTap)
-}
-
-
-if r&gt;=156 and r&lt;=166
-{
-
-//slowdown medium 2
-instance_create(x,384,ground)
-instance_create(x,358,BagnoSlowDown)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,objectTap)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//slowdown medium 3
-instance_create(x,384,objectTap)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
-instance_create(x+288,358,BagnoSlowDown)
-}
-
-if r&gt;=156 and r&lt;=166
+if r&gt;=47 and r&lt;=49
 {
 
 //Log easy
@@ -301,85 +115,7 @@ instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
 
-if r&gt;=156 and r&lt;=166
-{
-
-//Log hard
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,332,Log)
-instance_create(x+192,384,objectTap)
-instance_create(x+288,384,ground)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Log hard 2
-instance_create(x,384,ground)
-instance_create(x+96,384,objectTap)
-instance_create(x+96,332,Log)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Log really hard
-instance_create(x,384,ground)
-instance_create(x+96,384,objectTap)
-instance_create(x+192,384,ground)
-instance_create(x+192,332,Log)
-instance_create(x+288,384,objectTap)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Log really hard 2
-instance_create(x,384,objectTap)
-instance_create(x+96,384,objectTap)
-instance_create(x+192,384,ground)
-instance_create(x+192,332,Log)
-instance_create(x+288,384,objectTap)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Log medium
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,332,Log)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,objectTap)
-}
-
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Log medium 2
-instance_create(x,384,ground)
-instance_create(x,332,Log)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,objectTap)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Log medium 3
-instance_create(x,384,objectTap)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
-instance_create(x+288,332,Log)
-}
-
-if r&gt;=156 and r&lt;=166
+if r&gt;=50 and r&lt;=52
 {
 
 //Log 2 easy
@@ -390,85 +126,7 @@ instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
 
-if r&gt;=156 and r&lt;=166
-{
-
-//Log 2 hard
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,360,Log2)
-instance_create(x+192,384,objectTap)
-instance_create(x+288,384,ground)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Log 2 hard 2
-instance_create(x,384,ground)
-instance_create(x+96,384,objectTap)
-instance_create(x+96,360,Log2)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Log 2 really hard
-instance_create(x,384,ground)
-instance_create(x+96,384,objectTap)
-instance_create(x+192,384,ground)
-instance_create(x+192,360,Log2)
-instance_create(x+288,384,objectTap)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Log 2 really hard 2
-instance_create(x,384,objectTap)
-instance_create(x+96,384,objectTap)
-instance_create(x+192,384,ground)
-instance_create(x+192,360,Log2)
-instance_create(x+288,384,objectTap)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Log 2 medium
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,360,Log2)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,objectTap)
-}
-
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Log 2 medium 2
-instance_create(x,384,ground)
-instance_create(x,360,Log2)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,objectTap)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Log 2 medium 3
-instance_create(x,384,objectTap)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
-instance_create(x+288,360,Log2)
-}
-
-if r&gt;=156 and r&lt;=166
+if r&gt;=53 and r&lt;=55
 {
 
 //Poison Pot easy
@@ -479,86 +137,7 @@ instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
 
-if r&gt;=156 and r&lt;=166
-{
-
-//Poison Pot hard
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,300,PoisonPot)
-instance_create(x+192,384,objectTap)
-instance_create(x+288,384,ground)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Poison Pot hard 2
-instance_create(x,384,ground)
-instance_create(x+96,384,objectTap)
-instance_create(x+96,300,PoisonPot)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Poison Pot really hard
-instance_create(x,384,ground)
-instance_create(x+96,384,objectTap)
-instance_create(x+192,384,ground)
-instance_create(x+192,300,PoisonPot)
-instance_create(x+288,384,objectTap)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Poison Pot really hard 2
-instance_create(x,384,objectTap)
-instance_create(x+96,384,objectTap)
-instance_create(x+192,384,ground)
-instance_create(x+192,300,PoisonPot)
-instance_create(x+288,384,objectTap)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Poison Pot medium
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,300,PoisonPot)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,objectTap)
-}
-
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Poison Pot medium 2
-instance_create(x,384,ground)
-instance_create(x,300,PoisonPot)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,objectTap)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Poison Pot medium 3
-instance_create(x,384,objectTap)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
-instance_create(x+288,300,PoisonPot)
-}
-
-
-if r&gt;=156 and r&lt;=166
+if r&gt;=56 and r&lt;=58
 {
 
 //Flamer nie wystajacy easy
@@ -569,85 +148,7 @@ instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
 
-if r&gt;=156 and r&lt;=166
-{
-
-//Flamer nie wystajacy hard
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,335, SmokerConstGround)
-instance_create(x+192,384,objectTap)
-instance_create(x+288,384,ground)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Flamer nie wystajacy hard 2
-instance_create(x,384,ground)
-instance_create(x+96,384,objectTap)
-instance_create(x+96,335, SmokerConstGround)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Flamer nie wystajacy really hard
-instance_create(x,384,ground)
-instance_create(x+96,384,objectTap)
-instance_create(x+192,384,ground)
-instance_create(x+192,335, SmokerConstGround)
-instance_create(x+288,384,objectTap)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Flamer nie wystajacy really hard 2
-instance_create(x,384,objectTap)
-instance_create(x+96,384,objectTap)
-instance_create(x+192,384,ground)
-instance_create(x+192,335, SmokerConstGround)
-instance_create(x+288,384,objectTap)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Flamer nie wystajacy medium
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,335, SmokerConstGround)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,objectTap)
-}
-
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Flamer nie wystajacy medium 2
-instance_create(x,384,ground)
-instance_create(x,335, SmokerConstGround)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,objectTap)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Flamer nie wystajacy medium 3
-instance_create(x,384,objectTap)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
-instance_create(x+288,335, SmokerConstGround)
-}
-
-if r&gt;=156 and r&lt;=166
+if r&gt;=59 and r&lt;=61
 {
 
 //Bekacz chmurkami nie wystajacy easy
@@ -658,82 +159,911 @@ instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
 
-if r&gt;=156 and r&lt;=166
+if r&gt;=62 and r&lt;=63
 {
 
-//Bekacz chmurkami nie wystajacy hard
+//Flamer na skalce UP easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,335, SmokerGround)
+instance_create(x+96,288,GroundFlamerUp)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=64 and r&lt;=66
+{
+
+//Flamer na skalce LEfteasy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,288,GroundFlameLeft)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=67 and r&lt;=69
+{
+
+//Flamer na skalce Righteasy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,288,GroundFlameRight)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=70 and r&lt;=75
+{
+
+// Ground Imposter easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,288,GroundImposter)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=76 and r&lt;=78
+{
+
+// FireBall Spawner easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,224,FireBallSpawner)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=79 and r&lt;=81
+{
+
+// stone easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,220,stoneCalm)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=82 and r&lt;=85
+{
+
+// stone easy 2
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,220,stoneCalm)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,objectTap)
+}
+
+if r&gt;=86 and r&lt;=88
+{
+
+// stone Up Down easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,200,stoneUpDown)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=89 and r&lt;=91
+{
+
+// Stone Go Round easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,160,stoneGoRound)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=92 and r&lt;=94
+{
+
+// Stone Left Right easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,288,stoneLeftRight)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=95 and r&lt;=97
+{
+
+// Stone Left Right easy 2
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,224,stoneLeftRight)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+if global.hardship = 1
+{
+
+
+r = irandom_range(1,155)
+
+
+if r&gt;=1 and r&lt;=20
+or r&gt;=97 and r&lt;=120
+{
+//full ground easy
+
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=20 and r&lt;=25
+or r&gt;=121 and r&lt;=130
+{
+// 1hole1 easy
+instance_create(x,384,objectTap)
+instance_create(x+96,384,ground)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=26 and r&lt;=30
+or r&gt;=131 and r&lt;=138
+{
+//1jole2 easy
+instance_create(x,384,ground)
+instance_create(x+96,384,objectTap)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=31 and r&lt;=35
+or r&gt;=139 and r&lt;=146
+{
+//1hole3 easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
 instance_create(x+192,384,objectTap)
 instance_create(x+288,384,ground)
 }
 
-if r&gt;=156 and r&lt;=166
+if r&gt;=36 and r&lt;=40
+or r&gt;=147 and r&lt;=155
+{
+//1hole4 easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,objectTap)
+}
+
+if r&gt;=41 and r&lt;=43
+{
+//enemy 2 easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,288,enemy_spider_touchable)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+
+if r&gt;=44 and r&lt;=46
+{
+//slowdown easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,358,BagnoSlowDown)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=47 and r&lt;=49
 {
 
-//Bekacz chmurkami nie wystajacy hard 2
+//Log easy
 instance_create(x,384,ground)
-instance_create(x+96,384,objectTap)
+instance_create(x+96,384,ground)
+instance_create(x+96,332,Log)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=50 and r&lt;=52
+{
+
+//Log 2 easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,360,Log2)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=53 and r&lt;=55
+{
+
+//Poison Pot easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,300,PoisonPot)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=56 and r&lt;=58
+{
+
+//Flamer nie wystajacy easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,335, SmokerConstGround)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=59 and r&lt;=61
+{
+
+//Bekacz chmurkami nie wystajacy easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
 instance_create(x+96,335, SmokerGround)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
 
-if r&gt;=156 and r&lt;=166
+if r&gt;=62 and r&lt;=63
 {
 
-//Bekacz chmurkami nie wystajacy really hard
-instance_create(x,384,ground)
-instance_create(x+96,384,objectTap)
-instance_create(x+192,384,ground)
-instance_create(x+192,335, SmokerGround)
-instance_create(x+288,384,objectTap)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Bekacz chmurkami nie wystajacy really hard 2
-instance_create(x,384,objectTap)
-instance_create(x+96,384,objectTap)
-instance_create(x+192,384,ground)
-instance_create(x+192,335, SmokerGround)
-instance_create(x+288,384,objectTap)
-}
-
-if r&gt;=156 and r&lt;=166
-{
-
-//Bekacz chmurkami nie wystajacy medium
+//Flamer na skalce UP easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,335, SmokerGround)
+instance_create(x+96,288,GroundFlamerUp)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=64 and r&lt;=66
+{
+
+//Flamer na skalce LEfteasy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,288,GroundFlameLeft)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=67 and r&lt;=69
+{
+
+//Flamer na skalce Righteasy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,288,GroundFlameRight)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=70 and r&lt;=75
+{
+
+// Ground Imposter easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,288,GroundImposter)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=76 and r&lt;=78
+{
+
+// FireBall Spawner easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,224,FireBallSpawner)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=79 and r&lt;=81
+{
+
+// stone easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,220,stoneCalm)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=82 and r&lt;=85
+{
+
+// stone easy 2
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,220,stoneCalm)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,objectTap)
 }
 
-
-if r&gt;=156 and r&lt;=166
+if r&gt;=86 and r&lt;=88
 {
 
-//Bekacz chmurkami nie wystajacy medium 2
+// stone Up Down easy
 instance_create(x,384,ground)
-instance_create(x,335, SmokerGround)
+instance_create(x+96,384,ground)
+instance_create(x+96,200,stoneUpDown)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=89 and r&lt;=91
+{
+
+// Stone Go Round easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,160,stoneGoRound)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=92 and r&lt;=94
+{
+
+// Stone Left Right easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,288,stoneLeftRight)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=95 and r&lt;=97
+{
+
+// Stone Left Right easy 2
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,224,stoneLeftRight)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+
+}
+
+
+
+
+if global.hardship = 2
+{
+
+
+r = irandom_range(1,155)
+
+
+if r&gt;=1 and r&lt;=20
+or r&gt;=97 and r&lt;=120
+{
+//full ground easy
+
+instance_create(x,384,ground)
 instance_create(x+96,384,ground)
 instance_create(x+192,384,ground)
-instance_create(x+288,384,objectTap)
+instance_create(x+288,384,ground)
 }
 
-if r&gt;=156 and r&lt;=166
+if r&gt;=20 and r&lt;=25
+or r&gt;=121 and r&lt;=130
 {
-
-//Bekacz chmurkami nie wystajacy medium 3
+// 1hole1 easy
 instance_create(x,384,objectTap)
 instance_create(x+96,384,ground)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
-instance_create(x+288,335, SmokerGround)
+}
+
+if r&gt;=26 and r&lt;=30
+or r&gt;=131 and r&lt;=138
+{
+//1jole2 easy
+instance_create(x,384,ground)
+instance_create(x+96,384,objectTap)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=31 and r&lt;=35
+or r&gt;=139 and r&lt;=146
+{
+//1hole3 easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+192,384,objectTap)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=36 and r&lt;=40
+or r&gt;=147 and r&lt;=155
+{
+//1hole4 easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,objectTap)
+}
+
+if r&gt;=41 and r&lt;=43
+{
+//enemy 2 easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,288,enemy_spider_touchable)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+
+if r&gt;=44 and r&lt;=46
+{
+//slowdown easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,358,BagnoSlowDown)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=47 and r&lt;=49
+{
+
+//Log easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,332,Log)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=50 and r&lt;=52
+{
+
+//Log 2 easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,360,Log2)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=53 and r&lt;=55
+{
+
+//Poison Pot easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,300,PoisonPot)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=56 and r&lt;=58
+{
+
+//Flamer nie wystajacy easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,335, SmokerConstGround)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=59 and r&lt;=61
+{
+
+//Bekacz chmurkami nie wystajacy easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,335, SmokerGround)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=62 and r&lt;=63
+{
+
+//Flamer na skalce UP easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,288,GroundFlamerUp)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=64 and r&lt;=66
+{
+
+//Flamer na skalce LEfteasy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,288,GroundFlameLeft)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=67 and r&lt;=69
+{
+
+//Flamer na skalce Righteasy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,288,GroundFlameRight)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=70 and r&lt;=75
+{
+
+// Ground Imposter easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,288,GroundImposter)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=76 and r&lt;=78
+{
+
+// FireBall Spawner easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,224,FireBallSpawner)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=79 and r&lt;=81
+{
+
+// stone easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,220,stoneCalm)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=82 and r&lt;=85
+{
+
+// stone easy 2
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,220,stoneCalm)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,objectTap)
+}
+
+if r&gt;=86 and r&lt;=88
+{
+
+// stone Up Down easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,200,stoneUpDown)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=89 and r&lt;=91
+{
+
+// Stone Go Round easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,160,stoneGoRound)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=92 and r&lt;=94
+{
+
+// Stone Left Right easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,288,stoneLeftRight)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=95 and r&lt;=97
+{
+
+// Stone Left Right easy 2
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,224,stoneLeftRight)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+
+}
+
+
+if global.hardship = 3
+{
+
+
+r = irandom_range(1,155)
+
+
+if r&gt;=1 and r&lt;=20
+or r&gt;=97 and r&lt;=120
+{
+//full ground easy
+
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=20 and r&lt;=25
+or r&gt;=121 and r&lt;=130
+{
+// 1hole1 easy
+instance_create(x,384,objectTap)
+instance_create(x+96,384,ground)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=26 and r&lt;=30
+or r&gt;=131 and r&lt;=138
+{
+//1jole2 easy
+instance_create(x,384,ground)
+instance_create(x+96,384,objectTap)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=31 and r&lt;=35
+or r&gt;=139 and r&lt;=146
+{
+//1hole3 easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+192,384,objectTap)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=36 and r&lt;=40
+or r&gt;=147 and r&lt;=155
+{
+//1hole4 easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,objectTap)
+}
+
+if r&gt;=41 and r&lt;=43
+{
+//enemy 2 easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,288,enemy_spider_touchable)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+
+if r&gt;=44 and r&lt;=46
+{
+//slowdown easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,358,BagnoSlowDown)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=47 and r&lt;=49
+{
+
+//Log easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,332,Log)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=50 and r&lt;=52
+{
+
+//Log 2 easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,360,Log2)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=53 and r&lt;=55
+{
+
+//Poison Pot easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,300,PoisonPot)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=56 and r&lt;=58
+{
+
+//Flamer nie wystajacy easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,335, SmokerConstGround)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=59 and r&lt;=61
+{
+
+//Bekacz chmurkami nie wystajacy easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,335, SmokerGround)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=62 and r&lt;=63
+{
+
+//Flamer na skalce UP easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,288,GroundFlamerUp)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=64 and r&lt;=66
+{
+
+//Flamer na skalce LEfteasy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,288,GroundFlameLeft)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=67 and r&lt;=69
+{
+
+//Flamer na skalce Righteasy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,288,GroundFlameRight)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=70 and r&lt;=75
+{
+
+// Ground Imposter easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,288,GroundImposter)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=76 and r&lt;=78
+{
+
+// FireBall Spawner easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,224,FireBallSpawner)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=79 and r&lt;=81
+{
+
+// stone easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,220,stoneCalm)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=82 and r&lt;=85
+{
+
+// stone easy 2
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,220,stoneCalm)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,objectTap)
+}
+
+if r&gt;=86 and r&lt;=88
+{
+
+// stone Up Down easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,200,stoneUpDown)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=89 and r&lt;=91
+{
+
+// Stone Go Round easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,160,stoneGoRound)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=92 and r&lt;=94
+{
+
+// Stone Left Right easy
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,288,stoneLeftRight)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=95 and r&lt;=97
+{
+
+// Stone Left Right easy 2
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+96,224,stoneLeftRight)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
 }
 
 

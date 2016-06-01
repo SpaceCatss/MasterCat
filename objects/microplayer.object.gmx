@@ -81,7 +81,7 @@ h = x
           <argument>
             <kind>1</kind>
             <string>draw_sprite_ext(sprite5,0,h,y-10,0.6,0.6,0,c_black,1)
-draw_sprite_ext(sprite4,0,50+instance_nearest(GPS2.x, GPS2.y, checkpoint).x/n,y-7,0.15,0.15,0,c_black,1)
+//draw_sprite_ext(sprite4,0,50+instance_nearest(GPS2.x, GPS2.y, checkpoint).x/n,y-7,0.15,0.15,0,c_black,1)
 
 
 </string>

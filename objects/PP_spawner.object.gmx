@@ -62,9 +62,11 @@ alarm[0] = 40
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.CoinSpawner = 1
+            <string>if global.hardship &gt;= 0 {
+
+if global.CoinSpawner = 1
 {
-r = irandom_range(1,140)
+r = irandom_range(1,150)
 if r&gt;=1 and r&lt;=7
 makethis=PowerUpSpawner
 else if r&gt;=8 and r&lt;=60
@@ -73,6 +75,10 @@ else if r&gt;=61 and r&lt;=130
 makethis=empty
 else if r&gt;=131 and r&lt;=140
 makethis=bombing
+else if r&gt;=141 and r&lt;=145
+makethis=Komar
+else if r&gt;=146 and r&lt;=150
+makethis=UfoCreator
 bomb=instance_create(x+800,irandom_range(-50,-100),makethis)
 
 alarm[0] = 40
@@ -81,7 +87,7 @@ alarm[0] = 40
 else if global.CoinSpawner = 2
 {
 
-r = irandom_range(1,136)
+r = irandom_range(1,145)
 if r&gt;=1 and r&lt;=14
 makethis=PowerUpSpawner
 else if r&gt;=15 and r&lt;=100
@@ -90,6 +96,10 @@ else if r&gt;=101 and r&lt;=120
 makethis=empty
 else if r&gt;=121 and r&lt;=136
 makethis=bombing
+else if r&gt;=137 and r&lt;=141
+makethis=Komar
+else if r&gt;=142 and r&lt;=145
+makethis=UfoCreator
 bomb=instance_create(x+800,irandom_range(-50,-100),makethis)
 
 alarm[0] = 25
@@ -98,18 +108,23 @@ alarm[0] = 25
 if global.CoinSpawner = 3
 
 {
-r = irandom_range(1,145)
+r = irandom_range(1,150)
 if r&gt;=1 and r&lt;=25
 makethis=PowerUpSpawner
 else if r&gt;=25 and r&lt;=120
 makethis=coin
 else if r&gt;=121 and r&lt;=130
 makethis=empty
-else if r&gt;=131 and r&lt;=145
+else if r&gt;=131 and r&lt;=144
 makethis=bombing
+else if r&gt;=145 and r&lt;=147
+makethis=Komar
+else if r&gt;=148 and r&lt;=150
+makethis=UfoCreator
 bomb=instance_create(x+800,irandom_range(-50,-100),makethis)
 
 alarm[0] = 15
+}
 }
 </string>
           </argument>

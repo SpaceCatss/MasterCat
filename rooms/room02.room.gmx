@@ -15,7 +15,7 @@ draw_set_alpha(1)
 
 Waluta.visible = false;
 
-ground_spawner()
+
 global.coinController = 0</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
