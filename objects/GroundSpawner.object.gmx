@@ -29,7 +29,7 @@
 {
 
 
-r = irandom_range(1,155)
+r = irandom_range(1,185)
 
 
 if r&gt;=1 and r&lt;=20
@@ -280,6 +280,61 @@ instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
 
+
+
+if r&gt;=156 and r&lt;=160
+{
+//2holenazmiane medium
+instance_create(x,384,ground)
+instance_create(x+96,384,objectTap)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,objectTap)
+}
+
+if r&gt;=161 and r&lt;=165
+{
+//2hole2 medium
+instance_create(x,384,objectTap)
+instance_create(x+96,384,ground)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,objectTap)
+}
+
+if r&gt;=166 and r&lt;=170
+{
+//2hole2 medium
+instance_create(x,384,objectTap)
+instance_create(x+96,384,ground)
+instance_create(x+192,384,objectTap)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=171 and r&lt;=175
+{
+//2 z zrzedu medium
+instance_create(x,384,objectTap)
+instance_create(x+96,384,objectTap)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=176 and r&lt;=180
+{
+//2 z zrzedu 2 medium
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+192,384,objectTap)
+instance_create(x+288,384,objectTap)
+}
+
+if r&gt;=181 and r&lt;=185
+{
+//2 z zrzedu 3 medium
+instance_create(x,384,ground)
+instance_create(x+96,384,objectTap)
+instance_create(x+192,384,objectTap)
+instance_create(x+288,384,ground)
+}
 
 }
 
@@ -295,7 +350,7 @@ if global.hardship = 1
 {
 
 
-r = irandom_range(1,155)
+r = irandom_range(1,185)
 
 
 if r&gt;=1 and r&lt;=20
@@ -543,6 +598,60 @@ instance_create(x,384,ground)
 instance_create(x+96,384,ground)
 instance_create(x+96,224,stoneLeftRight)
 instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=156 and r&lt;=160
+{
+//2holenazmiane medium
+instance_create(x,384,ground)
+instance_create(x+96,384,objectTap)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,objectTap)
+}
+
+if r&gt;=161 and r&lt;=165
+{
+//2hole2 medium
+instance_create(x,384,objectTap)
+instance_create(x+96,384,ground)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,objectTap)
+}
+
+if r&gt;=166 and r&lt;=170
+{
+//2hole2 medium
+instance_create(x,384,objectTap)
+instance_create(x+96,384,ground)
+instance_create(x+192,384,objectTap)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=171 and r&lt;=175
+{
+//2 z zrzedu medium
+instance_create(x,384,objectTap)
+instance_create(x+96,384,objectTap)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=176 and r&lt;=180
+{
+//2 z zrzedu 2 medium
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+192,384,objectTap)
+instance_create(x+288,384,objectTap)
+}
+
+if r&gt;=181 and r&lt;=185
+{
+//2 z zrzedu 3 medium
+instance_create(x,384,ground)
+instance_create(x+96,384,objectTap)
+instance_create(x+192,384,objectTap)
 instance_create(x+288,384,ground)
 }
 
@@ -555,7 +664,7 @@ if global.hardship = 2
 {
 
 
-r = irandom_range(1,155)
+r = irandom_range(1,185)
 
 
 if r&gt;=1 and r&lt;=20
@@ -806,6 +915,60 @@ instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
 
+
+if r&gt;=156 and r&lt;=160
+{
+//2holenazmiane medium
+instance_create(x,384,ground)
+instance_create(x+96,384,objectTap)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,objectTap)
+}
+
+if r&gt;=161 and r&lt;=165
+{
+//2hole2 medium
+instance_create(x,384,objectTap)
+instance_create(x+96,384,ground)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,objectTap)
+}
+
+if r&gt;=166 and r&lt;=170
+{
+//2hole2 medium
+instance_create(x,384,objectTap)
+instance_create(x+96,384,ground)
+instance_create(x+192,384,objectTap)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=171 and r&lt;=175
+{
+//2 z zrzedu medium
+instance_create(x,384,objectTap)
+instance_create(x+96,384,objectTap)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=176 and r&lt;=180
+{
+//2 z zrzedu 2 medium
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+192,384,objectTap)
+instance_create(x+288,384,objectTap)
+}
+
+if r&gt;=181 and r&lt;=185
+{
+//2 z zrzedu 3 medium
+instance_create(x,384,ground)
+instance_create(x+96,384,objectTap)
+instance_create(x+192,384,objectTap)
+instance_create(x+288,384,ground)
+}
 
 }
 
@@ -814,7 +977,7 @@ if global.hardship = 3
 {
 
 
-r = irandom_range(1,155)
+r = irandom_range(1,185)
 
 
 if r&gt;=1 and r&lt;=20
@@ -1064,6 +1227,61 @@ instance_create(x+96,224,stoneLeftRight)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
+
+if r&gt;=156 and r&lt;=160
+{
+//2holenazmiane medium
+instance_create(x,384,ground)
+instance_create(x+96,384,objectTap)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,objectTap)
+}
+
+if r&gt;=161 and r&lt;=165
+{
+//2hole2 medium
+instance_create(x,384,objectTap)
+instance_create(x+96,384,ground)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,objectTap)
+}
+
+if r&gt;=166 and r&lt;=170
+{
+//2hole2 medium
+instance_create(x,384,objectTap)
+instance_create(x+96,384,ground)
+instance_create(x+192,384,objectTap)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=171 and r&lt;=175
+{
+//2 z zrzedu medium
+instance_create(x,384,objectTap)
+instance_create(x+96,384,objectTap)
+instance_create(x+192,384,ground)
+instance_create(x+288,384,ground)
+}
+
+if r&gt;=176 and r&lt;=180
+{
+//2 z zrzedu 2 medium
+instance_create(x,384,ground)
+instance_create(x+96,384,ground)
+instance_create(x+192,384,objectTap)
+instance_create(x+288,384,objectTap)
+}
+
+if r&gt;=181 and r&lt;=185
+{
+//2 z zrzedu 3 medium
+instance_create(x,384,ground)
+instance_create(x+96,384,objectTap)
+instance_create(x+192,384,objectTap)
+instance_create(x+288,384,ground)
+}
+
 
 }
 </string>

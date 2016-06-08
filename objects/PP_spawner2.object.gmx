@@ -80,17 +80,17 @@ makethis=empty
 else if r&gt;=131 and r&lt;=140
 makethis=bombing
 else if r&gt;=141 and r&lt;=145
-makethis=Komar
+makethis=KomarLiveAction
 else if r&gt;=146 and r&lt;=150
 makethis=UfoCreator
 bomb=instance_create(x+800,irandom_range(-50,-100),makethis)
 
-//komar-ufo
+//KomarLiveAction-ufo
 r2 = irandom_range(1,100)
 if r2&gt;=1 and r2&lt;=95
 makethis2=empty
 else if r2&gt;=96 and r2&lt;=98
-makethis2=Komar
+makethis2=KomarLiveAction
 else if r2&gt;=99 and r2&lt;=100
 makethis2=UfoCreator
 bomb2=instance_create(x+800,irandom_range(0,100),makethis2) 
@@ -111,18 +111,18 @@ makethis=empty
 else if r&gt;=121 and r&lt;=136
 makethis=bombing
 else if r&gt;=137 and r&lt;=141
-makethis=Komar
+makethis=KomarLiveAction
 else if r&gt;=142 and r&lt;=145
 makethis=UfoCreator
 bomb=instance_create(x+800,irandom_range(-50,-100),makethis)
 
 
-//komar-ufo
+//KomarLiveAction-ufo
 r2 = irandom_range(1,100)
 if r2&gt;=1 and r2&lt;=95
 makethis2=empty
 else if r2&gt;=96 and r2&lt;=98
-makethis2=Komar
+makethis2=KomarLiveAction
 else if r2&gt;=99 and r2&lt;=100
 makethis2=UfoCreator
 bomb2=instance_create(x+800,irandom_range(0,100),makethis2) 
@@ -143,18 +143,18 @@ makethis=empty
 else if r&gt;=131 and r&lt;=144
 makethis=bombing
 else if r&gt;=145 and r&lt;=147
-makethis=Komar
+makethis=KomarLiveAction
 else if r&gt;=148 and r&lt;=150
 makethis=UfoCreator
 bomb=instance_create(x+800,irandom_range(-50,-100),makethis)
 
 
-//komar-ufo
+//KomarLiveAction-ufo
 r2 = irandom_range(1,100)
 if r2&gt;=1 and r2&lt;=95
 makethis2=empty
 else if r2&gt;=96 and r2&lt;=98
-makethis2=Komar
+makethis2=KomarLiveAction
 else if r2&gt;=99 and r2&lt;=100
 makethis2=UfoCreator
 bomb2=instance_create(x+800,irandom_range(0,100),makethis2) 

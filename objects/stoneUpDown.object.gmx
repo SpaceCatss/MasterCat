@@ -205,7 +205,7 @@ alarm[1] = 1
             <kind>1</kind>
             <string>if CanWork =true
 {
-global.LifeCount -=1
+global.LifeContener -= 20
 script_lives()
 CanWork = false
 }
@@ -298,7 +298,7 @@ instance_destroy()
             <kind>1</kind>
             <string>if CanWork =true
 {
-global.LifeCount -=1
+global.LifeContener -= 20
 script_lives()
 CanWork = false
 }
@@ -391,7 +391,7 @@ instance_destroy()
             <kind>1</kind>
             <string>if CanWork =true
 {
-global.LifeCount -=1
+global.LifeContener -= 20
 script_lives()
 CanWork = false
 }

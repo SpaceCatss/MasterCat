@@ -25,20 +25,27 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_xscale = 1.5
+            <string>
+
+CanMove = true
+
+image_xscale = 1.5
 image_yscale = 1.5
 
+draw_set_alpha(1)
+global.inviEnemy = false
+
 instance_create(x,y,GPS);
-selected = false;
+global.selected = false;
 global.canSelect = true;
 
 /// Variablesy
-grav = 0.5;
+grav = 0.45;
 hspNormal = 0;
 hspUp = 20
 vsp = 0;
-jumpspeedNormal = 7;
-jumpspeedUp = 10;
+jumpspeedNormal = 11;
+jumpspeedUp = 15;
 movespeedNormal = 20;
 movespeedUp = 8;
 
@@ -123,8 +130,10 @@ alarm[6]=60;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-grav = 0.5;
+            <string>grav = 0.5;
+movespeed = movespeedNormal
+
+CanMove = true
 </string>
           </argument>
         </arguments>
@@ -262,22 +271,28 @@ GPS2.x=Player2.x
 GPS2.y=Player2.y
 }
 
+// uwalnianie sie z bloku
 
-// selected
+ if mouse_check_button(mb_right){
+CanMove = true}
 
-if (selected) 
+// global.selected
+
+if (global.selected) 
 {
+
 
 x = mouse_x
 y = mouse_y
 if (place_meeting(x,y+3,ground))
 {
-selected = false
+global.selected = false
 y = y - 20
 
 }
 
 }
+
 
 
 //Inputy
@@ -287,11 +302,12 @@ mouse2 = mouse_check_button_released(mb_left);
 key_move = keyboard_check_pressed(vk_space);
 key_jump = mouse_check_button(mb_right);
 
+
 // Reakcje na mysz
 if (mouse) and (global.mouse3) &amp;&amp; mouse_x&gt;x-sprite_width/2 &amp;&amp; mouse_x&lt;x+sprite_width/2 &amp;&amp; mouse_y&gt;y-sprite_height/2 &amp;&amp; mouse_y&lt;y+sprite_height/2
 {
 
-selected = true;
+global.selected = true;
 global.canSelect = false;
 global.fingers[global.FingerCount] = global.fingers[global.FingerCount] -1
 
@@ -301,7 +317,7 @@ instance_deactivate_object(GPS)
 
 if(mouse2) and (global.mouse3)
 {
-selected = false;
+global.selected = false;
 global.canSelect = true;
 instance_activate_object(GPS)
 }
@@ -310,6 +326,8 @@ if (global.fingers[global.FingerCount] &lt;1)
 {
 global.mouse3 = false;
 }
+
+
 
 // reakcje na inputy
 move = key_move;
@@ -321,18 +339,21 @@ if (place_meeting(x,y+1,ground))
 {
 vsp = key_jump * -jumpspeed
 }
+if (place_meeting(x,y+1,ground3))
+{
+vsp = key_jump * -jumpspeed
+}
 if (place_meeting(x,y+1,bridge))
 {
 vsp = -3
-image_index = catDifferent1
+}
+if (place_meeting(x,y+1,bridgeTap))
+{
+vsp = key_jump * -jumpspeed
 }
 if (place_meeting(x,y+1,bridgeD))
 {
 vsp = key_jump * -jumpspeed
-}
-if (place_meeting(x,y+1,bridgeTap))
-{
-vsp = -3
 }
 if (place_meeting(x,y+1,bridgeU))
 {
@@ -359,14 +380,32 @@ while(!place_meeting(x+sign(hsp),y,ground))
 x += sign(hsp)
 
 }
+CanMove = false
+}
+
+
+
+
+if (place_meeting(x+hsp,y,ground2))
+
+{
+while(!place_meeting(x+sign(hsp),y,ground2)) 
+{
+x += sign(hsp)
+
+}
 hsp = 0
 
 }
+if CanMove = true{
+global.incriser = global.incriser + 0.01
+if global.incriser &gt; 4 {
+global.incriser = 4}
+x += hsp + global.incriser;
 
-x += hsp;
-
-if hsp &gt; 20{
-hsp = 20
+if hsp &gt; 15{
+hsp = 15
+}
 }
 
 //Vertical Collision
@@ -383,12 +422,27 @@ vsp = 0
 y += vsp;
 
 
+
 // vlack hole collision
 
 if place_meeting(x,y,BlackHoleEnd)
 {move_towards_point( BlackHoleEnd.x,BlackHoleEnd.y,0); 
 instance_destroy()
 instance_create(BlackHoleEnd.x,BlackHoleEnd.y,BlackHoleSpawner)
+}
+
+//blocker collicion
+/*
+if place_meeting(x-1,y,blocker){
+CanMove = false
+}
+
+if !place_meeting(x-2,y,blocker){
+CanMove = true
+}
+else if place_meeting(x,y+1,blocker)
+{
+CanMove = true
 }
 
 </string>
@@ -419,7 +473,7 @@ with (bombing)
 instance_destroy()
 }
 
-global.LifeCount -=1
+global.LifeContener  = global.LifeContener  - 20
 
 script_lives()
 
@@ -454,7 +508,7 @@ with (enemy_slicable)
 instance_destroy()
 }
 
-global.life[global.LifeCount] = global.life[global.LifeCount] - 1
+global.LifeContener  = global.LifeContener  - 20
 }
 script_lives()
 </string>
@@ -488,7 +542,7 @@ with (enemy_spider_touchable)
 instance_destroy()
 }
 
-global.life[global.LifeCount] = global.life[global.LifeCount] - 1
+global.LifeContener  = global.LifeContener  - 20
 }
 script_lives()
 </string>
@@ -564,17 +618,19 @@ moveAdd = 0;
 
 
 
-if (global.LifeCount &gt; 0)
+if (global.LifeContener &gt;= 50)
 {
-global.LifeCount -= 1
+global.LifeContener -= 50
+script_death()
 }
 
-if (global.LifeCount = 0)
+if (global.LifeContener &lt;50 )
 {
-script_death();
+global.LifeContener = 0
+script_lives();
 }
 
-script_death();
+
 </string>
           </argument>
         </arguments>
@@ -632,12 +688,12 @@ moveAdd = 0;
 
 
 
-if (global.LifeCount &gt; 0)
+if (global.LifeContener &gt;= 50)
 {
-global.LifeCount -= 1
+global.LifeContener -= 50
 }
 
-if (global.LifeCount = 0)
+if (global.LifeContener &lt;50 )
 {
 script_death();
 }

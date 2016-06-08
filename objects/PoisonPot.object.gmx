@@ -3,7 +3,7 @@
   <spriteName>sprite174</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-999</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -110,7 +110,7 @@ instance_destroy()
             <kind>1</kind>
             <string>if CanWork =true
 {
-global.LifeCount -=1
+global.LifeContener -= 20
 script_lives()
 CanWork = false
 }
@@ -226,7 +226,7 @@ alarm[0]=90
             <kind>1</kind>
             <string>if CanWork =true
 {
-global.LifeCount -=1
+global.LifeContener -= 20
 script_lives()
 CanWork = false
 }
@@ -342,7 +342,7 @@ alarm[0]=90
             <kind>1</kind>
             <string>if CanWork =true
 {
-global.LifeCount -=1
+global.LifeContener -= 20
 script_lives()
 CanWork = false
 }

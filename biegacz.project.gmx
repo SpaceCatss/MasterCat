@@ -238,6 +238,7 @@
     <sprite>sprites\sprite177</sprite>
     <sprite>sprites\sprite178</sprite>
     <sprite>sprites\sprite179</sprite>
+    <sprite>sprites\sprite180</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -643,6 +644,7 @@
     <object>objects\Waluta</object>
     <object>objects\StarInitialize</object>
     <object>objects\PP_spawner</object>
+    <object>objects\PP_spawner2</object>
     <object>objects\PowerUpSpawner</object>
     <object>objects\Tools</object>
     <objects name="WhatIsIt">
@@ -748,6 +750,7 @@
       <object>objects\PoisonFlameLeft</object>
       <object>objects\PoisonFlameRight</object>
       <object>objects\Komar</object>
+      <object>objects\KomarLiveAction</object>
     </objects>
   </objects>
   <rooms name="rooms">

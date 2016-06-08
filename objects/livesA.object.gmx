@@ -55,7 +55,20 @@ global.LifeCount +=1
 
 if global.r = 3
 {
-global.LifeCount +=1
+global.LifeContener = 200
+global.LifeContenerMax = 200
+}
+
+else if global.r = 2
+{
+global.LifeContener = 120
+global.LifeContenerMax = 120
+}
+
+else if global.r = 1
+{
+global.LifeContener = 150
+global.LifeContenerMax = 150
 }
 </string>
           </argument>
@@ -163,8 +176,11 @@ room_goto(Lost)
 draw_set_colour(c_white);
 draw_set_valign(fa_middle);
 draw_set_halign(fa_middle);
-draw_sprite_ext(sprite94,0,view_xview[0]+64,view_yview[0]+40,0.8,0.8,0,c_white,1)
-draw_text_outline(view_xview[0]+64,view_yview[0]+40,string(global.life[global.LifeCount]),1,c_black,10);
+//draw_sprite_ext(sprite94,0,view_xview[0]+64,view_yview[0]+40,0.8,0.8,0,c_white,1)
+//draw_text_outline(view_xview[0]+64,view_yview[0]+40,string(global.life[global.LifeCount]),1,c_black,10);
+
+draw_roundrect_texture(view_xview[0]+(64), view_yview[0]+15, view_xview[0]+64+(global.LifeContenerMax/2) + 20, view_yview[0]+45, 5, background5, 9, false)
+draw_rectangle_color(view_xview[0]+(74), view_yview[0]+20, view_xview[0]+74+(global.LifeContener/2), view_yview[0]+40, c_red, c_red, c_red, c_red, false);
 
 
 

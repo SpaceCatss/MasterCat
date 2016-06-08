@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ground_spawner()
+            <string>global.coinController =0
+ground_spawner()
 global.CoinSpawner = 1
 global.feverMode = 0
 

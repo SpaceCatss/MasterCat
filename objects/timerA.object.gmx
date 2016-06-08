@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.CoinSpawner = 1
+            <string>
+
+global.coinController = 0
+global.CoinSpawner = 1
 global.mouse3 = false;
 
 global.seconds = 59;

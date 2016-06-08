@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>global.LifeContener = 0
+global.LifeContenerMax = 0
 global.hardship = 0
 global.incriser = 0.01
 global.t = 0

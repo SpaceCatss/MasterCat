@@ -1,4 +1,4 @@
-if (global.life[global.LifeCount] = 0){
+if (global.LifeContener <1){
 
 {
 instance_deactivate_object(player)
