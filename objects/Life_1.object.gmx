@@ -56,7 +56,7 @@ draw_text_outline(x+110,y,"1",1,c_black,10)
 if (addLife_1.CantBuy = false)
 {
 draw_set_font(font9)
-draw_text_outline(x-1,y,"+ 1 Life",1,c_black,10)
+draw_text_outline(x-1,y,"+ 10 HP",1,c_black,10)
 
 draw_sprite_ext(sprite35,0,x+80,y,0.5,0.5,0,c_white,1)
 }

@@ -81,7 +81,7 @@ depth = -1210
             <string>if (global.SilverStarMoney &gt;= 10) and (canSubstract = true)
 {
 global.SilverStarMoney = global.SilverStarMoney - 10
-global.LifeCount = global.LifeCount + 1
+global.LifeContener +=100
 
 instance_activate_object(player)
 instance_activate_object(Player2)

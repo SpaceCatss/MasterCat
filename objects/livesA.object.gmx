@@ -29,46 +29,110 @@
 
 global.paintN = 370
 
-global.LifeCount = 3
 
-if global.BoughtLives_20 = true
-{
-global.LifeCount +=1
-}
-
-if global.BoughtLives_10 = true
-{
-global.LifeCount +=1
-}
-if global.BoughtLives_30 = true
-{
-global.LifeCount +=1
-}
-if global.BoughtLives_40 = true
-{
-global.LifeCount +=1
-}
-if global.BoughtLives_50 = true
-{
-global.LifeCount +=1
-}
 
 if global.r = 3
 {
 global.LifeContener = 200
 global.LifeContenerMax = 200
+global.LifeCount = 3
+
+if global.BoughtLives_20 = true
+{
+global.LifeContener +=15
+global.LifeContenerMax +=15
 }
+
+if global.BoughtLives_10 = true
+{
+global.LifeContener +=10
+global.LifeContenerMax +=10
+}
+if global.BoughtLives_30 = true
+{
+global.LifeContener +=20
+global.LifeContenerMax +=20
+}
+if global.BoughtLives_40 = true
+{
+global.LifeContener +=25
+global.LifeContenerMax +=25
+}
+if global.BoughtLives_50 = true
+{
+global.LifeContener +=30
+global.LifeContenerMax +=30
+}
+}
+
+
+
+
+
+
 
 else if global.r = 2
 {
 global.LifeContener = 120
 global.LifeContenerMax = 120
+global.LifeCount = 3
+
+if global.BoughtLives_20 = true
+{
+global.LifeContener +=15
 }
+
+if global.BoughtLives_10 = true
+{
+global.LifeContener +=10
+}
+if global.BoughtLives_30 = true
+{
+global.LifeContener +=20
+}
+if global.BoughtLives_40 = true
+{
+global.LifeContener +=25
+}
+if global.BoughtLives_50 = true
+{
+global.LifeContener +=30
+}
+}
+
+
+
+
+
+
 
 else if global.r = 1
 {
 global.LifeContener = 150
 global.LifeContenerMax = 150
+global.LifeCount = 3
+
+if global.BoughtLives_20 = true
+{
+global.LifeContener +=15
+}
+
+if global.BoughtLives_10 = true
+{
+global.LifeContener +=10
+}
+if global.BoughtLives_30 = true
+{
+global.LifeContener +=20
+}
+if global.BoughtLives_40 = true
+{
+global.LifeContener +=25
+}
+if global.BoughtLives_50 = true
+{
+global.LifeContener +=30
+}
 }
 </string>
           </argument>

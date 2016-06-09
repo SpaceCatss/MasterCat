@@ -81,7 +81,7 @@ depth = -1210
             <string>if (global.money &gt;= 150) and (canSubstract = true)
 {
 global.money = global.money - 150
-global.LifeCount = global.LifeCount + 1
+global.LifeContener += 100
 
 instance_activate_object(player)
 instance_activate_object(Player2)

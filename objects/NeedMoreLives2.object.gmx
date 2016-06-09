@@ -84,7 +84,7 @@ if (ConfirmNeedMoreLives2.CantBuy = false)
 {
 draw_text_outline(x-40,y,"Spend 10",1,c_black,10)
 draw_sprite_ext(sprite36,0,x+60,y,0.5,0.5,0,c_white,1)
-draw_text_outline(x-40,y+20,"to get 1 Life",1,c_black,10)
+draw_text_outline(x-40,y+20,"to get + 100 HP",1,c_black,10)
 //draw_sprite_ext(sprite35,0,x+60,y+20,0.5,0.5,0,c_white,1)
 }
 else if (ConfirmNeedMoreLives2.CantBuy = true)
