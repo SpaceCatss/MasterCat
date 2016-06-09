@@ -51,6 +51,10 @@ room_goto(room01)
           <argument>
             <kind>1</kind>
             <string>draw_set_colour(c_white)
+draw_set_font(font10)
+draw_set_halign(fa_middle)
+draw_set_valign(fa_middle)
+
 
 draw_sprite_ext(sprite72,0,x,y,0.4,0.4,0,c_white,1)
 draw_text_outline(x,y,"1",1,c_black,10)
@@ -59,87 +63,87 @@ draw_text_outline(x,y,"1",1,c_black,10)
 
 if (global.GoldStar1InRM1 &gt; 2)
 {
-draw_sprite_ext(sprite35,0,x-23,y+40,0.5,0.5,0,c_white,1)
-image_xscale = 0.5
-image_yscale = 0.5
+draw_sprite_ext(sprite35,0,x+55,y+18,0.5,0.5,0,c_white,1)
+image_xscale = 0.4
+image_yscale = 0.4
 }
 else if
 (global.SilverStar1InRM1 &gt; 2)
 {
-draw_sprite_ext(sprite36,0,x-23,y+40,0.5,0.5,0,c_white,1)
-image_xscale = 0.5
-image_yscale = 0.5
+draw_sprite_ext(sprite36,0,x+55,y+18,0.5,0.5,0,c_white,1)
+image_xscale = 0.4
+image_yscale = 0.4
 }
 else if
 (global.BronzeStar1InRM1 &gt; 2)
 {
-draw_sprite_ext(sprite34,0,x-23,y+40,0.5,0.5,0,c_white,1)
-image_xscale = 0.5
-image_yscale = 0.5
+draw_sprite_ext(sprite34,0,x+55,y+18,0.5,0.5,0,c_white,1)
+image_xscale = 0.4
+image_yscale = 0.4
 }
 else 
 {
-draw_sprite_ext(blackStar,0,x-23,y+40,0.5,0.5,0,c_white,1)
-image_xscale = 0.5
-image_yscale = 0.5
+draw_sprite_ext(blackStar,0,x+55,y+18,0.5,0.5,0,c_white,1)
+image_xscale = 0.4
+image_yscale = 0.4
 }
 
 // 2 star
 
 if (global.GoldStar2InRM1 &gt; 2)
 {
-draw_sprite_ext(sprite35,0,x,y+40,0.5,0.5,0,c_white,1)
-image_xscale = 0.5
-image_yscale = 0.5
+draw_sprite_ext(sprite35,0,x+38,y+36,0.5,0.5,0,c_white,1)
+image_xscale = 0.4
+image_yscale = 0.4
 }
 else if
 (global.SilverStar2InRM1 &gt; 2)
 {
-draw_sprite_ext(sprite36,0,x,y+40,0.5,0.5,0,c_white,1)
-image_xscale = 0.5
-image_yscale = 0.5
+draw_sprite_ext(sprite36,0,x+38,y+36,0.5,0.5,0,c_white,1)
+image_xscale = 0.4
+image_yscale = 0.4
 }
 else if
 (global.BronzeStar2InRM1 &gt; 2)
 {
-draw_sprite_ext(sprite34,0,x,y+40,0.5,0.5,0,c_white,1)
-image_xscale = 0.5
-image_yscale = 0.5
+draw_sprite_ext(sprite34,0,x+38,y+36,0.5,0.5,0,c_white,1)
+image_xscale = 0.4
+image_yscale = 0.4
 }
 else 
 {
-draw_sprite_ext(blackStar,0,x,y+40,0.5,0.5,0,c_white,1)
-image_xscale = 0.5
-image_yscale = 0.5
+draw_sprite_ext(blackStar,0,x+38,y+36,0.5,0.5,0,c_white,1)
+image_xscale = 0.4
+image_yscale = 0.4
 }
 
 // 2 star
 
 if (global.GoldStar3InRM1 &gt; 2)
 {
-draw_sprite_ext(sprite35,0,x+23,y+40,0.5,0.5,0,c_white,1)
-image_xscale = 0.5
-image_yscale = 0.5
+draw_sprite_ext(sprite35,0,x+21,y+54,0.5,0.5,0,c_white,1)
+image_xscale = 0.4
+image_yscale = 0.4
 }
 else if
 (global.SilverStar3InRM1 &gt; 2)
 {
-draw_sprite_ext(sprite36,0,x+23,y+40,0.5,0.5,0,c_white,1)
-image_xscale = 0.5
-image_yscale = 0.5
+draw_sprite_ext(sprite36,0,x+21,y+54,0.5,0.5,0,c_white,1)
+image_xscale = 0.4
+image_yscale = 0.4
 }
 else if
 (global.BronzeStar3InRM1 &gt; 2)
 {
-draw_sprite_ext(sprite34,0,x+23,y+40,0.5,0.5,0,c_white,1)
-image_xscale = 0.5
-image_yscale = 0.5
+draw_sprite_ext(sprite34,0,x+21,y+54,0.5,0.5,0,c_white,1)
+image_xscale = 0.4
+image_yscale = 0.4
 }
 else 
 {
-draw_sprite_ext(blackStar,0,x+23,y+40,0.5,0.5,0,c_white,1)
-image_xscale = 0.5
-image_yscale = 0.5
+draw_sprite_ext(blackStar,0,x+21,y+54,0.5,0.5,0,c_white,1)
+image_xscale = 0.4
+image_yscale = 0.4
 }
 </string>
           </argument>

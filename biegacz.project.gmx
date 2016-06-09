@@ -140,6 +140,7 @@
     <sprite>sprites\sprite70</sprite>
     <sprite>sprites\sprite71</sprite>
     <sprite>sprites\sprite72</sprite>
+    <sprite>sprites\sprite73</sprite>
     <sprite>sprites\underTool</sprite>
     <sprite>sprites\costTool</sprite>
     <sprite>sprites\headTool</sprite>
@@ -239,6 +240,9 @@
     <sprite>sprites\sprite178</sprite>
     <sprite>sprites\sprite179</sprite>
     <sprite>sprites\sprite180</sprite>
+    <sprite>sprites\locker</sprite>
+    <sprite>sprites\backBTN</sprite>
+    <sprite>sprites\playBTN</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -251,6 +255,7 @@
         <background>background\bkg_sign_new</background>
       </backgrounds>
     </backgrounds>
+    <background>background\backLS</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
@@ -657,6 +662,8 @@
       <object>objects\whatinviCat</object>
     </objects>
     <objects name="LevelSelection">
+      <object>objects\PlayLS</object>
+      <object>objects\MainMenuLS</object>
       <object>objects\select</object>
       <object>objects\Button1</object>
       <object>objects\levelselect</object>
