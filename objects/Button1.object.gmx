@@ -57,7 +57,7 @@ draw_set_valign(fa_middle)
 
 
 draw_sprite_ext(sprite72,0,x,y,0.4,0.4,0,c_white,1)
-draw_text_outline(x,y,"1",1,c_black,10)
+draw_text_outline(x,y-7,"1",1,c_gray,10)
 
 // 1 star
 
