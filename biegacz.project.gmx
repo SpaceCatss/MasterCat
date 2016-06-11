@@ -129,6 +129,14 @@
       <sprite>sprites\sprite204_polestatsyskocznosc</sprite>
       <sprite>sprites\sprite205_polestatsySpeed</sprite>
       <sprite>sprites\sprite206_rybalusz</sprite>
+      <sprite>sprites\sprite222_ka_cat</sprite>
+      <sprite>sprites\sprite223_animecat</sprite>
+      <sprite>sprites\sprite224_pomiocik</sprite>
+      <sprite>sprites\sprite225_mooncat_without</sprite>
+      <sprite>sprites\sprite226_gejmusiccat_without</sprite>
+      <sprite>sprites\sprite227_pixelcat</sprite>
+      <sprite>sprites\sprite228_black_dress</sprite>
+      <sprite>sprites\sprite229_shroedinger</sprite>
       <sprite>sprites\sprite207_SpeedAd1</sprite>
       <sprite>sprites\sprite208_speedAd2</sprite>
       <sprite>sprites\sprite209_speedAd3</sprite>
@@ -350,6 +358,8 @@
     <path>paths\KnockUp</path>
     <path>paths\UfoArrive</path>
     <path>paths\UfoOut</path>
+    <path>paths\MoveRight</path>
+    <path>paths\MoveLeft</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\script_death.gml</script>
@@ -816,27 +826,45 @@
       <object>objects\addFinger_3</object>
       <objects name="CharacterSelection">
         <object>objects\CatName</object>
+        <object>objects\MianMenuCharacterS</object>
         <object>objects\NoneTool</object>
         <object>objects\NoneToolCopy</object>
         <object>objects\P1</object>
-        <object>objects\P1Copy</object>
-        <object>objects\P3</object>
-        <object>objects\P3Copy</object>
         <object>objects\P2</object>
-        <object>objects\P2Copy</object>
+        <object>objects\P3</object>
+        <object>objects\P4</object>
+        <object>objects\P5</object>
+        <object>objects\P6</object>
+        <object>objects\P7</object>
+        <object>objects\P8</object>
+        <object>objects\P9</object>
         <object>objects\Choose_a_Cat</object>
         <object>objects\abilityPanel</object>
         <object>objects\StatisticPanel</object>
+        <object>objects\fromCharacterToLevel</object>
+        <object>objects\PnaelJump</object>
+        <object>objects\PanelLife</object>
+        <object>objects\belka_gorna</object>
+        <object>objects\belka_dolna</object>
         <object>objects\StatisticSpeed1</object>
+        <object>objects\planetaDisplay</object>
+        <object>objects\bluefishy1</object>
+        <object>objects\bluefishy2</object>
+        <object>objects\rybalusze</object>
         <object>objects\StatisticSpeed2</object>
         <object>objects\StatisticSpeed3</object>
         <object>objects\StatisticSpeed4</object>
         <object>objects\StatisticSpeed5</object>
         <object>objects\StatisticJump1</object>
+        <object>objects\StatisticLife1</object>
         <object>objects\StatisticJump2</object>
+        <object>objects\StatisticLife2</object>
         <object>objects\StatisticJump3</object>
+        <object>objects\StatisticLife3</object>
         <object>objects\StatisticJump4</object>
+        <object>objects\StatisticLife4</object>
         <object>objects\StatisticJump5</object>
+        <object>objects\StatisticLife5</object>
         <object>objects\pointOfNoReturn</object>
         <object>objects\pointOfNoReturn2</object>
       </objects>
@@ -910,7 +938,6 @@
     <object>objects\RoomTeleport</object>
     <object>objects\savus</object>
     <object>objects\object26</object>
-    <object>objects\fromCharacterToLevel</object>
     <object>objects\object27</object>
     <object>objects\enemy_spider_touchable</object>
     <object>objects\enemy_slicable</object>

@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="background2" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="tlochara" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="-1"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -51,53 +51,61 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="MainMenu" x="64" y="340" name="inst_EFA61ECC" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
-    <instance objName="ToolBodyN" x="262" y="321" name="inst_9E76A36D" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
+    <instance objName="ToolBodyN" x="249" y="300" name="inst_9E76A36D" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
     <instance objName="ToolBodyN" x="416" y="512" name="inst_DABCD60E" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
     <instance objName="ToolBodyN" x="832" y="192" name="inst_CC792CBD" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
-    <instance objName="ToolBack" x="300" y="340" name="inst_896BE384" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
+    <instance objName="ToolBack" x="288" y="320" name="inst_896BE384" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
     <instance objName="ToolBack" x="896" y="192" name="inst_9812D753" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
     <instance objName="ToolBack" x="160" y="480" name="inst_D89487F9" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
     <instance objName="ToolBack" x="448" y="480" name="inst_E90CF562" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
     <instance objName="ToolBodyN" x="128" y="448" name="inst_06E7D835" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
-    <instance objName="Speed_1" x="258" y="320" name="inst_56BB9265" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
-    <instance objName="addSpeed_1" x="390" y="351" name="inst_EDB38CB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="addJump_1" x="390" y="351" name="inst_36A069E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="JumpForDisplay" x="220" y="340" name="inst_DD9854FB" locked="0" code="" scaleX="0.800000011920929" scaleY="0.800000011920929" colour="4294967295" rotation="0"/>
-    <instance objName="Jump_1" x="258" y="320" name="inst_0DE9E613" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
+    <instance objName="Speed_1" x="250" y="302" name="inst_56BB9265" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
+    <instance objName="addSpeed_1" x="375" y="330" name="inst_EDB38CB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="addJump_1" x="375" y="330" name="inst_36A069E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="JumpForDisplay" x="205" y="320" name="inst_DD9854FB" locked="0" code="" scaleX="0.800000011920929" scaleY="0.800000011920929" colour="4294967295" rotation="0"/>
+    <instance objName="Jump_1" x="250" y="302" name="inst_0DE9E613" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
     <instance objName="addLife_1" x="256" y="480" name="inst_FF957D19" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="addFinger_1" x="544" y="480" name="inst_B7C57897" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="LifeForDisplay" x="96" y="480" name="inst_63A21810" locked="0" code="" scaleX="0.649999976158142" scaleY="0.649999976158142" colour="4294967295" rotation="0"/>
     <instance objName="Life_1" x="128" y="448" name="inst_D0893577" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
     <instance objName="Finger_1" x="416" y="480" name="inst_F4C9BE7B" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
-    <instance objName="SpeedForDisplay" x="220" y="340" name="inst_3B4BACEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SpeedForDisplay" x="205" y="320" name="inst_3B4BACEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="FingerForDisplay" x="352" y="480" name="inst_82419271" locked="0" code="" scaleX="0.469999998807907" scaleY="0.469999998807907" colour="4294967295" rotation="0"/>
-    <instance objName="charaBackground" x="292" y="288" name="inst_CB828F9C" locked="0" code="" scaleX="0.430000007152557" scaleY="0.340000003576279" colour="4294967295" rotation="0"/>
-    <instance objName="P1" x="305" y="160" name="inst_76FE3661" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="CharaLeft" x="96" y="170" name="inst_0FF7F823" locked="0" code="" scaleX="0.300000011920929" scaleY="0.300000011920929" colour="4294967295" rotation="0"/>
-    <instance objName="charaRight" x="512" y="170" name="inst_BE4E5461" locked="0" code="" scaleX="0.300000011920929" scaleY="0.300000011920929" colour="4294967295" rotation="0"/>
-    <instance objName="toolLeft" x="100" y="256" name="inst_2263C28B" locked="0" code="" scaleX="0.200000002980232" scaleY="0.200000002980232" colour="4294967295" rotation="0"/>
-    <instance objName="toolRight" x="507" y="256" name="inst_726104BB" locked="0" code="" scaleX="0.200000002980232" scaleY="0.200000002980232" colour="4294967295" rotation="0"/>
-    <instance objName="CharacterLight" x="298" y="220" name="inst_04978FAE" locked="0" code="" scaleX="0.300000011920929" scaleY="0.300000011920929" colour="4294967295" rotation="0"/>
-    <instance objName="abilityPanel" x="64" y="58" name="inst_6E8815F9" locked="0" code="" scaleX="0.899999976158142" scaleY="0.899999976158142" colour="4294967295" rotation="0"/>
-    <instance objName="StatisticPanel" x="448" y="32" name="inst_CA3F9C7B" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
-    <instance objName="StatisticPanel" x="448" y="75" name="inst_A0A71E6E" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
-    <instance objName="StatisticSpeed1" x="459" y="34" name="inst_269A635C" locked="0" code="" scaleX="1.20000004768372" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="StatisticSpeed2" x="487" y="34" name="inst_4CED0DC1" locked="0" code="" scaleX="1.20000004768372" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="StatisticSpeed3" x="515" y="34" name="inst_3E04E136" locked="0" code="" scaleX="1.29999995231628" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="StatisticSpeed4" x="543" y="34" name="inst_5A25E294" locked="0" code="" scaleX="1.20000004768372" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="StatisticSpeed5" x="570" y="34" name="inst_5372530E" locked="0" code="" scaleX="1.20000004768372" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="StatisticJump1" x="459" y="77" name="inst_50721797" locked="0" code="" scaleX="1.20000004768372" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="StatisticJump2" x="487" y="77" name="inst_43A39750" locked="0" code="" scaleX="1.20000004768372" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="StatisticJump3" x="515" y="77" name="inst_7E1CA516" locked="0" code="" scaleX="1.20000004768372" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="StatisticJump4" x="543" y="77" name="inst_720D344F" locked="0" code="" scaleX="1.20000004768372" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="StatisticJump5" x="570" y="77" name="inst_0FEFF8D2" locked="0" code="" scaleX="1.20000004768372" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="SpeedUpForDisplay" x="425" y="34" name="inst_A49B1CA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="CatName" x="295" y="58" name="inst_B1A6571B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="P1" x="272" y="160" name="inst_76FE3661" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="CharaLeft" x="128" y="128" name="inst_0FF7F823" locked="0" code="" scaleX="0.300000011920929" scaleY="0.300000011920929" colour="4294967295" rotation="0"/>
+    <instance objName="charaRight" x="448" y="128" name="inst_BE4E5461" locked="0" code="" scaleX="0.300000011920929" scaleY="0.300000011920929" colour="4294967295" rotation="0"/>
+    <instance objName="toolLeft" x="132" y="256" name="inst_2263C28B" locked="0" code="" scaleX="0.200000002980232" scaleY="0.200000002980232" colour="4294967295" rotation="0"/>
+    <instance objName="toolRight" x="443" y="256" name="inst_726104BB" locked="0" code="" scaleX="0.200000002980232" scaleY="0.200000002980232" colour="4294967295" rotation="0"/>
+    <instance objName="StatisticPanel" x="280" y="32" name="inst_CA3F9C7B" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="StatisticSpeed1" x="295" y="32" name="inst_269A635C" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="StatisticSpeed2" x="315" y="32" name="inst_4CED0DC1" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="StatisticSpeed3" x="335" y="32" name="inst_3E04E136" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="StatisticSpeed4" x="355" y="32" name="inst_5A25E294" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="StatisticSpeed5" x="375" y="32" name="inst_5372530E" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="StatisticJump1" x="448" y="32" name="inst_50721797" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="StatisticJump2" x="468" y="32" name="inst_43A39750" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="StatisticJump3" x="488" y="32" name="inst_7E1CA516" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="StatisticJump4" x="508" y="32" name="inst_720D344F" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="StatisticJump5" x="528" y="32" name="inst_0FEFF8D2" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
     <instance objName="pointOfNoReturn" x="305" y="160" name="inst_E3017C22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="NoneTool" x="300" y="250" name="inst_8AE23CA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="pointOfNoReturn2" x="300" y="255" name="inst_7AC33D1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="fromCharacterToLevel" x="535" y="340" name="inst_97BE5371" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="fromCharacterToLevel" x="284" y="362" name="inst_97BE5371" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="PnaelJump" x="425" y="32" name="inst_A983534D" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="belka_gorna" x="0" y="32" name="inst_D56688AB" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="abilityPanel" x="64" y="58" name="inst_6E8815F9" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="belka_dolna" x="0" y="363" name="inst_32BC4572" locked="0" code="" scaleX="0.375999987125397" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="MianMenuCharacterS" x="114" y="374" name="inst_765BFF58" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="planetaDisplay" x="192" y="96" name="inst_6BE72E23" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="3456106495" rotation="0"/>
+    <instance objName="rybalusze" x="448" y="256" name="inst_A80DBEA0" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="3372220415" rotation="0"/>
+    <instance objName="bluefishy1" x="512" y="160" name="inst_ECD4C142" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="3372220415" rotation="0"/>
+    <instance objName="bluefishy2" x="96" y="192" name="inst_4290DEC0" locked="0" code="" scaleX="-0.400000005960464" scaleY="0.400000005960464" colour="3372220415" rotation="0"/>
+    <instance objName="NoneTool" x="278" y="256" name="inst_B3F8D416" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="PanelLife" x="145" y="32" name="inst_00764AB4" locked="0" code="" scaleX="0.425000011920929" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="StatisticLife1" x="160" y="32" name="inst_798D3505" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="StatisticLife2" x="180" y="32" name="inst_B69917AD" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="StatisticLife3" x="200" y="32" name="inst_A1FFAD78" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="StatisticLife4" x="220" y="32" name="inst_ECDE6AE7" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="StatisticLife5" x="240" y="32" name="inst_417E776F" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
