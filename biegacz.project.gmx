@@ -774,9 +774,7 @@
     <object>objects\addSpeedUp_1</object>
     <objects name="Tools">
       <object>objects\Tool1</object>
-      <object>objects\Tool1Copy</object>
       <object>objects\Tool2</object>
-      <object>objects\Tool2Copy</object>
       <object>objects\Tool3</object>
       <objects name="speed">
         <object>objects\SpeedParent</object>
