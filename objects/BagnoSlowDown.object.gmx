@@ -59,6 +59,288 @@ sprite_index = sprite5;
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="Player9">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with (Player9)
+{
+
+
+if global.MoveAddCount &gt; 3
+{
+global.MoveAddCount -= 3
+}
+
+if global.MoveAddCount = 3
+{
+global.MoveAddCount -= 2
+}
+
+if global.MoveAddCount = 2
+{
+global.MoveAddCount -= 1
+}
+
+
+Player9.y = Player9.y - 3
+alarm[3] = 120;
+}
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Player8">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with (Player8)
+{
+
+
+if global.MoveAddCount &gt; 3
+{
+global.MoveAddCount -= 3
+}
+
+if global.MoveAddCount = 3
+{
+global.MoveAddCount -= 2
+}
+
+if global.MoveAddCount = 2
+{
+global.MoveAddCount -= 1
+}
+
+
+Player8.y = Player8.y - 3
+alarm[3] = 120;
+}
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Player7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with (Player7)
+{
+
+
+if global.MoveAddCount &gt; 3
+{
+global.MoveAddCount -= 3
+}
+
+if global.MoveAddCount = 3
+{
+global.MoveAddCount -= 2
+}
+
+if global.MoveAddCount = 2
+{
+global.MoveAddCount -= 1
+}
+
+
+Player7.y = Player7.y - 3
+alarm[3] = 120;
+}
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Player6">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with (Player6)
+{
+
+
+if global.MoveAddCount &gt; 3
+{
+global.MoveAddCount -= 3
+}
+
+if global.MoveAddCount = 3
+{
+global.MoveAddCount -= 2
+}
+
+if global.MoveAddCount = 2
+{
+global.MoveAddCount -= 1
+}
+
+
+Player6.y = Player6.y - 3
+alarm[3] = 120;
+}
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Player5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with (Player5)
+{
+
+
+if global.MoveAddCount &gt; 3
+{
+global.MoveAddCount -= 3
+}
+
+if global.MoveAddCount = 3
+{
+global.MoveAddCount -= 2
+}
+
+if global.MoveAddCount = 2
+{
+global.MoveAddCount -= 1
+}
+
+
+Player5.y = Player5.y - 3
+alarm[3] = 120;
+}
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Player4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with (Player4)
+{
+
+
+if global.MoveAddCount &gt; 3
+{
+global.MoveAddCount -= 3
+}
+
+if global.MoveAddCount = 3
+{
+global.MoveAddCount -= 2
+}
+
+if global.MoveAddCount = 2
+{
+global.MoveAddCount -= 1
+}
+
+
+Player4.y = Player4.y - 3
+alarm[3] = 120;
+}
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="Player2">
       <action>
         <libid>1</libid>

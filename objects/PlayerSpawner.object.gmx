@@ -43,8 +43,22 @@ makethis=Player3
 
 }
 else if global.r=4
-makethis=player
+{makethis=Player4}
 
+else if global.r=5
+{makethis=Player5}
+
+else if global.r=6
+{makethis=Player6}
+
+else if global.r=7
+{makethis=Player7}
+
+else if global.r=8
+{makethis=Player8}
+
+else if global.r=9
+{makethis=Player9}
 
 
 spawn=instance_create(x,y,makethis)

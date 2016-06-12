@@ -729,6 +729,50 @@
     <font>fonts\fnt_Default</font>
   </fonts>
   <objects name="objects">
+    <objects name="players">
+      <object>objects\player</object>
+      <object>objects\Player4</object>
+      <object>objects\Player5</object>
+      <object>objects\Player6</object>
+      <object>objects\Player7</object>
+      <object>objects\Player8</object>
+      <object>objects\Player9</object>
+      <object>objects\Player3</object>
+      <object>objects\Player2</object>
+    </objects>
+    <objects name="Obstacles">
+      <object>objects\bombing</object>
+      <object>objects\FireBall</object>
+      <object>objects\BagnoSlowDown</object>
+      <object>objects\GroundFlameLeft</object>
+      <object>objects\GroundFlameRight</object>
+      <object>objects\GroundFlamerUp</object>
+      <object>objects\Log</object>
+      <object>objects\Log2</object>
+      <object>objects\Ufo</object>
+      <object>objects\UfoLightPlayerSwitch</object>
+      <object>objects\UfoCreator</object>
+      <object>objects\stoneCalm</object>
+      <object>objects\PoisonPot</object>
+      <object>objects\drawInk</object>
+      <object>objects\stoneLeftRight</object>
+      <object>objects\stoneGoRound</object>
+      <object>objects\stoneUpDown</object>
+      <object>objects\BlackHoleEnd</object>
+      <object>objects\BlackHoleStart</object>
+      <object>objects\BlackHoleSpawner</object>
+      <object>objects\SmokerConstGround</object>
+      <object>objects\SmokerConstLeft</object>
+      <object>objects\SmokerConstRight</object>
+      <object>objects\SmokerGround</object>
+      <object>objects\FireBallSpawner</object>
+      <object>objects\PoisonGasCollision</object>
+      <object>objects\PoisonFlameCollision</object>
+      <object>objects\PoisonFlameLeft</object>
+      <object>objects\PoisonFlameRight</object>
+      <object>objects\Komar</object>
+      <object>objects\KomarLiveAction</object>
+    </objects>
     <object>objects\ground</object>
     <object>objects\GroundImposter</object>
     <object>objects\ground3</object>
@@ -767,9 +811,6 @@
       <object>objects\GoToBronzeExchange</object>
       <object>objects\GoToMoneyExchange</object>
     </objects>
-    <object>objects\player</object>
-    <object>objects\Player3</object>
-    <object>objects\Player2</object>
     <object>objects\ground2</object>
     <object>objects\addSpeedUp_1</object>
     <objects name="Tools">
@@ -1046,39 +1087,6 @@
     <object>objects\InkFillUp</object>
     <object>objects\InkSpawner</object>
     <object>objects\StarToFill</object>
-    <objects name="Obstacles">
-      <object>objects\bombing</object>
-      <object>objects\FireBall</object>
-      <object>objects\BagnoSlowDown</object>
-      <object>objects\GroundFlameLeft</object>
-      <object>objects\GroundFlameRight</object>
-      <object>objects\GroundFlamerUp</object>
-      <object>objects\Log</object>
-      <object>objects\Log2</object>
-      <object>objects\Ufo</object>
-      <object>objects\UfoLightPlayerSwitch</object>
-      <object>objects\UfoCreator</object>
-      <object>objects\stoneCalm</object>
-      <object>objects\PoisonPot</object>
-      <object>objects\drawInk</object>
-      <object>objects\stoneLeftRight</object>
-      <object>objects\stoneGoRound</object>
-      <object>objects\stoneUpDown</object>
-      <object>objects\BlackHoleEnd</object>
-      <object>objects\BlackHoleStart</object>
-      <object>objects\BlackHoleSpawner</object>
-      <object>objects\SmokerConstGround</object>
-      <object>objects\SmokerConstLeft</object>
-      <object>objects\SmokerConstRight</object>
-      <object>objects\SmokerGround</object>
-      <object>objects\FireBallSpawner</object>
-      <object>objects\PoisonGasCollision</object>
-      <object>objects\PoisonFlameCollision</object>
-      <object>objects\PoisonFlameLeft</object>
-      <object>objects\PoisonFlameRight</object>
-      <object>objects\Komar</object>
-      <object>objects\KomarLiveAction</object>
-    </objects>
     <objects name="tweenline">
       <object>objects\obj_tweenline</object>
     </objects>

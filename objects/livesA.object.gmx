@@ -144,6 +144,216 @@ global.LifeContener +=30
 global.LifeContenerMax +=30
 }
 }
+
+//Rest of player
+
+
+if global.r = 4
+{
+global.LifeContener = 200
+global.LifeContenerMax = 200
+global.LifeCount = 3
+
+if global.BoughtLives_20 = true
+{
+global.LifeContener +=15
+global.LifeContenerMax +=15
+}
+
+if global.BoughtLives_10 = true
+{
+global.LifeContener +=10
+global.LifeContenerMax +=10
+}
+if global.BoughtLives_30 = true
+{
+global.LifeContener +=20
+global.LifeContenerMax +=20
+}
+if global.BoughtLives_40 = true
+{
+global.LifeContener +=25
+global.LifeContenerMax +=25
+}
+if global.BoughtLives_50 = true
+{
+global.LifeContener +=30
+global.LifeContenerMax +=30
+}
+}
+
+if global.r = 5
+{
+global.LifeContener = 200
+global.LifeContenerMax = 200
+global.LifeCount = 3
+
+if global.BoughtLives_20 = true
+{
+global.LifeContener +=15
+global.LifeContenerMax +=15
+}
+
+if global.BoughtLives_10 = true
+{
+global.LifeContener +=10
+global.LifeContenerMax +=10
+}
+if global.BoughtLives_30 = true
+{
+global.LifeContener +=20
+global.LifeContenerMax +=20
+}
+if global.BoughtLives_40 = true
+{
+global.LifeContener +=25
+global.LifeContenerMax +=25
+}
+if global.BoughtLives_50 = true
+{
+global.LifeContener +=30
+global.LifeContenerMax +=30
+}
+}
+
+
+if global.r = 6
+{
+global.LifeContener = 200
+global.LifeContenerMax = 200
+global.LifeCount = 3
+
+if global.BoughtLives_20 = true
+{
+global.LifeContener +=15
+global.LifeContenerMax +=15
+}
+
+if global.BoughtLives_10 = true
+{
+global.LifeContener +=10
+global.LifeContenerMax +=10
+}
+if global.BoughtLives_30 = true
+{
+global.LifeContener +=20
+global.LifeContenerMax +=20
+}
+if global.BoughtLives_40 = true
+{
+global.LifeContener +=25
+global.LifeContenerMax +=25
+}
+if global.BoughtLives_50 = true
+{
+global.LifeContener +=30
+global.LifeContenerMax +=30
+}
+}
+
+
+if global.r = 7
+{
+global.LifeContener = 200
+global.LifeContenerMax = 200
+global.LifeCount = 3
+
+if global.BoughtLives_20 = true
+{
+global.LifeContener +=15
+global.LifeContenerMax +=15
+}
+
+if global.BoughtLives_10 = true
+{
+global.LifeContener +=10
+global.LifeContenerMax +=10
+}
+if global.BoughtLives_30 = true
+{
+global.LifeContener +=20
+global.LifeContenerMax +=20
+}
+if global.BoughtLives_40 = true
+{
+global.LifeContener +=25
+global.LifeContenerMax +=25
+}
+if global.BoughtLives_50 = true
+{
+global.LifeContener +=30
+global.LifeContenerMax +=30
+}
+}
+
+if global.r = 8
+{
+global.LifeContener = 200
+global.LifeContenerMax = 200
+global.LifeCount = 3
+
+if global.BoughtLives_20 = true
+{
+global.LifeContener +=15
+global.LifeContenerMax +=15
+}
+
+if global.BoughtLives_10 = true
+{
+global.LifeContener +=10
+global.LifeContenerMax +=10
+}
+if global.BoughtLives_30 = true
+{
+global.LifeContener +=20
+global.LifeContenerMax +=20
+}
+if global.BoughtLives_40 = true
+{
+global.LifeContener +=25
+global.LifeContenerMax +=25
+}
+if global.BoughtLives_50 = true
+{
+global.LifeContener +=30
+global.LifeContenerMax +=30
+}
+}
+
+if global.r = 9
+{
+global.LifeContener = 200
+global.LifeContenerMax = 200
+global.LifeCount = 3
+
+if global.BoughtLives_20 = true
+{
+global.LifeContener +=15
+global.LifeContenerMax +=15
+}
+
+if global.BoughtLives_10 = true
+{
+global.LifeContener +=10
+global.LifeContenerMax +=10
+}
+if global.BoughtLives_30 = true
+{
+global.LifeContener +=20
+global.LifeContenerMax +=20
+}
+if global.BoughtLives_40 = true
+{
+global.LifeContener +=25
+global.LifeContenerMax +=25
+}
+if global.BoughtLives_50 = true
+{
+global.LifeContener +=30
+global.LifeContenerMax +=30
+}
+}
+
 </string>
           </argument>
         </arguments>

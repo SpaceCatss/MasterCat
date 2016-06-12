@@ -63,6 +63,162 @@
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="8">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>effect_create_above(ef_spark,UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y,1,c_gray)
+global.r = choose(2,1,3,4,5,6,7,8)
+instance_create(UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y,PlayerSpawner)
+CanWork = false
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>effect_create_above(ef_spark,UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y,1,c_gray)
+global.r = choose(2,1,3,4,5,6,7,9)
+instance_create(UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y,PlayerSpawner)
+CanWork = false
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="6">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>effect_create_above(ef_spark,UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y,1,c_gray)
+global.r = choose(2,1,3,4,5,6,8,9)
+instance_create(UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y,PlayerSpawner)
+CanWork = false
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>effect_create_above(ef_spark,UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y,1,c_gray)
+global.r = choose(2,1,3,4,5,7,8,9)
+instance_create(UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y,PlayerSpawner)
+CanWork = false
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>effect_create_above(ef_spark,UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y,1,c_gray)
+global.r = choose(2,1,3,4,6,7,8,9)
+instance_create(UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y,PlayerSpawner)
+CanWork = false
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>effect_create_above(ef_spark,UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y,1,c_gray)
+global.r = choose(2,1,3,5,6,7,8,9)
+instance_create(UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y,PlayerSpawner)
+CanWork = false
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="2">
       <action>
         <libid>1</libid>
@@ -81,7 +237,7 @@
           <argument>
             <kind>1</kind>
             <string>effect_create_above(ef_spark,UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y,1,c_gray)
-global.r = choose(2,1)
+global.r = choose(2,1,4,5,6,7,8,9)
 instance_create(UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y,PlayerSpawner)
 CanWork = false
 </string>
@@ -107,7 +263,7 @@ CanWork = false
           <argument>
             <kind>1</kind>
             <string>effect_create_above(ef_spark,UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y,1,c_gray)
-global.r = choose(1,3)
+global.r = choose(1,3,4,5,6,7,8,9)
 instance_create(UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y,PlayerSpawner)
 CanWork = false
 </string>
@@ -133,7 +289,7 @@ CanWork = false
           <argument>
             <kind>1</kind>
             <string>effect_create_above(ef_spark,UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y,1,c_gray)
-global.r = choose(2,3)
+global.r = choose(2,3,4,5,6,7,8,9)
 instance_create(UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y,PlayerSpawner)
 CanWork = false
 </string>
@@ -237,6 +393,162 @@ UfoLightPlayerSwitch.alarm[2]=20
 
 }
 
+//player 4
+
+
+if place_meeting(x,y,Player4)
+
+{
+with Player4
+{
+hsp = 0
+Player4.movespeed = 0 ; Player4.grav = 0 
+move_towards_point(UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y+60,20)
+}
+}
+
+with Player4
+{
+
+if distance_to_point(UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y + 60) &lt; 1
+{
+instance_destroy()
+effect_create_above(ef_firework,UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y,1,c_gray)
+UfoLightPlayerSwitch.alarm[3]=20
+}
+
+}
+
+
+//player 5
+
+
+if place_meeting(x,y,Player5)
+
+{
+with Player5
+{
+hsp = 0
+Player5.movespeed = 0 ; Player5.grav = 0 
+move_towards_point(UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y+60,20)
+}
+}
+
+with Player5
+{
+
+if distance_to_point(UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y + 60) &lt; 1
+{
+instance_destroy()
+effect_create_above(ef_firework,UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y,1,c_gray)
+UfoLightPlayerSwitch.alarm[4]=20
+}
+
+}
+
+//player 6
+
+
+if place_meeting(x,y,Player6)
+
+{
+with Player6
+{
+hsp = 0
+Player6.movespeed = 0 ; Player6.grav = 0 
+move_towards_point(UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y+60,20)
+}
+}
+
+with Player6
+{
+
+if distance_to_point(UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y + 60) &lt; 1
+{
+instance_destroy()
+effect_create_above(ef_firework,UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y,1,c_gray)
+UfoLightPlayerSwitch.alarm[5]=20
+}
+
+}
+
+//player 7
+
+
+if place_meeting(x,y,Player7)
+
+{
+with Player7
+{
+hsp = 0
+Player7.movespeed = 0 ; Player7.grav = 0 
+move_towards_point(UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y+60,20)
+}
+}
+
+with Player7
+{
+
+if distance_to_point(UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y + 60) &lt; 1
+{
+instance_destroy()
+effect_create_above(ef_firework,UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y,1,c_gray)
+UfoLightPlayerSwitch.alarm[6]=20
+}
+
+}
+
+//player 8
+
+
+if place_meeting(x,y,Player8)
+
+{
+with Player8
+{
+hsp = 0
+Player8.movespeed = 0 ; Player8.grav = 0 
+move_towards_point(UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y+60,20)
+}
+}
+
+with Player8
+{
+
+if distance_to_point(UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y + 60) &lt; 1
+{
+instance_destroy()
+effect_create_above(ef_firework,UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y,1,c_gray)
+UfoLightPlayerSwitch.alarm[7]=20
+}
+
+}
+
+//player 9
+
+
+if place_meeting(x,y,Player9)
+
+{
+with Player9
+{
+hsp = 0
+Player9.movespeed = 0 ; Player9.grav = 0 
+move_towards_point(UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y+60,20)
+}
+}
+
+with Player9
+{
+
+if distance_to_point(UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y + 60) &lt; 1
+{
+instance_destroy()
+effect_create_above(ef_firework,UfoLightPlayerSwitch.x,UfoLightPlayerSwitch.y,1,c_gray)
+UfoLightPlayerSwitch.alarm[8]=20
+}
+
+}
 
 }
 </string>
