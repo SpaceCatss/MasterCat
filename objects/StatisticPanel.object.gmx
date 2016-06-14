@@ -97,6 +97,7 @@ instance_deactivate_object(ToolBack)
 instance_deactivate_object(ToolBodyN)
 instance_deactivate_object(JumpParent)
 instance_deactivate_object(SpeedParent)
+instance_deactivate_object(SpeedDownParent)
 }
 if global.t = 1
 {
@@ -104,6 +105,7 @@ instance_activate_object(ToolBack)
 instance_activate_object(ToolBodyN)
 instance_deactivate_object(JumpParent)
 instance_activate_object(SpeedParent)
+instance_deactivate_object(SpeedDownParent)
 }
 
 if global.t = 2
@@ -112,8 +114,17 @@ instance_activate_object(ToolBack)
 instance_activate_object(ToolBodyN)
 instance_activate_object(JumpParent)
 instance_deactivate_object(SpeedParent)
+instance_deactivate_object(SpeedDownParent)
 }
 
+if global.t = 3
+{
+instance_activate_object(ToolBack)
+instance_activate_object(ToolBodyN)
+instance_deactivate_object(JumpParent)
+instance_deactivate_object(SpeedParent)
+instance_activate_object(SpeedDownParent)
+}
 
 
 </string>

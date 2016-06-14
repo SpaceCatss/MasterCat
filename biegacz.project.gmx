@@ -820,6 +820,25 @@
       <object>objects\Tool1</object>
       <object>objects\Tool2</object>
       <object>objects\Tool3</object>
+      <objects name="speedDown">
+        <object>objects\SpeedDownParent</object>
+        <object>objects\SpeedDownForDisplay</object>
+        <object>objects\addSpeedDown_2</object>
+        <object>objects\AddOneSpeedDown1</object>
+        <object>objects\addSpeedDown_5</object>
+        <object>objects\AddOneSpeedDown2</object>
+        <object>objects\AddOneSpeedDown4</object>
+        <object>objects\SpeedDown_4</object>
+        <object>objects\SpeedDown_3</object>
+        <object>objects\addSpeedDown_3</object>
+        <object>objects\AddOneSpeedDown3</object>
+        <object>objects\SpeedDown_1</object>
+        <object>objects\AddOneSpeedDown5</object>
+        <object>objects\addSpeedDown_4</object>
+        <object>objects\SpeedDown_2</object>
+        <object>objects\addSpeedDown_1</object>
+        <object>objects\SpeedDown_5</object>
+      </objects>
       <objects name="speed">
         <object>objects\SpeedParent</object>
         <object>objects\SpeedForDisplay</object>
@@ -869,7 +888,6 @@
         <object>objects\CatName</object>
         <object>objects\MianMenuCharacterS</object>
         <object>objects\NoneTool</object>
-        <object>objects\NoneToolCopy</object>
         <object>objects\P1</object>
         <object>objects\P2</object>
         <object>objects\P3</object>

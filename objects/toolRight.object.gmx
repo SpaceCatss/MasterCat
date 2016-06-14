@@ -27,7 +27,8 @@
             <kind>1</kind>
             <string>NoneTooltoTool1 = false
 Tool1toTool2 = false
-Tool2toNoneTool = false
+Tool2toTool3 = false
+Tool3toNoneTool = false
 CanClickAgain = true
 Ruch1 = false
 Ruch2 = false
@@ -84,6 +85,13 @@ with(Tool2)
 instance_destroy()
 }
 
+if t3destroy = true
+
+{
+with(Tool3)
+instance_destroy()
+}
+
 </string>
           </argument>
         </arguments>
@@ -128,6 +136,7 @@ path_start(MoveLeft, 20, path_action_stop, false)
 t0destroy = true
 t1destroy = false
 t2destroy = false
+t3destroy = false
 
 NoneTooltoTool1 = false
 alarm[0]=25
@@ -155,17 +164,45 @@ path_start(MoveLeft, 20, path_action_stop, false)
 t0destroy = false
 t1destroy = true
 t2destroy = false
+t3destroy = false
 
 Tool1toTool2 = false
 alarm[0]=25
 }
 
-// tool2 to nonetool
+// tool2 to tool3
 
-if Tool2toNoneTool = true
+if Tool2toTool3 = true
 {
 
 with (Tool2)
+{
+path_start(MoveLeft, 20, path_action_stop, false)
+}
+
+if !instance_exists(Tool3){
+instance_create(772,255,Tool3)}
+
+with (Tool3)
+{
+path_start(MoveLeft, 20, path_action_stop, false)
+
+}
+t0destroy = false
+t1destroy = false
+t2destroy = true
+t3destroy = false
+
+Tool2toTool3 = false
+alarm[0]=25
+}
+
+// tool3 to nonetool
+
+if Tool3toNoneTool = true
+{
+
+with (Tool3)
 {
 path_start(MoveLeft, 20, path_action_stop, false)
 }
@@ -180,9 +217,10 @@ path_start(MoveLeft, 20, path_action_stop, false)
 }
 t0destroy = false
 t1destroy = false
-t2destroy = true
+t2destroy = false
+t3destroy = true
 
-Tool2toNoneTool = false
+Tool3toNoneTool = false
 alarm[0]=25
 }
 </string>
@@ -226,7 +264,14 @@ global.t = 2
 
 if global.t=2 and CanClickAgain = true
 {
-Tool2toNoneTool = true
+Tool2toTool3 = true
+CanClickAgain = false
+global.t = 3
+}
+
+if global.t=3 and CanClickAgain = true
+{
+Tool3toNoneTool = true
 CanClickAgain = false
 global.t = 0
 

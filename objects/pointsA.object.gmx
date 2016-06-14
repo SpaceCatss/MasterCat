@@ -60,7 +60,7 @@ Fingers = true;
 
 //moveAdd  Room Start Modificators
 
-global.MoveAddCount = 2
+global.MoveAddCount = 6
 
 if global.t = 1
 {
@@ -87,6 +87,34 @@ global.MoveAddCount +=1
 if global.BoughtSpeed_50 = true
 {
 global.MoveAddCount +=1
+}
+}
+
+if global.t = 3
+{
+if global.BoughtSpeedDown_20 = true
+{
+global.MoveAddCount -=1
+}
+
+if global.BoughtSpeedDown_10 = true
+{
+global.MoveAddCount -=1
+}
+
+if global.BoughtSpeedDown_30 = true
+{
+global.MoveAddCount -=1
+}
+
+if global.BoughtSpeedDown_40 = true
+{
+global.MoveAddCount -=1
+}
+
+if global.BoughtSpeedDown_50 = true
+{
+global.MoveAddCount -=1
 }
 }
 

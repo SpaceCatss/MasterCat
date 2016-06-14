@@ -36,17 +36,21 @@ global.SilverStarMoney = 0
 global.BronzeStarMoney = 0
 global.money = 1000
 
-global.moveAdd[0] = 0;
-global.moveAdd[1] = 0.1;
-global.moveAdd[2] = 0.2;
-global.moveAdd[3] = 0.3;
-global.moveAdd[4] = 0.4;
-global.moveAdd[5]= 0.5;
-global.moveAdd[6] = 0.6;
-global.moveAdd[7] = 0.7;
-global.moveAdd[8] = 0.8;
-global.moveAdd[9] = 0.9;
-global.moveAdd[10] = 1;
+global.moveAdd[0] = 0.007;
+global.moveAdd[1] = 0.0125;
+global.moveAdd[2] = 0.025;
+global.moveAdd[3] = 0.05;
+global.moveAdd[4] = 0.1;
+global.moveAdd[5] = 0.15;
+global.moveAdd[6] = 0.2;
+global.moveAdd[7] = 0.3;
+global.moveAdd[8] = 0.4;
+global.moveAdd[9]= 0.5;
+global.moveAdd[10] = 0.6;
+global.moveAdd[11] = 0.7;
+global.moveAdd[12] = 0.8;
+global.moveAdd[13] = 0.9;
+global.moveAdd[14] = 1;
 
 global.MoveAddCount = 5
 
@@ -168,9 +172,9 @@ global.FingerCount = 0
 }
 
 
-if global.MoveAddCount &gt; 9
+if global.MoveAddCount &gt; 13
 {
-global.MoveAddCount = 10
+global.MoveAddCount = 14
 }
 
 if global.MoveAddCount &lt; 1

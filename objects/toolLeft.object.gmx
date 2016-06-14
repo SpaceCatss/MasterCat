@@ -26,7 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>image_angle = 180
-NoneTooltoTool2 = false
+NoneTooltoTool3 = false
+Tool3toTool2 = false 
 Tool1toNoneTool = false
 Tool2toTool1 = false
 CanClickAgain = true
@@ -38,7 +39,7 @@ Ruch3 = false
 t0destroy = false
 t1destroy = false
 t2destroy = false
-
+t3destroy = false
 </string>
           </argument>
         </arguments>
@@ -91,6 +92,14 @@ with(Tool2)
 instance_destroy()
 }
 
+
+if t3destroy = true
+
+{
+with(Tool3)
+instance_destroy()
+}
+
 </string>
           </argument>
         </arguments>
@@ -114,12 +123,40 @@ instance_destroy()
           <argument>
             <kind>1</kind>
             <string>image_alpha = 0.5
-// nonetool to tool2
+// nonetool to tool3
 
-if NoneTooltoTool2 = true
+if NoneTooltoTool3 = true
 {
 
 with (NoneTool)
+{
+path_start(MoveRight, 20, path_action_stop, false)
+}
+
+if !instance_exists(Tool3){
+instance_create(-228,255,Tool3)}
+
+with (Tool3)
+{
+path_start(MoveRight, 20, path_action_stop, false)
+
+}
+t0destroy = true
+t1destroy = false
+t2destroy = false
+t3destroy = false
+
+NoneTooltoTool2 = false
+alarm[0]=25
+}
+
+
+// tool3 to tool2
+
+if Tool3toTool2 = true
+{
+
+with (Tool3)
 {
 path_start(MoveRight, 20, path_action_stop, false)
 }
@@ -132,11 +169,12 @@ with (Tool2)
 path_start(MoveRight, 20, path_action_stop, false)
 
 }
-t0destroy = true
+t0destroy = false
 t1destroy = false
 t2destroy = false
+t3destroy = true
 
-NoneTooltoTool2 = false
+Tool2toTool1 = false
 alarm[0]=25
 }
 
@@ -162,6 +200,7 @@ path_start(MoveRight, 20, path_action_stop, false)
 t0destroy = false
 t1destroy = false
 t2destroy = true
+t3destroy = false
 
 Tool2toTool1 = false
 alarm[0]=25
@@ -188,6 +227,7 @@ path_start(MoveRight, 20, path_action_stop, false)
 t0destroy = false
 t1destroy = true
 t2destroy = false
+t3destroy = false
 
 Tool1toNoneTool = false
 alarm[0]=25
@@ -218,7 +258,15 @@ alarm[0]=25
 
 if global.t=0 and CanClickAgain = true
 {
-NoneTooltoTool2 = true
+NoneTooltoTool3 = true
+CanClickAgain = false
+global.t = 3
+
+}
+
+if global.t=3 and CanClickAgain = true
+{
+Tool3toTool2 = true
 CanClickAgain = false
 global.t = 2
 
