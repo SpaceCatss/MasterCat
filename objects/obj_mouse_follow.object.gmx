@@ -97,7 +97,7 @@ CanTrail = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if mouse_check_button_pressed(mb_left) 
+            <string>if mouse_check_button_pressed(mb_left) and global.paintN &gt;230 
 {
 
 
@@ -185,9 +185,10 @@ if place_meeting(x,y,objectA) or place_meeting(x,y,ground) or place_meeting(x,y,
 instance_create(mouse_x,mouse_y,paintBridge)
 global.paintN -= 0
 }
-else if  global.paintN &lt;231 
+else if  global.paintN &lt;=229 
 {
-instance_destroy()
+//instance_destroy()
+global.paintN = 229
 with (trail_follow)
 {instance_destroy()}
 }

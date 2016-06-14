@@ -457,14 +457,24 @@ room_goto(Lost)
           <argument>
             <kind>1</kind>
             <string>draw_set_alpha(1)
+draw_set_font(font0)
 draw_set_colour(c_white);
 draw_set_valign(fa_middle);
 draw_set_halign(fa_middle);
 //draw_sprite_ext(sprite94,0,view_xview[0]+64,view_yview[0]+40,0.8,0.8,0,c_white,1)
 //draw_text_outline(view_xview[0]+64,view_yview[0]+40,string(global.life[global.LifeCount]),1,c_black,10);
 
-draw_roundrect_texture(view_xview[0]+(64), view_yview[0]+15, view_xview[0]+64+(global.LifeContenerMax/2) + 20, view_yview[0]+45, 5, background5, 9, false)
-draw_rectangle_color(view_xview[0]+(74), view_yview[0]+20, view_xview[0]+74+(global.LifeContener/2), view_yview[0]+40, c_red, c_red, c_red, c_red, false);
+//draw_roundrect_texture(view_xview[0]+(64), view_yview[0]+15, view_xview[0]+64+(global.LifeContenerMax/2) + 20, view_yview[0]+45, 5, background5, 9, false)
+//draw_rectangle_color(view_xview[0]+(74), view_yview[0]+20, view_xview[0]+74+(global.LifeContener/2), view_yview[0]+40, c_red, c_red, c_red, c_red, false);
+
+
+var sprh = sprite_get_height(sprite94);
+var drawh = sprh * global.LifeContener/global.LifeContenerMax
+var sprw = sprite_get_width(sprite94);
+draw_sprite_part(sprite94, 0, 0, sprh - drawh ,sprw , drawh, view_xview[0]+32, view_yview[0] + 10+ sprh - drawh);
+
+draw_sprite(sobramowka,0,view_xview[0]+57, view_yview[0]+33)
+draw_text_outline(view_xview[0]+57, view_yview[0]+33,round(string(global.LifeContener)),1,c_black,10)
 
 
 

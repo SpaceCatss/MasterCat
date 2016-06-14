@@ -178,6 +178,7 @@ if global.MoveAddCount &lt; 1
 global.MoveAddCount = 0
 }
 
+
 </string>
           </argument>
         </arguments>

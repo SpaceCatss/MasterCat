@@ -29,10 +29,10 @@
 var sprh = sprite_get_height(star2);
 var drawh = sprh * global.feverMode/ 500
 var sprw = sprite_get_width(star2);
-draw_sprite_part(star2, 0, 0, sprh - drawh ,sprw , drawh, view_xview[0]+250, view_yview[0]+20 + sprh - drawh);
+draw_sprite_part(star2, 0, 0, sprh - drawh ,sprw , drawh, view_xview[0]+250, view_yview[0]+36 + sprh - drawh);
 
-draw_sprite(star3,0,view_xview[0]+292, view_yview[0]+59)
-draw_text_outline(view_xview[0]+292, view_yview[0]+59,string(global.feverMode),1,c_black,10)
+draw_sprite(star3,0,view_xview[0]+292, view_yview[0]+79)
+draw_text_outline(view_xview[0]+292, view_yview[0]+79,round(string(global.feverMode)),1,c_black,10)
 </string>
           </argument>
         </arguments>

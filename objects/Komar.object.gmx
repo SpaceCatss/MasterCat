@@ -208,9 +208,11 @@ if clickonkomar &gt;3
 {
 path_start(UfoOut, 4, path_action_stop, 0)
 }
-//colision player1
+//colision players
 
 if place_meeting(x,y,player) or place_meeting(x,y,Player2) or place_meeting(x,y,Player3)
+or place_meeting(x,y,Player4)  or place_meeting(x,y,Player5)  or place_meeting(x,y,Player6)
+or place_meeting(x,y,Player7)  or place_meeting(x,y,Player8)  or place_meeting(x,y,Player9)
 {
 CanWork = false
 }

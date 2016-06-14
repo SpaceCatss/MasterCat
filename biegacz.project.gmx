@@ -334,6 +334,8 @@
     <sprite>sprites\locker</sprite>
     <sprite>sprites\backBTN</sprite>
     <sprite>sprites\playBTN</sprite>
+    <sprite>sprites\sprite220</sprite>
+    <sprite>sprites\sobramowka</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -749,7 +751,6 @@
       <object>objects\GroundFlamerUp</object>
       <object>objects\Log</object>
       <object>objects\Log2</object>
-      <object>objects\Ufo</object>
       <object>objects\UfoLightPlayerSwitch</object>
       <object>objects\UfoCreator</object>
       <object>objects\stoneCalm</object>
@@ -764,6 +765,8 @@
       <object>objects\SmokerConstGround</object>
       <object>objects\SmokerConstLeft</object>
       <object>objects\SmokerConstRight</object>
+      <object>objects\enemy_spider_touchable</object>
+      <object>objects\enemy_slicable</object>
       <object>objects\SmokerGround</object>
       <object>objects\FireBallSpawner</object>
       <object>objects\PoisonGasCollision</object>
@@ -956,7 +959,6 @@
     <object>objects\objectB</object>
     <object>objects\objectD</object>
     <object>objects\objectU</object>
-    <object>objects\game_control</object>
     <object>objects\blocker</object>
     <object>objects\wyrzutnia</object>
     <object>objects\SpeedUp</object>
@@ -977,8 +979,6 @@
     <object>objects\savus</object>
     <object>objects\object26</object>
     <object>objects\object27</object>
-    <object>objects\enemy_spider_touchable</object>
-    <object>objects\enemy_slicable</object>
     <objects name="Text Engine - Demo Objects">
       <object>objects\obj_text_control</object>
       <object>objects\obj_text_demo_player</object>
@@ -1092,7 +1092,6 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room10</room>
     <room>rooms\startRM</room>
     <room>rooms\Win</room>
     <room>rooms\Lost</room>

@@ -49,6 +49,8 @@
           <argument>
             <kind>1</kind>
             <string>if (place_meeting(x,y,player)) or (place_meeting(x,y,Player2)) or (place_meeting(x,y,Player3))
+or (place_meeting(x,y,Player4)) or (place_meeting(x,y,Player5)) or (place_meeting(x,y,Player6))
+or (place_meeting(x,y,Player7)) or (place_meeting(x,y,Player8)) or (place_meeting(x,y,Player9))
 {
 sprite_index=sprite1
 global.CheckpointVisited = true

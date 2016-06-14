@@ -5,7 +5,7 @@
   <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>Ufo</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x,y,Ufo)
+            <string>//instance_create(x,y,Ufo)
 instance_create(x,y,UfoLightPlayerSwitch)
 global.clickonufo = 0
 instance_destroy()
