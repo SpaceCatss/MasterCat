@@ -163,7 +163,7 @@ if P1toP2 = true
 
 with (P1)
 {
-path_start(MoveLeft, 20, path_action_stop, false)
+path_start(MoveLeft, 20, 0, false)
 }
 
 if !instance_exists(P2){
@@ -171,7 +171,7 @@ instance_create(772,160,P2)}
 
 with (P2)
 {
-path_start(MoveLeft, 20, path_action_stop, false)
+path_start(MoveLeft, 20, 0, false)
 
 }
 p1destroy = true
@@ -198,14 +198,14 @@ if P2toP3 = true
 
 with (P2)
 {
-path_start(MoveLeft, 20, path_action_stop, false)
+path_start(MoveLeft, 20, 0, false)
 }
 if !instance_exists(P3){
 instance_create(772,160,P3)}
 
 with (P3)
 {
-path_start(MoveLeft, 20, path_action_stop, false)
+path_start(MoveLeft, 20, 0, false)
 
 }
 p1destroy = false
@@ -231,14 +231,14 @@ if P3toP4 = true
 
 with (P3)
 {
-path_start(MoveLeft, 20, path_action_stop, false)
+path_start(MoveLeft, 20, 0, false)
 }
 if !instance_exists(P4){
 instance_create(772,160,P4)}
 
 with (P4)
 {
-path_start(MoveLeft, 20, path_action_stop, false)
+path_start(MoveLeft, 20, 0, false)
 
 }
 p1destroy = false
@@ -264,14 +264,14 @@ if P4toP5 = true
 
 with (P4)
 {
-path_start(MoveLeft, 20, path_action_stop, false)
+path_start(MoveLeft, 20, 0, false)
 }
 if !instance_exists(P5){
 instance_create(772,160,P5)}
 
 with (P5)
 {
-path_start(MoveLeft, 20, path_action_stop, false)
+path_start(MoveLeft, 20, 0, false)
 
 }
 p1destroy = false
@@ -296,14 +296,14 @@ if P5toP6 = true
 
 with (P5)
 {
-path_start(MoveLeft, 20, path_action_stop, false)
+path_start(MoveLeft, 20, 0, false)
 }
 if !instance_exists(P6){
 instance_create(772,160,P6)}
 
 with (P6)
 {
-path_start(MoveLeft, 20, path_action_stop, false)
+path_start(MoveLeft, 20, 0, false)
 
 }
 p1destroy = false
@@ -328,14 +328,14 @@ if P6toP7 = true
 
 with (P6)
 {
-path_start(MoveLeft, 20, path_action_stop, false)
+path_start(MoveLeft, 20, 0, false)
 }
 if !instance_exists(P7){
 instance_create(772,160,P7)}
 
 with (P7)
 {
-path_start(MoveLeft, 20, path_action_stop, false)
+path_start(MoveLeft, 20, 0, false)
 
 }
 p1destroy = false
@@ -361,14 +361,14 @@ if P7toP8 = true
 
 with (P7)
 {
-path_start(MoveLeft, 20, path_action_stop, false)
+path_start(MoveLeft, 20, 0, false)
 }
 if !instance_exists(P8){
 instance_create(772,160,P8)}
 
 with (P8)
 {
-path_start(MoveLeft, 20, path_action_stop, false)
+path_start(MoveLeft, 20, 0, false)
 
 }
 p1destroy = false
@@ -393,14 +393,14 @@ if P8toP9 = true
 
 with (P8)
 {
-path_start(MoveLeft, 20, path_action_stop, false)
+path_start(MoveLeft, 20, 0, false)
 }
 if !instance_exists(P9){
 instance_create(772,160,P9)}
 
 with (P9)
 {
-path_start(MoveLeft, 20, path_action_stop, false)
+path_start(MoveLeft, 20, 0, false)
 
 }
 p1destroy = false
@@ -425,14 +425,14 @@ if P9toP1 = true
 
 with (P9)
 {
-path_start(MoveLeft, 20, path_action_stop, false)
+path_start(MoveLeft, 20, 0, false)
 }
 if !instance_exists(P1){
 instance_create(772,160,P1)}
 
 with (P1)
 {
-path_start(MoveLeft, 20, path_action_stop, false)
+path_start(MoveLeft, 20, 0, false)
 
 }
 p1destroy = false
@@ -562,5 +562,8 @@ global.r = 1
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>56,111</point>
+    <point>111,111</point>
+  </PhysicsShapePoints>
 </object>

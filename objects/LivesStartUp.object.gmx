@@ -27,6 +27,11 @@
             <kind>1</kind>
             <string>global.LifeContener = 0
 global.LifeContenerMax = 0
+global.paintN = 200
+global.paintNMax = 200
+global.ShieldQty=1
+global.ShieldTimerMultiplier = 1
+global.ShieldTimerAlarm = 90
 global.hardship = 0
 global.incriser = 0.01
 global.t = 0
@@ -106,11 +111,31 @@ global.BoughtSpeed_20 = false
 global.BoughtSpeed_30 = false
 global.BoughtSpeed_40 = false
 global.BoughtSpeed_50 = false
+global.BoughtSpeedDown_10 = false
+global.BoughtSpeedDown_20 = false
+global.BoughtSpeedDown_30 = false
+global.BoughtSpeedDown_40 = false
+global.BoughtSpeedDown_50 = false
 global.BoughtJump_10 = false
 global.BoughtJump_20 = false
 global.BoughtJump_30 = false
 global.BoughtJump_40 = false
 global.BoughtJump_50 = false
+global.BoughtPaint_10 = false
+global.BoughtPaint_20 = false
+global.BoughtPaint_30 = false
+global.BoughtPaint_40 = false
+global.BoughtPaint_50 = false
+global.BoughtShield_10 = false
+global.BoughtShield_20 = false
+global.BoughtShield_30 = false
+global.BoughtShield_40 = false
+global.BoughtShield_50 = false
+global.BoughtTimer_10 = false
+global.BoughtTimer_20 = true
+global.BoughtTimer_30 = false
+global.BoughtTimer_40 = false
+global.BoughtTimer_50 = false
 
 if
 (global.purchasedSuperCoin = false) and

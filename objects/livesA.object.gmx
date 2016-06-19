@@ -27,8 +27,72 @@
             <kind>1</kind>
             <string>draw_set_alpha(1)
 
-global.paintN = 370
 
+
+if global.BoughtPaint_10 = true
+{
+global.paintN = 220
+global.paintNMax = 220
+}
+
+if global.BoughtPaint_20 = true
+{
+global.paintN = 240
+global.paintNMax = 240
+}
+
+if global.BoughtPaint_30 = true
+{
+global.paintN = 260
+global.paintNMax = 260
+}
+
+if global.BoughtPaint_40 = true
+{
+global.paintN = 270
+global.paintNMax = 270
+}
+
+if global.BoughtPaint_50 = true
+{
+global.paintN = 300
+global.paintNMax = 300
+}
+
+if global.BoughtShield_10 = true
+{
+global.ShieldQty=1
+global.ShieldTimerMultiplier = 0.5
+global.ShieldTimerAlarm = 180
+}
+
+if global.BoughtShield_20 = true
+{
+global.ShieldQty=2
+global.ShieldTimerMultiplier = 0.5
+global.ShieldTimerAlarm = 180
+}
+
+if global.BoughtShield_30 = true
+{
+global.ShieldQty=2
+global.ShieldTimerMultiplier = 0.33
+global.ShieldTimerAlarm = 270
+}
+
+if global.BoughtShield_40 = true
+{
+global.ShieldQty=3
+global.ShieldTimerMultiplier = 0.33
+global.ShieldTimerAlarm = 270
+}
+
+if global.BoughtShield_50 = true
+{
+global.ShieldQty=3
+global.ShieldTimerMultiplier = 0.25
+global.ShieldTimerAlarm = 360
+}
 
 
 if global.r = 3

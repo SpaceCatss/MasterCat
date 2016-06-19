@@ -84,7 +84,7 @@ if (global.GoldStarMoney &gt;= 1) and (canSubstract = true)
 {
 mouse_clear(mb_left)
 global.GoldStarMoney = global.GoldStarMoney -1
-global.BoughtJump_1 = true
+global.BoughtJump_10 = true
 
 canSubstract = false
 addJump_1.persistent = true

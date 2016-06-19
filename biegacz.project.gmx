@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="8" name="datafiles">
+  <datafiles number="9" name="datafiles">
     <datafile>
       <name>LICENSE.txt</name>
       <exists>-1</exists>
@@ -89,6 +89,23 @@
       </ConfigOptions>
       <filename>Tweenline_demo_project.gmz</filename>
     </datafile>
+    <datafile>
+      <name>cat.gif</name>
+      <exists>-1</exists>
+      <size>27932508</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>cat.gif</filename>
+    </datafile>
   </datafiles>
   <NewExtensions>
     <extension index="0">extensions\HappyTear Text-Dialogue Engine</extension>
@@ -113,8 +130,8 @@
       <sprite>sprites\sprite188_AddLife4</sprite>
       <sprite>sprites\sprite189_AddLife5</sprite>
       <sprite>sprites\sprite190_AdLife3</sprite>
-      <sprite>sprites\sprite191_belka dolna</sprite>
-      <sprite>sprites\sprite192_belka gorna</sprite>
+      <sprite>sprites\sprite191_belka_dolna</sprite>
+      <sprite>sprites\sprite192_belka_gorna</sprite>
       <sprite>sprites\sprite193_bluefish</sprite>
       <sprite>sprites\sprite194_bluefish2</sprite>
       <sprite>sprites\sprite195_jumpAd1</sprite>
@@ -336,6 +353,13 @@
     <sprite>sprites\playBTN</sprite>
     <sprite>sprites\sprite220</sprite>
     <sprite>sprites\sobramowka</sprite>
+    <sprites name="tools">
+      <sprite>sprites\sprite223_spr_shield</sprite>
+      <sprite>sprites\bubbleshield</sprite>
+      <sprite>sprites\sprite225_shield_PNG1277</sprite>
+      <sprite>sprites\shieldInvi</sprite>
+    </sprites>
+    <sprite>sprites\misslek</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -361,6 +385,7 @@
     <path>paths\UfoOut</path>
     <path>paths\MoveRight</path>
     <path>paths\MoveLeft</path>
+    <path>paths\MisslePath</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\script_death.gml</script>
@@ -963,6 +988,9 @@
       <object>objects\toolLeft</object>
       <object>objects\charaRight</object>
       <object>objects\toolRight</object>
+      <object>objects\ShieldUI</object>
+      <object>objects\ShieldOnCat</object>
+      <object>objects\Missle</object>
     </objects>
     <object>objects\invi</object>
     <object>objects\bridge</object>

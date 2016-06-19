@@ -61,6 +61,37 @@ alarm[0] = 10
 
 
 
+//if t = ilestam { to ponizej }
+
+if global.BoughtTimer_10 = true
+{
+global.seconds = 09;
+global.minutes = 3;
+}
+
+if global.BoughtTimer_20 = true
+{
+global.seconds = 19;
+global.minutes = 3;
+}
+
+if global.BoughtTimer_30 = true
+{
+global.seconds = 29;
+global.minutes = 3;
+}
+
+if global.BoughtTimer_40 = true
+{
+global.seconds = 39;
+global.minutes = 3;
+}
+
+if global.BoughtTimer_50 = true
+{
+global.seconds = 49;
+global.minutes = 3;
+}
 
 
 

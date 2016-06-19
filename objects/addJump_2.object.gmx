@@ -82,7 +82,7 @@ depth = -121099
 {
 mouse_clear(mb_left)
 global.GoldStarMoney = global.GoldStarMoney -3
-global.BoughtJump_2 = true
+global.BoughtJump_20 = true
 canSubstract = false
 addJump_2.persistent = true
 instance_activate_object(SpeedParent)

@@ -595,7 +595,7 @@ THIS COMMENTS ARE FOR MY (I'm the tweenline developer) USE ONLY. SO DON'T USE TH
 
 
 //Comment this line if it gives you an error. This line is to give a SPEED BOOST of the main rendering loop of the tweenline engine. 
-gml_pragma("forceinline");
+//gml_pragma("forceinline");
 
 
 var t = argument0[TLTWEEN.SETTERS_TARGET];

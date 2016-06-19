@@ -61,4 +61,3 @@ instance_create(64,256,PlayerSpawner)
 
 
 
-

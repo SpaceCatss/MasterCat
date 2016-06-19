@@ -82,7 +82,7 @@ depth = -121099
 {
 mouse_clear(mb_left)
 global.GoldStarMoney = global.GoldStarMoney -15
-global.BoughtJump_5 = true
+global.BoughtJump_50 = true
 canSubstract = false
 
 instance_create(x-33,y-1,AddJump5)

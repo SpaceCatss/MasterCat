@@ -54,7 +54,6 @@ movespeedUp = 4;
 grav = gravNormal;
 
 
-
 movespeed = movespeedNormal;
 jumpspeed = jumpspeedNormal * global.jumpmultiplier;
 hsp = hspNormal;

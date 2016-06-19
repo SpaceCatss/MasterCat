@@ -33,6 +33,8 @@ global.mouse3 = false;
 
 global.seconds = 59;
 global.minutes = 2;
+
+
 global.hours = 0;
 Feler = true;
 global.OutOfTime = false
@@ -43,7 +45,37 @@ global.OutOfTime = false
 alarm[0] = 10
 
 
+//if t = ilestam { to ponizej }
 
+if global.BoughtTimer_10 = true
+{
+global.seconds = 09;
+global.minutes = 3;
+}
+
+if global.BoughtTimer_20 = true
+{
+global.seconds = 19;
+global.minutes = 3;
+}
+
+if global.BoughtTimer_30 = true
+{
+global.seconds = 29;
+global.minutes = 3;
+}
+
+if global.BoughtTimer_40 = true
+{
+global.seconds = 39;
+global.minutes = 3;
+}
+
+if global.BoughtTimer_50 = true
+{
+global.seconds = 49;
+global.minutes = 3;
+}
 
 
 
@@ -397,8 +429,8 @@ draw_text_outline(view_xview[0]+500,view_yview[0]+32, string(global.hours) + ":"
             <kind>1</kind>
             <string>/// draw ink contener
 
-draw_roundrect_texture(view_xview[0]+220, view_yview[0]+15, view_xview[0]+380, view_yview[0]+45, 5, background5, 9, false)
-draw_rectangle_color(view_xview[0]+230, view_yview[0]+20, view_xview[0]+global.paintN, view_yview[0]+40, c_black, c_black, c_black, c_black, false);
+draw_roundrect_texture(view_xview[0]+220, view_yview[0]+15, view_xview[0]+220+global.paintNMax + 10, view_yview[0]+45, 5, background5, 9, false)
+draw_rectangle_color(view_xview[0]+230, view_yview[0]+20, view_xview[0]+230+global.paintN, view_yview[0]+40, c_black, c_black, c_black, c_black, false);
 </string>
           </argument>
         </arguments>
