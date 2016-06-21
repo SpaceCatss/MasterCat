@@ -43,46 +43,16 @@ grav = 0.45;
 hspNormal = 0;
 hspUp = 20
 vsp = 0;
-//jumpspeedNormal = 8.5;
+jumpspeedNormal = 8.5;
 jumpspeedUp = 10;
 movespeedNormal = 12;
 movespeedUp = 2;
 
-if global.t = 2
-{
-if global.BoughtJump_20 = true
-{
-jumpspeedNormal = 9.5;
-
-}
-
-if global.BoughtJump_10 = true
-{
-jumpspeedNormal = 9;
-}
-
-if global.BoughtJump_30 = true
-{
-jumpspeedNormal = 10;
-
-}
-
-if global.BoughtJump_40 = true
-{
-jumpspeedNormal = 10.5;
 
 
-}
-
-if global.BoughtJump_50 = true
-{
-jumpspeedNormal = 11;
-
-}
-}
 
 movespeed = movespeedNormal;
-jumpspeed = jumpspeedNormal ;
+jumpspeed = jumpspeedNormal * global.jumpmultiplier;
 hsp = hspNormal;
 
 

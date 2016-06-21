@@ -30,6 +30,7 @@ global.LifeContenerMax = 0
 global.paintN = 200
 global.paintNMax = 200
 global.ShieldQty=1
+global.MissleQty=1
 global.ShieldTimerMultiplier = 1
 global.ShieldTimerAlarm = 90
 global.hardship = 0
@@ -136,6 +137,11 @@ global.BoughtTimer_20 = true
 global.BoughtTimer_30 = false
 global.BoughtTimer_40 = false
 global.BoughtTimer_50 = false
+global.BoughtMissle_10 = false
+global.BoughtMissle_20 = false
+global.BoughtMissle_30 = false
+global.BoughtMissle_40 = false
+global.BoughtMissle_50 = false
 
 if
 (global.purchasedSuperCoin = false) and

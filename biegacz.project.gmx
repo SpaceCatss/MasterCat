@@ -117,12 +117,24 @@
     <extension index="6">extensions\PickerJoint</extension>
     <extension index="7">extensions\Tweenline Animation Engine</extension>
     <extension index="8">extensions\tweenline</extension>
+    <extension index="9">extensions\Laser Example</extension>
   </NewExtensions>
   <sounds name="sound">
     <sound>sound\sound0</sound>
     <sound>sound\sound1</sound>
+    <sound>sound\sndLaser</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="tools">
+      <sprite>sprites\misslek</sprite>
+      <sprite>sprites\sPlayer</sprite>
+      <sprite>sprites\sPlayer2</sprite>
+      <sprite>sprites\misslek2</sprite>
+      <sprite>sprites\sprite223_spr_shield</sprite>
+      <sprite>sprites\bubbleshield</sprite>
+      <sprite>sprites\sprite225_shield_PNG1277</sprite>
+      <sprite>sprites\shieldInvi</sprite>
+    </sprites>
     <sprites name="CharaSelection">
       <sprite>sprites\sprite185_abilitypanel</sprite>
       <sprite>sprites\sprite186_AddLife1</sprite>
@@ -353,13 +365,13 @@
     <sprite>sprites\playBTN</sprite>
     <sprite>sprites\sprite220</sprite>
     <sprite>sprites\sobramowka</sprite>
-    <sprites name="tools">
-      <sprite>sprites\sprite223_spr_shield</sprite>
-      <sprite>sprites\bubbleshield</sprite>
-      <sprite>sprites\sprite225_shield_PNG1277</sprite>
-      <sprite>sprites\shieldInvi</sprite>
+    <sprites name="Laser">
+      <sprite>sprites\sBlock_Curve</sprite>
+      <sprite>sprites\sBlock</sprite>
+      <sprite>sprites\sSparks</sprite>
+      <sprite>sprites\sLaser</sprite>
+      <sprite>sprites\sCredits_Programmer</sprite>
     </sprites>
-    <sprite>sprites\misslek</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -386,6 +398,8 @@
     <path>paths\MoveRight</path>
     <path>paths\MoveLeft</path>
     <path>paths\MisslePath</path>
+    <path>paths\MisslePath2</path>
+    <path>paths\MisslePath3</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\script_death.gml</script>
@@ -734,6 +748,9 @@
       <script>scripts\bb_create.gml</script>
       <script>scripts\__bb_private.gml</script>
     </scripts>
+    <script>scripts\scrLaser.gml</script>
+    <script>scripts\scrDraw_Laser.gml</script>
+    <script>scripts\scrDesvanecer.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
@@ -756,6 +773,9 @@
     <font>fonts\fnt_Default</font>
   </fonts>
   <objects name="objects">
+    <object>objects\oBlock</object>
+    <object>objects\Laser</object>
+    <object>objects\LaserUI</object>
     <objects name="players">
       <object>objects\player</object>
       <object>objects\Player4</object>
@@ -989,6 +1009,7 @@
       <object>objects\charaRight</object>
       <object>objects\toolRight</object>
       <object>objects\ShieldUI</object>
+      <object>objects\MissleUI</object>
       <object>objects\ShieldOnCat</object>
       <object>objects\Missle</object>
     </objects>
@@ -1136,6 +1157,8 @@
     <objects name="tweenline">
       <object>objects\obj_tweenline</object>
     </objects>
+    <object>objects\oCredits</object>
+    <object>objects\oBlock_Curve</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\startRM</room>
@@ -1160,6 +1183,7 @@
     <room>rooms\r_room3</room>
     <room>rooms\r_room4</room>
     <room>rooms\room_1</room>
+    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -28,6 +28,29 @@
             <string>draw_set_alpha(1)
 
 
+if global.BoughtMissle_10 = true
+{
+global.MissleQty=1
+}
+if global.BoughtMissle_20 = true
+{
+global.MissleQty=2
+}
+if global.BoughtMissle_30 = true
+{
+global.MissleQty=3
+}
+if global.BoughtMissle_40 = true
+{
+global.MissleQty=4
+}
+if global.BoughtMissle_50 = true
+{
+global.MissleQty=5
+}
+
+global.paintN = 200
+global.paintNMax = 200
 
 if global.BoughtPaint_10 = true
 {

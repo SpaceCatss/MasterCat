@@ -97,7 +97,7 @@ CanTrail = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if mouse_check_button_pressed(mb_left) and global.paintN &gt;230 
+            <string>if mouse_check_button_pressed(mb_left) and global.paintN &gt;0 
 {
 
 
@@ -111,6 +111,21 @@ alarm[0] = 1
 
 
 }
+
+if  global.paintN &gt;= global.paintNMax
+{
+global.paintN = global.paintNMax 
+}
+
+
+if  global.paintN &lt;=-1
+{
+//instance_destroy()
+global.paintN = 0
+with (trail_follow)
+{instance_destroy()}
+}
+
 </string>
           </argument>
         </arguments>
@@ -168,13 +183,13 @@ y = mouse_y
 
 visible=true
 
-if global.paintN &gt;230 and x &gt;= xprevious -2 and y &lt;= yprevious+1 or global.paintN &gt;230 and x &lt;= xprevious +2 and y &lt;= yprevious+1 
+if global.paintN &gt;0 and x &gt;= xprevious -2 and y &lt;= yprevious+1 or global.paintN &gt;0 and x &lt;= xprevious +2 and y &lt;= yprevious+1 
 {
 instance_create(mouse_x,mouse_y,paintBridge)
 global.paintN -= 1
 
 }
-if global.paintN &gt;230 and y &gt;= yprevious+2
+if global.paintN &gt;0 and y &gt;= yprevious+2
 {
 instance_create(mouse_x,mouse_y,paintBridge2)
 global.paintN -= 1
@@ -185,14 +200,13 @@ if place_meeting(x,y,objectA) or place_meeting(x,y,ground) or place_meeting(x,y,
 instance_create(mouse_x,mouse_y,paintBridge)
 global.paintN -= 0
 }
-else if  global.paintN &lt;=229 
+else if  global.paintN &lt;=-1
 {
 //instance_destroy()
-global.paintN = 229
+global.paintN = 0
 with (trail_follow)
 {instance_destroy()}
 }
-
 
 
 

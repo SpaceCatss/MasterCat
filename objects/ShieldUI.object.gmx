@@ -89,7 +89,7 @@ StartCounting = false
           <argument>
             <kind>1</kind>
             <string>x = view_xview[0]+300;
-y = view_yview[0]+350;
+y = view_yview[0]+450;
 if StartCounting = true
 {
 ShieldTimer -= global.ShieldTimerMultiplier
@@ -157,15 +157,15 @@ setAlarmOff = true
           <argument>
             <kind>1</kind>
             <string>//shield icon
-draw_sprite_ext(sprite225_shield_PNG1277,0,view_xview[0]+300,view_yview[0]+350,1,1,0,c_white,1)
+draw_sprite_ext(sprite225_shield_PNG1277,0,view_xview[0]+300,view_yview[0]+410,1,1,0,c_white,1)
 
 
 //qty of shields
-draw_text_outline(view_xview[0]+300,view_yview[0]+350,string(global.ShieldQty),2,c_black,10)
+draw_text_outline(view_xview[0]+300,view_yview[0]+410,string(global.ShieldQty),2,c_black,10)
 
 //time till shield runs out draw
-draw_roundrect_texture(view_xview[0]+250, view_yview[0]+370, view_xview[0]+350, view_yview[0]+400, 5, background5, 9, false)
-draw_rectangle_color(view_xview[0]+255, view_yview[0]+375, view_xview[0]+255+ShieldTimer, view_yview[0]+395, c_green, c_green, c_green, c_green, false);
+draw_roundrect_texture(view_xview[0]+250, view_yview[0]+430, view_xview[0]+350, view_yview[0]+460, 5, background5, 9, false)
+draw_rectangle_color(view_xview[0]+255, view_yview[0]+435, view_xview[0]+255+ShieldTimer, view_yview[0]+455, c_green, c_green, c_green, c_green, false);
 </string>
           </argument>
         </arguments>
