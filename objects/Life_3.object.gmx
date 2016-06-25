@@ -3,7 +3,7 @@
   <spriteName>falseBody</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-9999</depth>
   <persistent>0</persistent>
   <parentName>LifeParent</parentName>
   <maskName>&lt;undefined&gt;</maskName>

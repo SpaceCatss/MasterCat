@@ -136,6 +136,7 @@
       <sprite>sprites\sPlayer2</sprite>
       <sprite>sprites\misslek2</sprite>
       <sprite>sprites\sprite223_spr_shield</sprite>
+      <sprite>sprites\shieldInviDeadPixel</sprite>
       <sprite>sprites\bubbleshield</sprite>
       <sprite>sprites\sprite225_shield_PNG1277</sprite>
       <sprite>sprites\shieldInvi</sprite>
@@ -212,6 +213,9 @@
     <sprite>sprites\Redi</sprite>
     <sprite>sprites\RediInvi</sprite>
     <sprite>sprites\Redi2</sprite>
+    <sprite>sprites\deadi</sprite>
+    <sprite>sprites\deadi2</sprite>
+    <sprite>sprites\deadi3</sprite>
     <sprite>sprites\sprite22</sprite>
     <sprite>sprites\sprite23</sprite>
     <sprite>sprites\superPoint</sprite>
@@ -406,6 +410,7 @@
     <path>paths\MisslePath</path>
     <path>paths\MisslePath2</path>
     <path>paths\MisslePath3</path>
+    <path>paths\deadpixel</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\script_death.gml</script>
@@ -780,6 +785,13 @@
   </fonts>
   <objects name="objects">
     <object>objects\oBlock</object>
+    <objects name="abilities">
+      <object>objects\AbilityShieldUI</object>
+      <object>objects\DeadPixelek2</object>
+      <object>objects\DeadPixelek</object>
+      <object>objects\DeadPixelek3</object>
+      <object>objects\InvisibleShield</object>
+    </objects>
     <object>objects\Laser</object>
     <object>objects\LaserDestroyer</object>
     <object>objects\LaserUI</object>
@@ -1294,8 +1306,6 @@
     <objects name="tweenline">
       <object>objects\obj_tweenline</object>
     </objects>
-    <object>objects\oCredits</object>
-    <object>objects\oBlock_Curve</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\startRM</room>

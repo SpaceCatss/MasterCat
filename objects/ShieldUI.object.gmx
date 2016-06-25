@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ShieldTimer = 90
+            <string>image_xscale = 2
+image_yscale = 2
+
+ShieldTimer = 90
 
 StartCounting = false
 setAlarmOff = false
@@ -88,8 +91,18 @@ StartCounting = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = view_xview[0]+300;
+            <string>if !instance_exists(AbilityShieldUI)
+{
+x = view_xview[0]+300;
 y = view_yview[0]+450;
+}
+if instance_exists(AbilityShieldUI)
+{
+x = view_xview[0]+250;
+y = view_yview[0]+450;
+}
+
+
 if StartCounting = true
 {
 ShieldTimer -= global.ShieldTimerMultiplier
@@ -157,7 +170,14 @@ setAlarmOff = true
           <argument>
             <kind>1</kind>
             <string>//shield icon
+if !instance_exists(AbilityShieldUI)
+{
 draw_sprite_ext(sprite225_shield_PNG1277,0,view_xview[0]+300,view_yview[0]+410,1,1,0,c_white,1)
+}
+if instance_exists(AbilityShieldUI)
+{
+draw_sprite_ext(sprite225_shield_PNG1277,0,view_xview[0]+250,view_yview[0]+410,1,1,0,c_white,1)
+}
 
 
 //qty of shields
