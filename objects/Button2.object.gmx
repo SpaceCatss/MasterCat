@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.CanPlayRM2 = false
+            <string>global.CanPlayRM2 = true
 
 mouse_clear(mb_left)
 if(global.CanPlayRM2 = true) {

@@ -98,6 +98,13 @@ instance_deactivate_object(ToolBodyN)
 instance_deactivate_object(JumpParent)
 instance_deactivate_object(SpeedParent)
 instance_deactivate_object(SpeedDownParent)
+instance_deactivate_object(LifeParent)
+instance_deactivate_object(PaintParent)
+instance_deactivate_object(TimerParent)
+instance_deactivate_object(ShieldParent)
+instance_deactivate_object(MissleParent)
+instance_deactivate_object(LaserCoinParent)
+instance_deactivate_object(LaserDestroyerParent)
 }
 if global.t = 1
 {
@@ -106,6 +113,13 @@ instance_activate_object(ToolBodyN)
 instance_deactivate_object(JumpParent)
 instance_activate_object(SpeedParent)
 instance_deactivate_object(SpeedDownParent)
+instance_deactivate_object(LifeParent)
+instance_deactivate_object(PaintParent)
+instance_deactivate_object(TimerParent)
+instance_deactivate_object(ShieldParent)
+instance_deactivate_object(MissleParent)
+instance_deactivate_object(LaserCoinParent)
+instance_deactivate_object(LaserDestroyerParent)
 }
 
 if global.t = 2
@@ -115,6 +129,13 @@ instance_activate_object(ToolBodyN)
 instance_activate_object(JumpParent)
 instance_deactivate_object(SpeedParent)
 instance_deactivate_object(SpeedDownParent)
+instance_deactivate_object(LifeParent)
+instance_deactivate_object(PaintParent)
+instance_deactivate_object(TimerParent)
+instance_deactivate_object(ShieldParent)
+instance_deactivate_object(MissleParent)
+instance_deactivate_object(LaserCoinParent)
+instance_deactivate_object(LaserDestroyerParent)
 }
 
 if global.t = 3
@@ -124,6 +145,132 @@ instance_activate_object(ToolBodyN)
 instance_deactivate_object(JumpParent)
 instance_deactivate_object(SpeedParent)
 instance_activate_object(SpeedDownParent)
+instance_deactivate_object(LifeParent)
+instance_deactivate_object(PaintParent)
+instance_deactivate_object(TimerParent)
+instance_deactivate_object(ShieldParent)
+instance_deactivate_object(MissleParent)
+instance_deactivate_object(LaserCoinParent)
+instance_deactivate_object(LaserDestroyerParent)
+}
+
+
+if global.t = 4
+{
+instance_activate_object(ToolBack)
+instance_activate_object(ToolBodyN)
+instance_deactivate_object(JumpParent)
+instance_deactivate_object(SpeedParent)
+instance_deactivate_object(SpeedDownParent)
+instance_activate_object(LifeParent)
+instance_deactivate_object(PaintParent)
+instance_deactivate_object(TimerParent)
+instance_deactivate_object(ShieldParent)
+instance_deactivate_object(MissleParent)
+instance_deactivate_object(LaserCoinParent)
+instance_deactivate_object(LaserDestroyerParent)
+}
+
+
+if global.t = 5
+{
+instance_activate_object(ToolBack)
+instance_activate_object(ToolBodyN)
+instance_deactivate_object(JumpParent)
+instance_deactivate_object(SpeedParent)
+instance_deactivate_object(SpeedDownParent)
+instance_deactivate_object(LifeParent)
+instance_activate_object(PaintParent)
+instance_deactivate_object(TimerParent)
+instance_deactivate_object(ShieldParent)
+instance_deactivate_object(MissleParent)
+instance_deactivate_object(LaserCoinParent)
+instance_deactivate_object(LaserDestroyerParent)
+}
+
+
+if global.t = 6
+{
+instance_activate_object(ToolBack)
+instance_activate_object(ToolBodyN)
+instance_deactivate_object(JumpParent)
+instance_deactivate_object(SpeedParent)
+instance_deactivate_object(SpeedDownParent)
+instance_deactivate_object(LifeParent)
+instance_deactivate_object(PaintParent)
+instance_activate_object(TimerParent)
+instance_deactivate_object(ShieldParent)
+instance_deactivate_object(MissleParent)
+instance_deactivate_object(LaserCoinParent)
+instance_deactivate_object(LaserDestroyerParent)
+}
+
+
+if global.t = 7
+{
+instance_activate_object(ToolBack)
+instance_activate_object(ToolBodyN)
+instance_deactivate_object(JumpParent)
+instance_deactivate_object(SpeedParent)
+instance_deactivate_object(SpeedDownParent)
+instance_deactivate_object(LifeParent)
+instance_deactivate_object(PaintParent)
+instance_deactivate_object(TimerParent)
+instance_activate_object(ShieldParent)
+instance_deactivate_object(MissleParent)
+instance_deactivate_object(LaserCoinParent)
+instance_deactivate_object(LaserDestroyerParent)
+}
+
+
+if global.t = 8
+{
+instance_activate_object(ToolBack)
+instance_activate_object(ToolBodyN)
+instance_deactivate_object(JumpParent)
+instance_deactivate_object(SpeedParent)
+instance_deactivate_object(SpeedDownParent)
+instance_deactivate_object(LifeParent)
+instance_deactivate_object(PaintParent)
+instance_deactivate_object(TimerParent)
+instance_deactivate_object(ShieldParent)
+instance_activate_object(MissleParent)
+instance_deactivate_object(LaserCoinParent)
+instance_deactivate_object(LaserDestroyerParent)
+}
+
+
+if global.t = 9
+{
+instance_activate_object(ToolBack)
+instance_activate_object(ToolBodyN)
+instance_deactivate_object(JumpParent)
+instance_deactivate_object(SpeedParent)
+instance_deactivate_object(SpeedDownParent)
+instance_deactivate_object(LifeParent)
+instance_deactivate_object(PaintParent)
+instance_deactivate_object(TimerParent)
+instance_deactivate_object(ShieldParent)
+instance_deactivate_object(MissleParent)
+instance_activate_object(LaserCoinParent)
+instance_deactivate_object(LaserDestroyerParent)
+}
+
+
+if global.t = 10
+{
+instance_activate_object(ToolBack)
+instance_activate_object(ToolBodyN)
+instance_deactivate_object(JumpParent)
+instance_deactivate_object(SpeedParent)
+instance_deactivate_object(SpeedDownParent)
+instance_deactivate_object(LifeParent)
+instance_deactivate_object(PaintParent)
+instance_deactivate_object(TimerParent)
+instance_deactivate_object(ShieldParent)
+instance_deactivate_object(MissleParent)
+instance_deactivate_object(LaserCoinParent)
+instance_activate_object(LaserDestroyerParent)
 }
 
 

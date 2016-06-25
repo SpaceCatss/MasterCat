@@ -26,7 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>image_angle = 180
-NoneTooltoTool3 = false
+NoneTooltoTool10 = false
+Tool10toTool9 = false 
+Tool9toTool8 = false 
+Tool8toTool7 = false 
+Tool7toTool6 = false 
+Tool6toTool5 = false 
+Tool5toTool4 = false 
+Tool4toTool3 = false 
 Tool3toTool2 = false 
 Tool1toNoneTool = false
 Tool2toTool1 = false
@@ -40,6 +47,13 @@ t0destroy = false
 t1destroy = false
 t2destroy = false
 t3destroy = false
+t4destroy = false
+t5destroy = false
+t6destroy = false
+t7destroy = false
+t8destroy = false
+t9destroy = false
+t10destroy = false
 </string>
           </argument>
         </arguments>
@@ -92,11 +106,65 @@ with(Tool2)
 instance_destroy()
 }
 
-
 if t3destroy = true
 
 {
 with(Tool3)
+instance_destroy()
+}
+
+if t4destroy = true
+
+{
+with(Tool4)
+instance_destroy()
+}
+
+
+if t5destroy = true
+
+{
+with(Tool5)
+instance_destroy()
+}
+
+
+if t6destroy = true
+
+{
+with(Tool6)
+instance_destroy()
+}
+
+
+if t7destroy = true
+
+{
+with(Tool7)
+instance_destroy()
+}
+
+
+if t8destroy = true
+
+{
+with(Tool8)
+instance_destroy()
+}
+
+
+if t9destroy = true
+
+{
+with(Tool9)
+instance_destroy()
+}
+
+
+if t10destroy = true
+
+{
+with(Tool10)
 instance_destroy()
 }
 
@@ -123,12 +191,260 @@ instance_destroy()
           <argument>
             <kind>1</kind>
             <string>image_alpha = 0.5
-// nonetool to tool3
+// nonetool to tool10
 
-if NoneTooltoTool3 = true
+if NoneTooltoTool10 = true
 {
 
 with (NoneTool)
+{
+path_start(MoveRight, 20, 0, false)
+}
+
+if !instance_exists(Tool10){
+instance_create(-228,255,Tool10)}
+
+with (Tool10)
+{
+path_start(MoveRight, 20, 0, false)
+
+}
+t0destroy = true
+t1destroy = false
+t2destroy = false
+t3destroy = false
+t3destroy = false
+t4destroy = false
+t5destroy = false
+t6destroy = false
+t7destroy = false
+t8destroy = false
+t9destroy = false
+t10destroy = false
+
+NoneTooltoTool10 = false
+alarm[0]=25
+}
+
+
+// tool10 to tool9
+
+if Tool10toTool9 = true
+{
+
+with (Tool10)
+{
+path_start(MoveRight, 20, 0, false)
+}
+
+if !instance_exists(Tool9){
+instance_create(-228,255,Tool9)}
+
+with (Tool9)
+{
+path_start(MoveRight, 20, 0, false)
+
+}
+t0destroy = false
+t1destroy = false
+t2destroy = false
+t3destroy = false
+t4destroy = false
+t5destroy = false
+t6destroy = false
+t7destroy = false
+t8destroy = false
+t9destroy = false
+t10destroy = true
+
+Tool10toTool9 = false
+alarm[0]=25
+}
+
+// tool9 to tool8
+
+if Tool9toTool8 = true
+{
+
+with (Tool9)
+{
+path_start(MoveRight, 20, 0, false)
+}
+
+if !instance_exists(Tool8){
+instance_create(-228,255,Tool8)}
+
+with (Tool8)
+{
+path_start(MoveRight, 20, 0, false)
+
+}
+t0destroy = false
+t1destroy = false
+t2destroy = false
+t3destroy = false
+t4destroy = false
+t5destroy = false
+t6destroy = false
+t7destroy = false
+t8destroy = false
+t9destroy = true
+t10destroy = false
+
+Tool9toTool8 = false
+alarm[0]=25
+}
+
+
+// tool8 to tool7
+
+if Tool8toTool7 = true
+{
+
+with (Tool8)
+{
+path_start(MoveRight, 20, 0, false)
+}
+
+if !instance_exists(Tool7){
+instance_create(-228,255,Tool7)}
+
+with (Tool7)
+{
+path_start(MoveRight, 20, 0, false)
+
+}
+t0destroy = false
+t1destroy = false
+t2destroy = false
+t3destroy = false
+t4destroy = false
+t5destroy = false
+t6destroy = false
+t7destroy = false
+t8destroy = true
+t9destroy = false
+t10destroy = false
+
+Tool8toTool7 = false
+alarm[0]=25
+}
+
+
+// tool7 to tool6
+
+if Tool7toTool6 = true
+{
+
+with (Tool7)
+{
+path_start(MoveRight, 20, 0, false)
+}
+
+if !instance_exists(Tool6){
+instance_create(-228,255,Tool6)}
+
+with (Tool6)
+{
+path_start(MoveRight, 20, 0, false)
+
+}
+t0destroy = false
+t1destroy = false
+t2destroy = false
+t3destroy = false
+t4destroy = false
+t5destroy = false
+t6destroy = false
+t7destroy = true
+t8destroy = false
+t9destroy = false
+t10destroy = false
+
+Tool7toTool6 = false
+alarm[0]=25
+}
+
+
+
+
+// tool6 to tool5
+
+if Tool6toTool5 = true
+{
+
+with (Tool6)
+{
+path_start(MoveRight, 20, 0, false)
+}
+
+if !instance_exists(Tool5){
+instance_create(-228,255,Tool5)}
+
+with (Tool5)
+{
+path_start(MoveRight, 20, 0, false)
+
+}
+t0destroy = false
+t1destroy = false
+t2destroy = false
+t3destroy = false
+t4destroy = false
+t5destroy = false
+t6destroy = true
+t7destroy = false
+t8destroy = false
+t9destroy = false
+t10destroy = false
+
+Tool6toTool5 = false
+alarm[0]=25
+}
+
+
+
+// tool5 to tool4
+
+if Tool5toTool4 = true
+{
+
+with (Tool5)
+{
+path_start(MoveRight, 20, 0, false)
+}
+
+if !instance_exists(Tool4){
+instance_create(-228,255,Tool4)}
+
+with (Tool4)
+{
+path_start(MoveRight, 20, 0, false)
+
+}
+t0destroy = false
+t1destroy = false
+t2destroy = false
+t3destroy = false
+t4destroy = false
+t5destroy = true
+t6destroy = false
+t7destroy = false
+t8destroy = false
+t9destroy = false
+t10destroy = false
+
+Tool5toTool4 = false
+alarm[0]=25
+}
+
+
+// tool4 to tool3
+
+if Tool4toTool3 = true
+{
+
+with (Tool4)
 {
 path_start(MoveRight, 20, 0, false)
 }
@@ -141,14 +457,22 @@ with (Tool3)
 path_start(MoveRight, 20, 0, false)
 
 }
-t0destroy = true
+t0destroy = false
 t1destroy = false
 t2destroy = false
 t3destroy = false
+t4destroy = true
+t5destroy = false
+t6destroy = false
+t7destroy = false
+t8destroy = false
+t9destroy = false
+t10destroy = false
 
-NoneTooltoTool2 = false
+Tool4toTool3 = false
 alarm[0]=25
 }
+
 
 
 // tool3 to tool2
@@ -173,8 +497,16 @@ t0destroy = false
 t1destroy = false
 t2destroy = false
 t3destroy = true
+t3destroy = false
+t4destroy = false
+t5destroy = false
+t6destroy = false
+t7destroy = false
+t8destroy = false
+t9destroy = false
+t10destroy = false
 
-Tool2toTool1 = false
+Tool3toTool2 = false
 alarm[0]=25
 }
 
@@ -201,6 +533,14 @@ t0destroy = false
 t1destroy = false
 t2destroy = true
 t3destroy = false
+t3destroy = false
+t4destroy = false
+t5destroy = false
+t6destroy = false
+t7destroy = false
+t8destroy = false
+t9destroy = false
+t10destroy = false
 
 Tool2toTool1 = false
 alarm[0]=25
@@ -228,6 +568,14 @@ t0destroy = false
 t1destroy = true
 t2destroy = false
 t3destroy = false
+t3destroy = false
+t4destroy = false
+t5destroy = false
+t6destroy = false
+t7destroy = false
+t8destroy = false
+t9destroy = false
+t10destroy = false
 
 Tool1toNoneTool = false
 alarm[0]=25
@@ -256,13 +604,66 @@ alarm[0]=25
             <kind>1</kind>
             <string>mouse_clear(mb_left)
 
-if global.t=0 and CanClickAgain = true
+if global.t=10 and CanClickAgain = true
 {
-NoneTooltoTool3 = true
+Tool10toTool9 = true
+CanClickAgain = false
+global.t = 9
+
+}
+
+
+if global.t=9 and CanClickAgain = true
+{
+Tool9toTool8 = true
+CanClickAgain = false
+global.t = 8
+
+}
+
+if global.t=8 and CanClickAgain = true
+{
+Tool8toTool7 = true
+CanClickAgain = false
+global.t = 7
+
+}
+
+if global.t=7 and CanClickAgain = true
+{
+Tool7toTool6 = true
+CanClickAgain = false
+global.t = 6
+
+}
+
+
+if global.t=6 and CanClickAgain = true
+{
+Tool6toTool5 = true
+CanClickAgain = false
+global.t = 5
+
+}
+
+
+if global.t=5 and CanClickAgain = true
+{
+Tool5toTool4 = true
+CanClickAgain = false
+global.t = 4
+
+}
+
+
+if global.t=4 and CanClickAgain = true
+{
+Tool4toTool3 = true
 CanClickAgain = false
 global.t = 3
 
 }
+
 
 if global.t=3 and CanClickAgain = true
 {
@@ -287,6 +688,14 @@ global.t = 0
 
 }
 
+
+if global.t=0 and CanClickAgain = true
+{
+NoneTooltoTool10 = true
+CanClickAgain = false
+global.t = 10
+
+}
 </string>
           </argument>
         </arguments>

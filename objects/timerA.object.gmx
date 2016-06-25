@@ -45,7 +45,7 @@ global.OutOfTime = false
 alarm[0] = 10
 
 
-//if t = ilestam { to ponizej }
+if global.t = 6 {
 
 if global.BoughtTimer_10 = true
 {
@@ -77,23 +77,7 @@ global.seconds = 49;
 global.minutes = 3;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 </string>
           </argument>

@@ -35,10 +35,10 @@ if collision_point(xx+lengthdir_x(i,dir),yy+lengthdir_y(i,dir),oBlock,1,1)
 {
 with (instance_nearest(xx+lengthdir_x(i,dir), yy+lengthdir_y(i,dir), oBlock ))
 {
-if global.t=1{
+if global.t=9{
 instance_destroy()}
 
-if global.t=2
+if global.t=10
 {
 instance_change(coin, true)
 }

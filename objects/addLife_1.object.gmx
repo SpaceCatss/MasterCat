@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>LifeParent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -78,13 +78,17 @@ depth = -121099
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.GoldStarMoney &gt;= 1) and (canSubstract = true)
+            <string>
+
+if (global.GoldStarMoney &gt;= 1) and (canSubstract = true)
 {
 mouse_clear(mb_left)
 global.GoldStarMoney = global.GoldStarMoney -1
 global.BoughtLives_10 = true
+
 canSubstract = false
 addLife_1.persistent = true
+
 
 instance_create(Life_1.x,Life_1.y,Life_2)
 with(Life_1){
@@ -93,7 +97,7 @@ instance_destroy()
 instance_create(x,y,addLife_2)
 
 
-instance_create(x-125,y-1,AddOne)
+instance_create(x-125,y-1,AddLife1)
 
 
 instance_destroy()

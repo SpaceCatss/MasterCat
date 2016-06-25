@@ -126,6 +126,11 @@
   </sounds>
   <sprites name="sprites">
     <sprites name="tools">
+      <sprite>sprites\lasergun1</sprite>
+      <sprite>sprites\sprite237_czarna_dziura1</sprite>
+      <sprite>sprites\lasergun2</sprite>
+      <sprite>sprites\misiowski</sprite>
+      <sprite>sprites\sprite236_lajka</sprite>
       <sprite>sprites\misslek</sprite>
       <sprite>sprites\sPlayer</sprite>
       <sprite>sprites\sPlayer2</sprite>
@@ -134,6 +139,7 @@
       <sprite>sprites\bubbleshield</sprite>
       <sprite>sprites\sprite225_shield_PNG1277</sprite>
       <sprite>sprites\shieldInvi</sprite>
+      <sprite>sprites\blackholik</sprite>
     </sprites>
     <sprites name="CharaSelection">
       <sprite>sprites\sprite185_abilitypanel</sprite>
@@ -775,7 +781,9 @@
   <objects name="objects">
     <object>objects\oBlock</object>
     <object>objects\Laser</object>
+    <object>objects\LaserDestroyer</object>
     <object>objects\LaserUI</object>
+    <object>objects\LaserUIDestroyer</object>
     <objects name="players">
       <object>objects\player</object>
       <object>objects\Player4</object>
@@ -865,6 +873,70 @@
       <object>objects\Tool1</object>
       <object>objects\Tool2</object>
       <object>objects\Tool3</object>
+      <object>objects\Tool4</object>
+      <object>objects\Tool5</object>
+      <object>objects\Tool6</object>
+      <object>objects\Tool7</object>
+      <object>objects\Tool8</object>
+      <object>objects\Tool9</object>
+      <object>objects\Tool10</object>
+      <objects name="life">
+        <object>objects\AddLife2</object>
+        <object>objects\AddLife1</object>
+        <object>objects\AddLife3</object>
+        <object>objects\AddLife4</object>
+        <object>objects\AddLife5</object>
+        <object>objects\LifeParent</object>
+        <object>objects\Life_1</object>
+        <object>objects\LifeForDisplay</object>
+        <object>objects\addLife_5</object>
+        <object>objects\addLife_3</object>
+        <object>objects\addLife_1</object>
+        <object>objects\Life_3</object>
+        <object>objects\Life_4</object>
+        <object>objects\Life_5</object>
+        <object>objects\Life_2</object>
+        <object>objects\addLife_2</object>
+        <object>objects\addLife_4</object>
+      </objects>
+      <objects name="LaserDestroyer">
+        <object>objects\addLaserDestroyer_2</object>
+        <object>objects\LaserDestroyerForDisplay</object>
+        <object>objects\AddOneLaserDestroyer4</object>
+        <object>objects\AddOneLaserDestroyer5</object>
+        <object>objects\AddOneLaserDestroyer2</object>
+        <object>objects\addLaserDestroyer_5</object>
+        <object>objects\LaserDestroyer_3</object>
+        <object>objects\LaserDestroyer_4</object>
+        <object>objects\LaserDestroyer_1</object>
+        <object>objects\AddOneLaserDestroyer3</object>
+        <object>objects\addLaserDestroyer_4</object>
+        <object>objects\addLaserDestroyer_3</object>
+        <object>objects\LaserDestroyer_5</object>
+        <object>objects\LaserDestroyer_2</object>
+        <object>objects\addLaserDestroyer_1</object>
+        <object>objects\AddOneLaserDestroyer1</object>
+        <object>objects\LaserDestroyerParent</object>
+      </objects>
+      <objects name="LaserCoin">
+        <object>objects\LaserCoinForDisplay</object>
+        <object>objects\addLaserCoin_2</object>
+        <object>objects\AddOneLaserCoin2</object>
+        <object>objects\AddOneLaserCoin1</object>
+        <object>objects\AddOneLaserCoin4</object>
+        <object>objects\addLaserCoin_5</object>
+        <object>objects\LaserCoin_4</object>
+        <object>objects\LaserCoin_2</object>
+        <object>objects\addLaserCoin_3</object>
+        <object>objects\AddOneLaserCoin5</object>
+        <object>objects\AddOneLaserCoin3</object>
+        <object>objects\LaserCoin_3</object>
+        <object>objects\addLaserCoin_1</object>
+        <object>objects\LaserCoin_5</object>
+        <object>objects\addLaserCoin_4</object>
+        <object>objects\LaserCoin_1</object>
+        <object>objects\LaserCoinParent</object>
+      </objects>
       <objects name="speedDown">
         <object>objects\SpeedDownParent</object>
         <object>objects\SpeedDownForDisplay</object>
@@ -904,7 +976,6 @@
         <object>objects\Speed_2</object>
       </objects>
       <object>objects\addSuperCoin_1</object>
-      <object>objects\addLife_1</object>
       <objects name="jump">
         <object>objects\AddJump1</object>
         <object>objects\JumpForDisplay</object>
@@ -925,10 +996,88 @@
         <object>objects\JumpParent</object>
       </objects>
       <object>objects\addFinger_1</object>
-      <object>objects\addLife_2</object>
+      <objects name="paint">
+        <object>objects\Paint_1</object>
+        <object>objects\AddPaint4</object>
+        <object>objects\PaintForDisplay</object>
+        <object>objects\addPaint_2</object>
+        <object>objects\AddPaint3</object>
+        <object>objects\AddPaint2</object>
+        <object>objects\AddPaint1</object>
+        <object>objects\addPaint_4</object>
+        <object>objects\AddPaint5</object>
+        <object>objects\addPaint_3</object>
+        <object>objects\Paint_2</object>
+        <object>objects\addPaint_5</object>
+        <object>objects\Paint_3</object>
+        <object>objects\Paint_4</object>
+        <object>objects\Paint_5</object>
+        <object>objects\addPaint_1</object>
+        <object>objects\PaintParent</object>
+      </objects>
       <object>objects\addFinger_2</object>
-      <object>objects\addLife_3</object>
+      <objects name="timer">
+        <object>objects\addTimer_4</object>
+        <object>objects\TimerForDisplay</object>
+        <object>objects\AddTimer2</object>
+        <object>objects\AddTimer3</object>
+        <object>objects\AddTimer1</object>
+        <object>objects\addTimer_2</object>
+        <object>objects\Timer_1</object>
+        <object>objects\AddTimer4</object>
+        <object>objects\Timer_3</object>
+        <object>objects\AddTimer5</object>
+        <object>objects\addTimer_3</object>
+        <object>objects\Timer_2</object>
+        <object>objects\addTimer_5</object>
+        <object>objects\Timer_4</object>
+        <object>objects\Timer_5</object>
+        <object>objects\addTimer_1</object>
+        <object>objects\TimerParent</object>
+      </objects>
+      <objects name="shield">
+        <object>objects\AddShield1</object>
+        <object>objects\ShieldForDisplay</object>
+        <object>objects\AddShield2</object>
+        <object>objects\AddShield3</object>
+        <object>objects\ShieldOnCat</object>
+        <object>objects\addShield_4</object>
+        <object>objects\Shield_5</object>
+        <object>objects\AddShield5</object>
+        <object>objects\addShield_3</object>
+        <object>objects\Shield_2</object>
+        <object>objects\Shield_1</object>
+        <object>objects\Shield_3</object>
+        <object>objects\addShield_2</object>
+        <object>objects\AddShield4</object>
+        <object>objects\addShield_5</object>
+        <object>objects\ShieldUI</object>
+        <object>objects\Shield_4</object>
+        <object>objects\addShield_1</object>
+        <object>objects\ShieldParent</object>
+      </objects>
       <object>objects\addFinger_3</object>
+      <objects name="missle">
+        <object>objects\Missle</object>
+        <object>objects\Missle_5</object>
+        <object>objects\MissleUI</object>
+        <object>objects\MissleForDisplay</object>
+        <object>objects\AddMissle1</object>
+        <object>objects\addMissle_2</object>
+        <object>objects\MissleParent</object>
+        <object>objects\AddMissle2</object>
+        <object>objects\AddMissle3</object>
+        <object>objects\Missle_1</object>
+        <object>objects\addMissle_4</object>
+        <object>objects\Missle_3</object>
+        <object>objects\AddMissle4</object>
+        <object>objects\addMissle_3</object>
+        <object>objects\Missle_2</object>
+        <object>objects\AddMissle5</object>
+        <object>objects\addMissle_5</object>
+        <object>objects\Missle_4</object>
+        <object>objects\addMissle_1</object>
+      </objects>
       <objects name="CharacterSelection">
         <object>objects\CatName</object>
         <object>objects\MianMenuCharacterS</object>
@@ -972,27 +1121,19 @@
         <object>objects\pointOfNoReturn</object>
         <object>objects\pointOfNoReturn2</object>
       </objects>
-      <object>objects\addLife_4</object>
       <object>objects\addFinger_4</object>
-      <object>objects\addLife_5</object>
       <object>objects\addFinger_5</object>
       <object>objects\BridgeUp_1</object>
       <object>objects\SpeedUp_1</object>
       <object>objects\SuperCoin_1</object>
-      <object>objects\Life_1</object>
       <object>objects\Finger_1</object>
-      <object>objects\Life_2</object>
       <object>objects\Finger_2</object>
-      <object>objects\Life_3</object>
+      <object>objects\AddOne</object>
       <object>objects\Finger_3</object>
-      <object>objects\Life_4</object>
       <object>objects\Finger_4</object>
-      <object>objects\Life_5</object>
       <object>objects\Finger_5</object>
       <object>objects\ToolBodyN</object>
       <object>objects\ToolBack</object>
-      <object>objects\AddOne</object>
-      <object>objects\LifeForDisplay</object>
       <object>objects\FingerForDisplay</object>
       <object>objects\SuperCoinFordisplay</object>
       <object>objects\BridgeUpForDisplay</object>
@@ -1008,10 +1149,6 @@
       <object>objects\toolLeft</object>
       <object>objects\charaRight</object>
       <object>objects\toolRight</object>
-      <object>objects\ShieldUI</object>
-      <object>objects\MissleUI</object>
-      <object>objects\ShieldOnCat</object>
-      <object>objects\Missle</object>
     </objects>
     <object>objects\invi</object>
     <object>objects\bridge</object>

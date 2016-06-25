@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>LifeParent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -85,7 +85,7 @@ global.GoldStarMoney = global.GoldStarMoney -15
 global.BoughtLives_50 = true
 canSubstract = false
 
-instance_create(x-33,y-1,AddOne)
+instance_create(x-33,y-1,AddLife5)
 
 
 }

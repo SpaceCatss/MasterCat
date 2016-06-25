@@ -3,7 +3,7 @@
   <spriteName>sPlayer2</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-9999</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,10 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>CanClick = true
-global.LaserBeamLenght = 200
-global.LaserAlarm = 40
-global.LaserQTY = 4
-global.LaserAlarmMax = 40
+
 LaserAlarm = global.LaserAlarm
 CanShoot = false
 CanCount = false
@@ -190,7 +187,11 @@ instance_destroy()
           <argument>
             <kind>1</kind>
             <string>//shield icon
-draw_sprite_ext(sPlayer,0,view_xview[0]+300,view_yview[0]+410,1,1,0,c_white,1)
+if global.t = 9 {
+draw_sprite_ext(lasergun1,0,view_xview[0]+300,view_yview[0]+410,0.6,0.6,0,c_white,1)}
+if global.t = 10
+{
+draw_sprite_ext(lasergun2,0,view_xview[0]+300,view_yview[0]+410,0.6,0.6,0,c_red,1)}
 
 
 //qty of shields

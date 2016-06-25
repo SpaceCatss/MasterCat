@@ -27,7 +27,96 @@
             <kind>1</kind>
             <string>draw_set_alpha(1)
 
+if global.t = 9
+instance_create(x,y,LaserUIDestroyer)
+{
+if global.BoughtLaserDestroyer_10 = true
+{
+global.LaserDestroyerBeamLenght = 250
+global.LaserDestroyerAlarm = 50
+global.LaserDestroyerQTY = 2
+global.LaserDestroyerAlarmMax = 50
+}
 
+if global.BoughtLaserDestroyer_20 = true
+{
+global.LaserDestroyerBeamLenght = 300
+global.LaserDestroyerAlarm = 60
+global.LaserDestroyerQTY = 3
+global.LaserDestroyerAlarmMax = 60
+}
+
+if global.BoughtLaserDestroyer_30 = true
+{
+global.LaserDestroyerBeamLenght = 350
+global.LaserDestroyerAlarm = 70
+global.LaserDestroyerQTY = 4
+global.LaserDestroyerAlarmMax = 70
+}
+
+if global.BoughtLaserDestroyer_40 = true
+{
+global.LaserDestroyerBeamLenght = 400
+global.LaserDestroyerAlarm = 80
+global.LaserDestroyerQTY = 5
+global.LaserDestroyerAlarmMax = 80
+}
+
+if global.BoughtLaserDestroyer_50 = true
+{
+global.LaserDestroyerBeamLenght = 450
+global.LaserDestroyerAlarm = 90
+global.LaserDestroyerQTY = 6
+global.LaserDestroyerAlarmMax = 90
+}
+}
+
+
+if global.t = 10{
+instance_create(x,y,LaserUI)
+if global.BoughtLaser_10 = true
+{
+global.LaserBeamLenght = 250
+global.LaserAlarm = 50
+global.LaserQTY = 2
+global.LaserAlarmMax = 50
+}
+
+if global.BoughtLaser_20 = true
+{
+global.LaserBeamLenght = 300
+global.LaserAlarm = 60
+global.LaserQTY = 3
+global.LaserAlarmMax = 60
+}
+
+if global.BoughtLaser_30 = true
+{
+global.LaserBeamLenght = 350
+global.LaserAlarm = 70
+global.LaserQTY = 4
+global.LaserAlarmMax = 70
+}
+
+if global.BoughtLaser_40 = true
+{
+global.LaserBeamLenght = 400
+global.LaserAlarm = 80
+global.LaserQTY = 5
+global.LaserAlarmMax = 80
+}
+
+if global.BoughtLaser_50 = true
+{
+global.LaserBeamLenght = 450
+global.LaserAlarm = 90
+global.LaserQTY = 6
+global.LaserAlarmMax = 90
+}
+}
+
+if global.t = 8{
+instance_create(x,y,MissleUI)
 if global.BoughtMissle_10 = true
 {
 global.MissleQty=1
@@ -48,7 +137,9 @@ if global.BoughtMissle_50 = true
 {
 global.MissleQty=5
 }
+}
 
+if global.t = 5{
 global.paintN = 200
 global.paintNMax = 200
 
@@ -81,7 +172,10 @@ if global.BoughtPaint_50 = true
 global.paintN = 300
 global.paintNMax = 300
 }
+}
 
+if global.t = 7{
+instance_create(x,y,ShieldUI)
 if global.BoughtShield_10 = true
 {
 global.ShieldQty=1
@@ -116,6 +210,9 @@ global.ShieldQty=3
 global.ShieldTimerMultiplier = 0.25
 global.ShieldTimerAlarm = 360
 }
+}
+
+
 
 
 if global.r = 3
@@ -123,7 +220,7 @@ if global.r = 3
 global.LifeContener = 200
 global.LifeContenerMax = 200
 global.LifeCount = 3
-
+if global.t = 4{
 if global.BoughtLives_20 = true
 {
 global.LifeContener +=15
@@ -149,6 +246,7 @@ if global.BoughtLives_50 = true
 {
 global.LifeContener +=30
 global.LifeContenerMax +=30
+}
 }
 }
 
@@ -163,7 +261,7 @@ else if global.r = 2
 global.LifeContener = 120
 global.LifeContenerMax = 120
 global.LifeCount = 3
-
+if global.t = 4{
 if global.BoughtLives_20 = true
 {
 global.LifeContener +=15
@@ -191,7 +289,7 @@ global.LifeContener +=30
 global.LifeContenerMax +=30
 }
 }
-
+}
 
 
 
@@ -203,7 +301,7 @@ else if global.r = 1
 global.LifeContener = 150
 global.LifeContenerMax = 150
 global.LifeCount = 3
-
+if global.t = 4{
 if global.BoughtLives_20 = true
 {
 global.LifeContener +=15
@@ -229,6 +327,7 @@ if global.BoughtLives_50 = true
 {
 global.LifeContener +=30
 global.LifeContenerMax +=30
+}
 }
 }
 
@@ -240,7 +339,7 @@ if global.r = 4
 global.LifeContener = 200
 global.LifeContenerMax = 200
 global.LifeCount = 3
-
+if global.t = 4{
 if global.BoughtLives_20 = true
 {
 global.LifeContener +=15
@@ -266,6 +365,7 @@ if global.BoughtLives_50 = true
 {
 global.LifeContener +=30
 global.LifeContenerMax +=30
+}
 }
 }
 
@@ -274,7 +374,7 @@ if global.r = 5
 global.LifeContener = 200
 global.LifeContenerMax = 200
 global.LifeCount = 3
-
+if global.t = 4{
 if global.BoughtLives_20 = true
 {
 global.LifeContener +=15
@@ -300,6 +400,7 @@ if global.BoughtLives_50 = true
 {
 global.LifeContener +=30
 global.LifeContenerMax +=30
+}
 }
 }
 
@@ -309,7 +410,7 @@ if global.r = 6
 global.LifeContener = 200
 global.LifeContenerMax = 200
 global.LifeCount = 3
-
+if global.t = 4{
 if global.BoughtLives_20 = true
 {
 global.LifeContener +=15
@@ -335,6 +436,7 @@ if global.BoughtLives_50 = true
 {
 global.LifeContener +=30
 global.LifeContenerMax +=30
+}
 }
 }
 
@@ -344,7 +446,7 @@ if global.r = 7
 global.LifeContener = 200
 global.LifeContenerMax = 200
 global.LifeCount = 3
-
+if global.t = 4{
 if global.BoughtLives_20 = true
 {
 global.LifeContener +=15
@@ -370,6 +472,7 @@ if global.BoughtLives_50 = true
 {
 global.LifeContener +=30
 global.LifeContenerMax +=30
+}
 }
 }
 
@@ -378,7 +481,7 @@ if global.r = 8
 global.LifeContener = 200
 global.LifeContenerMax = 200
 global.LifeCount = 3
-
+if global.t = 4{
 if global.BoughtLives_20 = true
 {
 global.LifeContener +=15
@@ -404,6 +507,7 @@ if global.BoughtLives_50 = true
 {
 global.LifeContener +=30
 global.LifeContenerMax +=30
+}
 }
 }
 
@@ -412,7 +516,7 @@ if global.r = 9
 global.LifeContener = 200
 global.LifeContenerMax = 200
 global.LifeCount = 3
-
+if global.t = 4{
 if global.BoughtLives_20 = true
 {
 global.LifeContener +=15
@@ -438,6 +542,7 @@ if global.BoughtLives_50 = true
 {
 global.LifeContener +=30
 global.LifeContenerMax +=30
+}
 }
 }
 

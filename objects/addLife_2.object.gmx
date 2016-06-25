@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>LifeParent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -93,7 +93,7 @@ instance_destroy()
 instance_create(x,y,addLife_3)
 
 
-instance_create(x-102,y-1,AddOne)
+instance_create(x-102,y-1,AddLife2)
 
 
 instance_destroy()

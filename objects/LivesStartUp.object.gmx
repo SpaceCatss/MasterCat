@@ -25,7 +25,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.LifeContener = 0
+            <string>
+
+global.LaserBeamLenght = 200
+global.LaserAlarm = 40
+global.LaserQTY = 2
+global.LaserAlarmMax = 40
+global.LaserDestroyerBeamLenght = 200
+global.LaserDestroyerAlarm = 40
+global.LaserDestroyerQTY = 2
+global.LaserDestroyerAlarmMax = 40
+global.LifeContener = 0
 global.LifeContenerMax = 0
 global.paintN = 200
 global.paintNMax = 200
@@ -117,6 +127,11 @@ global.BoughtSpeedDown_20 = false
 global.BoughtSpeedDown_30 = false
 global.BoughtSpeedDown_40 = false
 global.BoughtSpeedDown_50 = false
+global.BoughtLaser_10 = false
+global.BoughtLaser_20 = false
+global.BoughtLaser_30 = false
+global.BoughtLaser_40 = false
+global.BoughtLaser_50 = false
 global.BoughtJump_10 = false
 global.BoughtJump_20 = false
 global.BoughtJump_30 = false
@@ -142,6 +157,11 @@ global.BoughtMissle_20 = false
 global.BoughtMissle_30 = false
 global.BoughtMissle_40 = false
 global.BoughtMissle_50 = false
+global.BoughtLaserDestroyer_10 = false
+global.BoughtLaserDestroyer_20 = false
+global.BoughtLaserDestroyer_30 = false
+global.BoughtLaserDestroyer_40 = false
+global.BoughtLaserDestroyer_50 = false
 
 if
 (global.purchasedSuperCoin = false) and

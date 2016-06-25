@@ -61,7 +61,7 @@ alarm[0] = 10
 
 
 
-//if t = ilestam { to ponizej }
+if global.t = 6 { 
 
 if global.BoughtTimer_10 = true
 {
@@ -92,12 +92,7 @@ if global.BoughtTimer_50 = true
 global.seconds = 49;
 global.minutes = 3;
 }
-
-
-
-
-
-
+}
 
 </string>
           </argument>
