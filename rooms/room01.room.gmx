@@ -16,7 +16,48 @@ draw_set_alpha(1)
 Waluta.visible = false;
 
 ground_spawner_ink()
-global.coinController = 0</code>
+global.coinController = 0
+
+
+
+if global.r=1
+{
+
+
+}
+else if global.r=2
+{
+
+
+}
+else if global.r=3
+{
+
+
+}
+else if global.r=4
+{
+instance_create(x,y,AbilityTimeStopUI)
+}
+
+else if global.r=5
+{
+instance_create(x,y,AbilityFeverUI)
+}
+
+else if global.r=6
+{
+instance_create(x,y,AbilityShieldUI)
+}
+
+else if global.r=7
+{}
+
+else if global.r=8
+{}
+
+else if global.r=9
+{}</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

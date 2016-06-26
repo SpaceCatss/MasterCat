@@ -25,18 +25,36 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_xscale = 2
-image_yscale = 2
+            <string>global.Stopper = false
 
-ShieldTimer = 90
+image_xscale = 1.5
+image_yscale = 1.5
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.Stopper = false
 
-StartCounting = false
-setAlarmOff = false
-//sprite_add("cat.gif",0,true,true, x,y)
 
-
-global.ShieldTimerMultiplier = 0.5
-global.ShieldTimerAlarm = 180
+instance_destroy()
 </string>
           </argument>
         </arguments>
@@ -59,17 +77,7 @@ global.ShieldTimerAlarm = 180
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.ShieldQty -= 1
-instance_create(x,y,ShieldUI)
-instance_destroy()
-with ShieldOnCat
-{
-instance_destroy()
-}
-StartCounting = false
-
-
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -91,37 +99,21 @@ StartCounting = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !instance_exists(AbilityShieldUI) and !instance_exists(AbilityTimeStopUI) and !instance_exists(AbilityFeverUI)
+            <string>if global.t = 10 or global.t = 9 or global.t = 8 or global.t = 7
+{
+x = view_xview[0]+350;
+y = view_yview[0]+450;
+}
+else if global.t = 6 or global.t = 5 or global.t = 4 or global.t = 3 or global.t = 2 or global.t = 1 or global.t = 0
 {
 x = view_xview[0]+300;
 y = view_yview[0]+450;
 }
-if instance_exists(AbilityShieldUI) or instance_exists(AbilityTimeStopUI) or instance_exists(AbilityFeverUI)
-{
-x = view_xview[0]+250;
-y = view_yview[0]+450;
-}
 
 
-if StartCounting = true
-{
-ShieldTimer -= global.ShieldTimerMultiplier
 
-}
-if setAlarmOff = true{
-instance_create(GPS2.x+20,GPS2.y,ShieldOnCat)
-alarm[0] = global.ShieldTimerAlarm
-setAlarmOff = false}
 
-if global.ShieldQty &lt; 1
-{
-instance_destroy()
-with ShieldOnCat
-{
-instance_destroy()
-}
-StartCounting = false
-}
+
 </string>
           </argument>
         </arguments>
@@ -144,9 +136,11 @@ StartCounting = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>StartCounting = true
-setAlarmOff = true
+            <string>
+global.Stopper = true
+alarm[1]=600
 
+mouse_clear(mb_left)
 </string>
           </argument>
         </arguments>
@@ -170,22 +164,19 @@ setAlarmOff = true
           <argument>
             <kind>1</kind>
             <string>//shield icon
-if !instance_exists(AbilityShieldUI) and !instance_exists(AbilityTimeStopUI) and !instance_exists(AbilityFeverUI)
+
+if global.t = 10 or global.t = 9 or global.t = 8 or global.t = 7
 {
-draw_sprite_ext(sprite225_shield_PNG1277,0,view_xview[0]+300,view_yview[0]+410,1,1,0,c_white,1)
+draw_sprite_ext(misiowski,0,view_xview[0]+350,view_yview[0]+410,1,1,0,c_red,1)
 }
-if instance_exists(AbilityShieldUI) or instance_exists(AbilityTimeStopUI) or instance_exists(AbilityFeverUI)
+else if global.t = 6 or global.t = 5 or global.t = 4 or global.t = 3 or global.t = 2 or global.t = 1 or global.t = 0
 {
-draw_sprite_ext(sprite225_shield_PNG1277,0,view_xview[0]+250,view_yview[0]+410,1,1,0,c_white,1)
+draw_sprite_ext(misiowski,0,view_xview[0]+300,view_yview[0]+410,1,1,0,c_red,1)
 }
 
 
-//qty of shields
-draw_text_outline(view_xview[0]+300,view_yview[0]+410,string(global.ShieldQty),2,c_black,10)
 
-//time till shield runs out draw
-draw_roundrect_texture(view_xview[0]+250, view_yview[0]+430, view_xview[0]+350, view_yview[0]+460, 5, background5, 9, false)
-draw_rectangle_color(view_xview[0]+255, view_yview[0]+435, view_xview[0]+255+ShieldTimer, view_yview[0]+455, c_green, c_green, c_green, c_green, false);
+
 </string>
           </argument>
         </arguments>

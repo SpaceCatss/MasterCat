@@ -102,13 +102,13 @@ LaserAlarm  = global.LaserDestroyerAlarm
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !instance_exists(AbilityShieldUI)
+            <string>if !instance_exists(AbilityShieldUI) and !instance_exists(AbilityTimeStopUI) and !instance_exists(AbilityFeverUI)
 {
 x = view_xview[0]+300;
 y = view_yview[0]+450;
 }
 
-if instance_exists(AbilityShieldUI)
+if instance_exists(AbilityShieldUI) or instance_exists(AbilityTimeStopUI) or instance_exists(AbilityFeverUI)
 {
 x = view_xview[0]+250;
 y = view_yview[0]+450;
@@ -196,7 +196,7 @@ instance_destroy()
           <argument>
             <kind>1</kind>
             <string>//shield icon
-if !instance_exists(AbilityShieldUI)
+if !instance_exists(AbilityShieldUI) and !instance_exists(AbilityTimeStopUI) and !instance_exists(AbilityFeverUI)
 {
 
 if global.t = 9 {
@@ -206,7 +206,7 @@ if global.t = 10
 draw_sprite_ext(lasergun2,0,view_xview[0]+300,view_yview[0]+410,0.6,0.6,0,c_red,1)}
 }
 
-else if instance_exists(AbilityShieldUI)
+else if instance_exists(AbilityShieldUI) or instance_exists(AbilityTimeStopUI) or instance_exists(AbilityFeverUI)
 {
 
 if global.t = 9 {
@@ -221,7 +221,7 @@ draw_text_outline(view_xview[0]+300,view_yview[0]+410,string(global.LaserDestroy
 
 //time till shield runs out draw
 draw_roundrect_texture(view_xview[0]+250, view_yview[0]+430, view_xview[0]+250+global.LaserDestroyerAlarmMax, view_yview[0]+460, 5, background5, 9, false)
-draw_rectangle_color(view_xview[0]+255, view_yview[0]+435, view_xview[0]+255+LaserDestroyerAlarm, view_yview[0]+455, c_green, c_green, c_green, c_green, false);
+draw_rectangle_color(view_xview[0]+255, view_yview[0]+435, view_xview[0]+255+global.LaserDestroyerAlarm, view_yview[0]+455, c_green, c_green, c_green, c_green, false);
 </string>
           </argument>
         </arguments>

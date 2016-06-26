@@ -192,7 +192,10 @@ effect_create_above(ef_firework, x, y, 1, c_black)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if global.Stopper = true
+{
+speed = 0
+}
 
 if CanWork = true
 {

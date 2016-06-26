@@ -182,6 +182,7 @@ alarm[0] = 10
 //}
 
 // 
+if global.Stopper = false {
 
 if (Feler=true){
 global.seconds -= 1/room_speed;
@@ -227,6 +228,7 @@ instance_create(view_xview[0]+367,view_yview[0]+274,ConfirmNeedMoreTime2)
 with (Waluta){
 visible = false}
 global.OutOfTime = false
+}
 }
 </string>
           </argument>

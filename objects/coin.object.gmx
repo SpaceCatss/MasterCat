@@ -99,6 +99,13 @@
             <string>if place_meeting(x,y+5,paintBridge) or place_meeting(x,y+5,paintBridge2)
 {
 speed = 0
+gravity = 0
+}
+
+if global.Stopper = true
+{
+speed = 0
+gravity = 0
 }
 </string>
           </argument>

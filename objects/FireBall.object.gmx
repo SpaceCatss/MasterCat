@@ -73,7 +73,11 @@ CanWork =true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if global.Stopper = true
+{
+speed = 0
+}
+
 if place_meeting(x,y,ground)
 {
 effect_create_above(ef_firework, x, y, 0.5, c_white)

@@ -149,6 +149,11 @@ alarm[0]= 1
 {
 speed = 0
 }
+
+if global.Stopper = true
+{
+speed = 0
+}
 </string>
           </argument>
         </arguments>

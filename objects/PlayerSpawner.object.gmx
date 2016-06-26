@@ -43,14 +43,18 @@ makethis=Player3
 
 }
 else if global.r=4
-{makethis=Player4}
+{makethis=Player4
+
+}
 
 else if global.r=5
-{makethis=Player5}
+{makethis=Player5
+
+}
 
 else if global.r=6
 {makethis=Player6
-instance_create(x,y,AbilityShieldUI)
+
 }
 
 else if global.r=7

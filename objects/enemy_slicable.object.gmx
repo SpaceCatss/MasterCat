@@ -240,6 +240,11 @@ global.canSelect = true;
 {
 speed = 0
 }
+
+if global.Stopper = true
+{
+speed = 0
+}
 </string>
           </argument>
         </arguments>

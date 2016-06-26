@@ -240,6 +240,11 @@ global.canSelect = true;
 x = mouse_x
 y = mouse_y
 }
+
+if global.Stopper = true
+{
+speed = 0
+}
 </string>
           </argument>
         </arguments>
