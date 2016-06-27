@@ -789,10 +789,12 @@
       <object>objects\AbilityShieldUI</object>
       <object>objects\AbilityTimeStopUI</object>
       <object>objects\AbilityFeverUI</object>
+      <object>objects\PantieCloudUI</object>
       <object>objects\DeadPixelek2</object>
       <object>objects\DeadPixelek</object>
       <object>objects\DeadPixelek3</object>
       <object>objects\InvisibleShield</object>
+      <object>objects\PantieCloud</object>
     </objects>
     <object>objects\Laser</object>
     <object>objects\LaserDestroyer</object>
@@ -1190,6 +1192,8 @@
     <object>objects\LivesStartUp</object>
     <object>objects\pointsA</object>
     <object>objects\coin</object>
+    <object>objects\coinCloud</object>
+    <object>objects\coinCloud200</object>
     <object>objects\SuperPoint200</object>
     <object>objects\SuperCoin</object>
     <object>objects\empty</object>

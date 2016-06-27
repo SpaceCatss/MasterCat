@@ -309,6 +309,198 @@ global.points = global.points + 200;
 
 
 
+
+
+with(player)
+if (place_meeting(x,y,coinCloud))
+{
+global.points = global.points + 100;
+with instance_nearest(GPS2.x,GPS2.y,coinCloud)
+{
+instance_change(empty,true)
+}
+}
+
+
+with(Player2)
+if (place_meeting(x,y,coinCloud))
+{
+global.points = global.points + 100;
+with instance_nearest(GPS2.x,GPS2.y,coinCloud)
+{
+instance_change(empty,true)
+}
+}
+
+
+with(Player3)
+if (place_meeting(x,y,coinCloud))
+{
+global.points = global.points + 100;
+with instance_nearest(GPS2.x,GPS2.y,coinCloud)
+{
+instance_change(empty,true)
+}
+}
+
+with(Player4)
+if (place_meeting(x,y,coinCloud))
+{
+global.points = global.points + 100;
+with instance_nearest(GPS2.x,GPS2.y,coinCloud)
+{
+instance_change(empty,true)
+}
+}
+
+with(Player5)
+if (place_meeting(x,y,coinCloud))
+{
+global.points = global.points + 100;
+with instance_nearest(GPS2.x,GPS2.y,coinCloud)
+{
+instance_change(empty,true)
+}
+
+}
+
+with(Player6)
+if (place_meeting(x,y,coinCloud))
+{
+global.points = global.points + 100;
+with instance_nearest(GPS2.x,GPS2.y,coinCloud)
+{
+instance_change(empty,true)
+}
+}
+
+with(Player7)
+if (place_meeting(x,y,coinCloud))
+{
+global.points = global.points + 100;
+with instance_nearest(GPS2.x,GPS2.y,coinCloud)
+{
+instance_change(empty,true)
+}
+}
+
+with(Player8)
+if (place_meeting(x,y,coinCloud))
+{
+global.points = global.points + 100;
+with instance_nearest(GPS2.x,GPS2.y,coinCloud)
+{
+instance_change(empty,true)
+}
+}
+
+with(Player9)
+if (place_meeting(x,y,coinCloud))
+{
+global.points = global.points + 100;
+with instance_nearest(GPS2.x,GPS2.y,coinCloud)
+{
+instance_change(empty,true)
+}
+}
+
+
+
+
+with(player)
+if (place_meeting(x,y,coinCloud200))
+{
+global.points = global.points + 200;
+with instance_nearest(GPS2.x,GPS2.y,coinCloud200)
+{
+instance_change(empty,true)
+}
+}
+
+
+with(Player2)
+if (place_meeting(x,y,coinCloud200))
+{
+global.points = global.points + 200;
+with instance_nearest(GPS2.x,GPS2.y,coinCloud200)
+{
+instance_change(empty,true)
+}
+}
+
+
+with(Player3)
+if (place_meeting(x,y,coinCloud200))
+{
+global.points = global.points + 200;
+with instance_nearest(GPS2.x,GPS2.y,coinCloud200)
+{
+instance_change(empty,true)
+}
+}
+
+with(Player4)
+if (place_meeting(x,y,coinCloud200))
+{
+global.points = global.points + 200;
+with instance_nearest(GPS2.x,GPS2.y,coinCloud200)
+{
+instance_change(empty,true)
+}
+}
+
+with(Player5)
+if (place_meeting(x,y,coinCloud200))
+{
+global.points = global.points + 200;
+with instance_nearest(GPS2.x,GPS2.y,coinCloud200)
+{
+instance_change(empty,true)
+}
+
+}
+
+with(Player6)
+if (place_meeting(x,y,coinCloud200))
+{
+global.points = global.points + 200;
+with instance_nearest(GPS2.x,GPS2.y,coinCloud200)
+{
+instance_change(empty,true)
+}
+}
+
+with(Player7)
+if (place_meeting(x,y,coinCloud200))
+{
+global.points = global.points + 200;
+with instance_nearest(GPS2.x,GPS2.y,coinCloud200)
+{
+instance_change(empty,true)
+}
+}
+
+with(Player8)
+if (place_meeting(x,y,coinCloud200))
+{
+global.points = global.points + 200;
+with instance_nearest(GPS2.x,GPS2.y,coinCloud200)
+{
+instance_change(empty,true)
+}
+}
+
+with(Player9)
+if (place_meeting(x,y,coinCloud200))
+{
+global.points = global.points + 200;
+with instance_nearest(GPS2.x,GPS2.y,coinCloud200)
+{
+instance_change(empty,true)
+}
+}
+
+
 </string>
           </argument>
         </arguments>

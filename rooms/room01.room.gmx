@@ -33,7 +33,7 @@ else if global.r=2
 else if global.r=3
 {
 
-
+instance_create(x,y,PantieCloudUI)
 }
 else if global.r=4
 {
