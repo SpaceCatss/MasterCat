@@ -54,7 +54,9 @@ else if global.r=7
 {}
 
 else if global.r=8
-{}
+{
+instance_create(x,y,AbilityBoxUI)
+}
 
 else if global.r=9
 {}</code>

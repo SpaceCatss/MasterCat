@@ -787,9 +787,12 @@
     <object>objects\oBlock</object>
     <objects name="abilities">
       <object>objects\AbilityShieldUI</object>
+      <object>objects\box_spawner</object>
+      <object>objects\BoxD</object>
       <object>objects\AbilityTimeStopUI</object>
       <object>objects\AbilityFeverUI</object>
       <object>objects\PantieCloudUI</object>
+      <object>objects\AbilityBoxUI</object>
       <object>objects\DeadPixelek2</object>
       <object>objects\DeadPixelek</object>
       <object>objects\DeadPixelek3</object>
