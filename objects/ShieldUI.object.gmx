@@ -91,12 +91,12 @@ StartCounting = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !instance_exists(AbilityShieldUI) and !instance_exists(AbilityBoxUI) and !instance_exists(PantieCloudUI) and !instance_exists(AbilityTimeStopUI) and !instance_exists(AbilityFeverUI)
+            <string>if !instance_exists(AbilityShieldUI) and !instance_exists(AbilitySuperCatUI)  and !instance_exists(AbilityBoxUI) and !instance_exists(PantieCloudUI) and !instance_exists(AbilityTimeStopUI) and !instance_exists(AbilityFeverUI)
 {
 x = view_xview[0]+300;
 y = view_yview[0]+450;
 }
-if instance_exists(AbilityShieldUI) or instance_exists(AbilityBoxUI) or instance_exists(PantieCloudUI) or instance_exists(AbilityTimeStopUI) or instance_exists(AbilityFeverUI)
+if instance_exists(AbilityShieldUI) or instance_exists(AbilitySuperCatUI)  or instance_exists(AbilityBoxUI) or instance_exists(PantieCloudUI) or instance_exists(AbilityTimeStopUI) or instance_exists(AbilityFeverUI)
 {
 x = view_xview[0]+250;
 y = view_yview[0]+450;
@@ -170,11 +170,11 @@ setAlarmOff = true
           <argument>
             <kind>1</kind>
             <string>//shield icon
-if !instance_exists(AbilityShieldUI) and!instance_exists(AbilityBoxUI) and !instance_exists(PantieCloudUI) and !instance_exists(AbilityTimeStopUI) and !instance_exists(AbilityFeverUI)
+if !instance_exists(AbilityShieldUI) and !instance_exists(AbilitySuperCatUI)  and !instance_exists(AbilityBoxUI) and !instance_exists(PantieCloudUI) and !instance_exists(AbilityTimeStopUI) and !instance_exists(AbilityFeverUI)
 {
 draw_sprite_ext(sprite225_shield_PNG1277,0,view_xview[0]+300,view_yview[0]+410,1,1,0,c_white,1)
 }
-if instance_exists(AbilityShieldUI) or instance_exists(AbilityBoxUI) or instance_exists(PantieCloudUI) or instance_exists(AbilityTimeStopUI) or instance_exists(AbilityFeverUI)
+if instance_exists(AbilityShieldUI) or instance_exists(AbilitySuperCatUI) or instance_exists(AbilityBoxUI) or instance_exists(PantieCloudUI) or instance_exists(AbilityTimeStopUI) or instance_exists(AbilityFeverUI)
 {
 draw_sprite_ext(sprite225_shield_PNG1277,0,view_xview[0]+250,view_yview[0]+410,1,1,0,c_white,1)
 }

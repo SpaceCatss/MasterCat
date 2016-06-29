@@ -28,14 +28,18 @@
             <string>draw_set_alpha(1)
 
 if global.t = 9
-instance_create(x,y,LaserUIDestroyer)
 {
+instance_create(x,y,LaserUIDestroyer)
 if global.BoughtLaserDestroyer_10 = true
 {
 global.LaserDestroyerBeamLenght = 250
 global.LaserDestroyerAlarm = 50
 global.LaserDestroyerQTY = 2
 global.LaserDestroyerAlarmMax = 50
+if global.r=9
+{
+global.LaserDestroyerQTY = global.LaserDestroyerQTY * 2
+}
 }
 
 if global.BoughtLaserDestroyer_20 = true
@@ -44,6 +48,9 @@ global.LaserDestroyerBeamLenght = 300
 global.LaserDestroyerAlarm = 60
 global.LaserDestroyerQTY = 3
 global.LaserDestroyerAlarmMax = 60
+if global.r=9
+{
+global.LaserDestroyerQTY = global.LaserDestroyerQTY * 2}
 }
 
 if global.BoughtLaserDestroyer_30 = true
@@ -52,6 +59,9 @@ global.LaserDestroyerBeamLenght = 350
 global.LaserDestroyerAlarm = 70
 global.LaserDestroyerQTY = 4
 global.LaserDestroyerAlarmMax = 70
+if global.r=9
+{
+global.LaserDestroyerQTY = global.LaserDestroyerQTY * 2}
 }
 
 if global.BoughtLaserDestroyer_40 = true
@@ -60,6 +70,9 @@ global.LaserDestroyerBeamLenght = 400
 global.LaserDestroyerAlarm = 80
 global.LaserDestroyerQTY = 5
 global.LaserDestroyerAlarmMax = 80
+if global.r=9
+{
+global.LaserDestroyerQTY = global.LaserDestroyerQTY * 2}
 }
 
 if global.BoughtLaserDestroyer_50 = true
@@ -68,6 +81,9 @@ global.LaserDestroyerBeamLenght = 450
 global.LaserDestroyerAlarm = 90
 global.LaserDestroyerQTY = 6
 global.LaserDestroyerAlarmMax = 90
+if global.r=9
+{
+global.LaserDestroyerQTY = global.LaserDestroyerQTY * 2}
 }
 }
 
@@ -120,22 +136,42 @@ instance_create(x,y,MissleUI)
 if global.BoughtMissle_10 = true
 {
 global.MissleQty=1
+if global.r=9
+{
+global.MissleQty=2
+}
 }
 if global.BoughtMissle_20 = true
 {
 global.MissleQty=2
+if global.r=9
+{
+global.MissleQty=4
+}
 }
 if global.BoughtMissle_30 = true
 {
 global.MissleQty=3
+if global.r=9
+{
+global.MissleQty=6
+}
 }
 if global.BoughtMissle_40 = true
 {
 global.MissleQty=4
+if global.r=9
+{
+global.MissleQty=8
+}
 }
 if global.BoughtMissle_50 = true
 {
 global.MissleQty=5
+if global.r=9
+{
+global.MissleQty=10
+}
 }
 }
 

@@ -182,6 +182,7 @@
       <sprite>sprites\sprite213_tlochara</sprite>
     </sprites>
     <sprite>sprites\sprite0</sprite>
+    <sprite>sprites\groundinvi</sprite>
     <sprite>sprites\sprite1</sprite>
     <sprite>sprites\sprite2</sprite>
     <sprite>sprites\sprite3</sprite>
@@ -789,8 +790,10 @@
       <object>objects\AbilityShieldUI</object>
       <object>objects\box_spawner</object>
       <object>objects\BoxD</object>
+      <object>objects\groundInvisible</object>
       <object>objects\AbilityTimeStopUI</object>
       <object>objects\AbilityFeverUI</object>
+      <object>objects\AbilitySuperCatUI</object>
       <object>objects\PantieCloudUI</object>
       <object>objects\AbilityBoxUI</object>
       <object>objects\DeadPixelek2</object>
