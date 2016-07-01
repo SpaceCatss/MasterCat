@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.Stopper = false
+            <string>global.TorpedoPlayer = false
+global.holy = false
+global.Stopper = false
 
 global.LaserBeamLenght = 200
 global.LaserAlarm = 40

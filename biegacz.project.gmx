@@ -190,6 +190,7 @@
     <sprite>sprites\InvisiblePoint</sprite>
     <sprite>sprites\sprite4</sprite>
     <sprite>sprites\sprite5</sprite>
+    <sprite>sprites\kottransformers</sprite>
     <sprite>sprites\catDifferent1</sprite>
     <sprite>sprites\sprite116</sprite>
     <sprite>sprites\sprite32</sprite>
@@ -547,7 +548,6 @@
     <script>scripts\rope_segment_get_instance.gml</script>
     <script>scripts\ground_spawner.gml</script>
     <script>scripts\ground_spawner_ink.gml</script>
-    <script>scripts\script105.gml</script>
     <script>scripts\script_lives.gml</script>
     <scripts name="tweenline">
       <scripts name="tweenline_engine">
@@ -791,9 +791,12 @@
       <object>objects\box_spawner</object>
       <object>objects\BoxD</object>
       <object>objects\groundInvisible</object>
+      <object>objects\groundInvisible2</object>
       <object>objects\AbilityTimeStopUI</object>
       <object>objects\AbilityFeverUI</object>
+      <object>objects\AbilityCracyCowUI</object>
       <object>objects\AbilitySuperCatUI</object>
+      <object>objects\AbilityHolyUI</object>
       <object>objects\PantieCloudUI</object>
       <object>objects\AbilityBoxUI</object>
       <object>objects\DeadPixelek2</object>

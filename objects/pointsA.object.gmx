@@ -67,26 +67,46 @@ if global.t = 1
 if global.BoughtSpeed_20 = true
 {
 global.MoveAddCount +=1
+if global.r=9
+{
+global.MoveAddCount +=2
+}
 }
 
 if global.BoughtSpeed_10 = true
 {
 global.MoveAddCount +=1
+if global.r=9
+{
+global.MoveAddCount +=2
+}
 }
 
 if global.BoughtSpeed_30 = true
 {
 global.MoveAddCount +=1
+if global.r=9
+{
+global.MoveAddCount +=2
+}
 }
 
 if global.BoughtSpeed_40 = true
 {
 global.MoveAddCount +=1
+if global.r=9
+{
+global.MoveAddCount +=2
+}
 }
 
 if global.BoughtSpeed_50 = true
 {
 global.MoveAddCount +=1
+if global.r=9
+{
+global.MoveAddCount +=2
+}
 }
 }
 
@@ -95,26 +115,46 @@ if global.t = 3
 if global.BoughtSpeedDown_20 = true
 {
 global.MoveAddCount -=1
+if global.r=9
+{
+global.MoveAddCount -=2
+}
 }
 
 if global.BoughtSpeedDown_10 = true
 {
 global.MoveAddCount -=1
+if global.r=9
+{
+global.MoveAddCount -=2
+}
 }
 
 if global.BoughtSpeedDown_30 = true
 {
 global.MoveAddCount -=1
+if global.r=9
+{
+global.MoveAddCount -=2
+}
 }
 
 if global.BoughtSpeedDown_40 = true
 {
 global.MoveAddCount -=1
+if global.r=9
+{
+global.MoveAddCount -=2
+}
 }
 
 if global.BoughtSpeedDown_50 = true
 {
 global.MoveAddCount -=1
+if global.r=9
+{
+global.MoveAddCount -=2
+}
 }
 }
 
@@ -125,31 +165,47 @@ if global.t = 2
 if global.BoughtJump_20 = true
 {
 global.jumpmultiplier = 1.2;
-
+if global.r=9
+{
+global.jumpmultiplier = 1.4
+}
 }
 
 if global.BoughtJump_10 = true
 {
 global.jumpmultiplier = 1.1;
+if global.r=9
+{
+global.jumpmultiplier = 1.2
+}
 }
 
 if global.BoughtJump_30 = true
 {
 global.jumpmultiplier = 1.3;
-
+if global.r=9
+{
+global.jumpmultiplier = 1.6
+}
 }
 
 if global.BoughtJump_40 = true
 {
 global.jumpmultiplier = 1.4;
-
+if global.r=9
+{
+global.jumpmultiplier = 1.8
+}
 
 }
 
 if global.BoughtJump_50 = true
 {
 global.jumpmultiplier = 1.5;
-
+if global.r=9
+{
+global.jumpmultiplier = 2
+}
 }
 }
 </string>

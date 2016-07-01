@@ -20,7 +20,7 @@ global.coinController = 0
 
 if global.r=1
 {
-
+instance_create(x,y,AbilityCracyCowUI)
 
 }
 else if global.r=2
@@ -49,7 +49,9 @@ instance_create(x,y,AbilityShieldUI)
 }
 
 else if global.r=7
-{}
+{
+instance_create(x,y,AbilityHolyUI)
+}
 
 else if global.r=8
 {
@@ -100,7 +102,6 @@ else if global.r=9
   <instances>
     <instance objName="pointsA" x="128" y="64" name="inst_B4812EB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="empty" x="192" y="64" name="inst_38A96757" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="PlayerSpawner" x="256" y="288" name="inst_9E559D2A" locked="0" code="" scaleX="1.70000004768372" scaleY="1.70000004768372" colour="4294967295" rotation="0"/>
     <instance objName="livesA" x="32" y="128" name="inst_F0081BDB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="microMap" x="300" y="430" name="inst_A12B1716" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="microplayer" x="60" y="470" name="inst_07046996" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -109,6 +110,7 @@ else if global.r=9
     <instance objName="PossiblePointsss" x="256" y="64" name="inst_5F3F7C49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="StarToFill" x="544" y="96" name="inst_81976FEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="meta" x="24896" y="320" name="inst_96260E45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="PlayerSpawner" x="256" y="288" name="inst_9E559D2A" locked="0" code="" scaleX="1.70000004768372" scaleY="1.70000004768372" colour="4294967295" rotation="0"/>
     <instance objName="PP_spawner2" x="384" y="224" name="inst_A01D8BF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="invi" x="0" y="416" name="inst_2A0575D3" locked="0" code="" scaleX="300" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

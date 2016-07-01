@@ -56,18 +56,13 @@
     <instance objName="ToolBodyN" x="832" y="192" name="inst_CC792CBD" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
     <instance objName="ToolBack" x="288" y="320" name="inst_896BE384" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
     <instance objName="ToolBack" x="896" y="192" name="inst_9812D753" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
-    <instance objName="ToolBack" x="160" y="480" name="inst_D89487F9" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
     <instance objName="ToolBack" x="448" y="480" name="inst_E90CF562" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
-    <instance objName="ToolBodyN" x="128" y="448" name="inst_06E7D835" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
     <instance objName="Speed_1" x="250" y="302" name="inst_56BB9265" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
     <instance objName="addSpeed_1" x="375" y="330" name="inst_EDB38CB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="addJump_1" x="375" y="330" name="inst_36A069E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="JumpForDisplay" x="205" y="320" name="inst_DD9854FB" locked="0" code="" scaleX="0.800000011920929" scaleY="0.800000011920929" colour="4294967295" rotation="0"/>
     <instance objName="Jump_1" x="250" y="302" name="inst_0DE9E613" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
-    <instance objName="addLife_1" x="256" y="480" name="inst_FF957D19" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="addFinger_1" x="544" y="480" name="inst_B7C57897" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="LifeForDisplay" x="96" y="480" name="inst_63A21810" locked="0" code="" scaleX="0.649999976158142" scaleY="0.649999976158142" colour="4294967295" rotation="0"/>
-    <instance objName="Life_1" x="128" y="448" name="inst_D0893577" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
     <instance objName="Finger_1" x="416" y="480" name="inst_F4C9BE7B" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
     <instance objName="SpeedForDisplay" x="205" y="320" name="inst_3B4BACEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="FingerForDisplay" x="352" y="480" name="inst_82419271" locked="0" code="" scaleX="0.469999998807907" scaleY="0.469999998807907" colour="4294967295" rotation="0"/>

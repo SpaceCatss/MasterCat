@@ -213,7 +213,7 @@ path_start(UfoOut, 4, path_action_stop, 0)
 }
 //colision players
 
-if place_meeting(x,y,player) or place_meeting(x,y,Player2) or place_meeting(x,y,Player3)
+if  place_meeting(x,y,Player2) or place_meeting(x,y,Player3)
 or place_meeting(x,y,Player4)  or place_meeting(x,y,Player5)  or place_meeting(x,y,Player6)
 or place_meeting(x,y,Player7)  or place_meeting(x,y,Player8)  or place_meeting(x,y,Player9)
 {
@@ -228,6 +228,19 @@ image_xscale = image_xscale*1.007
 image_yscale = image_yscale*1.007
 }
 
+
+if place_meeting(x,y,player) and global.TorpedoPlayer = false
+{
+CanWork = false
+}
+if CanWork = false
+{
+move_towards_point(GPS2.x,GPS2.y,0)
+x  = GPS2.xprevious 
+global.paintN -= 1
+image_xscale = image_xscale*1.007
+image_yscale = image_yscale*1.007
+}
 </string>
           </argument>
         </arguments>

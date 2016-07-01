@@ -89,6 +89,55 @@ event_inherited();
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="11">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.TorpedoPlayer = false
+sprite_index = sprite5
+global.MoveAddCount -= 3
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>sprite_index = misslek
+player.y = player.y - 20
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="6">
       <action>
         <libid>1</libid>
@@ -284,7 +333,21 @@ instance_activate_object(invi);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//zwiekszyc grawitacje wraz z szybkoscia
+            <string>//apecial aiblity
+if global.TorpedoPlayer = true
+{
+if place_meeting(x,y,oBlock)
+{
+with (instance_nearest(x, y, oBlock ))
+{
+effect_create_above(ef_explosion, x, y, 1.4, c_gray)
+instance_destroy()}
+}
+}
+
+
+
+//zwiekszyc grawitacje wraz z szybkoscia
 
 with(GPS)
 {

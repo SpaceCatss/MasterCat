@@ -26,6 +26,42 @@
           <argument>
             <kind>1</kind>
             <string>
+if global.r = 7
+{
+global.LifeContener = 240
+global.LifeContenerMax = 240
+global.LifeCount = 3
+if global.t = 4{
+if global.BoughtLives_20 = true
+{
+global.LifeContener +=15
+global.LifeContenerMax +=15
+}
+
+if global.BoughtLives_10 = true
+{
+global.LifeContener +=10
+global.LifeContenerMax +=10
+}
+if global.BoughtLives_30 = true
+{
+global.LifeContener +=20
+global.LifeContenerMax +=20
+}
+if global.BoughtLives_40 = true
+{
+global.LifeContener +=25
+global.LifeContenerMax +=25
+}
+if global.BoughtLives_50 = true
+{
+global.LifeContener +=30
+global.LifeContenerMax +=30
+}
+}
+}
+
+MaxLife = global.LifeContener
 CanMove = true
 
 image_xscale = 0.4
@@ -85,6 +121,29 @@ physics_fixture_delete(iv_Fixture);
 
 event_inherited();
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.holy = false
 </string>
           </argument>
         </arguments>
@@ -285,7 +344,63 @@ instance_activate_object(invi);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//zwiekszyc grawitacje wraz z szybkoscia
+            <string>if  global.LifeContener &gt; MaxLife
+{
+global.LifeContener = MaxLife
+}
+
+//korekcja maks zycia
+/*
+if global.t != 4
+{
+if global.LifeContener &gt; 240
+{
+global.LifeContener = 240
+}
+}
+
+if global.t = 4{
+if global.BoughtLives_20 = true
+{
+if global.LifeContener &gt; 265
+{
+global.LifeContener = 265
+}
+}
+
+if global.BoughtLives_10 = true
+{
+if global.LifeContener &gt; 250
+{
+global.LifeContener = 250
+}
+}
+if global.BoughtLives_30 = true
+{
+if global.LifeContener &gt; 285
+{
+global.LifeContener = 285
+}
+}
+if global.BoughtLives_40 = true
+{
+if global.LifeContener &gt; 310
+{
+global.LifeContener = 310
+}
+}
+if global.BoughtLives_50 = true
+{
+if global.LifeContener &gt; 340
+{
+global.LifeContener = 340
+}
+}
+}
+*/
+
+
+//zwiekszyc grawitacje wraz z szybkoscia
 
 with(GPS)
 {

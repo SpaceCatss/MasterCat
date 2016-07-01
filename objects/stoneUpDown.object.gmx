@@ -34,6 +34,99 @@ alarm[0]= 1
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>119</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_path</functionname>
+        <codestring></codestring>
+        <whoName>player</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>8</kind>
+            <path>KnockBack</path>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>10</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if CanWork =true
+{
+global.LifeContener -= 20
+script_lives()
+CanWork = false
+}
+
+
+with player
+{
+player.movespeed = 0
+global.incriser = 0
+player.sprite_index = sprite6
+alarm[4] = 20
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>effect_create_above(ef_explosion, x, y, 1.4, c_gray)
+instance_destroy()
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="1">
       <action>
         <libid>1</libid>
@@ -160,6 +253,11 @@ speed = 0
 if global.Stopper = true
 {
 speed = 0
+}
+
+if place_meeting(x,y,player) and global.TorpedoPlayer = false
+{
+alarm[2]=1
 }
 </string>
           </argument>
@@ -640,9 +738,17 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if CanWork =true
+            <string>if global.holy = false{
+if CanWork =true
 {
 global.LifeContener -= 20
+script_lives()
+CanWork = false
+}
+}
+if global.holy = true
+{
+global.LifeContener += 20
 script_lives()
 CanWork = false
 }
@@ -932,99 +1038,6 @@ with Player4
 Player4.movespeed = 0
 global.incriser = 0
 Player4.sprite_index = sprite6
-alarm[4] = 20
-}
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>effect_create_above(ef_explosion, x, y, 1.4, c_gray)
-instance_destroy()
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="player">
-      <action>
-        <libid>1</libid>
-        <id>119</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_path</functionname>
-        <codestring></codestring>
-        <whoName>player</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>8</kind>
-            <path>KnockBack</path>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>10</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if CanWork =true
-{
-global.LifeContener -= 20
-script_lives()
-CanWork = false
-}
-
-
-with player
-{
-player.movespeed = 0
-global.incriser = 0
-player.sprite_index = sprite6
 alarm[4] = 20
 }
 

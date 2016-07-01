@@ -17,6 +17,11 @@ visible = false}
 
 }
 
+if instance_exists(Player7) and global.LifeContener > 240
+{
+global.LifeContener = 240
+}
+
 
 
 

@@ -38,7 +38,7 @@ global.LaserDestroyerQTY = 2
 global.LaserDestroyerAlarmMax = 50
 if global.r=9
 {
-global.LaserDestroyerQTY = global.LaserDestroyerQTY * 2
+global.LaserDestroyerQTY = 4
 }
 }
 
@@ -50,7 +50,7 @@ global.LaserDestroyerQTY = 3
 global.LaserDestroyerAlarmMax = 60
 if global.r=9
 {
-global.LaserDestroyerQTY = global.LaserDestroyerQTY * 2}
+global.LaserDestroyerQTY = 6}
 }
 
 if global.BoughtLaserDestroyer_30 = true
@@ -61,7 +61,7 @@ global.LaserDestroyerQTY = 4
 global.LaserDestroyerAlarmMax = 70
 if global.r=9
 {
-global.LaserDestroyerQTY = global.LaserDestroyerQTY * 2}
+global.LaserDestroyerQTY = 8}
 }
 
 if global.BoughtLaserDestroyer_40 = true
@@ -72,7 +72,7 @@ global.LaserDestroyerQTY = 5
 global.LaserDestroyerAlarmMax = 80
 if global.r=9
 {
-global.LaserDestroyerQTY = global.LaserDestroyerQTY * 2}
+global.LaserDestroyerQTY = 10}
 }
 
 if global.BoughtLaserDestroyer_50 = true
@@ -96,6 +96,13 @@ global.LaserBeamLenght = 250
 global.LaserAlarm = 50
 global.LaserQTY = 2
 global.LaserAlarmMax = 50
+if global.r=9
+{
+global.LaserBeamLenght = 250
+global.LaserAlarm = 100
+global.LaserQTY = 4
+global.LaserAlarmMax = 100
+}
 }
 
 if global.BoughtLaser_20 = true
@@ -104,6 +111,13 @@ global.LaserBeamLenght = 300
 global.LaserAlarm = 60
 global.LaserQTY = 3
 global.LaserAlarmMax = 60
+if global.r=9
+{
+global.LaserBeamLenght = 300
+global.LaserAlarm = 120
+global.LaserQTY = 6
+global.LaserAlarmMax = 120
+}
 }
 
 if global.BoughtLaser_30 = true
@@ -112,6 +126,13 @@ global.LaserBeamLenght = 350
 global.LaserAlarm = 70
 global.LaserQTY = 4
 global.LaserAlarmMax = 70
+if global.r=9
+{
+global.LaserBeamLenght = 350
+global.LaserAlarm = 140
+global.LaserQTY = 8
+global.LaserAlarmMax = 140
+}
 }
 
 if global.BoughtLaser_40 = true
@@ -120,6 +141,13 @@ global.LaserBeamLenght = 400
 global.LaserAlarm = 80
 global.LaserQTY = 5
 global.LaserAlarmMax = 80
+if global.r=9
+{
+global.LaserBeamLenght = 400
+global.LaserAlarm = 160
+global.LaserQTY = 10
+global.LaserAlarmMax = 160
+}
 }
 
 if global.BoughtLaser_50 = true
@@ -128,6 +156,13 @@ global.LaserBeamLenght = 450
 global.LaserAlarm = 90
 global.LaserQTY = 6
 global.LaserAlarmMax = 90
+if global.r=9
+{
+global.LaserBeamLenght = 450
+global.LaserAlarm = 200
+global.LaserQTY = 12
+global.LaserAlarmMax = 200
+}
 }
 }
 
@@ -183,30 +218,55 @@ if global.BoughtPaint_10 = true
 {
 global.paintN = 220
 global.paintNMax = 220
+if global.r=9
+{
+global.paintN = 440
+global.paintNMax = 440
+}
 }
 
 if global.BoughtPaint_20 = true
 {
 global.paintN = 240
 global.paintNMax = 240
+if global.r=9
+{
+global.paintN = 480
+global.paintNMax = 480
+}
 }
 
 if global.BoughtPaint_30 = true
 {
 global.paintN = 260
 global.paintNMax = 260
+if global.r=9
+{
+global.paintN = 520
+global.paintNMax = 520
+}
 }
 
 if global.BoughtPaint_40 = true
 {
 global.paintN = 270
 global.paintNMax = 270
+if global.r=9
+{
+global.paintN = 540
+global.paintNMax = 540
+}
 }
 
 if global.BoughtPaint_50 = true
 {
 global.paintN = 300
 global.paintNMax = 300
+if global.r=9
+{
+global.paintN = 600
+global.paintNMax = 600
+}
 }
 }
 
@@ -217,6 +277,12 @@ if global.BoughtShield_10 = true
 global.ShieldQty=1
 global.ShieldTimerMultiplier = 0.5
 global.ShieldTimerAlarm = 180
+if global.r=9
+{
+global.ShieldQty=2
+global.ShieldTimerMultiplier = 1
+global.ShieldTimerAlarm = 360
+}
 }
 
 if global.BoughtShield_20 = true
@@ -224,6 +290,12 @@ if global.BoughtShield_20 = true
 global.ShieldQty=2
 global.ShieldTimerMultiplier = 0.5
 global.ShieldTimerAlarm = 180
+if global.r=9
+{
+global.ShieldQty=4
+global.ShieldTimerMultiplier = 1
+global.ShieldTimerAlarm = 360
+}
 }
 
 if global.BoughtShield_30 = true
@@ -231,6 +303,12 @@ if global.BoughtShield_30 = true
 global.ShieldQty=2
 global.ShieldTimerMultiplier = 0.33
 global.ShieldTimerAlarm = 270
+if global.r=9
+{
+global.ShieldQty=4
+global.ShieldTimerMultiplier = 0.66
+global.ShieldTimerAlarm = 360
+}
 }
 
 if global.BoughtShield_40 = true
@@ -238,6 +316,12 @@ if global.BoughtShield_40 = true
 global.ShieldQty=3
 global.ShieldTimerMultiplier = 0.33
 global.ShieldTimerAlarm = 270
+if global.r=9
+{
+global.ShieldQty=6
+global.ShieldTimerMultiplier = 0.66
+global.ShieldTimerAlarm = 360
+}
 }
 
 if global.BoughtShield_50 = true
@@ -245,6 +329,12 @@ if global.BoughtShield_50 = true
 global.ShieldQty=3
 global.ShieldTimerMultiplier = 0.25
 global.ShieldTimerAlarm = 360
+if global.r=9
+{
+global.ShieldQty=6
+global.ShieldTimerMultiplier = 0.5
+global.ShieldTimerAlarm = 720
+}
 }
 }
 
@@ -479,8 +569,8 @@ global.LifeContenerMax +=30
 
 if global.r = 7
 {
-global.LifeContener = 200
-global.LifeContenerMax = 200
+global.LifeContener = 240
+global.LifeContenerMax = 240
 global.LifeCount = 3
 if global.t = 4{
 if global.BoughtLives_20 = true
@@ -557,27 +647,52 @@ if global.BoughtLives_20 = true
 {
 global.LifeContener +=15
 global.LifeContenerMax +=15
+if global.r=9
+{
+global.LifeContener +=30
+global.LifeContenerMax +=30
+}
 }
 
 if global.BoughtLives_10 = true
 {
 global.LifeContener +=10
 global.LifeContenerMax +=10
+if global.r=9
+{
+global.LifeContener +=20
+global.LifeContenerMax +=20
+}
 }
 if global.BoughtLives_30 = true
 {
 global.LifeContener +=20
 global.LifeContenerMax +=20
+if global.r=9
+{
+global.LifeContener +=40
+global.LifeContenerMax +=40
+}
 }
 if global.BoughtLives_40 = true
 {
 global.LifeContener +=25
 global.LifeContenerMax +=25
+if global.r=9
+{
+global.LifeContener +=50
+global.LifeContenerMax +=50
+}
 }
 if global.BoughtLives_50 = true
 {
 global.LifeContener +=30
 global.LifeContenerMax +=30
+if global.r=9
+{
+global.LifeContener +=60
+global.LifeContenerMax +=60
+}
 }
 }
 }
