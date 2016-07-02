@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.TorpedoPlayer = false
+            <string>global.OneTimeToolUfoRepel = false
+global.OneTimeToolFever = false
+
+global.TorpedoPlayer = false
 global.holy = false
 global.Stopper = false
 

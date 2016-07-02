@@ -26,6 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>CanWork = true
+
+if global.OneTimeToolUfoRepel = true
+{
+instance_destroy()
+}
 </string>
           </argument>
         </arguments>

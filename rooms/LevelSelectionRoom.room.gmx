@@ -55,6 +55,7 @@
     <instance objName="Button2" x="448" y="64" name="inst_963E0783" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
     <instance objName="PlayLS" x="527" y="383" name="inst_6C0B0554" locked="0" code="" scaleX="0.370000004768372" scaleY="0.370000004768372" colour="4294967295" rotation="0"/>
     <instance objName="MainMenuLS" x="74" y="65" name="inst_586DAE3B" locked="0" code="" scaleX="0.370000004768372" scaleY="0.370000004768372" colour="4294967295" rotation="0"/>
+    <instance objName="AbilityFeverUI" x="672" y="192" name="inst_3E5974E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -25,7 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.feverMode = 0
+            <string>if global.OneTimeToolFever = false
+{
+
+global.feverMode = 0
+}
+
+if global.OneTimeToolFever = true
+{
+
+global.feverMode = 500
+}
+
+
 
 global.coinController = 0
 global.CoinSpawner = 1

@@ -28,7 +28,18 @@
             <string>global.coinController =0
 ground_spawner()
 global.CoinSpawner = 1
+
+if global.OneTimeToolFever = false
+{
+
 global.feverMode = 0
+}
+
+if global.OneTimeToolFever = true
+{
+
+global.feverMode = 500
+}
 
 
 global.mouse3 = true;
