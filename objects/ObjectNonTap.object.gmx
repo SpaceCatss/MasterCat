@@ -25,7 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>//instance_create(x,y-180,invi2)
+//with invi2
+//{
+//image_xscale = 0.05
+//}
+</string>
           </argument>
         </arguments>
       </action>

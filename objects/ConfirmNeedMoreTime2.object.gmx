@@ -86,6 +86,12 @@ global.seconds = global.seconds + 30
 instance_activate_object(player)
 instance_activate_object(Player2)
 instance_activate_object(Player3)
+instance_activate_object(Player4)
+instance_activate_object(Player5)
+instance_activate_object(Player6)
+instance_activate_object(Player7)
+instance_activate_object(Player8)
+instance_activate_object(Player9)
 with (NeedMoreTime)
 {instance_destroy()
 }

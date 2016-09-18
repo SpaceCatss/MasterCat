@@ -26,8 +26,67 @@
           <argument>
             <kind>1</kind>
             <string>
+
+if global.CanClick = true{
+global.MoveToolBar = true
+global.ChoosedLevel = 1
+
 mouse_clear(mb_left)
-room_goto(room01)
+
+//slot1
+instance_deactivate_object (OneTimeToolLife)
+global.Tool1Active = false
+instance_deactivate_object (OneTimeToolInk)
+global.Tool2Active = false
+instance_deactivate_object (OneTimeToolNoGoods)
+global.Tool3Active = false
+instance_deactivate_object (OneTimeToolFeverish)
+global.Tool4Active = false
+instance_deactivate_object (OneTimeToolDoubleCoin)
+global.Tool5Active = false
+instance_deactivate_object (OneTimeToolNoHoles)
+global.Tool6Active = false
+instance_activate_object (OneTimeToolKomarOut)
+global.Tool7Active = true
+instance_deactivate_object (OneTimeToolUfoOut)
+global.Tool8Active = false
+
+//slot2
+instance_activate_object (OneTimeToolLife2)
+global.Tool1Active = true
+instance_deactivate_object (OneTimeToolInk2)
+global.Tool2Active = false
+instance_deactivate_object (OneTimeToolNoGoods2)
+global.Tool3Active = false
+instance_deactivate_object (OneTimeToolFeverish2)
+global.Tool4Active = false
+instance_deactivate_object (OneTimeToolDoubleCoin2)
+global.Tool5Active = false
+instance_deactivate_object (OneTimeToolNoHoles2)
+global.Tool6Active = false
+instance_deactivate_object (OneTimeToolKomarOut2)
+global.Tool7Active = false
+instance_deactivate_object (OneTimeToolUfoOut2)
+global.Tool8Active = false
+
+//slot2
+instance_deactivate_object (OneTimeToolLife3)
+global.Tool1Active = false
+instance_deactivate_object (OneTimeToolInk3)
+global.Tool2Active = false
+instance_deactivate_object (OneTimeToolNoGoods3)
+global.Tool3Active = false
+instance_deactivate_object (OneTimeToolFeverish3)
+global.Tool4Active = false
+instance_activate_object (OneTimeToolDoubleCoin3)
+global.Tool5Active = true
+instance_deactivate_object (OneTimeToolNoHoles3)
+global.Tool6Active = false
+instance_deactivate_object (OneTimeToolKomarOut3)
+global.Tool7Active = false
+instance_deactivate_object (OneTimeToolUfoOut3)
+global.Tool8Active = false
+}
 </string>
           </argument>
         </arguments>
@@ -56,7 +115,19 @@ draw_set_halign(fa_middle)
 draw_set_valign(fa_middle)
 
 
+
+
+if global.ChoosedLevel = 1
+{
+draw_sprite_ext(sprite72,0,x,y,0.4,0.4,0,c_gray,1)
+}
+
+else
+
+{
 draw_sprite_ext(sprite72,0,x,y,0.4,0.4,0,c_white,1)
+}
+
 draw_text_outline(x,y-7,"1",1,c_gray,10)
 
 // 1 star

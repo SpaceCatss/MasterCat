@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>canSubstract = true
-Waluta.visible = true;
+//Waluta.visible = true;
 CantBuy = false
 NoMoreBuy = false
 depth = -1210
@@ -86,7 +86,12 @@ global.LifeContener += 100
 instance_activate_object(player)
 instance_activate_object(Player2)
 instance_activate_object(Player3)
-
+instance_activate_object(Player4)
+instance_activate_object(Player5)
+instance_activate_object(Player6)
+instance_activate_object(Player7)
+instance_activate_object(Player8)
+instance_activate_object(Player9)
 
 with(player)
 {

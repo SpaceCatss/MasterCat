@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>audio_stop_sound(totemy1);
 
 CanGiveMoney1 = true;
 CanGiveMoney2 = true;
@@ -52,6 +52,68 @@ instance_deactivate_object(timerB)
 
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// check actve one time tools
+
+if global.Tool6Active = true
+{
+global.OneTimeIHateHoles = false
+global.Tool6Active = false
+}
+if global.Tool5Active = true
+{
+global.OneTimeToolCoinDouble = false
+global.Tool5Active = false
+}
+if  global.Tool7Active = true
+{
+global.OneTimeToolKomarRepel = false
+global.Tool7Active = false
+}
+if global.Tool8Active = true
+{
+global.OneTimeToolUfoRepel = false
+global.Tool8Active = false
+}
+if global.Tool4Active = true
+{
+global.OneTimeToolFever = false
+global.Tool4Active = false
+}
+if  global.Tool3Active = true
+{
+global.OneTimeToolNoGood = false
+global.Tool3Active = false
+}
+if global.Tool2Active = true
+{
+global.OneTimeToolInfiniteInk = false
+global.Tool2Active = false
+}
+if global.Tool1Active = true
+{
+global.OneTimeToolDoubleLife = false
+global.Tool1Active = false
+}
 </string>
           </argument>
         </arguments>

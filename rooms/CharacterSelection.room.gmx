@@ -82,6 +82,12 @@
     <instance objName="StatisticJump3" x="488" y="32" name="inst_7E1CA516" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
     <instance objName="StatisticJump4" x="508" y="32" name="inst_720D344F" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
     <instance objName="StatisticJump5" x="528" y="32" name="inst_0FEFF8D2" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="PanelLife" x="145" y="32" name="inst_00764AB4" locked="0" code="" scaleX="0.425000011920929" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="StatisticLife1" x="160" y="32" name="inst_798D3505" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="StatisticLife2" x="180" y="32" name="inst_B69917AD" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="StatisticLife3" x="200" y="32" name="inst_A1FFAD78" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="StatisticLife4" x="220" y="32" name="inst_ECDE6AE7" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="StatisticLife5" x="240" y="32" name="inst_417E776F" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
     <instance objName="pointOfNoReturn" x="305" y="160" name="inst_E3017C22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="pointOfNoReturn2" x="300" y="255" name="inst_7AC33D1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="fromCharacterToLevel" x="284" y="362" name="inst_97BE5371" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
@@ -95,12 +101,6 @@
     <instance objName="bluefishy1" x="512" y="160" name="inst_ECD4C142" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="3372220415" rotation="0"/>
     <instance objName="bluefishy2" x="96" y="192" name="inst_4290DEC0" locked="0" code="" scaleX="-0.400000005960464" scaleY="0.400000005960464" colour="3372220415" rotation="0"/>
     <instance objName="NoneTool" x="278" y="256" name="inst_B3F8D416" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="PanelLife" x="145" y="32" name="inst_00764AB4" locked="0" code="" scaleX="0.425000011920929" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
-    <instance objName="StatisticLife1" x="160" y="32" name="inst_798D3505" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
-    <instance objName="StatisticLife2" x="180" y="32" name="inst_B69917AD" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
-    <instance objName="StatisticLife3" x="200" y="32" name="inst_A1FFAD78" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
-    <instance objName="StatisticLife4" x="220" y="32" name="inst_ECDE6AE7" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
-    <instance objName="StatisticLife5" x="240" y="32" name="inst_417E776F" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
     <instance objName="SpeedDown_1" x="250" y="302" name="inst_586E6DD7" locked="0" code="" scaleX="0.550000011920929" scaleY="0.550000011920929" colour="4294967295" rotation="0"/>
     <instance objName="addSpeedDown_1" x="375" y="330" name="inst_F050F1E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SpeedDownForDisplay" x="205" y="320" name="inst_AD22941E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

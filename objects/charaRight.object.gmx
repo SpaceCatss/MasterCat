@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>P1toP2 = false
+            <string>image_alpha = 0
+tweenline_to(id, 1.2, array(  "ease",ease_backinout, "alpha", 1))
+
+P1toP2 = false
 P2toP3 = false
 P3toP4 = false
 P4toP5 = false
@@ -469,7 +472,8 @@ alarm[0]=25
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>mouse_clear(mb_left)
+            <string>if global.CanClick = true{
+mouse_clear(mb_left)
 
 if global.r=1 and CanClickAgain = true
 {
@@ -544,6 +548,7 @@ P9toP1 = true
 CanClickAgain = false
 global.r = 1
 
+}
 }
 </string>
           </argument>

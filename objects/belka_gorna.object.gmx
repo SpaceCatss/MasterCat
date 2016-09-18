@@ -7,7 +7,44 @@
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events/>
+  <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+image_alpha = 0
+y = y -70
+
+
+//tween_to(id, .7, array("scale",1.5, "patrol", true, "ease",ease_backinout,"repeatdelay",.5,"delay",.3));
+    tweenline_to(id, .5, array("y", y+70));
+    //tweenline_to(id, .8, array("xscale", image_xscale*2, "ease", ease_backinout));
+    //tweenline_to(id, .8, array("yscale", image_yscale*2, "ease", ease_backinout),"-=.4");
+    //tweenline_to(id, 1.2, array("scale", image_xscale, "ease", ease_bounceout));
+    //tweenline_to(id, 1, array("angle", 90, "blend", make_color_rgb(185, 202, 74), "ease", ease_quintout));
+    tweenline_to(id, .4, array(  "ease",ease_backinout, "alpha", 1));
+   //     tweenline_to(id, .2, array( "yscale",0.4,"xscale",0.4, "ease",ease_backinout, ));
+//tweenline_set_repeat(tweenline, -1); //Repeat indefinitely
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>

@@ -25,7 +25,58 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if global.rm = 2 
+{movespeedNormal = 5;
+}
+
+if global.rm = 3 
+{movespeedNormal = 6;
+}
+
+if global.rm = 4
+{movespeedNormal = 5;
+}
+
+if global.rm = 5
+{movespeedNormal = 5;
+}
+
+if global.rm = 6
+{movespeedNormal = 5;
+}
+
+if global.rm = 7
+{movespeedNormal = 5;
+}
+
+if global.rm = 8 
+{movespeedNormal = 5;
+}
+
+if global.rm = 9
+{movespeedNormal = 5;
+}
+
+/// wzor na obliczenie predkosci kota
+
+//sprawdzic bmp utwory (ilosc bitow na minute) np. 87,6
+//podzieli to przez ilosc sekund w minucie czyli 60 ;) dostajemy wtedy dlugosc beata na sekunde
+//bpm (w przeliczeniu an sekundy = 1.46
+//dlugosc beata w pikselach - 100 // to dlugosc standardowej dziuey w ziemi w trybie muzycznym, tego nie zmeiniamy
+//ilosc stepow na sekunde - 30 // to tez stała (predkosc pokoju
+
+//wzor na sugerowaną predkosc kota:
+// x = beat na sekunde * długosc beata w pikselach (100)/ ilo stepw na sekunde(30)
+//X  = (1.46 *100)/30
+//X = 4.87
+
+//dla utwory totemy1 sugerowana predkosc kota to 4.87 piksela na krok
+
+global.ZoomOut = false
+global.zoom = 1
+
+
+//instance_create(x,y,FlyingDetector)
 
 CanMove = true
 
@@ -35,7 +86,7 @@ image_yscale = 1.5
 draw_set_alpha(1)
 global.inviEnemy = false
 
-instance_create(x,y,GPS);
+//instance_create(x,y,GPS);
 global.selected = false;
 global.canSelect = true;
 /// Variablesy
@@ -45,8 +96,9 @@ hspUp = 20
 vsp = 0;
 jumpspeedNormal = 8.5;
 jumpspeedUp = 10;
-movespeedNormal = 12;
-movespeedUp = 2;
+
+
+movespeedUp = movespeedNormal;
 
 
 
@@ -128,11 +180,13 @@ alarm[6]=60;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sprite_index=sprite32
+            <string>global.ZoomOut = false
+sprite_index=sprite32
 grav = 0.5;
 movespeed = movespeedNormal
 
 CanMove = true
+global.PlayMusic = true
 </string>
           </argument>
         </arguments>
@@ -160,6 +214,7 @@ grav = 0.5
 jumpspeed = jumpspeedNormal * global.jumpmultiplier;
 global.inviEnemy = false
 sprite_index = sprite32;
+    
 
 </string>
           </argument>
@@ -257,11 +312,38 @@ instance_activate_object(invi);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>jumpspeed = jumpspeedNormal * global.jumpmultiplier
+            <string>//instance_deactivate_region(view_xview[0],view_yview[0], view_wview[0], view_hview[0], false, true)
+//instance_activate_region(view_xview[0], view_yview[0], view_wview[0], view_hview[0], true);
+
+
+
+
+if global.ZoomOut = true
+{ if global.zoom &lt;1.15
+{
+global.zoom += 0.009
+}
+}
+
+if global.ZoomOut = false and  global.zoom &gt;0.80
+{
+global.zoom -= 0.0005
+}
+view_wview[0] = 800 * global.zoom
+view_hview[0] = 480 * global.zoom
+
+
+if global.PlayMusic = true
+{
+audio_resume_sound(livesA.snd);}
+if global.PlayMusic = false {
+audio_pause_sound(livesA.snd)}
+
+jumpspeed = jumpspeedNormal * global.jumpmultiplier
 
 with(GPS)
 {
-GPS.x=Player3.x
+GPS.x=Player3.x + 150
 GPS.y=Player3.y
 }
 with(GPS2)
@@ -270,10 +352,13 @@ GPS2.x=Player3.x
 GPS2.y=Player3.y
 }
 
+
+
 // uwalnianie sie z bloku
 
  if mouse_check_button(mb_right){
-CanMove = true}
+//CanMove = true
+}
 
 // global.selected
 
@@ -299,7 +384,7 @@ y = y - 20
 mouse = mouse_check_button_pressed(mb_left);
 mouse2 = mouse_check_button_released(mb_left);
 key_move = keyboard_check_pressed(vk_space);
-key_jump = mouse_check_button(mb_right);
+key_jump = 0 //mouse_check_button(mb_right);
 
 
 // Reakcje na mysz
@@ -330,7 +415,7 @@ global.mouse3 = false;
 
 // reakcje na inputy
 move = key_move;
-hsp =  movespeed * global.moveAdd[global.MoveAddCount];
+hsp =  movespeed 
 
 if (vsp &lt; 10) vsp += grav;
 
@@ -347,6 +432,10 @@ if (place_meeting(x,y+1,bridge))
 vsp = -3
 }
 if (place_meeting(x,y+1,bridgeTap))
+{
+vsp = key_jump * -jumpspeed
+}
+if (place_meeting(x,y+1,bridgeTapBis))
 {
 vsp = key_jump * -jumpspeed
 }
@@ -397,10 +486,17 @@ hsp = 0
 
 }
 if CanMove = true{
-global.incriser = global.incriser + 0.01
-if global.incriser &gt; 4 {
-global.incriser = 4}
-x += hsp + global.incriser;
+//global.incriser = (global.incriser + 0.0025)
+//if global.incriser &gt; 2 {
+//global.incriser = 2}
+/*if global.incriser &gt;2
+{grav = 0.6}
+if global.incriser &gt;3
+{grav = 0.7}
+if global.incriser &gt;4
+{grav = 0.8}*/
+
+x += hsp ;
 
 if hsp &gt; 15{
 hsp = 15
@@ -449,28 +545,6 @@ CanMove = true
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="RoomTeleport">
-      <action>
-        <libid>1</libid>
-        <id>224</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_another_room</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>11</kind>
-            <room>room02</room>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="blocker">
       <action>
         <libid>1</libid>
@@ -490,6 +564,35 @@ CanMove = true
             <kind>1</kind>
             <string>hsp = 0;
 if (jumpspeed &lt; 1) hsp = x
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="invi2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>path_start(deathpath,3,path_action_stop,false)
+sprite_index = sprite6
+hsp = 0;
+moveAdd = 0;
+movespeed = 0
+global.incriser = 0
+
 </string>
           </argument>
         </arguments>

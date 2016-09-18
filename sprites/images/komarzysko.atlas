@@ -1,0 +1,195 @@
+
+komarzysko.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Noga Gorna Cz2
+  rotate: false
+  xy: 215, 93
+  size: 52, 26
+  orig: 52, 26
+  offset: 0, 0
+  index: -1
+NogaGornaCz3
+  rotate: true
+  xy: 555, 180
+  size: 65, 130
+  orig: 65, 130
+  offset: 0, 0
+  index: -1
+NogaGornaSruba1
+  rotate: true
+  xy: 281, 164
+  size: 23, 22
+  orig: 23, 22
+  offset: 0, 0
+  index: -1
+NogaGornaSruba2
+  rotate: false
+  xy: 925, 193
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+atrament
+  rotate: false
+  xy: 449, 143
+  size: 104, 102
+  orig: 104, 102
+  offset: 0, 0
+  index: -1
+czolek gora CZ 2
+  rotate: true
+  xy: 840, 193
+  size: 52, 56
+  orig: 52, 56
+  offset: 0, 0
+  index: -1
+czolek_dol sruba
+  rotate: true
+  xy: 898, 189
+  size: 24, 25
+  orig: 24, 25
+  offset: 0, 0
+  index: -1
+czolekdolCZ1
+  rotate: false
+  xy: 449, 117
+  size: 94, 24
+  orig: 94, 24
+  offset: 0, 0
+  index: -1
+czolekgora
+  rotate: false
+  xy: 687, 202
+  size: 81, 43
+  orig: 81, 43
+  offset: 0, 0
+  index: -1
+czulekdolCZ2
+  rotate: true
+  xy: 622, 145
+  size: 33, 34
+  orig: 33, 34
+  offset: 0, 0
+  index: -1
+kableZarowka
+  rotate: false
+  xy: 122, 12
+  size: 71, 79
+  orig: 71, 79
+  offset: 0, 0
+  index: -1
+kadbek
+  rotate: false
+  xy: 2, 2
+  size: 118, 89
+  orig: 118, 89
+  offset: 0, 0
+  index: -1
+lamp
+  rotate: true
+  xy: 305, 114
+  size: 131, 142
+  orig: 131, 142
+  offset: 0, 0
+  index: -1
+leb
+  rotate: true
+  xy: 2, 93
+  size: 94, 211
+  orig: 94, 211
+  offset: 0, 0
+  index: -1
+nogadolnaCZ1
+  rotate: true
+  xy: 898, 215
+  size: 30, 59
+  orig: 30, 59
+  offset: 0, 0
+  index: -1
+nogadolnaCZ2
+  rotate: true
+  xy: 770, 203
+  size: 42, 68
+  orig: 42, 68
+  offset: 0, 0
+  index: -1
+nogagornaCz1
+  rotate: true
+  xy: 555, 152
+  size: 26, 65
+  orig: 26, 65
+  offset: 0, 0
+  index: -1
+ogadolnasruba1
+  rotate: true
+  xy: 281, 139
+  size: 23, 22
+  orig: 23, 22
+  offset: 0, 0
+  index: -1
+oko
+  rotate: false
+  xy: 236, 51
+  size: 38, 40
+  orig: 38, 40
+  offset: 0, 0
+  index: -1
+pretodskrzydel
+  rotate: true
+  xy: 687, 182
+  size: 18, 34
+  orig: 18, 34
+  offset: 0, 0
+  index: -1
+skrzydla
+  rotate: false
+  xy: 2, 189
+  size: 301, 56
+  orig: 301, 56
+  offset: 0, 0
+  index: -1
+srubka
+  rotate: false
+  xy: 236, 12
+  size: 37, 37
+  orig: 37, 37
+  offset: 0, 0
+  index: -1
+srubka1
+  rotate: false
+  xy: 658, 152
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1
+srubkaczolka gora
+  rotate: false
+  xy: 959, 216
+  size: 42, 29
+  orig: 42, 29
+  offset: 0, 0
+  index: -1
+szczeka
+  rotate: false
+  xy: 195, 43
+  size: 39, 48
+  orig: 39, 48
+  offset: 0, 0
+  index: -1
+szyja
+  rotate: false
+  xy: 195, 4
+  size: 39, 37
+  orig: 39, 37
+  offset: 0, 0
+  index: -1
+tutka
+  rotate: false
+  xy: 215, 121
+  size: 64, 66
+  orig: 64, 66
+  offset: 0, 0
+  index: -1

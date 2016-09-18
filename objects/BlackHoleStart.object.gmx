@@ -31,6 +31,30 @@
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>BlackActive = true
+sprite_index = blackholik
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -61,7 +85,8 @@ with player
 player.visible = false
 player.movespeed = 0 ; player.grav = 0 
 instance_create(irandom_range(GPS2.x-400,GPS2.x-200),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole)
+move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt; 65 and r &lt;= 70
@@ -71,7 +96,8 @@ with player
 player.visible = false
 player.movespeed = 0 ; player.grav = 0 
 instance_create(irandom_range(GPS2.x-400,GPS2.x-1000),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole)
+move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt;=71 and r &lt;=95
@@ -81,7 +107,8 @@ with player
 player.visible = false
 player.movespeed = 0 ; player.grav = 0 
 instance_create(irandom_range(GPS2.x+300,GPS2.x+600),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole)
+move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt;=96 and r &lt;=100
@@ -91,7 +118,7 @@ with player
 player.visible = false
 player.movespeed = 0 ; player.grav = 0 
 instance_create(irandom_range(GPS2.x+600,GPS2.x+1000),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 instance_destroy()
@@ -120,7 +147,7 @@ with Player2
 Player2.visible = false
 Player2.movespeed = 0 ; Player2.grav = 0 
 instance_create(irandom_range(GPS2.x-400,GPS2.x-200),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt; 65 and r &lt;= 70
@@ -130,7 +157,7 @@ with Player2
 Player2.visible = false
 Player2.movespeed = 0 ; Player2.grav = 0 
 instance_create(irandom_range(GPS2.x-400,GPS2.x-1000),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt;=71 and r &lt;=95
@@ -140,7 +167,7 @@ with Player2
 Player2.visible = false
 Player2.movespeed = 0 ; Player2.grav = 0 
 instance_create(irandom_range(GPS2.x+300,GPS2.x+600),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt;=96 and r &lt;=100
@@ -150,7 +177,7 @@ with Player2
 Player2.visible = false
 Player2.movespeed = 0 ; Player2.grav = 0 
 instance_create(irandom_range(GPS2.x+600,GPS2.x+1000),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 instance_destroy()
@@ -178,7 +205,7 @@ with Player3
 Player3.visible = false
 Player3.movespeed = 0 ; Player3.grav = 0 
 instance_create(irandom_range(GPS2.x-400,GPS2.x-200),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt; 65 and r &lt;= 70
@@ -188,7 +215,7 @@ with Player3
 Player3.visible = false
 Player3.movespeed = 0 ; Player3.grav = 0 
 instance_create(irandom_range(GPS2.x-400,GPS2.x-1000),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt;=71 and r &lt;=95
@@ -198,7 +225,7 @@ with Player3
 Player3.visible = false
 Player3.movespeed = 0 ; Player3.grav = 0 
 instance_create(irandom_range(GPS2.x+300,GPS2.x+600),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt;=96 and r &lt;=100
@@ -208,7 +235,7 @@ with Player3
 Player3.visible = false
 Player3.movespeed = 0 ; Player3.grav = 0 
 instance_create(irandom_range(GPS2.x+600,GPS2.x+1000),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 instance_destroy()
@@ -235,7 +262,7 @@ with Player4
 Player4.visible = false
 Player4.movespeed = 0 ; Player4.grav = 0 
 instance_create(irandom_range(GPS2.x-400,GPS2.x-200),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt; 65 and r &lt;= 70
@@ -245,7 +272,7 @@ with Player4
 Player4.visible = false
 Player4.movespeed = 0 ; Player4.grav = 0 
 instance_create(irandom_range(GPS2.x-400,GPS2.x-1000),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt;=71 and r &lt;=95
@@ -255,7 +282,7 @@ with Player4
 Player4.visible = false
 Player4.movespeed = 0 ; Player4.grav = 0 
 instance_create(irandom_range(GPS2.x+300,GPS2.x+600),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt;=96 and r &lt;=100
@@ -265,7 +292,7 @@ with Player4
 Player4.visible = false
 Player4.movespeed = 0 ; Player4.grav = 0 
 instance_create(irandom_range(GPS2.x+600,GPS2.x+1000),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 instance_destroy()
@@ -293,7 +320,7 @@ with Player5
 Player5.visible = false
 Player5.movespeed = 0 ; Player5.grav = 0 
 instance_create(irandom_range(GPS2.x-400,GPS2.x-200),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt; 65 and r &lt;= 70
@@ -303,7 +330,7 @@ with Player5
 Player5.visible = false
 Player5.movespeed = 0 ; Player5.grav = 0 
 instance_create(irandom_range(GPS2.x-400,GPS2.x-1000),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt;=71 and r &lt;=95
@@ -313,7 +340,7 @@ with Player5
 Player5.visible = false
 Player5.movespeed = 0 ; Player5.grav = 0 
 instance_create(irandom_range(GPS2.x+300,GPS2.x+600),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt;=96 and r &lt;=100
@@ -323,7 +350,7 @@ with Player5
 Player5.visible = false
 Player5.movespeed = 0 ; Player5.grav = 0 
 instance_create(irandom_range(GPS2.x+600,GPS2.x+1000),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 instance_destroy()
@@ -351,7 +378,7 @@ with Player6
 Player6.visible = false
 Player6.movespeed = 0 ; Player6.grav = 0 
 instance_create(irandom_range(GPS2.x-400,GPS2.x-200),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt; 65 and r &lt;= 70
@@ -361,7 +388,7 @@ with Player6
 Player6.visible = false
 Player6.movespeed = 0 ; Player6.grav = 0 
 instance_create(irandom_range(GPS2.x-400,GPS2.x-1000),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt;=71 and r &lt;=95
@@ -371,7 +398,7 @@ with Player6
 Player6.visible = false
 Player6.movespeed = 0 ; Player6.grav = 0 
 instance_create(irandom_range(GPS2.x+300,GPS2.x+600),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt;=96 and r &lt;=100
@@ -381,7 +408,7 @@ with Player6
 Player6.visible = false
 Player6.movespeed = 0 ; Player6.grav = 0 
 instance_create(irandom_range(GPS2.x+600,GPS2.x+1000),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 instance_destroy()
@@ -409,7 +436,7 @@ with Player7
 Player7.visible = false
 Player7.movespeed = 0 ; Player7.grav = 0 
 instance_create(irandom_range(GPS2.x-400,GPS2.x-200),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt; 65 and r &lt;= 70
@@ -419,7 +446,7 @@ with Player7
 Player7.visible = false
 Player7.movespeed = 0 ; Player7.grav = 0 
 instance_create(irandom_range(GPS2.x-400,GPS2.x-1000),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt;=71 and r &lt;=95
@@ -429,7 +456,7 @@ with Player7
 Player7.visible = false
 Player7.movespeed = 0 ; Player7.grav = 0 
 instance_create(irandom_range(GPS2.x+300,GPS2.x+600),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt;=96 and r &lt;=100
@@ -439,7 +466,7 @@ with Player7
 Player7.visible = false
 Player7.movespeed = 0 ; Player7.grav = 0 
 instance_create(irandom_range(GPS2.x+600,GPS2.x+1000),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 instance_destroy()
@@ -467,7 +494,7 @@ with Player8
 Player8.visible = false
 Player8.movespeed = 0 ; Player8.grav = 0 
 instance_create(irandom_range(GPS2.x-400,GPS2.x-200),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt; 65 and r &lt;= 70
@@ -477,7 +504,7 @@ with Player8
 Player8.visible = false
 Player8.movespeed = 0 ; Player8.grav = 0 
 instance_create(irandom_range(GPS2.x-400,GPS2.x-1000),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt;=71 and r &lt;=95
@@ -487,7 +514,7 @@ with Player8
 Player8.visible = false
 Player8.movespeed = 0 ; Player8.grav = 0 
 instance_create(irandom_range(GPS2.x+300,GPS2.x+600),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt;=96 and r &lt;=100
@@ -497,7 +524,7 @@ with Player8
 Player8.visible = false
 Player8.movespeed = 0 ; Player8.grav = 0 
 instance_create(irandom_range(GPS2.x+600,GPS2.x+1000),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 instance_destroy()
@@ -521,11 +548,11 @@ r = irandom_range(1,100)
 if r &gt;= 1 and r  &lt;=65
 {
 with Player9
-{	
+{
 Player9.visible = false
 Player9.movespeed = 0 ; Player9.grav = 0 
 instance_create(irandom_range(GPS2.x-400,GPS2.x-200),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt; 65 and r &lt;= 70
@@ -535,7 +562,7 @@ with Player9
 Player9.visible = false
 Player9.movespeed = 0 ; Player9.grav = 0 
 instance_create(irandom_range(GPS2.x-400,GPS2.x-1000),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt;=71 and r &lt;=95
@@ -545,7 +572,7 @@ with Player9
 Player9.visible = false
 Player9.movespeed = 0 ; Player9.grav = 0 
 instance_create(irandom_range(GPS2.x+300,GPS2.x+600),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 else if r &gt;=96 and r &lt;=100
@@ -555,7 +582,7 @@ with Player9
 Player9.visible = false
 Player9.movespeed = 0 ; Player9.grav = 0 
 instance_create(irandom_range(GPS2.x+600,GPS2.x+1000),180,BlackHoleEnd)
-move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20 )
+instance_create(GPS2.x,GPS2.y,InviShieldForBlackHole);move_towards_point( BlackHoleEnd.x, BlackHoleEnd.y, 20*global.incriser )
 }
 }
 instance_destroy()
@@ -611,7 +638,7 @@ instance_destroy()
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="11">
+    <event eventtype="6" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -628,53 +655,14 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>BlackActive = true
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="7">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>BlackActive = true
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="4">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>BlackActive = false
+            <string>if global.CanClick = true{
+if mouse_x &gt; x -40 and mouse_x &lt; x+ 40 and mouse_y &gt; y -40 and mouse_y &lt; y+ 40
+{
+BlackActive = false
+sprite_index = blackholik2
+alarm[0] = 60
+}
+}
 </string>
           </argument>
         </arguments>

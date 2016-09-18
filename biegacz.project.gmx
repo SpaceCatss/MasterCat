@@ -123,11 +123,59 @@
     <sound>sound\sound0</sound>
     <sound>sound\sound1</sound>
     <sound>sound\sndLaser</sound>
+    <sound>sound\sound4_Animez__-_This_Game_(In_E_flat_Advanced_Version)(re-modify)</sound>
+    <sound>sound\sound5</sound>
+    <sound>sound\totemy1</sound>
+    <sound>sound\beat</sound>
+    <sound>sound\boom</sound>
+    <sound>sound\song2</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="obstacles">
+      <sprite>sprites\sprite295_ufo2</sprite>
+      <sprite>sprites\sprite296_ufo3</sprite>
+      <sprite>sprites\sprite297_ufo4</sprite>
+      <sprite>sprites\sprite298_kloda</sprite>
+      <sprite>sprites\sprite299_kloda_bez_lisci</sprite>
+      <sprite>sprites\ufo1</sprite>
+      <sprite>sprites\sprite284_mysz</sprite>
+      <sprite>sprites\sprite285_pieniek</sprite>
+      <sprite>sprites\sprite286_crolik</sprite>
+      <sprite>sprites\sprite287_kamien_gwiazdka</sprite>
+      <sprite>sprites\sprite288_kocio_ek</sprite>
+      <sprite>sprites\ufo3</sprite>
+      <sprite>sprites\lajka</sprite>
+      <sprite>sprites\komarzysko</sprite>
+      <sprite>sprites\lajka22</sprite>
+    </sprites>
+    <sprites name="dialogs">
+      <sprite>sprites\dyndl</sprite>
+      <sprite>sprites\dyndl2</sprite>
+      <sprite>sprites\dialogbox</sprite>
+      <sprite>sprites\kiciekgifek</sprite>
+      <sprite>sprites\sprite281</sprite>
+    </sprites>
+    <sprites name="abilities">
+      <sprite>sprites\pixel</sprite>
+      <sprite>sprites\sprite253_shroedingerbox</sprite>
+      <sprite>sprites\sprite254_super_cat</sprite>
+      <sprite>sprites\cloud</sprite>
+      <sprite>sprites\holy2</sprite>
+      <sprite>sprites\bridgus</sprite>
+      <sprite>sprites\sprite258_agentpng</sprite>
+      <sprite>sprites\sprite259_clockstop</sprite>
+      <sprite>sprites\sprite266_bronze_tile_walkway</sprite>
+      <sprite>sprites\Grondi</sprite>
+      <sprite>sprites\GroundBisMusic</sprite>
+      <sprite>sprites\groundMirror2</sprite>
+      <sprite>sprites\groundMirror</sprite>
+      <sprite>sprites\sprite267_paintbucket</sprite>
+    </sprites>
     <sprites name="tools">
+      <sprite>sprites\sprite260_swamp_small</sprite>
+      <sprite>sprites\sprite247_belka_pion</sprite>
+      <sprite>sprites\tabelsen</sprite>
       <sprite>sprites\lasergun1</sprite>
-      <sprite>sprites\sprite237_czarna_dziura1</sprite>
       <sprite>sprites\lasergun2</sprite>
       <sprite>sprites\misiowski</sprite>
       <sprite>sprites\sprite236_lajka</sprite>
@@ -140,6 +188,7 @@
       <sprite>sprites\bubbleshield</sprite>
       <sprite>sprites\sprite225_shield_PNG1277</sprite>
       <sprite>sprites\shieldInvi</sprite>
+      <sprite>sprites\blackholik2</sprite>
       <sprite>sprites\blackholik</sprite>
     </sprites>
     <sprites name="CharaSelection">
@@ -182,10 +231,16 @@
       <sprite>sprites\sprite213_tlochara</sprite>
     </sprites>
     <sprite>sprites\sprite0</sprite>
+    <sprite>sprites\pathblock</sprite>
+    <sprite>sprites\GroundMusicStretch</sprite>
+    <sprite>sprites\FlyingDet</sprite>
+    <sprite>sprites\sprite0bis</sprite>
     <sprite>sprites\groundinvi</sprite>
     <sprite>sprites\sprite1</sprite>
     <sprite>sprites\sprite2</sprite>
+    <sprite>sprites\sprite2bis</sprite>
     <sprite>sprites\sprite3</sprite>
+    <sprite>sprites\sprite3Bis</sprite>
     <sprite>sprites\in</sprite>
     <sprite>sprites\InvisiblePoint</sprite>
     <sprite>sprites\sprite4</sprite>
@@ -213,6 +268,8 @@
     <sprite>sprites\sprite18</sprite>
     <sprite>sprites\sprite21</sprite>
     <sprite>sprites\Redi</sprite>
+    <sprite>sprites\RediBis</sprite>
+    <sprite>sprites\RedBisLong</sprite>
     <sprite>sprites\RediInvi</sprite>
     <sprite>sprites\Redi2</sprite>
     <sprite>sprites\deadi</sprite>
@@ -384,6 +441,8 @@
       <sprite>sprites\sLaser</sprite>
       <sprite>sprites\sCredits_Programmer</sprite>
     </sprites>
+    <sprite>sprites\black</sprite>
+    <sprite>sprites\sprite303</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -398,6 +457,9 @@
     </backgrounds>
     <background>background\backLS</background>
     <background>background\tlochara</background>
+    <background>background\background8</background>
+    <background>background\background9</background>
+    <background>background\background10</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
@@ -405,6 +467,7 @@
     <path>paths\path2</path>
     <path>paths\KnockBack</path>
     <path>paths\KnockUp</path>
+    <path>paths\KnockUpClone</path>
     <path>paths\UfoArrive</path>
     <path>paths\UfoOut</path>
     <path>paths\MoveRight</path>
@@ -413,6 +476,9 @@
     <path>paths\MisslePath2</path>
     <path>paths\MisslePath3</path>
     <path>paths\deadpixel</path>
+    <path>paths\LevelToolsDown</path>
+    <path>paths\deathpath</path>
+    <path>paths\PathForBlock</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\script_death.gml</script>
@@ -547,6 +613,17 @@
     <script>scripts\rope_segment_get_number.gml</script>
     <script>scripts\rope_segment_get_instance.gml</script>
     <script>scripts\ground_spawner.gml</script>
+    <script>scripts\ground_spawner_bis.gml</script>
+    <script>scripts\ground_spawner_bis2.gml</script>
+    <script>scripts\ground_spawner_bis3.gml</script>
+    <script>scripts\ground_spawner_bis4.gml</script>
+    <script>scripts\ground_spawner_bis5.gml</script>
+    <script>scripts\ground_spawner_bis6.gml</script>
+    <script>scripts\ground_spawner_bis7.gml</script>
+    <script>scripts\ground_spawner_bis8.gml</script>
+    <script>scripts\ground_spawner_bis9.gml</script>
+    <script>scripts\ground_spawner_bis10.gml</script>
+    <script>scripts\ground_spawner_music_stretch.gml</script>
     <script>scripts\ground_spawner_ink.gml</script>
     <script>scripts\script_lives.gml</script>
     <scripts name="tweenline">
@@ -763,6 +840,11 @@
     <script>scripts\scrLaser.gml</script>
     <script>scripts\scrDraw_Laser.gml</script>
     <script>scripts\scrDesvanecer.gml</script>
+    <script>scripts\OneTimeToolSetter.gml</script>
+    <script>scripts\DisableClicks.gml</script>
+    <script>scripts\dialog_master.gml</script>
+    <script>scripts\skeleton_draw.gml</script>
+    <script>scripts\instance_create_ext.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
@@ -785,7 +867,24 @@
     <font>fonts\fnt_Default</font>
   </fonts>
   <objects name="objects">
+    <object>objects\shadow</object>
+    <object>objects\LoadingScreenMusic</object>
     <object>objects\oBlock</object>
+    <objects name="LevelSelection">
+      <object>objects\PlayLS</object>
+      <object>objects\MainMenuLS</object>
+      <object>objects\select</object>
+      <object>objects\Button1</object>
+      <object>objects\levelselect</object>
+      <object>objects\Button2</object>
+      <object>objects\Button3</object>
+      <object>objects\Button4</object>
+      <object>objects\Button5</object>
+      <object>objects\Button6</object>
+      <object>objects\Button7</object>
+      <object>objects\Button8</object>
+      <object>objects\Button9</object>
+    </objects>
     <objects name="abilities">
       <object>objects\AbilityShieldUI</object>
       <object>objects\box_spawner</object>
@@ -804,6 +903,39 @@
       <object>objects\DeadPixelek3</object>
       <object>objects\InvisibleShield</object>
       <object>objects\PantieCloud</object>
+      <objects name="toolsOneTime">
+        <object>objects\BelkaTools</object>
+        <object>objects\OneTimeToolLife</object>
+        <object>objects\OneTimeToolLife2</object>
+        <object>objects\OneTimeToolLife3</object>
+        <object>objects\OneTimeToolInk</object>
+        <object>objects\OneTimeToolInk2</object>
+        <object>objects\OneTimeToolInk3</object>
+        <object>objects\OneTimeToolNoGoods</object>
+        <object>objects\OneTimeToolNoGoods2</object>
+        <object>objects\OneTimeToolNoGoods3</object>
+        <object>objects\OneTimeToolFeverish</object>
+        <object>objects\OneTimeToolFeverish2</object>
+        <object>objects\OneTimeToolFeverish3</object>
+        <object>objects\OneTimeToolDoubleCoin</object>
+        <object>objects\OneTimeToolDoubleCoin2</object>
+        <object>objects\OneTimeToolDoubleCoin3</object>
+        <object>objects\OneTimeToolNoHoles</object>
+        <object>objects\OneTimeToolNoHoles2</object>
+        <object>objects\OneTimeToolNoHoles3</object>
+        <object>objects\OneTimeToolKomarOut</object>
+        <object>objects\OneTimeToolKomarOut2</object>
+        <object>objects\OneTimeToolKomarOut3</object>
+        <object>objects\OneTimeToolUfoOut</object>
+        <object>objects\OneTimeToolUfoOut2</object>
+        <object>objects\OneTimeToolUfoOut3</object>
+        <object>objects\Slot1</object>
+        <object>objects\Slot2</object>
+        <object>objects\Slot3</object>
+        <object>objects\TableToolOneTime</object>
+        <object>objects\CancelBuyOneTime</object>
+        <object>objects\BuyToolOneTime</object>
+      </objects>
     </objects>
     <object>objects\Laser</object>
     <object>objects\LaserDestroyer</object>
@@ -822,6 +954,7 @@
     </objects>
     <objects name="Obstacles">
       <object>objects\bombing</object>
+      <object>objects\InviShieldForBlackHole</object>
       <object>objects\FireBall</object>
       <object>objects\BagnoSlowDown</object>
       <object>objects\GroundFlameLeft</object>
@@ -843,7 +976,6 @@
       <object>objects\SmokerConstGround</object>
       <object>objects\SmokerConstLeft</object>
       <object>objects\SmokerConstRight</object>
-      <object>objects\enemy_spider_touchable</object>
       <object>objects\enemy_slicable</object>
       <object>objects\SmokerGround</object>
       <object>objects\FireBallSpawner</object>
@@ -852,9 +984,35 @@
       <object>objects\PoisonFlameLeft</object>
       <object>objects\PoisonFlameRight</object>
       <object>objects\Komar</object>
-      <object>objects\KomarLiveAction</object>
+      <objects name="obstaclesMusic">
+        <object>objects\LogTouch</object>
+        <object>objects\PoisonPotTouch</object>
+        <object>objects\FireBallSpawnerTouch</object>
+        <object>objects\stoneGoRoundTouch</object>
+        <object>objects\Log2Touch</object>
+        <object>objects\stoneLeftRightTouch</object>
+        <object>objects\stoneUpDownTouch</object>
+        <object>objects\stoneCalmTouch</object>
+        <object>objects\Log3</object>
+        <object>objects\SmokerGroundTouch</object>
+        <object>objects\Log4</object>
+        <object>objects\kociak3</object>
+        <object>objects\kociak4</object>
+        <objects name="obstacleRapid">
+          <object>objects\enemy_spider_touchable</object>
+          <object>objects\UfoCreatorTouch</object>
+          <object>objects\KomarLiveAction</object>
+          <object>objects\kociak</object>
+          <object>objects\kociak2</object>
+        </objects>
+      </objects>
     </objects>
     <object>objects\ground</object>
+    <object>objects\GroundMusicStretchBlock</object>
+    <object>objects\groundBis</object>
+    <object>objects\groundBisCreator</object>
+    <object>objects\groundBisEnding</object>
+    <object>objects\groundBisStarting</object>
     <object>objects\GroundImposter</object>
     <object>objects\ground3</object>
     <objects name="WalutaExchange">
@@ -893,6 +1051,7 @@
       <object>objects\GoToMoneyExchange</object>
     </objects>
     <object>objects\ground2</object>
+    <object>objects\ground2Bis</object>
     <object>objects\addSpeedUp_1</object>
     <objects name="Tools">
       <object>objects\Tool1</object>
@@ -1176,14 +1335,20 @@
       <object>objects\toolRight</object>
     </objects>
     <object>objects\invi</object>
+    <object>objects\invi2</object>
     <object>objects\bridge</object>
     <object>objects\bridgeTap</object>
+    <object>objects\bridgeTapBis</object>
+    <object>objects\bridgeTapBisLong</object>
     <object>objects\paintBridge</object>
     <object>objects\paintBridge2</object>
     <object>objects\bridgeU</object>
     <object>objects\bridgeD</object>
     <object>objects\objectA</object>
     <object>objects\objectTap</object>
+    <object>objects\objectTapBis</object>
+    <object>objects\objectTapBisLong</object>
+    <object>objects\ObstacleCreator</object>
     <object>objects\ObjectNonTap</object>
     <object>objects\objectB</object>
     <object>objects\objectD</object>
@@ -1201,6 +1366,9 @@
     <object>objects\LivesStartUp</object>
     <object>objects\pointsA</object>
     <object>objects\coin</object>
+    <object>objects\coinMusic</object>
+    <object>objects\coinMusicRisky</object>
+    <object>objects\coinMusicEx</object>
     <object>objects\coinCloud</object>
     <object>objects\coinCloud200</object>
     <object>objects\SuperPoint200</object>
@@ -1225,6 +1393,7 @@
     <object>objects\GPS2</object>
     <object>objects\timerA</object>
     <object>objects\timerB</object>
+    <object>objects\timerC</object>
     <object>objects\gameover</object>
     <object>objects\bronzeStar</object>
     <object>objects\silverStar</object>
@@ -1242,6 +1411,7 @@
     <object>objects\StarInitialize</object>
     <object>objects\PP_spawner</object>
     <object>objects\PP_spawner2</object>
+    <object>objects\PP_spawner3</object>
     <object>objects\PowerUpSpawner</object>
     <object>objects\Tools</object>
     <objects name="WhatIsIt">
@@ -1253,16 +1423,10 @@
       <object>objects\whatBridgeUp</object>
       <object>objects\whatinviCat</object>
     </objects>
-    <objects name="LevelSelection">
-      <object>objects\PlayLS</object>
-      <object>objects\MainMenuLS</object>
-      <object>objects\select</object>
-      <object>objects\Button1</object>
-      <object>objects\levelselect</object>
-      <object>objects\Button2</object>
-    </objects>
     <object>objects\ProgressManager</object>
     <object>objects\checkpoint</object>
+    <object>objects\checkpoint2</object>
+    <object>objects\checkpoint3</object>
     <objects name="NeedMoreTime">
       <object>objects\cancelNeedMoreTime</object>
       <object>objects\NeedMoreTime</object>
@@ -1310,7 +1474,10 @@
     <object>objects\CatPicker</object>
     <object>objects\obj_Dynamic</object>
     <object>objects\GroundSpawner</object>
+    <object>objects\GroundSpawnerBis</object>
     <object>objects\GroundSpawnerInk</object>
+    <object>objects\GroundSpawnerSpecial</object>
+    <object>objects\GroundSpawnerRapid</object>
     <object>objects\TapRatingGood</object>
     <object>objects\TapRatingExcellent</object>
     <object>objects\TapRatingRisky</object>
@@ -1321,16 +1488,26 @@
     <objects name="tweenline">
       <object>objects\obj_tweenline</object>
     </objects>
+    <object>objects\obj_dialog</object>
+    <object>objects\FirtstDialogue</object>
+    <object>objects\SecondDialogue</object>
+    <object>objects\FlyingDetector</object>
+    <object>objects\MusicLevelObstaclesSpawner</object>
+    <object>objects\PathBlockCollision</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\startRM</room>
     <room>rooms\Win</room>
     <room>rooms\Lost</room>
     <room>rooms\room01</room>
-    <room>rooms\room02</room>
-    <rooms name="Text Engine - Demo Rooms">
-      <room>rooms\text_demo_room</room>
-    </rooms>
+    <room>rooms\room03</room>
+    <room>rooms\room04</room>
+    <room>rooms\room05</room>
+    <room>rooms\room06</room>
+    <room>rooms\room07</room>
+    <room>rooms\room08</room>
+    <room>rooms\room09</room>
+    <room>rooms\room10</room>
     <room>rooms\LevelSelectionRoom</room>
     <room>rooms\WalutaExchangeGold</room>
     <room>rooms\WalutaExchangeSilver</room>
@@ -1345,6 +1522,7 @@
     <room>rooms\r_room3</room>
     <room>rooms\r_room4</room>
     <room>rooms\room_1</room>
+    <room>rooms\text_demo_room</room>
     <room>rooms\room1</room>
   </rooms>
   <help>

@@ -51,11 +51,21 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="Button1" x="288" y="64" name="inst_4928CC2D" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
-    <instance objName="Button2" x="448" y="64" name="inst_963E0783" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="Button1" x="268" y="64" name="inst_4928CC2D" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="Button2" x="404" y="64" name="inst_963E0783" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
     <instance objName="PlayLS" x="527" y="383" name="inst_6C0B0554" locked="0" code="" scaleX="0.370000004768372" scaleY="0.370000004768372" colour="4294967295" rotation="0"/>
     <instance objName="MainMenuLS" x="74" y="65" name="inst_586DAE3B" locked="0" code="" scaleX="0.370000004768372" scaleY="0.370000004768372" colour="4294967295" rotation="0"/>
-    <instance objName="AbilityFeverUI" x="672" y="192" name="inst_3E5974E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Slot1" x="48" y="-295" name="inst_66EEE0F2" locked="0" code="" scaleX="0.300000011920929" scaleY="0.300000011920929" colour="4294967295" rotation="0"/>
+    <instance objName="BelkaTools" x="48" y="-256" name="inst_D7B97231" locked="0" code="" scaleX="1" scaleY="0.600000023841858" colour="4294967295" rotation="0"/>
+    <instance objName="Slot2" x="48" y="-210" name="inst_515B59F5" locked="0" code="" scaleX="0.300000011920929" scaleY="0.300000011920929" colour="4294967295" rotation="0"/>
+    <instance objName="Slot3" x="48" y="-128" name="inst_2655B4F7" locked="0" code="" scaleX="0.300000011920929" scaleY="0.300000011920929" colour="4294967295" rotation="0"/>
+    <instance objName="Button3" x="544" y="64" name="inst_DA4C0662" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="Button4" x="180" y="160" name="inst_FF6F3D31" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="Button5" x="330" y="160" name="inst_01A68AA9" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="Button6" x="480" y="160" name="inst_56FC58B3" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="Button7" x="80" y="256" name="inst_3CD12382" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="Button8" x="240" y="256" name="inst_1BC71EBA" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="Button9" x="390" y="256" name="inst_36EC7F3B" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

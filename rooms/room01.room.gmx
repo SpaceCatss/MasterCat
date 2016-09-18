@@ -2,7 +2,7 @@
 <room>
   <caption></caption>
   <width>29100</width>
-  <height>480</height>
+  <height>1000</height>
   <vsnap>32</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
@@ -10,7 +10,8 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>global.rm = 1
+  <code>global.StartPositionY = 256
+global.rm = 1
 draw_set_alpha(1)
 
 Waluta.visible = false;
@@ -63,7 +64,7 @@ instance_create(x,y,AbilityBoxUI)
 else if global.r=9
 {}</code>
   <enableViews>-1</enableViews>
-  <clearViewBackground>-1</clearViewBackground>
+  <clearViewBackground>0</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>0</isSet>
@@ -82,8 +83,8 @@ else if global.r=9
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="background0" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="-1" foreground="0" name="background0" x="0" y="1" htiled="-1" vtiled="-1" hspeed="-2" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="background8" x="0" y="0" htiled="-1" vtiled="-1" hspeed="-20" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="background8" x="0" y="1" htiled="-1" vtiled="-1" hspeed="-2" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -92,7 +93,7 @@ else if global.r=9
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="GPS" xview="0" yview="0" wview="600" hview="480" xport="0" yport="0" wport="680" hport="480" hborder="550" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="GPS" xview="0" yview="140" wview="600" hview="480" xport="0" yport="0" wport="680" hport="480" hborder="550" vborder="450" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -111,13 +112,14 @@ else if global.r=9
     <instance objName="microplayer" x="60" y="470" name="inst_07046996" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="GPS2" x="160" y="128" name="inst_BC7588C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mouse_follow" x="256" y="192" name="inst_B0C53893" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="enemy_slicable" x="1184" y="224" name="inst_E4810C13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="enemy_slicable" x="1216" y="416" name="inst_E4810C13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="meta" x="29056" y="320" name="inst_CE3CA4D0" locked="0" code="" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
     <instance objName="InkSpawner" x="160" y="224" name="inst_493D9481" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="PossiblePointsss" x="288" y="128" name="inst_93252E1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="invi" x="0" y="416" name="inst_2FB1FB2A" locked="0" code="" scaleX="2300" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="PlayerSpawner" x="64" y="256" name="inst_9E559D2A" locked="0" code="" scaleX="1.70000004768372" scaleY="1.70000004768372" colour="4294967295" rotation="0"/>
+    <instance objName="invi" x="0" y="960" name="inst_2FB1FB2A" locked="0" code="" scaleX="2300" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="PlayerSpawner" x="64" y="416" name="inst_9E559D2A" locked="0" code="" scaleX="1.70000004768372" scaleY="1.70000004768372" colour="4294967295" rotation="0"/>
     <instance objName="StarToFill" x="416" y="128" name="inst_E2F1B1EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Komar" x="768" y="256" name="inst_307C2727" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

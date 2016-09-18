@@ -78,7 +78,8 @@ depth = -121099
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.GoldStarMoney &gt;= 15) and (canSubstract = true)
+            <string>if global.CanClick = true{
+if (global.GoldStarMoney &gt;= 15) and (canSubstract = true)
 {
 mouse_clear(mb_left)
 global.GoldStarMoney = global.GoldStarMoney -15
@@ -94,7 +95,7 @@ else
 CantBuy = true
 alarm[0] = 5
 }
-
+}
 </string>
           </argument>
         </arguments>

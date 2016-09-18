@@ -7,7 +7,7 @@ instance_create(0+192,384,ground)
 instance_create(0+288,384,ground)
 
 
-n = 384
+n = 165
 k = room_width/n
 j = round(k*0.25)
 l = round(k * 0.5)
@@ -47,7 +47,7 @@ instance_create(0+(n*i)+288,384,ground)
 }
 else
 {
-instance_create(0 +(n*i), 384, GroundSpawner)
+instance_create(0+ (n*i),384,ground)
 }
 
 

@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>depth = -999
+x = x + 600
+tweenline_to(id, .42, array("x", x-600,"delay",2.05));
 </string>
           </argument>
         </arguments>

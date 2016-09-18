@@ -8,6 +8,30 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>x = x + 600
+tweenline_to(id, .42, array("x", x-600,"delay",1.65));
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -29,7 +53,7 @@
 
 instance_activate_object(StatisticSpeed1)
 instance_activate_object(StatisticSpeed2)
-instance_activate_object(StatisticSpeed3)
+instance_deactivate_object(StatisticSpeed3)
 instance_deactivate_object(StatisticSpeed4)
 instance_deactivate_object(StatisticSpeed5)
 
@@ -53,7 +77,7 @@ instance_activate_object(StatisticSpeed1)
 instance_activate_object(StatisticSpeed2)
 instance_activate_object(StatisticSpeed3)
 instance_activate_object(StatisticSpeed4)
-instance_activate_object(StatisticSpeed5)
+instance_deactivate_object(StatisticSpeed5)
 
 instance_activate_object(StatisticJump1)
 instance_activate_object(StatisticJump2)
@@ -88,6 +112,138 @@ instance_activate_object(StatisticLife2)
 instance_activate_object(StatisticLife3)
 instance_activate_object(StatisticLife4)
 instance_activate_object(StatisticLife5)
+
+}
+
+if global.r=4{
+
+instance_activate_object(StatisticSpeed1)
+instance_activate_object(StatisticSpeed2)
+instance_deactivate_object(StatisticSpeed3)
+instance_deactivate_object(StatisticSpeed4)
+instance_deactivate_object(StatisticSpeed5)
+
+instance_activate_object(StatisticJump1)
+instance_deactivate_object(StatisticJump2)
+instance_deactivate_object(StatisticJump3)
+instance_deactivate_object(StatisticJump4)
+instance_deactivate_object(StatisticJump5)
+
+instance_activate_object(StatisticLife1)
+instance_activate_object(StatisticLife2)
+instance_activate_object(StatisticLife3)
+instance_activate_object(StatisticLife4)
+instance_activate_object(StatisticLife5)
+
+}
+
+if global.r=5{
+
+instance_activate_object(StatisticSpeed1)
+instance_activate_object(StatisticSpeed2)
+instance_activate_object(StatisticSpeed3)
+instance_activate_object(StatisticSpeed4)
+instance_activate_object(StatisticSpeed5)
+
+instance_activate_object(StatisticJump1)
+instance_activate_object(StatisticJump2)
+instance_activate_object(StatisticJump3)
+instance_activate_object(StatisticJump4)
+instance_deactivate_object(StatisticJump5)
+
+instance_activate_object(StatisticLife1)
+instance_activate_object(StatisticLife2)
+instance_activate_object(StatisticLife3)
+instance_deactivate_object(StatisticLife4)
+instance_deactivate_object(StatisticLife5)
+
+}
+
+if global.r=6{
+
+instance_activate_object(StatisticSpeed1)
+instance_activate_object(StatisticSpeed2)
+instance_deactivate_object(StatisticSpeed3)
+instance_deactivate_object(StatisticSpeed4)
+instance_deactivate_object(StatisticSpeed5)
+
+instance_activate_object(StatisticJump1)
+instance_activate_object(StatisticJump2)
+instance_activate_object(StatisticJump3)
+instance_activate_object(StatisticJump4)
+instance_deactivate_object(StatisticJump5)
+
+instance_activate_object(StatisticLife1)
+instance_activate_object(StatisticLife2)
+instance_activate_object(StatisticLife3)
+instance_activate_object(StatisticLife4)
+instance_deactivate_object(StatisticLife5)
+
+}
+
+if global.r=7{
+
+instance_activate_object(StatisticSpeed1)
+instance_activate_object(StatisticSpeed2)
+instance_deactivate_object(StatisticSpeed3)
+instance_deactivate_object(StatisticSpeed4)
+instance_deactivate_object(StatisticSpeed5)
+
+instance_activate_object(StatisticJump1)
+instance_deactivate_object(StatisticJump2)
+instance_deactivate_object(StatisticJump3)
+instance_deactivate_object(StatisticJump4)
+instance_deactivate_object(StatisticJump5)
+
+instance_activate_object(StatisticLife1)
+instance_activate_object(StatisticLife2)
+instance_deactivate_object(StatisticLife3)
+instance_deactivate_object(StatisticLife4)
+instance_deactivate_object(StatisticLife5)
+
+}
+
+if global.r=8{
+
+instance_activate_object(StatisticSpeed1)
+instance_activate_object(StatisticSpeed2)
+instance_deactivate_object(StatisticSpeed3)
+instance_deactivate_object(StatisticSpeed4)
+instance_deactivate_object(StatisticSpeed5)
+
+instance_activate_object(StatisticJump1)
+instance_activate_object(StatisticJump2)
+instance_activate_object(StatisticJump3)
+instance_activate_object(StatisticJump4)
+instance_activate_object(StatisticJump5)
+
+instance_activate_object(StatisticLife1)
+instance_activate_object(StatisticLife2)
+instance_activate_object(StatisticLife3)
+instance_deactivate_object(StatisticLife4)
+instance_deactivate_object(StatisticLife5)
+
+}
+
+if global.r=9{
+
+instance_activate_object(StatisticSpeed1)
+instance_activate_object(StatisticSpeed2)
+instance_deactivate_object(StatisticSpeed3)
+instance_deactivate_object(StatisticSpeed4)
+instance_deactivate_object(StatisticSpeed5)
+
+instance_activate_object(StatisticJump1)
+instance_activate_object(StatisticJump2)
+instance_deactivate_object(StatisticJump3)
+instance_deactivate_object(StatisticJump4)
+instance_deactivate_object(StatisticJump5)
+
+instance_activate_object(StatisticLife1)
+instance_activate_object(StatisticLife2)
+instance_activate_object(StatisticLife3)
+instance_activate_object(StatisticLife4)
+instance_deactivate_object(StatisticLife5)
 
 }
 

@@ -49,7 +49,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if global.OneTimeToolInfiniteInk = false {
 g += 600
 
 if g&lt;room_width-200
@@ -59,7 +59,7 @@ if r&gt;=1 and r&lt;=100
 makethis=InkFillUp
 else if r&gt;=101 and r&lt;=140
 makethis=empty
-bomb=instance_create(irandom_range(-50,50)+g,irandom_range(150,300),makethis)
+bomb=instance_create(irandom_range(-50,50)+g,irandom_range(instance_nearest(x,y,ground).y-70,instance_nearest(x,y,ground).y-150),makethis)
 
 }
 
@@ -68,7 +68,7 @@ if g&gt;=room_width-200
 
 }
 
-
+}
 </string>
           </argument>
         </arguments>

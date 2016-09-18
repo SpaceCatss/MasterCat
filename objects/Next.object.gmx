@@ -25,9 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>switch (global.rm){
+            <string>if global.CanClick = true{
+switch (global.rm){
 case 1:  room_goto(room02) ; break;
 case 2:  room_goto(startRM) ; break;
+}
 }
 </string>
           </argument>

@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = 40
+            <string>instance_create(x,y+50,coinMusic)
+alarm[0] = 40
+audio_play_sound(beat, 11, false);
 </string>
           </argument>
         </arguments>

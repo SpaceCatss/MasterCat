@@ -25,7 +25,37 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_alpha(1)
+            <string>if global.rm =2 {
+snd = audio_play_sound(totemy1,10,true)}
+if global.rm =3 {
+snd = audio_play_sound(song2,10,true)}
+if global.rm =4 {
+snd = audio_play_sound(song3,10,true)}
+if global.rm =5 {
+snd = audio_play_sound(song4,10,true)}
+if global.rm =6 {
+snd = audio_play_sound(song5,10,true)}
+if global.rm =7 {
+snd = audio_play_sound(song6,10,true)}
+if global.rm =8 {
+snd = audio_play_sound(song7,10,true)}
+if global.rm =9 {
+snd = audio_play_sound(song8,10,true)}
+
+global.WznowMuzykePoSmierci = false
+
+//alarm[1]=10
+alarm[0]=300
+global.Check = 0
+global.z = 0
+global.checkObjectTapBisYPosition = 384
+t = 0
+global.b = 0
+
+
+global.paintN = 360
+
+draw_set_alpha(1)
 
 if global.t = 9
 {
@@ -211,61 +241,61 @@ global.MissleQty=10
 }
 
 if global.t = 5{
-global.paintN = 200
-global.paintNMax = 200
+global.paintN = 360
+global.paintNMax = 360
 
 if global.BoughtPaint_10 = true
 {
-global.paintN = 220
-global.paintNMax = 220
+global.paintN = 400
+global.paintNMax = 400
 if global.r=9
 {
-global.paintN = 440
-global.paintNMax = 440
+global.paintN = 800
+global.paintNMax = 800
 }
 }
 
 if global.BoughtPaint_20 = true
 {
-global.paintN = 240
-global.paintNMax = 240
+global.paintN = 440
+global.paintNMax = 440
 if global.r=9
 {
-global.paintN = 480
-global.paintNMax = 480
+global.paintN = 880
+global.paintNMax = 880
 }
 }
 
 if global.BoughtPaint_30 = true
 {
-global.paintN = 260
-global.paintNMax = 260
+global.paintN = 480
+global.paintNMax = 480
 if global.r=9
 {
-global.paintN = 520
-global.paintNMax = 520
+global.paintN = 960
+global.paintNMax = 960
 }
 }
 
 if global.BoughtPaint_40 = true
 {
-global.paintN = 270
-global.paintNMax = 270
+global.paintN = 520
+global.paintNMax = 520
 if global.r=9
 {
-global.paintN = 540
-global.paintNMax = 540
+global.paintN = 1040
+global.paintNMax = 1040
 }
 }
 
 if global.BoughtPaint_50 = true
 {
-global.paintN = 300
-global.paintNMax = 300
+global.paintN = 560
+global.paintNMax = 560
 if global.r=9
 {
-global.paintN = 600
-global.paintNMax = 600
+global.paintN = 1120
+global.paintNMax = 1120
 }
 }
 }
@@ -343,9 +373,15 @@ global.ShieldTimerAlarm = 720
 
 if global.r = 3
 {
+if global.OneTimeToolDoubleLife = false{
 global.LifeContener = 200
 global.LifeContenerMax = 200
-global.LifeCount = 3
+global.LifeCount = 3}
+if global.OneTimeToolDoubleLife = true{
+global.LifeContener = 400
+global.LifeContenerMax = 400
+global.LifeCount = 3}
+
 if global.t = 4{
 if global.BoughtLives_20 = true
 {
@@ -384,9 +420,16 @@ global.LifeContenerMax +=30
 
 else if global.r = 2
 {
+if global.OneTimeToolDoubleLife = false{
 global.LifeContener = 120
 global.LifeContenerMax = 120
 global.LifeCount = 3
+}
+if global.OneTimeToolDoubleLife = true{
+global.LifeContener = 240
+global.LifeContenerMax = 240
+global.LifeCount = 3
+}
 if global.t = 4{
 if global.BoughtLives_20 = true
 {
@@ -424,9 +467,16 @@ global.LifeContenerMax +=30
 
 else if global.r = 1
 {
+if global.OneTimeToolDoubleLife = false{
 global.LifeContener = 150
 global.LifeContenerMax = 150
 global.LifeCount = 3
+}
+if global.OneTimeToolDoubleLife = true{
+global.LifeContener = 300
+global.LifeContenerMax = 300
+global.LifeCount = 3
+}
 if global.t = 4{
 if global.BoughtLives_20 = true
 {
@@ -462,9 +512,16 @@ global.LifeContenerMax +=30
 
 if global.r = 4
 {
+if global.OneTimeToolDoubleLife = false{
 global.LifeContener = 200
 global.LifeContenerMax = 200
 global.LifeCount = 3
+}
+if global.OneTimeToolDoubleLife = true{
+global.LifeContener = 400
+global.LifeContenerMax = 400
+global.LifeCount = 3
+}
 if global.t = 4{
 if global.BoughtLives_20 = true
 {
@@ -497,9 +554,16 @@ global.LifeContenerMax +=30
 
 if global.r = 5
 {
+if global.OneTimeToolDoubleLife = false{
 global.LifeContener = 200
 global.LifeContenerMax = 200
 global.LifeCount = 3
+}
+if global.OneTimeToolDoubleLife = true{
+global.LifeContener = 400
+global.LifeContenerMax = 400
+global.LifeCount = 3
+}
 if global.t = 4{
 if global.BoughtLives_20 = true
 {
@@ -533,9 +597,16 @@ global.LifeContenerMax +=30
 
 if global.r = 6
 {
+if global.OneTimeToolDoubleLife = false{
 global.LifeContener = 200
 global.LifeContenerMax = 200
 global.LifeCount = 3
+}
+if global.OneTimeToolDoubleLife = true{
+global.LifeContener = 400
+global.LifeContenerMax = 400
+global.LifeCount = 3
+}
 if global.t = 4{
 if global.BoughtLives_20 = true
 {
@@ -569,9 +640,16 @@ global.LifeContenerMax +=30
 
 if global.r = 7
 {
+if global.OneTimeToolDoubleLife = false{
 global.LifeContener = 240
 global.LifeContenerMax = 240
 global.LifeCount = 3
+}
+if global.OneTimeToolDoubleLife = true{
+global.LifeContener = 480
+global.LifeContenerMax = 480
+global.LifeCount = 3
+}
 if global.t = 4{
 if global.BoughtLives_20 = true
 {
@@ -604,9 +682,16 @@ global.LifeContenerMax +=30
 
 if global.r = 8
 {
+if global.OneTimeToolDoubleLife = false{
 global.LifeContener = 200
 global.LifeContenerMax = 200
 global.LifeCount = 3
+}
+if global.OneTimeToolDoubleLife = true{
+global.LifeContener = 400
+global.LifeContenerMax = 400
+global.LifeCount = 3
+}
 if global.t = 4{
 if global.BoughtLives_20 = true
 {
@@ -639,9 +724,16 @@ global.LifeContenerMax +=30
 
 if global.r = 9
 {
+if global.OneTimeToolDoubleLife = false{
 global.LifeContener = 200
 global.LifeContenerMax = 200
 global.LifeCount = 3
+}
+if global.OneTimeToolDoubleLife = true{
+global.LifeContener = 400
+global.LifeContenerMax = 400
+global.LifeCount = 3
+}
 if global.t = 4{
 if global.BoughtLives_20 = true
 {
@@ -702,6 +794,52 @@ global.LifeContenerMax +=60
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//instance_create(x,y,FlyingDetector)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_create(4650,100,checkpoint)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -719,7 +857,26 @@ global.LifeContenerMax +=60
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//if (mouse_x &gt; view_xview[0]) &amp;&amp;  (mouse_y &lt; view_yview[0]+380) &amp;&amp; (mouse_y &gt; view_yview[0])
+            <string>x = GPS.x
+y = GPS.y
+
+if global.WznowMuzykePoSmierci = true
+{
+audio_sound_set_track_position(snd,global.trututu)
+
+global.WznowMuzykePoSmierci = false
+}
+
+//audio_sound_pitch(s_engine, 1 + (global.incriser/10)); 
+
+if global.OneTimeIHateHoles = true
+{
+with invi2
+{
+instance_destroy()
+}
+}
+//if (mouse_x &gt; view_xview[0]) &amp;&amp;  (mouse_y &lt; view_yview[0]+380) &amp;&amp; (mouse_y &gt; view_yview[0])
 //&amp;&amp; !place_meeting(x,y,player)
 
 //if mouse_check_button(mb_left) and place_free(mouse_x, mouse_y)
@@ -782,6 +939,28 @@ room_goto(Lost)
         </arguments>
       </action>
     </event>
+    <event eventtype="5" enumb="27">
+      <action>
+        <libid>1</libid>
+        <id>224</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_another_room</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>11</kind>
+            <room>Lost</room>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -799,8 +978,7 @@ room_goto(Lost)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_alpha(1)
-draw_set_font(font0)
+            <string>draw_set_font(font0)
 draw_set_colour(c_white);
 draw_set_valign(fa_middle);
 draw_set_halign(fa_middle);
@@ -811,17 +989,134 @@ draw_set_halign(fa_middle);
 //draw_rectangle_color(view_xview[0]+(74), view_yview[0]+20, view_xview[0]+74+(global.LifeContener/2), view_yview[0]+40, c_red, c_red, c_red, c_red, false);
 
 
-var sprh = sprite_get_height(sprite94);
+var sprh = sprite_get_height(sprite94)*global.zoom;
 var drawh = sprh * global.LifeContener/global.LifeContenerMax
-var sprw = sprite_get_width(sprite94);
-draw_sprite_part(sprite94, 0, 0, sprh - drawh ,sprw , drawh, view_xview[0]+32, view_yview[0] + 10+ sprh - drawh);
+var sprw = sprite_get_width(sprite94)*global.zoom;
+draw_sprite_part_ext(sprite94, 0, 0, sprh - drawh ,sprw , drawh, view_xview[0]+(32*global.zoom), view_yview[0] + (10*global.zoom)+ sprh - drawh,1*global.zoom,1*global.zoom,c_white,1);
 
-draw_sprite(sobramowka,0,view_xview[0]+57, view_yview[0]+33)
-draw_text_outline(view_xview[0]+57, view_yview[0]+33,round(string(global.LifeContener)),1,c_black,10)
+draw_sprite_ext(sobramowka,0,view_xview[0]+(57*global.zoom), view_yview[0]+(33*global.zoom),1*global.zoom,1*global.zoom,0,c_white,1)
+draw_text_outline(view_xview[0]+(57*global.zoom), view_yview[0]+(33*global.zoom),round(string(global.LifeContener)),1,c_black,10)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="32">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.a = Player3.x
+t = t + 1
+
+show_debug_message( 
+"if t = " + string(t)
++ " { global.a = " + string(Player3.x)  + "global.c = " + string(global.b)
+);
+
+
+//if i = 6 { instance_create(0+(n*(6-1)),384,objectTapBis)}
+//check if i 6 is higher than the one above
 
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="17">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.z = Player3.x
+global.Check = Player3.y+70
+show_debug_message(
+"  instance_create( " + string(global.z) + "," +string(global.Check) + ",GroundSpawnerSpecial);")
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="16">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.z = Player3.x
+global.Check = Player3.y+70
+show_debug_message(
+"  instance_create( " + string(global.z) + "," +string(global.Check) + ",GroundSpawnerRapid);")
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="32">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.b = Player3.x
 
+show_debug_message(
++ " ; global.b = " +string(Player3.x)  + " ;"
++ "  d = global.b-global.c ; if d &lt; 80 {  CheckY -=75 } ;"
++ "  if global.b-global.a &lt; 50 { instance_create( " + string(global.a) + ",CheckY,objectTapBis);}
+else if global.b-global.a &gt;=50 {instance_create( " + string(global.a) + ",CheckY,objectTapBisLong);
+instance_create( " + string(global.b) + ",CheckY,groundBisStarting);
+"
++ "}}"
+)
 </string>
           </argument>
         </arguments>

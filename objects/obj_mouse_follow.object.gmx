@@ -178,7 +178,8 @@ trail.follow = -1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = mouse_x
+            <string>if global.CanClick = true{
+x = mouse_x
 y = mouse_y
 
 visible=true
@@ -186,21 +187,25 @@ visible=true
 if global.paintN &gt;0 and x &gt;= xprevious -2 and y &lt;= yprevious+1 or global.paintN &gt;0 and x &lt;= xprevious +2 and y &lt;= yprevious+1 
 {
 instance_create(mouse_x,mouse_y,paintBridge)
-global.paintN -= 1
+if global.OneTimeToolInfiniteInk = false {
+global.paintN -= 1}
 
 }
 if global.paintN &gt;0 and y &gt;= yprevious+2
 {
 instance_create(mouse_x,mouse_y,paintBridge2)
-global.paintN -= 1
+if global.OneTimeToolInfiniteInk = false {
+global.paintN -= 1}
 
 }
 if place_meeting(x,y,objectA) or place_meeting(x,y,ground) or place_meeting(x,y,ground2)
 {
 instance_create(mouse_x,mouse_y,paintBridge)
-global.paintN -= 0
+if global.OneTimeToolInfiniteInk = false {
+global.paintN -= 0}
 }
-else if  global.paintN &lt;=-1
+
+if  global.paintN &lt;=-1
 {
 //instance_destroy()
 global.paintN = 0
@@ -210,7 +215,7 @@ with (trail_follow)
 
 
 
-
+}
 </string>
           </argument>
         </arguments>

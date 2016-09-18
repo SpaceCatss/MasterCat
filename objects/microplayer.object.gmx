@@ -48,7 +48,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>n = room_width/500
+            <string>
+n = room_width/500
 x  += (GPS2.x - GPS2.xprevious)/n
 h = x
 
@@ -80,8 +81,8 @@ h = x
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_ext(sprite5,0,view_xview[0]+h,view_yview[0]+y-10,0.6,0.6,0,c_black,1)
-draw_sprite_ext(sprite4,0,view_xview[0]+50+instance_nearest(GPS2.x, GPS2.y, checkpoint).x/n,view_yview[0]+y-7,0.15,0.15,0,c_black,1)
+            <string>draw_sprite_ext(sprite5,0,view_xview[0]+(h*global.zoom),view_yview[0]+((y-10)*global.zoom),0.6*global.zoom,0.6*global.zoom,0,c_black,1)
+//draw_sprite_ext(sprite4,0,view_xview[0]+50+instance_nearest(GPS2.x, GPS2.y, checkpoint).x/n,view_yview[0]+y-7,0.15,0.15,0,c_black,1)
 
 
 </string>

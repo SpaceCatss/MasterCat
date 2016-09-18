@@ -1,0 +1,202 @@
+
+shroedinnger.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+EyeBlue1
+  rotate: false
+  xy: 427, 96
+  size: 87, 36
+  orig: 87, 36
+  offset: 0, 0
+  index: -1
+EyeBlue1Powieka
+  rotate: false
+  xy: 516, 113
+  size: 81, 19
+  orig: 81, 19
+  offset: 0, 0
+  index: -1
+EyeBlue2
+  rotate: false
+  xy: 893, 252
+  size: 86, 64
+  orig: 86, 64
+  offset: 0, 0
+  index: -1
+EyeBlue2Powieka
+  rotate: true
+  xy: 994, 430
+  size: 80, 25
+  orig: 80, 25
+  offset: 0, 0
+  index: -1
+EyeBrown1
+  rotate: false
+  xy: 874, 208
+  size: 58, 42
+  orig: 58, 42
+  offset: 0, 0
+  index: -1
+EyeBrown1powieka
+  rotate: false
+  xy: 934, 217
+  size: 52, 33
+  orig: 52, 33
+  offset: 0, 0
+  index: -1
+EyeBrown2
+  rotate: true
+  xy: 981, 256
+  size: 60, 41
+  orig: 60, 41
+  offset: 0, 0
+  index: -1
+EyeBrown2powieka
+  rotate: false
+  xy: 874, 174
+  size: 54, 32
+  orig: 54, 32
+  offset: 0, 0
+  index: -1
+EyeRed
+  rotate: false
+  xy: 725, 115
+  size: 60, 42
+  orig: 60, 42
+  offset: 0, 0
+  index: -1
+EyeRedpowieka
+  rotate: true
+  xy: 994, 374
+  size: 54, 27
+  orig: 54, 27
+  offset: 0, 0
+  index: -1
+FibrysR2
+  rotate: false
+  xy: 725, 159
+  size: 68, 108
+  orig: 68, 108
+  offset: 0, 0
+  index: -1
+ZrenicaBlue1
+  rotate: true
+  xy: 994, 350
+  size: 22, 28
+  orig: 22, 28
+  offset: 0, 0
+  index: -1
+ZrenicaBlue2
+  rotate: false
+  xy: 599, 105
+  size: 22, 27
+  orig: 22, 27
+  offset: 0, 0
+  index: -1
+ZrenicaBrown2
+  rotate: true
+  xy: 795, 158
+  size: 22, 27
+  orig: 22, 27
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 719, 269
+  size: 172, 241
+  orig: 172, 241
+  offset: 0, 0
+  index: -1
+cieniepodoczami
+  rotate: false
+  xy: 427, 134
+  size: 194, 116
+  orig: 194, 116
+  offset: 0, 0
+  index: -1
+fibrys L
+  rotate: true
+  xy: 2, 2
+  size: 91, 74
+  orig: 91, 74
+  offset: 0, 0
+  index: -1
+fibrys R
+  rotate: false
+  xy: 795, 182
+  size: 77, 85
+  orig: 77, 85
+  offset: 0, 0
+  index: -1
+fibrysL2
+  rotate: true
+  xy: 312, 7
+  size: 86, 97
+  orig: 86, 97
+  offset: 0, 0
+  index: -1
+glow
+  rotate: false
+  xy: 2, 95
+  size: 423, 415
+  orig: 423, 415
+  offset: 0, 0
+  index: -1
+hand L
+  rotate: true
+  xy: 194, 10
+  size: 83, 116
+  orig: 83, 116
+  offset: 0, 0
+  index: -1
+hand R
+  rotate: true
+  xy: 78, 5
+  size: 88, 114
+  orig: 88, 114
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 427, 252
+  size: 290, 258
+  orig: 290, 258
+  offset: 0, 0
+  index: -1
+tail
+  rotate: true
+  xy: 893, 318
+  size: 192, 99
+  orig: 192, 99
+  offset: 0, 0
+  index: -1
+wirek
+  rotate: true
+  xy: 988, 211
+  size: 43, 33
+  orig: 43, 33
+  offset: 0, 0
+  index: -1
+zarowka
+  rotate: false
+  xy: 623, 122
+  size: 100, 128
+  orig: 100, 128
+  offset: 0, 0
+  index: -1
+zrenicaBrown1
+  rotate: true
+  xy: 824, 161
+  size: 19, 26
+  orig: 19, 26
+  offset: 0, 0
+  index: -1
+zrenicaRed
+  rotate: false
+  xy: 994, 318
+  size: 20, 30
+  orig: 20, 30
+  offset: 0, 0
+  index: -1

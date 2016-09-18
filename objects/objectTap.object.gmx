@@ -26,6 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>CanMiss = true
+instance_create(x+70,y-20,invi2)
+with invi2
+{
+image_xscale = 0.05
+}
 </string>
           </argument>
         </arguments>
@@ -60,7 +65,7 @@ CanMiss = false
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="0">
+    <event eventtype="6" enumb="7">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -80,6 +85,9 @@ CanMiss = false
             <string>mouse_clear(mb_left)
 //if  mouse_x&gt;x-sprite_width/2 &amp;&amp; mouse_x&lt;x+sprite_width/2 &amp;&amp; mouse_y&gt;y-sprite_height/2 &amp;&amp; mouse_y&lt;y+sprite_height/2
 //{
+
+if global.OneTimeToolNoGood = false
+{
 
 if distance_to_object(GPS2)&gt;200
 {
@@ -113,7 +121,45 @@ instance_destroy()
 }
 //}
 
+}
 
+
+if global.OneTimeToolNoGood = true
+{
+
+if distance_to_object(GPS2)&gt;200
+{
+
+instance_create(x,y-200,TapRatingMiss)
+CanMiss = false
+}
+
+else if distance_to_object(GPS2)&gt;100 and distance_to_object(GPS2)&lt;=200 
+{
+instance_create(x,y,bridgeTap)
+CanMiss = false
+instance_create(x,y-200,TapRatingExcellent)
+instance_destroy()
+}
+
+
+else if distance_to_object(GPS2)&lt;=100 and distance_to_object(GPS2)&gt;=80
+{instance_create(x,y,bridgeTap)
+instance_create(x,y-200,TapRatingExcellent)
+CanMiss = false
+instance_destroy()
+}
+
+else if distance_to_object(GPS2)&lt;80
+{
+instance_create(x,y,bridgeTap)
+CanMiss = false
+instance_create(x,y-200,TapRatingRisky)
+instance_destroy()
+}
+//}
+
+}
 </string>
           </argument>
         </arguments>

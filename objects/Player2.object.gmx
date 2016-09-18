@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>global.zoom = 1
 
 CanMove = true
 
@@ -46,7 +46,7 @@ hspUp = 20
 vsp = 0;
 jumpspeedNormal = 11;
 jumpspeedUp = 15;
-movespeedNormal = 20;
+movespeedNormal = 5;
 movespeedUp = 8;
 
 
@@ -258,11 +258,28 @@ instance_activate_object(invi);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if !place_meeting(x,y+50,ground) and global.zoom &lt;1.3
+{ global.zoom += 0.01
+}
+else if place_meeting(x,y+50,ground) and global.zoom &gt;0.7
+{
+global.zoom -= 0.01
+}
+view_wview[0] = 600 * global.zoom
+view_hview[0] = 480 * global.zoom
+
+//ability correction
+if global.abilitySuperCat = true
+{
+with instance_nearest(x,y,invi2)
+{
+instance_destroy()
+}
+}
 
 with(GPS)
 {
-GPS.x=Player2.x
+GPS.x=Player2.x + 150
 GPS.y=Player2.y
 }
 with(GPS2)
@@ -331,7 +348,7 @@ global.mouse3 = false;
 
 // reakcje na inputy
 move = key_move;
-hsp =  movespeed * global.moveAdd[global.MoveAddCount];
+hsp =  movespeed + global.incriser
 
 if (vsp &lt; 10) vsp += grav;
 
@@ -398,9 +415,16 @@ hsp = 0
 
 }
 if CanMove = true{
-global.incriser = global.incriser + 0.01
-if global.incriser &gt; 4 {
-global.incriser = 4}
+global.incriser = (global.incriser + 0.0025)
+if global.incriser &gt; 2 {
+global.incriser = 2}
+/*if global.incriser &gt;2
+{grav = 0.6}
+if global.incriser &gt;3
+{grav = 0.7}
+if global.incriser &gt;4
+{grav = 0.8}*/
+
 x += hsp + global.incriser;
 
 if hsp &gt; 15{
@@ -450,28 +474,6 @@ CanMove = true
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="RoomTeleport">
-      <action>
-        <libid>1</libid>
-        <id>224</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_another_room</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>11</kind>
-            <room>room02</room>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="blocker">
       <action>
         <libid>1</libid>
@@ -491,6 +493,35 @@ CanMove = true
             <kind>1</kind>
             <string>hsp = 0;
 if (jumpspeed &lt; 1) hsp = x
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="invi2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>path_start(deathpath,3,path_action_stop,false)
+sprite_index = sprite6
+hsp = 0;
+moveAdd = 0;
+movespeed = 0
+global.incriser = 0
+
 </string>
           </argument>
         </arguments>

@@ -25,12 +25,42 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.OneTimeToolUfoRepel = false
+            <string>global.CheckpointVisited2 = false
+global.CheckpointVisited3 = false
+global.zoom = 1
+global.trututu = 0
+global.StartPositionY = 0
+global.PlayMusic = true
+global.ChangeAnimation = false
+global.checkObjectTapBisYPosition = 384
+global.PlayThisDialogueOnlyOnce = false
+global.ToolOneTimeNumber = 0
+global.CanClick = true
+
+global.Tool1Active = false
+global.Tool2Active = false
+global.Tool3Active = false
+global.Tool4Active = false
+global.Tool5Active = false
+global.Tool6Active = false
+global.Tool7Active = false
+global.Tool8Active = false
+
+global.ChoosedLevel = 0
+global.MoveToolBar = false
+global.OneTimeIHateHoles = false
+global.OneTimeToolCoinDouble = false
+global.OneTimeToolKomarRepel = false
+global.OneTimeToolUfoRepel = false
 global.OneTimeToolFever = false
+global.OneTimeToolNoGood = false
+global.OneTimeToolInfiniteInk = false
+global.OneTimeToolDoubleLife = false
 
 global.TorpedoPlayer = false
 global.holy = false
 global.Stopper = false
+global.abilitySuperCat = false
 
 global.LaserBeamLenght = 200
 global.LaserAlarm = 40

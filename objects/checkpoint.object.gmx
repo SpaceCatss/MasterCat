@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.CheckpointVisited = false
+            <string>ThisWorksOnlyOnce = true
+global.CheckpointVisited = false
+incriserPlayer3 = 0
+xx = 0
 </string>
           </argument>
         </arguments>
@@ -48,13 +51,68 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (place_meeting(x,y,player)) or (place_meeting(x,y,Player2)) or (place_meeting(x,y,Player3))
+            <string>
+if (place_meeting(x,y,player)) or (place_meeting(x,y,Player2)) or (place_meeting(x,y,Player3))
 or (place_meeting(x,y,Player4)) or (place_meeting(x,y,Player5)) or (place_meeting(x,y,Player6))
 or (place_meeting(x,y,Player7)) or (place_meeting(x,y,Player8)) or (place_meeting(x,y,Player9))
 {
 sprite_index=sprite1
 global.CheckpointVisited = true
 }
+if global.rm = 2 {
+y = instance_nearest(x,y,groundBis).y-48
+//x = instance_nearest(x,y,groundBis).x
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="FlyingDetector">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>xx=global.seconds2 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Player3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if ThisWorksOnlyOnce = true {
+global.trututu = audio_sound_get_track_position(livesA.snd)
+incriserPlayer3 = global.incriser
+ThisWorksOnlyOnce = false}
+
 </string>
           </argument>
         </arguments>

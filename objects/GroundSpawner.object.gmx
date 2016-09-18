@@ -88,7 +88,7 @@ if r&gt;=41 and r&lt;=43
 //enemy 2 easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,288,enemy_spider_touchable)
+instance_create(x+96,instance_nearest(x,y,ground).y-60,enemy_spider_touchable)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -99,7 +99,7 @@ if r&gt;=44 and r&lt;=46
 //slowdown easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,358,BagnoSlowDown)
+instance_create(x+96,instance_nearest(x,y,ground).y-30,BagnoSlowDown)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -110,7 +110,7 @@ if r&gt;=47 and r&lt;=49
 //Log easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,332,Log)
+instance_create(x+96,instance_nearest(x,y,ground).y-46,Log)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -364,7 +364,7 @@ instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
 
-if r&gt;=20 and r&lt;=25
+if r&gt;=21 and r&lt;=25
 or r&gt;=121 and r&lt;=130
 {
 // 1hole1 easy
@@ -409,7 +409,7 @@ if r&gt;=41 and r&lt;=43
 //enemy 2 easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,288,enemy_spider_touchable)
+instance_create(x+96,instance_nearest(x,y,ground).y-60,enemy_spider_touchable)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -420,7 +420,7 @@ if r&gt;=44 and r&lt;=46
 //slowdown easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,358,BagnoSlowDown)
+instance_create(x+96,instance_nearest(x,y,ground).y-30,BagnoSlowDown)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -431,7 +431,7 @@ if r&gt;=47 and r&lt;=49
 //Log easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,332,Log)
+instance_create(x+96,instance_nearest(x,y,ground).y-16,Log)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -723,7 +723,7 @@ if r&gt;=41 and r&lt;=43
 //enemy 2 easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,288,enemy_spider_touchable)
+instance_create(x+96,instance_nearest(x,y,ground).y-60,enemy_spider_touchable)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -734,7 +734,7 @@ if r&gt;=44 and r&lt;=46
 //slowdown easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,358,BagnoSlowDown)
+instance_create(x+96,instance_nearest(x,y,ground).y-30,BagnoSlowDown)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -745,7 +745,7 @@ if r&gt;=47 and r&lt;=49
 //Log easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,332,Log)
+instance_create(x+96,instance_nearest(x,y,ground).y-16,Log)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -1036,7 +1036,7 @@ if r&gt;=41 and r&lt;=43
 //enemy 2 easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,288,enemy_spider_touchable)
+instance_create(x+96,instance_nearest(x,y,ground).y-60,enemy_spider_touchable)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -1047,7 +1047,7 @@ if r&gt;=44 and r&lt;=46
 //slowdown easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,358,BagnoSlowDown)
+instance_create(x+96,instance_nearest(x,y,ground).y-30,BagnoSlowDown)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -1058,7 +1058,7 @@ if r&gt;=47 and r&lt;=49
 //Log easy
 instance_create(x,384,ground)
 instance_create(x+96,384,ground)
-instance_create(x+96,332,Log)
+instance_create(x+96,instance_nearest(x,y,ground).y-16,Log)
 instance_create(x+192,384,ground)
 instance_create(x+288,384,ground)
 }
@@ -1283,6 +1283,35 @@ instance_create(x+288,384,ground)
 }
 
 
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if global.OneTimeIHateHoles = true
+{
+with objectTap
+{
+instance_change(ground,true)
+}
 }
 </string>
           </argument>

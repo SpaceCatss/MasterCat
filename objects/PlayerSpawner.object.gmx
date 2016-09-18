@@ -27,6 +27,10 @@
             <kind>1</kind>
             <string>
 
+
+
+
+
 if global.r=1
 {
 makethis=player
@@ -94,7 +98,9 @@ spawn=instance_create(x,y,makethis)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (goldStar){
+            <string>
+
+with (goldStar){
 
 if (instance_count&gt;0){
 goldStar.visible = false;

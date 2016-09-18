@@ -207,7 +207,9 @@ alarm[0] = 10
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//global.seconds += 1/room_speed;
+            <string>x = GPS.x
+y = GPS.y
+//global.seconds += 1/room_speed;
 
 //if (global.seconds&lt;60) and (global.seconds&gt;59.9) {
 //global.seconds = 0
@@ -256,6 +258,12 @@ if (global.OutOfTime = true)
 instance_deactivate_object(player)
 instance_deactivate_object(Player2)
 instance_deactivate_object(Player3)
+instance_deactivate_object(Player4)
+instance_deactivate_object(Player5)
+instance_deactivate_object(Player6)
+instance_deactivate_object(Player7)
+instance_deactivate_object(Player8)
+instance_deactivate_object(Player9)
 instance_create(view_xview[0]+239,view_yview[0]+192,NeedMoreTime)
 instance_create(view_xview[0]+367,view_yview[0]+207,ConfirmNeedMoreTime)
 instance_create(view_xview[0]+497,view_yview[0]+372,cancelNeedMoreTime)
@@ -390,45 +398,46 @@ global.feverMode = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// draw timer
+            <string>/*
+/// draw timer
 draw_set_colour(c_white);
 draw_set_valign(fa_middle);
 draw_set_halign(fa_middle);
 var drawSec 
 drawSec = floor(global.seconds)
 
-draw_sprite_ext(sprite97,0,view_xview[0]+500,view_yview[0]+32,0.8,0.8,0,c_white,1)
+draw_sprite_ext(sprite97,0,view_xview[0]+(700*global.zoom),view_yview[0]+(32*global.zoom),0.8*global.zoom,0.8*global.zoom,0,c_white,1)
 
 if (global.hours &lt; 10) and (global.minutes &lt; 10) and (drawSec &lt; 10) {
-draw_text_outline(view_xview[0]+500,view_yview[0]+32, "0" +string(global.hours) + ":0" + string(global.minutes) + ":0" + string(drawSec),1,c_black,10)
+draw_text_outline(view_xview[0]+(700*global.zoom),view_yview[0]+(32*global.zoom), "0" +string(global.hours) + ":0" + string(global.minutes) + ":0" + string(drawSec),1,c_black,10)
 }
 else if 
 (global.hours &lt; 10) and (global.minutes &lt; 10)  {
-draw_text_outline(view_xview[0]+500,view_yview[0]+32, "0" +string(global.hours) + ":0" + string(global.minutes) + ":" + string(drawSec),1,c_black,10)
+draw_text_outline(view_xview[0]+(700*global.zoom),view_yview[0]+(32*global.zoom), "0" +string(global.hours) + ":0" + string(global.minutes) + ":" + string(drawSec),1,c_black,10)
 }
 else if 
 (global.hours &lt; 10) and (drawSec &lt; 10)  {
-draw_text_outline(view_xview[0]+500,view_yview[0]+32, "0" +string(global.hours) + ":" + string(global.minutes) + ":0" + string(drawSec),1,c_black,10)
+draw_text_outline(view_xview[0]+(700*global.zoom),view_yview[0]+(32*global.zoom), "0" +string(global.hours) + ":" + string(global.minutes) + ":0" + string(drawSec),1,c_black,10)
 }
 else if 
 (global.minutes&lt; 10) and (drawSec &lt; 10)  {
-draw_text_outline(view_xview[0]+500,view_yview[0]+32, string(global.hours) + ":" + string(global.minutes) + ":0" + string(drawSec),1,c_black,10)
+draw_text_outline(view_xview[0]+(700*global.zoom),view_yview[0]+(32*global.zoom), string(global.hours) + ":" + string(global.minutes) + ":0" + string(drawSec),1,c_black,10)
 }
 else if 
 (global.hours&lt; 10)  {
-draw_text_outline(view_xview[0]+500,view_yview[0]+32, "0" + string(global.hours) + ":" + string(global.minutes) + ":" + string(drawSec),1,c_black,10)
+draw_text_outline(view_xview[0]+(700*global.zoom),view_yview[0]+(32*global.zoom), "0" + string(global.hours) + ":" + string(global.minutes) + ":" + string(drawSec),1,c_black,10)
 }
 else if 
 (global.minutes&lt; 10)   {
-draw_text_outline(view_xview[0]+500,view_yview[0]+32, string(global.hours) + ":0" + string(global.minutes) + ":" + string(drawSec),1,c_black,10)
+draw_text_outline(view_xview[0]+(700*global.zoom),view_yview[0]+(32*global.zoom), string(global.hours) + ":0" + string(global.minutes) + ":" + string(drawSec),1,c_black,10)
 }
 else if 
  (drawSec &lt; 10)  {
-draw_text_outline(view_xview[0]+500,view_yview[0]+32, string(global.hours) + ":" + string(global.minutes) + ":0" + string(drawSec),1,c_black,10)
+draw_text_outline(view_xview[0]+(700*global.zoom),view_yview[0]+(32*global.zoom), string(global.hours) + ":" + string(global.minutes) + ":0" + string(drawSec),1,c_black,10)
 }
 else
  {
-draw_text_outline(view_xview[0]+500,view_yview[0]+32, string(global.hours) + ":" + string(global.minutes) + ":" + string(drawSec),1,c_black,10)
+draw_text_outline(view_xview[0]+(700*global.zoom),view_yview[0]+(32*global.zoom), string(global.hours) + ":" + string(global.minutes) + ":" + string(drawSec),1,c_black,10)
 }
 
 </string>
@@ -452,9 +461,10 @@ draw_text_outline(view_xview[0]+500,view_yview[0]+32, string(global.hours) + ":"
           <argument>
             <kind>1</kind>
             <string>/// draw ink contener
-
-draw_roundrect_texture(view_xview[0]+220, view_yview[0]+15, view_xview[0]+220+global.paintNMax + 10, view_yview[0]+45, 5, background5, 9, false)
-draw_rectangle_color(view_xview[0]+230, view_yview[0]+20, view_xview[0]+230+global.paintN, view_yview[0]+40, c_black, c_black, c_black, c_black, false);
+if global.rm = 1 {
+draw_roundrect_texture(view_xview[0]+(220*global.zoom), view_yview[0]+(15*global.zoom), view_xview[0]+((220+(global.paintNMax/2) + 10)*global.zoom), view_yview[0]+(45*global.zoom), 5, background5, 9, false)
+draw_rectangle_color(view_xview[0]+(global.zoom*230), view_yview[0]+(global.zoom*20), view_xview[0]+((230+(global.paintN/2))*global.zoom), view_yview[0]+(global.zoom*40), c_black, c_black, c_black, c_black, false);
+}
 </string>
           </argument>
         </arguments>

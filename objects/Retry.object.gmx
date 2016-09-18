@@ -25,13 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>switch (global.rm){
+            <string>if global.CanClick = true{
+switch (global.rm){
 case 1:  room_goto(room01) ;
-room_restart() ;
+ ;
  break;
 case 2:  room_goto(room02) ; break;
 }
 mouse_clear(mb_left)
+}
 </string>
           </argument>
         </arguments>

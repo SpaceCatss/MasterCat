@@ -26,6 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>alarm[0] = 300
+with instance_nearest(x,y,invi2)
+{
+instance_destroy()
+}
 </string>
           </argument>
         </arguments>

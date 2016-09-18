@@ -384,11 +384,11 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>8</kind>
-            <path>KnockBack</path>
+            <path>KnockUpClone</path>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>7</string>
+            <string>10</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -416,7 +416,10 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if CanWork =true
+            <string>global.ZoomOut = true
+global.PlayMusic=false
+audio_play_sound(boom, 11, false);
+if CanWork =true
 {
 global.LifeContener -= 20
 script_lives()
@@ -427,9 +430,9 @@ CanWork = false
 with Player3
 {
 Player3.movespeed = 0
-global.incriser = 0
+
 Player3.sprite_index = sprite6
-alarm[4] = 20
+alarm[4] = 19.19
 }
 
 </string>

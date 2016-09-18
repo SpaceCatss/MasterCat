@@ -197,6 +197,18 @@ effect_create_above(ef_firework, x, y, 1, c_black)
 speed = 0
 }
 
+
+if global.OneTimeToolKomarRepel = true
+{
+if distance_to_point(GPS2.x,GPS2.y) &lt;120
+{
+
+path_start(UfoOut, 4, path_action_stop, 0)
+}
+}
+
+if global.OneTimeToolKomarRepel = false
+{
 if CanWork = true
 {
 
@@ -223,7 +235,8 @@ if CanWork = false
 {
 move_towards_point(GPS2.x,GPS2.y,0)
 x  = GPS2.xprevious 
-global.paintN -= 1
+if global.OneTimeToolInfiniteInk = false {
+global.paintN -= 1}
 image_xscale = image_xscale*1.007
 image_yscale = image_yscale*1.007
 }
@@ -237,9 +250,11 @@ if CanWork = false
 {
 move_towards_point(GPS2.x,GPS2.y,0)
 x  = GPS2.xprevious 
-global.paintN -= 1
+if global.OneTimeToolInfiniteInk = false {
+global.paintN -= 1}
 image_xscale = image_xscale*1.007
 image_yscale = image_yscale*1.007
+}
 }
 </string>
           </argument>
@@ -316,8 +331,10 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>clickonkomar  +=1
+            <string>if global.CanClick = true{
+clickonkomar  +=1
 mouse_clear(mb_left)
+}
 </string>
           </argument>
         </arguments>

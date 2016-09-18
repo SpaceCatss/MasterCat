@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//global.LaserBeamLenght = 200
+            <string>
+//global.LaserBeamLenght = 200
 //global.LaserAlarm = 40
 alarm[0] = global.LaserDestroyerAlarm 
 //CanShoot = false

@@ -8,6 +8,29 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>x = GPS.x
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -25,14 +48,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>/*
 var sprh = sprite_get_height(star2);
 var drawh = sprh * global.feverMode/ 500
 var sprw = sprite_get_width(star2);
-draw_sprite_part(star2, 0, 0, sprh - drawh ,sprw , drawh, view_xview[0]+250, view_yview[0]+36 + sprh - drawh);
+draw_sprite_part_ext(star2, 0, 0, sprh - drawh ,sprw , drawh, view_xview[0]+(350*global.zoom), view_yview[0]+(36*global.zoom) + sprh - drawh,1*global.zoom,1*global.zoom,c_white,1);
 
-draw_sprite(star3,0,view_xview[0]+292, view_yview[0]+79)
-draw_text_outline(view_xview[0]+292, view_yview[0]+79,round(string(global.feverMode)),1,c_black,10)
+draw_sprite_ext(star3,0,view_xview[0]+(392*global.zoom), view_yview[0]+(79*global.zoom),1*global.zoom,1*global.zoom,0,c_white,1)
+draw_text_outline(view_xview[0]+(392*global.zoom), view_yview[0]+(79*global.zoom),round(string(global.feverMode)),1,c_black,10)
 </string>
           </argument>
         </arguments>

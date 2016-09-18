@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>ground</parentName>
+  <parentName>Log</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,7 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x,y,PoisonFlameLeft)
+            <string>
+CanWork =true
+
+
+instance_create(x,y,PoisonFlameLeft)
 with (PoisonFlameLeft)
 {
 image_angle = 270
@@ -60,19 +64,72 @@ image_angle = 270
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_alpha(1)
-if (place_meeting(x,y,player))
+            <string>if place_meeting(x,y,player) or place_meeting(x,y,Player2) or place_meeting(x,y,Player3) or place_meeting(x,y,Player4)
+or place_meeting(x,y,Player5) or place_meeting(x,y,Player6)  or place_meeting(x,y,Player7)
+or place_meeting(x,y,Player8)  or place_meeting(x,y,Player9)      
 {
-player.y +=10
-}
-if (place_meeting(x,y,Player2))
+if instance_exists(player){
+with player{
+path_start(KnockBack,10,path_action_stop, false)}}
+
+if instance_exists(Player2){
+with Player2{
+path_start(KnockBack,10,path_action_stop, false)}}
+
+if instance_exists(Player3){
+with Player3{
+path_start(KnockBack,10,path_action_stop, false)}}
+
+if instance_exists(Player4){
+with Player4{
+path_start(KnockBack,10,path_action_stop, false)}}
+
+if instance_exists(Player5){
+with Player5{
+path_start(KnockBack,10,path_action_stop, false)}}
+
+if instance_exists(Player6){
+with Player6{
+path_start(KnockBack,10,path_action_stop, false)}}
+
+if instance_exists(Player7){
+with Player7{
+path_start(KnockBack,10,path_action_stop, false)}}
+
+if instance_exists(Player8){
+with Player8{
+path_start(KnockBack,10,path_action_stop, false)}}
+
+if instance_exists(Player9){
+with Player9{
+path_start(KnockBack,10,path_action_stop, false)}}
+
+if CanWork =true
 {
-Player2.y +=10
+global.LifeContener -= 20
+script_lives()
+CanWork = false
 }
-if (place_meeting(x,y,Player3))
+
+
+with Player4
 {
-Player3.y +=10
+Player4.movespeed = 0
+global.incriser = 0
+Player4.sprite_index = sprite6
+alarm[4] = 20
 }
+
+with (SmokerConstLeft)
+{
+instance_destroy()
+}
+
+effect_create_above(ef_explosion, x, y, 1.4, c_gray)
+instance_destroy()
+
+}
+
 </string>
           </argument>
         </arguments>

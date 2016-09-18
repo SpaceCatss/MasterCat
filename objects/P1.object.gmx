@@ -25,7 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>image_alpha = 0
+tween_to(id, 1.2, array("alpha",1))
+tween_to(id, .7, array("scale",1.1,/* "patrol", true,*/ "ease",ease_backinout,/*"repeatdelay",.5,*/"delay",.3));
+tween_to(id, .5, array("scale",1,/* "patrol", true,*/ "ease",ease_backinout,/*"repeatdelay",.5,*/"delay",1.2));
+tween_to(id, .7, array("scale",1.06, "patrol", true, "ease",ease_backinout,"repeatdelay",3,"delay",3));
 global.r=1
 
 </string>

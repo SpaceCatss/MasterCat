@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(CharacterSelection)
+            <string>if global.CanClick = true{
+room_goto(CharacterSelection)
+}
 </string>
           </argument>
         </arguments>

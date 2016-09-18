@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>global.zoom = 1
 if global.r = 7
 {
 global.LifeContener = 240
@@ -85,7 +85,7 @@ hspUp = 20
 vsp = 0;
 jumpspeedNormal = 10;
 jumpspeedUp = 13;
-movespeedNormal = 16;
+movespeedNormal = 3;
 movespeedUp = 4;
 grav = gravNormal;
 
@@ -344,7 +344,22 @@ instance_activate_object(invi);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if  global.LifeContener &gt; MaxLife
+            <string>if !place_meeting(x,y+50,ground) and global.zoom &lt;1.3
+{ global.zoom += 0.01
+}
+else if place_meeting(x,y+50,ground) and global.zoom &gt;0.7
+{
+global.zoom -= 0.01
+}
+view_wview[0] = 600 * global.zoom
+view_hview[0] = 480 * global.zoom
+
+// zwiekszenie sprite6 - dla uszkodoznego kota, do usuniecia z czasem
+if sprite_index = sprite6
+{
+sprite_index = sprite228_black_dress
+}
+if  global.LifeContener &gt; MaxLife
 {
 global.LifeContener = MaxLife
 }
@@ -404,7 +419,7 @@ global.LifeContener = 340
 
 with(GPS)
 {
-GPS.x=Player7.x
+GPS.x=Player7.x + 150
 GPS.y=Player7.y
 }
 with(GPS2)
@@ -473,7 +488,7 @@ global.mouse3 = false;
 
 // reakcje na inputy
 move = key_move;
-hsp =  movespeed * global.moveAdd[global.MoveAddCount];
+hsp =  movespeed + global.incriser;
 
 if (vsp &lt; 10) vsp += grav;
 
@@ -540,9 +555,15 @@ hsp = 0
 
 }
 if CanMove = true{
-global.incriser = global.incriser + 0.01
-if global.incriser &gt; 5 {
-global.incriser = 5}
+global.incriser = (global.incriser + 0.0025)
+if global.incriser &gt; 2 {
+global.incriser = 2}
+/*if global.incriser &gt;2
+{grav = 0.6}
+if global.incriser &gt;3
+{grav = 0.7}
+if global.incriser &gt;4
+{grav = 0.8}*/
 x += hsp + global.incriser;
 
 if hsp &gt; 20{
@@ -592,24 +613,31 @@ CanMove = true
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="RoomTeleport">
+    <event eventtype="4" ename="invi2">
       <action>
         <libid>1</libid>
-        <id>224</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_another_room</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>11</kind>
-            <room>room02</room>
+            <kind>1</kind>
+            <string>path_start(deathpath,3,path_action_stop,false)
+sprite_index = sprite6
+hsp = 0;
+moveAdd = 0;
+movespeed = 0
+global.incriser = 0
+
+</string>
           </argument>
         </arguments>
       </action>

@@ -1,0 +1,160 @@
+
+animacja.png
+
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Warstwa 45
+  rotate: true
+  xy: 505, 167
+  size: 57, 153
+  orig: 57, 153
+  offset: 0, 0
+  index: -1
+bisquit
+  rotate: false
+  xy: 593, 342
+  size: 226, 166
+  orig: 226, 166
+  offset: 0, 0
+  index: -1
+bulb
+  rotate: false
+  xy: 2, 222
+  size: 307, 286
+  orig: 307, 286
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 821, 293
+  size: 192, 215
+  orig: 192, 215
+  offset: 0, 0
+  index: -1
+jezorex
+  rotate: true
+  xy: 294, 24
+  size: 47, 75
+  orig: 47, 75
+  offset: 0, 0
+  index: -1
+korpusek
+  rotate: false
+  xy: 311, 356
+  size: 280, 152
+  orig: 280, 152
+  offset: 0, 0
+  index: -1
+korpusek - Copy
+  rotate: false
+  xy: 294, 73
+  size: 130, 74
+  orig: 130, 74
+  offset: 0, 0
+  index: -1
+kosci1
+  rotate: true
+  xy: 660, 167
+  size: 57, 42
+  orig: 57, 42
+  offset: 0, 0
+  index: -1
+kosci2
+  rotate: false
+  xy: 704, 176
+  size: 63, 42
+  orig: 63, 42
+  offset: 0, 0
+  index: -1
+kroplaslinynamalujecie
+  rotate: false
+  xy: 811, 331
+  size: 8, 9
+  orig: 8, 9
+  offset: 0, 0
+  index: -1
+leg back right
+  rotate: true
+  xy: 311, 149
+  size: 88, 192
+  orig: 88, 192
+  offset: 0, 0
+  index: -1
+leg front
+  rotate: true
+  xy: 311, 239
+  size: 115, 198
+  orig: 115, 198
+  offset: 0, 0
+  index: -1
+leg front Right
+  rotate: true
+  xy: 511, 226
+  size: 114, 196
+  orig: 114, 196
+  offset: 0, 0
+  index: -1
+leg_back
+  rotate: true
+  xy: 811, 202
+  size: 89, 193
+  orig: 89, 193
+  offset: 0, 0
+  index: -1
+okoL
+  rotate: false
+  xy: 769, 195
+  size: 18, 23
+  orig: 18, 23
+  offset: 0, 0
+  index: -1
+okoP
+  rotate: false
+  xy: 371, 26
+  size: 42, 45
+  orig: 42, 45
+  offset: 0, 0
+  index: -1
+owal
+  rotate: false
+  xy: 426, 52
+  size: 107, 95
+  orig: 107, 95
+  offset: 0, 0
+  index: -1
+rod
+  rotate: false
+  xy: 2, 35
+  size: 290, 185
+  orig: 290, 185
+  offset: 0, 0
+  index: -1
+tail
+  rotate: false
+  xy: 709, 220
+  size: 100, 120
+  orig: 100, 120
+  offset: 0, 0
+  index: -1
+uszko
+  rotate: false
+  xy: 2, 2
+  size: 47, 31
+  orig: 47, 31
+  offset: 0, 0
+  index: -1
+zrenicalewa
+  rotate: true
+  xy: 1015, 503
+  size: 5, 7
+  orig: 5, 7
+  offset: 0, 0
+  index: -1
+zrenicaprawa
+  rotate: false
+  xy: 511, 343
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1

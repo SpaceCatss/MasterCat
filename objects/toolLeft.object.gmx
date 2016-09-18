@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_angle = 180
+            <string>image_alpha = 0
+tweenline_to(id, 1.5, array(  "ease",ease_backinout, "alpha", 1))
+
+image_angle = 180
 NoneTooltoTool10 = false
 Tool10toTool9 = false 
 Tool9toTool8 = false 
@@ -602,7 +605,8 @@ alarm[0]=25
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>mouse_clear(mb_left)
+            <string>if global.CanClick = true{
+mouse_clear(mb_left)
 
 if global.t=10 and CanClickAgain = true
 {
@@ -695,6 +699,7 @@ NoneTooltoTool10 = true
 CanClickAgain = false
 global.t = 10
 
+}
 }
 </string>
           </argument>

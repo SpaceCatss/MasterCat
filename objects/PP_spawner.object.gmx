@@ -102,7 +102,11 @@ r3 = irandom_range(1,100)
 if r3&gt;=1 and r3&lt;=95
 makethis3=empty
 else if r3&gt;=96 and r3&lt;=100
+{
+if !instance_exists(BlackHoleStart)
 makethis3=BlackHoleStart
+else if instance_exists(BlackHoleStart)
+makethis3=empty}
 bomb3=instance_create(x+1200,irandom_range(100,250),makethis3) 
 
 alarm[0] = 40
@@ -142,7 +146,11 @@ r3 = irandom_range(1,100)
 if r3&gt;=1 and r3&lt;=95
 makethis3=empty
 else if r3&gt;=96 and r3&lt;=100
+{
+if !instance_exists(BlackHoleStart)
 makethis3=BlackHoleStart
+else if instance_exists(BlackHoleStart)
+makethis3=empty}
 bomb3=instance_create(x+1200,irandom_range(100,250),makethis3) 
 
 alarm[0] = 25
@@ -183,7 +191,11 @@ r3 = irandom_range(1,100)
 if r3&gt;=1 and r3&lt;=95
 makethis3=empty
 else if r3&gt;=96 and r3&lt;=100
+{
+if !instance_exists(BlackHoleStart)
 makethis3=BlackHoleStart
+else if instance_exists(BlackHoleStart)
+makethis3=empty}
 bomb3=instance_create(x+1200,irandom_range(100,250),makethis3) 
 
 alarm[0] = 15

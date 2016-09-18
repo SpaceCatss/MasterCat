@@ -37,126 +37,126 @@ or r&gt;=97 and r&lt;=120
 {
 //full ground easy
 
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=20 and r&lt;=25
 or r&gt;=121 and r&lt;=130
 {
 // 1hole1 easy
-instance_create(x,384,ObjectNonTap)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+192,512,ground)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=26 and r&lt;=30
 or r&gt;=131 and r&lt;=138
 {
 //1jole2 easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ObjectNonTap)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=31 and r&lt;=35
 or r&gt;=139 and r&lt;=146
 {
 //1hole3 easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ObjectNonTap)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+384,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=36 and r&lt;=40
 or r&gt;=147 and r&lt;=155
 {
 //1hole4 easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ObjectNonTap)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+384,512,ground)
+instance_create(x+576,instance_nearest(x-192,y,ground).y,ObjectNonTap)
 }
 
 if r&gt;=41 and r&lt;=43
 {
 //enemy 2 easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,288,enemy_slicable)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-96,enemy_slicable)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 
 if r&gt;=44 and r&lt;=46
 {
 //slowdown easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,358,BagnoSlowDown)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-26,BagnoSlowDown)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=47 and r&lt;=49
 {
 
 //Log easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,332,Log)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-52,Log)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=50 and r&lt;=52
 {
 
 //Log 2 easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,360,Log2)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-24,Log2)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=53 and r&lt;=55
 {
 
 //Poison Pot easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,300,PoisonPot)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-84,PoisonPot)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=56 and r&lt;=58
 {
 
 //Flamer nie wystajacy easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,335, SmokerConstGround)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-49, SmokerConstGround)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=59 and r&lt;=75
 {
 
 //Bekacz chmurkami nie wystajacy easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,335, SmokerGround)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-49, SmokerGround)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 
@@ -165,131 +165,131 @@ if r&gt;=76 and r&lt;=78
 {
 
 // FireBall Spawner easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,150,FireBallSpawner)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-234,FireBallSpawner)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=79 and r&lt;=81
 {
 
 // stone easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,220,stoneCalm)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-164,stoneCalm)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=82 and r&lt;=85
 {
 
 // stone easy 2
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,220,stoneCalm)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ObjectNonTap)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-164,stoneCalm)
+instance_create(x+384,512,ground)
+instance_create(x+576,instance_nearest(x-192,y,ground).y,ObjectNonTap)
 }
 
 if r&gt;=86 and r&lt;=88
 {
 
 // stone Up Down easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,200,stoneUpDown)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-184,stoneUpDown)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=89 and r&lt;=91
 {
 
 // Stone Go Round easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,160,stoneGoRound)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-224,stoneGoRound)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=92 and r&lt;=94
 {
 
 // Stone Left Right easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,288,stoneLeftRight)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-96,stoneLeftRight)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=95 and r&lt;=97
 {
 
 // Stone Left Right easy 2
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,224,stoneLeftRight)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-156,stoneLeftRight)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=156 and r&lt;=160
 {
 //2holenazmiane medium
-instance_create(x,384,ground)
-instance_create(x+96,384,ObjectNonTap)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ObjectNonTap)
+instance_create(x,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+384,512,ground)
+instance_create(x+576,instance_nearest(x-192,y,ground).y,ObjectNonTap)
 }
 
 if r&gt;=161 and r&lt;=165
 {
 //2hole2 medium
-instance_create(x,384,ObjectNonTap)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ObjectNonTap)
+instance_create(x,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+192,512,ground)
+instance_create(x+384,512,ground)
+instance_create(x+576,instance_nearest(x-192,y,ground).y,ObjectNonTap)
 }
 
 if r&gt;=166 and r&lt;=170
 {
 //2hole2 medium
-instance_create(x,384,ObjectNonTap)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ObjectNonTap)
-instance_create(x+288,384,ground)
+instance_create(x,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+192,512,ground)
+instance_create(x+384,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=171 and r&lt;=175
 {
 //2 z zrzedu medium
-instance_create(x,384,ObjectNonTap)
-instance_create(x+96,384,ObjectNonTap)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+192,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=176 and r&lt;=180
 {
 //2 z zrzedu 2 medium
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ObjectNonTap)
-instance_create(x+288,384,ObjectNonTap)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+384,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+576,instance_nearest(x-192,y,ground).y,ObjectNonTap)
 }
 
 if r&gt;=181 and r&lt;=185
 {
 //2 z zrzedu 3 medium
-instance_create(x,384,ground)
-instance_create(x+96,384,ObjectNonTap)
-instance_create(x+192,384,ObjectNonTap)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+384,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+576,512,ground)
 }
 
 }
@@ -314,126 +314,126 @@ or r&gt;=97 and r&lt;=120
 {
 //full ground easy
 
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=20 and r&lt;=25
 or r&gt;=121 and r&lt;=130
 {
 // 1hole1 easy
-instance_create(x,384,ObjectNonTap)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+192,512,ground)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=26 and r&lt;=30
 or r&gt;=131 and r&lt;=138
 {
 //1jole2 easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ObjectNonTap)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=31 and r&lt;=35
 or r&gt;=139 and r&lt;=146
 {
 //1hole3 easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ObjectNonTap)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+384,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=36 and r&lt;=40
 or r&gt;=147 and r&lt;=155
 {
 //1hole4 easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ObjectNonTap)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+384,512,ground)
+instance_create(x+576,instance_nearest(x-192,y,ground).y,ObjectNonTap)
 }
 
 if r&gt;=41 and r&lt;=43
 {
 //enemy 2 easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,288,enemy_slicable)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-96,enemy_slicable)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 
 if r&gt;=44 and r&lt;=46
 {
 //slowdown easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,358,BagnoSlowDown)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-26,BagnoSlowDown)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=47 and r&lt;=49
 {
 
 //Log easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,332,Log)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-52,Log)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=50 and r&lt;=52
 {
 
 //Log 2 easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,360,Log2)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-24,Log2)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=53 and r&lt;=55
 {
 
 //Poison Pot easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,300,PoisonPot)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-84,PoisonPot)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=56 and r&lt;=58
 {
 
 //Flamer nie wystajacy easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,335, SmokerConstGround)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-49, SmokerConstGround)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=59 and r&lt;=75
 {
 
 //Bekacz chmurkami nie wystajacy easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,335, SmokerGround)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-49, SmokerGround)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 
@@ -442,131 +442,131 @@ if r&gt;=76 and r&lt;=78
 {
 
 // FireBall Spawner easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,150,FireBallSpawner)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-234,FireBallSpawner)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=79 and r&lt;=81
 {
 
 // stone easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,220,stoneCalm)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-164,stoneCalm)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=82 and r&lt;=85
 {
 
 // stone easy 2
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,220,stoneCalm)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ObjectNonTap)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-164,stoneCalm)
+instance_create(x+384,512,ground)
+instance_create(x+576,instance_nearest(x-192,y,ground).y,ObjectNonTap)
 }
 
 if r&gt;=86 and r&lt;=88
 {
 
 // stone Up Down easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,200,stoneUpDown)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-184,stoneUpDown)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=89 and r&lt;=91
 {
 
 // Stone Go Round easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,160,stoneGoRound)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-224,stoneGoRound)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=92 and r&lt;=94
 {
 
 // Stone Left Right easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,288,stoneLeftRight)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-96,stoneLeftRight)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=95 and r&lt;=97
 {
 
 // Stone Left Right easy 2
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,224,stoneLeftRight)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-156,stoneLeftRight)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=156 and r&lt;=160
 {
 //2holenazmiane medium
-instance_create(x,384,ground)
-instance_create(x+96,384,ObjectNonTap)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ObjectNonTap)
+instance_create(x,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+384,512,ground)
+instance_create(x+576,instance_nearest(x-192,y,ground).y,ObjectNonTap)
 }
 
 if r&gt;=161 and r&lt;=165
 {
 //2hole2 medium
-instance_create(x,384,ObjectNonTap)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ObjectNonTap)
+instance_create(x,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+192,512,ground)
+instance_create(x+384,512,ground)
+instance_create(x+576,instance_nearest(x-192,y,ground).y,ObjectNonTap)
 }
 
 if r&gt;=166 and r&lt;=170
 {
 //2hole2 medium
-instance_create(x,384,ObjectNonTap)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ObjectNonTap)
-instance_create(x+288,384,ground)
+instance_create(x,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+192,512,ground)
+instance_create(x+384,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=171 and r&lt;=175
 {
 //2 z zrzedu medium
-instance_create(x,384,ObjectNonTap)
-instance_create(x+96,384,ObjectNonTap)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+192,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=176 and r&lt;=180
 {
 //2 z zrzedu 2 medium
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ObjectNonTap)
-instance_create(x+288,384,ObjectNonTap)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+384,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+576,instance_nearest(x-192,y,ground).y,ObjectNonTap)
 }
 
 if r&gt;=181 and r&lt;=185
 {
 //2 z zrzedu 3 medium
-instance_create(x,384,ground)
-instance_create(x+96,384,ObjectNonTap)
-instance_create(x+192,384,ObjectNonTap)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+384,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+576,512,ground)
 }
 
 }
@@ -586,126 +586,126 @@ or r&gt;=97 and r&lt;=120
 {
 //full ground easy
 
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=20 and r&lt;=25
 or r&gt;=121 and r&lt;=130
 {
 // 1hole1 easy
-instance_create(x,384,ObjectNonTap)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+192,512,ground)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=26 and r&lt;=30
 or r&gt;=131 and r&lt;=138
 {
 //1jole2 easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ObjectNonTap)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=31 and r&lt;=35
 or r&gt;=139 and r&lt;=146
 {
 //1hole3 easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ObjectNonTap)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+384,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=36 and r&lt;=40
 or r&gt;=147 and r&lt;=155
 {
 //1hole4 easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ObjectNonTap)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+384,512,ground)
+instance_create(x+576,instance_nearest(x-192,y,ground).y,ObjectNonTap)
 }
 
 if r&gt;=41 and r&lt;=43
 {
 //enemy 2 easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,288,enemy_slicable)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-96,enemy_slicable)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 
 if r&gt;=44 and r&lt;=46
 {
 //slowdown easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,358,BagnoSlowDown)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-26,BagnoSlowDown)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=47 and r&lt;=49
 {
 
 //Log easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,332,Log)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-52,Log)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=50 and r&lt;=52
 {
 
 //Log 2 easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,360,Log2)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-24,Log2)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=53 and r&lt;=55
 {
 
 //Poison Pot easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,300,PoisonPot)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-84,PoisonPot)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=56 and r&lt;=58
 {
 
 //Flamer nie wystajacy easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,335, SmokerConstGround)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-49, SmokerConstGround)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=59 and r&lt;=75
 {
 
 //Bekacz chmurkami nie wystajacy easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,335, SmokerGround)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-49, SmokerGround)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 
@@ -713,131 +713,131 @@ if r&gt;=76 and r&lt;=78
 {
 
 // FireBall Spawner easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,150,FireBallSpawner)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-234,FireBallSpawner)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=79 and r&lt;=81
 {
 
 // stone easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,220,stoneCalm)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-164,stoneCalm)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=82 and r&lt;=85
 {
 
 // stone easy 2
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,220,stoneCalm)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ObjectNonTap)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-164,stoneCalm)
+instance_create(x+384,512,ground)
+instance_create(x+576,instance_nearest(x-192,y,ground).y,ObjectNonTap)
 }
 
 if r&gt;=86 and r&lt;=88
 {
 
 // stone Up Down easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,200,stoneUpDown)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-184,stoneUpDown)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=89 and r&lt;=91
 {
 
 // Stone Go Round easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,160,stoneGoRound)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-224,stoneGoRound)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=92 and r&lt;=94
 {
 
 // Stone Left Right easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,288,stoneLeftRight)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-96,stoneLeftRight)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=95 and r&lt;=97
 {
 
 // Stone Left Right easy 2
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,224,stoneLeftRight)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-156,stoneLeftRight)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=156 and r&lt;=160
 {
 //2holenazmiane medium
-instance_create(x,384,ground)
-instance_create(x+96,384,ObjectNonTap)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ObjectNonTap)
+instance_create(x,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+384,512,ground)
+instance_create(x+576,instance_nearest(x-192,y,ground).y,ObjectNonTap)
 }
 
 if r&gt;=161 and r&lt;=165
 {
 //2hole2 medium
-instance_create(x,384,ObjectNonTap)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ObjectNonTap)
+instance_create(x,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+192,512,ground)
+instance_create(x+384,512,ground)
+instance_create(x+576,instance_nearest(x-192,y,ground).y,ObjectNonTap)
 }
 
 if r&gt;=166 and r&lt;=170
 {
 //2hole2 medium
-instance_create(x,384,ObjectNonTap)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ObjectNonTap)
-instance_create(x+288,384,ground)
+instance_create(x,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+192,512,ground)
+instance_create(x+384,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=171 and r&lt;=175
 {
 //2 z zrzedu medium
-instance_create(x,384,ObjectNonTap)
-instance_create(x+96,384,ObjectNonTap)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+192,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=176 and r&lt;=180
 {
 //2 z zrzedu 2 medium
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ObjectNonTap)
-instance_create(x+288,384,ObjectNonTap)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+384,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+576,instance_nearest(x-192,y,ground).y,ObjectNonTap)
 }
 
 if r&gt;=181 and r&lt;=185
 {
 //2 z zrzedu 3 medium
-instance_create(x,384,ground)
-instance_create(x+96,384,ObjectNonTap)
-instance_create(x+192,384,ObjectNonTap)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+384,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+576,512,ground)
 }
 
 }
@@ -855,260 +855,289 @@ or r&gt;=97 and r&lt;=120
 {
 //full ground easy
 
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=20 and r&lt;=25
 or r&gt;=121 and r&lt;=130
 {
 // 1hole1 easy
-instance_create(x,384,ObjectNonTap)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+192,512,ground)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=26 and r&lt;=30
 or r&gt;=131 and r&lt;=138
 {
 //1jole2 easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ObjectNonTap)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=31 and r&lt;=35
 or r&gt;=139 and r&lt;=146
 {
 //1hole3 easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ObjectNonTap)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+384,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=36 and r&lt;=40
 or r&gt;=147 and r&lt;=155
 {
 //1hole4 easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ObjectNonTap)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+384,512,ground)
+instance_create(x+576,instance_nearest(x-192,y,ground).y,ObjectNonTap)
 }
 
 if r&gt;=41 and r&lt;=43
 {
 //enemy 2 easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,288,enemy_slicable)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-96,enemy_slicable)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 
 if r&gt;=44 and r&lt;=46
 {
 //slowdown easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,358,BagnoSlowDown)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-26,BagnoSlowDown)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=47 and r&lt;=49
 {
 
 //Log easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,332,Log)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-52,Log)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=50 and r&lt;=52
 {
 
 //Log 2 easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,360,Log2)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-24,Log2)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=53 and r&lt;=55
 {
 
 //Poison Pot easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,300,PoisonPot)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-84,PoisonPot)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=56 and r&lt;=58
 {
 
 //Flamer nie wystajacy easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,335, SmokerConstGround)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-49, SmokerConstGround)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=59 and r&lt;=75
 {
 
 //Bekacz chmurkami nie wystajacy easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,335, SmokerGround)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-49, SmokerGround)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=76 and r&lt;=78
 {
 
 // FireBall Spawner easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,150,FireBallSpawner)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-234,FireBallSpawner)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=79 and r&lt;=81
 {
 
 // stone easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,220,stoneCalm)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-164,stoneCalm)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=82 and r&lt;=85
 {
 
 // stone easy 2
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,220,stoneCalm)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ObjectNonTap)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-164,stoneCalm)
+instance_create(x+384,512,ground)
+instance_create(x+576,instance_nearest(x-192,y,ground).y,ObjectNonTap)
 }
 
 if r&gt;=86 and r&lt;=88
 {
 
 // stone Up Down easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,200,stoneUpDown)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-184,stoneUpDown)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=89 and r&lt;=91
 {
 
 // Stone Go Round easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,160,stoneGoRound)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-224,stoneGoRound)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=92 and r&lt;=94
 {
 
 // Stone Left Right easy
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,288,stoneLeftRight)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-96,stoneLeftRight)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=95 and r&lt;=97
 {
 
 // Stone Left Right easy 2
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+96,224,stoneLeftRight)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y-156,stoneLeftRight)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=156 and r&lt;=160
 {
 //2holenazmiane medium
-instance_create(x,384,ground)
-instance_create(x+96,384,ObjectNonTap)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ObjectNonTap)
+instance_create(x,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+384,512,ground)
+instance_create(x+576,instance_nearest(x-192,y,ground).y,ObjectNonTap)
 }
 
 if r&gt;=161 and r&lt;=165
 {
 //2hole2 medium
-instance_create(x,384,ObjectNonTap)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ObjectNonTap)
+instance_create(x,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+192,512,ground)
+instance_create(x+384,512,ground)
+instance_create(x+576,instance_nearest(x-192,y,ground).y,ObjectNonTap)
 }
 
 if r&gt;=166 and r&lt;=170
 {
 //2hole2 medium
-instance_create(x,384,ObjectNonTap)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ObjectNonTap)
-instance_create(x+288,384,ground)
+instance_create(x,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+192,512,ground)
+instance_create(x+384,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=171 and r&lt;=175
 {
 //2 z zrzedu medium
-instance_create(x,384,ObjectNonTap)
-instance_create(x+96,384,ObjectNonTap)
-instance_create(x+192,384,ground)
-instance_create(x+288,384,ground)
+instance_create(x,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+192,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+384,512,ground)
+instance_create(x+576,512,ground)
 }
 
 if r&gt;=176 and r&lt;=180
 {
 //2 z zrzedu 2 medium
-instance_create(x,384,ground)
-instance_create(x+96,384,ground)
-instance_create(x+192,384,ObjectNonTap)
-instance_create(x+288,384,ObjectNonTap)
+instance_create(x,512,ground)
+instance_create(x+192,512,ground)
+instance_create(x+384,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+576,instance_nearest(x-192,y,ground).y,ObjectNonTap)
 }
 
 if r&gt;=181 and r&lt;=185
 {
 //2 z zrzedu 3 medium
-instance_create(x,384,ground)
-instance_create(x+96,384,ObjectNonTap)
-instance_create(x+192,384,ObjectNonTap)
-instance_create(x+288,384,ground)
+instance_create(x,512,ground)
+instance_create(x+192,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+384,instance_nearest(x-192,y,ground).y,ObjectNonTap)
+instance_create(x+576,512,ground)
 }
 
 
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if global.OneTimeIHateHoles = true
+{
+with ObjectNonTap
+{
+instance_change(ground,true)
+}
 }
 </string>
           </argument>
