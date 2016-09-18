@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0]=140
+            <string>alarm[0]=200
 image_alpha = 1
 image_xscale = 14
 image_yscale = 14
@@ -77,7 +77,7 @@ image_yscale = 14
             <kind>1</kind>
             <string>
 instance_create(64,global.StartPositionY,livesA)
-instance_create(0,global.StartPositionY,PlayerSpawner)
+instance_create(0,4815,PlayerSpawner)
 instance_destroy()
 </string>
           </argument>

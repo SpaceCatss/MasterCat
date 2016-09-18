@@ -55,6 +55,7 @@ global.CanPlayRM2 = true
 if(global.CanPlayRM2 = true) {
 
 global.ChoosedLevel = 2
+global.rm = 2
 }
 
 
