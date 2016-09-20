@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>CanWork =true
+            <string>n=x
+nn = 0
+DontDestroyBlock = false
+CanWork =true
 LetItStretch = false
 spd = 0
 //nie rkeujemy GroundBisStartera, bo on bedzie wykreowany z kodu, gdy mamy dlugi obiekt ((za x sluzy global.b) 
@@ -115,7 +118,9 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !place_meeting(x,y,groundBisStarting){
+            <string>
+
+if !place_meeting(x,y,groundBisStarting){
 image_xscale += 1
 }
 else 
@@ -127,7 +132,8 @@ if place_meeting(x+60,y,Player3)
 {
 with Player3 {
 path_start(KnockUpClone, 10, path_action_stop, 0)}
-instance_create(x,y,bridgeTapBisLong)
+instance_create_ext(x,y,bridgeTapBisLong,sprite_width/100,1)
+DontDestroyBlock = true
 global.ZoomOut = true
 global.PlayMusic=false
 audio_play_sound(boom, 11, false);
@@ -251,7 +257,13 @@ CanMiss = false
           <argument>
             <kind>1</kind>
             <string>LetItStretch = false
+if DontDestroyBlock = false{
 alarm[0]=1
+}
+
+if DontDestroyBlock = true {
+alarm[0]=120
+}
 </string>
           </argument>
         </arguments>

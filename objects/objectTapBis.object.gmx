@@ -28,19 +28,15 @@
             <string>CanWork = true
 instance_create(x,y+200,invi)
 
-if !place_meeting(x+97,y-30,objectTapBis) 
+if !place_meeting(x/*+97*/,y-30,objectTapBis) 
 {
 instance_create(x+96,y,groundBisStarting)
-/*r = random_range(1,50)
-if r &gt;=1 and r &lt;=25
-{
 
 }
-if r &gt;= 26 and r &lt;=50
+if !place_meeting(x/*+97*/,y,objectTapBis) 
 {
-instance_create(x,y,ObstacleCreator)
-instance_destroy()
-}*/
+instance_create(x+96,y,groundBisStarting)
+
 }
 
 
@@ -48,7 +44,7 @@ Stairs = true
 Stairscount = 1
 n = 0
 CanGenerateGround = false
-if !place_meeting(x-90,y,objectTapBis) 
+if !place_meeting(x-35,y,objectTapBis) 
 {
 instance_create(x-1,y,groundBisEnding)
 }

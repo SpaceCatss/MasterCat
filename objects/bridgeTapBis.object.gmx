@@ -82,7 +82,7 @@ instance_create(x,y,objectTap)
 
 if place_meeting(x,y,bridgeTapBis)
 {
-image_xscale = 0.40
+//image_xscale = 0.40
 }
 
 if place_meeting(x,y,objectTapBis)

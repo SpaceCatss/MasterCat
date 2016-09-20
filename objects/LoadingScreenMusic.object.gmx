@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0]=200
+            <string>alarm[0]=400
 image_alpha = 1
 image_xscale = 14
 image_yscale = 14

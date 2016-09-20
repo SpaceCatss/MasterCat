@@ -166,9 +166,12 @@
       <sprite>sprites\sprite259_clockstop</sprite>
       <sprite>sprites\sprite266_bronze_tile_walkway</sprite>
       <sprite>sprites\Grondi</sprite>
+      <sprite>sprites\grondiG</sprite>
       <sprite>sprites\GroundBisMusic</sprite>
       <sprite>sprites\groundMirror2</sprite>
+      <sprite>sprites\startingG</sprite>
       <sprite>sprites\groundMirror</sprite>
+      <sprite>sprites\endingG</sprite>
       <sprite>sprites\sprite267_paintbucket</sprite>
     </sprites>
     <sprites name="tools">
@@ -1010,6 +1013,7 @@
     <object>objects\ground</object>
     <object>objects\GroundMusicStretchBlock</object>
     <object>objects\groundBis</object>
+    <object>objects\groundBis2</object>
     <object>objects\groundBisCreator</object>
     <object>objects\groundBisEnding</object>
     <object>objects\groundBisStarting</object>
