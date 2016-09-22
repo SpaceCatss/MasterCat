@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*if global.rm = 2 {
+            <string>if global.rm = 2 {
   
    instance_create( 640,4888.70,GroundSpawnerSpecial);
   instance_create( 1055,4888.70,GroundSpawnerSpecial);
@@ -88,11 +88,37 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*if global.rm = 3 {
+            <string>if global.rm = 3 {
 /// dla piosenki 2(room04)
 
 //tu wklej zawartosc CTRLI i SHIFTOW
-
+  instance_create( 3234,4888.70,GroundSpawnerSpecial);
+  instance_create( 4386,4889.05,GroundSpawnerSpecial);
+  instance_create( 4794,4888.55,GroundSpawnerSpecial);
+  instance_create( 5184,4888.55,GroundSpawnerSpecial);
+  instance_create( 5544,4888.55,GroundSpawnerSpecial);
+  instance_create( 5946,4888.55,GroundSpawnerSpecial);
+  instance_create( 6348,4888.55,GroundSpawnerSpecial);
+  instance_create( 6642,4889.05,GroundSpawnerSpecial);
+  instance_create( 7169,4663.89,GroundSpawnerSpecial);
+  instance_create( 7343,4663.89,GroundSpawnerSpecial);
+  instance_create( 7905,4514.39,GroundSpawnerRapid);
+  instance_create( 8599,4363.89,GroundSpawnerRapid);
+  instance_create( 9539,3838.55,GroundSpawnerSpecial);
+  instance_create( 10042,3764.05,GroundSpawnerRapid);
+  instance_create( 10588,3764.05,GroundSpawnerRapid);
+  instance_create( 17427,3238.93,GroundSpawnerRapid);
+  instance_create( 17643,3238.93,GroundSpawnerRapid);
+  instance_create( 17859,3238.93,GroundSpawnerRapid);
+  instance_create( 18057,3238.93,GroundSpawnerRapid);
+  instance_create( 18729,3238.93,GroundSpawnerSpecial);
+  instance_create( 18843,3238.93,GroundSpawnerSpecial);
+  instance_create( 18975,3238.93,GroundSpawnerSpecial);
+  instance_create( 19071,3238.93,GroundSpawnerSpecial);
+  instance_create( 19149,3238.93,GroundSpawnerSpecial);
+  instance_create( 19233,3238.93,GroundSpawnerSpecial);
+  instance_create( 19317,3238.93,GroundSpawnerSpecial);
+  instance_create( 19431,3238.93,GroundSpawnerSpecial);
 }
 </string>
           </argument>
@@ -114,7 +140,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*if global.rm = 4 {
+            <string>if global.rm = 4 {
 /// dla piosenki 3(room05)
 
 //tu wklej zawartosc CTRLI i SHIFTOW

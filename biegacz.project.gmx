@@ -244,6 +244,7 @@
     <sprite>sprites\sprite2bis</sprite>
     <sprite>sprites\sprite3</sprite>
     <sprite>sprites\sprite3Bis</sprite>
+    <sprite>sprites\sprite3Bis2</sprite>
     <sprite>sprites\in</sprite>
     <sprite>sprites\InvisiblePoint</sprite>
     <sprite>sprites\sprite4</sprite>
@@ -1352,6 +1353,7 @@
     <object>objects\objectTap</object>
     <object>objects\objectTapBis</object>
     <object>objects\objectTapBisLong</object>
+    <object>objects\ObjectCollisionLong</object>
     <object>objects\ObstacleCreator</object>
     <object>objects\ObjectNonTap</object>
     <object>objects\objectB</object>

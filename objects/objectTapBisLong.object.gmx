@@ -25,12 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>n=x
+            <string>alarm[1]=60
+OneTimeInMyLife = true
+n=x
 nn = 0
 DontDestroyBlock = false
 CanWork =true
 LetItStretch = false
 spd = 0
+image_xscale = 1
 //nie rkeujemy GroundBisStartera, bo on bedzie wykreowany z kodu, gdy mamy dlugi obiekt ((za x sluzy global.b) 
 //a ten objekt bedzie sie skalował poki nie napotka na bis starterA
 instance_create_ext(x,y+100,invi,2,1)
@@ -75,6 +78,29 @@ CanMiss = true
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_create_ext(x,y+10,ObjectCollisionLong,sprite_width,1)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
@@ -96,6 +122,7 @@ CanMiss = true
 {
 instance_destroy()
 }
+instance_create_ext(x,y,objectTapBisLong, sprite_width,1)
 </string>
           </argument>
         </arguments>
@@ -121,111 +148,15 @@ instance_destroy()
             <string>
 
 if !place_meeting(x,y,groundBisStarting){
-image_xscale += 1
+image_xscale += 0.5
 }
-else 
+else if place_meeting(x,y,groundBisStarting)
 {
 image_xscale += 0
 }
 
-if place_meeting(x+60,y,Player3)
-{
-with Player3 {
-path_start(KnockUpClone, 10, path_action_stop, 0)}
-instance_create_ext(x,y,bridgeTapBisLong,sprite_width/100,1)
-DontDestroyBlock = true
-global.ZoomOut = true
-global.PlayMusic=false
-audio_play_sound(boom, 11, false);
-if CanWork =true
-{
-global.LifeContener -= 50
-script_lives()
-CanWork = false
-}
 
 
-with Player3
-{
-Player3.movespeed = 0
-
-Player3.sprite_index = sprite6
-alarm[4] = 19.19
-}
-
-instance_destroy()
-}
-/*
-
-if Stairs = true and place_meeting(x-50,y,objectTapBis)
-{
-y = choose(instance_nearest(x-50,y,objectTapBis).yprevious-50)
-
-{
-
-}
-Stairs = false
-Stairscount = 2
-}
-
-if Stairscount = 2 and place_meeting(x-50,y,objectTapBis)
-{
-y = choose(instance_nearest(x-50,y,objectTapBis).y-50)
-Stairs = false
-Stairscount = 3
-
-}
-
-
-if Stairscount = 3 and place_meeting(x-50,y,objectTapBis)
-{
-y = choose(instance_nearest(x-50,y,objectTapBis).y-50)
-Stairs = false
-Stairscount = 4
-
-}
-
-
-if Stairscount = 4 and place_meeting(x-50,y,objectTapBis)
-{
-y = choose(instance_nearest(x-50,y,objectTapBis).y-50)
-Stairs = false
-Stairscount = 5
-
-}
-
-if Stairscount = 5 and place_meeting(x-50,y,objectTapBis)
-{
-y = choose(instance_nearest(x-50,y,objectTapBis).y-50)
-Stairs = false
-Stairscount = 6
-
-}
-
-if Stairscount = 6 and place_meeting(x-50,y,objectTapBis)
-{
-y = choose(instance_nearest(x-50,y,objectTapBis).y-50)
-Stairs = false
-Stairscount = 7
-
-}
-
-if Stairscount = 7 and place_meeting(x-50,y,objectTapBis)
-{
-y = choose(instance_nearest(x-50,y,objectTapBis).y-50)
-Stairs = false
-Stairscount = 8
-
-}
-
-// global na ustalenie y
-
-if !place_meeting(x+20,y,objectTapBis)
-{
-global.CheckObjectTapBisYPosition = objectTapBis.y
-}
-
-*/
 
 if  GPS2.x-80&gt;x  and GPS2.x-100&lt;x and CanMiss = true
 {
@@ -239,7 +170,7 @@ CanMiss = false
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="56">
+    <event eventtype="6" enumb="7">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -258,6 +189,7 @@ CanMiss = false
             <kind>1</kind>
             <string>LetItStretch = false
 if DontDestroyBlock = false{
+//instance_destroy()
 alarm[0]=1
 }
 
@@ -298,31 +230,38 @@ if distance_to_object(GPS2)&gt;200
 
 instance_create(x,y-200,TapRatingMiss)
 CanMiss = false
+
 }
 
-else if distance_to_object(GPS2)&gt;100 and distance_to_object(GPS2)&lt;=200 
+else if distance_to_object(GPS2)&gt;100 and distance_to_object(GPS2)&lt;=200 and OneTimeInMyLife = true
 {
 spd = instance_create(x,y,bridgeTapBisLong)
 LetItStretch = true
 CanMiss = false
+OneTimeInMyLife = false
+DontDestroyBlock = false
 instance_create(x,y-200,TapRatingGood)
 //instance_destroy()
 }
 
 
-else if distance_to_object(GPS2)&lt;=100 and distance_to_object(GPS2)&gt;=50
+else if distance_to_object(GPS2)&lt;=100 and distance_to_object(GPS2)&gt;=50 and OneTimeInMyLife = true
 { spd = instance_create(x,y,bridgeTapBisLong)
 LetItStretch = true
+DontDestroyBlock = false
+OneTimeInMyLife = false
 instance_create(x,y-200,TapRatingExcellent)
 CanMiss = false
 //instance_destroy()
 }
 
-else if distance_to_object(GPS2)&lt;50
+else if distance_to_object(GPS2)&lt;50 and OneTimeInMyLife = true
 {
 spd = instance_create(x,y,bridgeTapBisLong)
 LetItStretch = true
+DontDestroyBlock = false
 CanMiss = false
+OneTimeInMyLife = false
 instance_create(x,y-200,TapRatingRisky)
 //instance_destroy()
 }
@@ -341,29 +280,35 @@ instance_create(x,y-200,TapRatingMiss)
 CanMiss = false
 }
 
-else if distance_to_object(GPS2)&gt;100 and distance_to_object(GPS2)&lt;=200 
+else if distance_to_object(GPS2)&gt;100 and distance_to_object(GPS2)&lt;=200 and OneTimeInMyLife = true
 {
 spd = instance_create(x,y,bridgeTapBisLong)
 LetItStretch = true
 CanMiss = false
+OneTimeInMyLife = false
+DontDestroyBlock = false
 instance_create(x,y-200,TapRatingExcellent)
 //instance_destroy()
 }
 
 
-else if distance_to_object(GPS2)&lt;=100 and distance_to_object(GPS2)&gt;=80
+else if distance_to_object(GPS2)&lt;=100 and distance_to_object(GPS2)&gt;=80 and OneTimeInMyLife = true
 {spd = instance_create(x,y,bridgeTapBisLong)
 LetItStretch = true
+DontDestroyBlock = false
 instance_create(x,y-200,TapRatingExcellent)
 CanMiss = false
+OneTimeInMyLife = false
 //instance_destroy()
 }
 
-else if distance_to_object(GPS2)&lt;80
+else if distance_to_object(GPS2)&lt;80 and OneTimeInMyLife = true
 {
 spd = instance_create(x,y,bridgeTapBisLong)
 LetItStretch = true
 CanMiss = false
+DontDestroyBlock = false
+OneTimeInMyLife = false
 instance_create(x,y-200,TapRatingRisky)
 //instance_destroy()
 }

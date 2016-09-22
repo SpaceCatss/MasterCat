@@ -177,7 +177,7 @@ if t = 75 { global.a = 16974global.c = 16914
 if t = 76 { global.a = 17004global.c = 16986
  ; global.b = 17022 ;  d = global.b-global.c ; if d < 100 {  CheckY -=75 } ;  if global.b-global.a < 50 { instance_create( 17004,CheckY,objectTapBis);} else if global.b-global.a >=50 {instance_create( 17004,CheckY,objectTapBisLong); instance_create( 17022,CheckY,groundBisStarting); }}
 
-if t = 998 {  instance_create( room_width+70,CheckY,objectTapBis);
+if t = 998 {  instance_create( room_width+10,CheckY,objectTapBis);
  instance_create( room_width-20,room_height/2,meta)
 }
 
