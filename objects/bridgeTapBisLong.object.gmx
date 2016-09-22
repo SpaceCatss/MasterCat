@@ -54,7 +54,7 @@ instance_destroy()
           <argument>
             <kind>1</kind>
             <string>if !place_meeting(x,y,groundBisStarting)
-{image_xscale += 0.05}
+{image_xscale += 0.08}
 
 if place_meeting(x,y,groundBisStarting)
 {

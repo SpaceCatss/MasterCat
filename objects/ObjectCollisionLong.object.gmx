@@ -48,13 +48,20 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if !place_meeting(x,y,groundBisStarting){
+image_xscale += 0.5
+}
+else if place_meeting(x,y,groundBisStarting)
+{
+image_xscale += 0
+}
+
 
 if place_meeting(x+60,y,Player3)
 {
 with Player3 {
 path_start(KnockUpClone, 10, path_action_stop, 0)}
-instance_create_ext(x,y-10,bridgeTapBisLong,sprite_width/100,1)
+instance_create_ext(x,y-3,bridgeTapBisLong,sprite_width/70,1)
 DontDestroyBlock = true
 global.ZoomOut = true
 global.PlayMusic=false

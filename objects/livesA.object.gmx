@@ -1110,10 +1110,12 @@ show_debug_message(
 
 show_debug_message(
 + " ; global.b = " +string(Player3.x)  + " ;"
-+ "  d = global.b-global.c ; if d &lt; 80 {  CheckY -=75 } ;"
++ "  d = global.b-global.c ; if d &lt; 100 {  CheckY -=75 } ;"
 + "  if global.b-global.a &lt; 50 { instance_create( " + string(global.a) + ",CheckY,objectTapBis);}
-else if global.b-global.a &gt;=50 {instance_create( " + string(global.a) + ",CheckY,objectTapBisLong);
+else if global.b-global.a &gt;=50 {
 instance_create( " + string(global.b) + ",CheckY,groundBisStarting);
+instance_create( " + string(global.a) + ",CheckY,objectTapBisLong)
+;
 "
 + "}}"
 )

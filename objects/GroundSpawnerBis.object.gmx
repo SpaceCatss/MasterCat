@@ -57,7 +57,7 @@ a = 0 ; b = 0 ; c = 0 ; t = 0;
 
 /// song 1 beat sync
 /*
-n = 70
+n = 35
 k = room_width/n
 j = round(k*0.25)
 l = round(k * 0.5)

@@ -95,7 +95,7 @@ CanMiss = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create_ext(x,y+10,ObjectCollisionLong,sprite_width,1)
+            <string>instance_create_ext(x,y+3,ObjectCollisionLong,sprite_width,1)
 </string>
           </argument>
         </arguments>
@@ -148,7 +148,7 @@ instance_create_ext(x,y,objectTapBisLong, sprite_width,1)
             <string>
 
 if !place_meeting(x,y,groundBisStarting){
-image_xscale += 0.5
+image_xscale += 1
 }
 else if place_meeting(x,y,groundBisStarting)
 {

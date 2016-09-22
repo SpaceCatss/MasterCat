@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.rm = 2 {
+            <string>///przeszkody dla room03
+
+if global.rm = 2 {
   
    instance_create( 640,4888.70,GroundSpawnerSpecial);
   instance_create( 1055,4888.70,GroundSpawnerSpecial);
@@ -88,10 +90,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.rm = 3 {
-/// dla piosenki 2(room04)
+            <string>/// dla piosenki 2(room04)
+
+if global.rm = 3 {
+
 
 //tu wklej zawartosc CTRLI i SHIFTOW
+/*
   instance_create( 3234,4888.70,GroundSpawnerSpecial);
   instance_create( 4386,4889.05,GroundSpawnerSpecial);
   instance_create( 4794,4888.55,GroundSpawnerSpecial);
@@ -119,6 +124,7 @@
   instance_create( 19233,3238.93,GroundSpawnerSpecial);
   instance_create( 19317,3238.93,GroundSpawnerSpecial);
   instance_create( 19431,3238.93,GroundSpawnerSpecial);
+  */
 }
 </string>
           </argument>
@@ -140,8 +146,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.rm = 4 {
-/// dla piosenki 3(room05)
+            <string>/// dla piosenki 3(room05)
+
+if global.rm = 4 {
+
 
 //tu wklej zawartosc CTRLI i SHIFTOW
 
