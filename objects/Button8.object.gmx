@@ -166,7 +166,7 @@ else
 {
 draw_sprite_ext(sprite73,0,x,y,0.4,0.4,0,c_white,1)
 }
-draw_text_outline(x,y-7,"2",1,c_gray,10)
+draw_text_outline(x,y-7,"8",1,c_gray,10)
 }
 if(global.CanPlayRM2 = false) {
 draw_sprite_ext(sprite73,0,x,y,0.4,0.4,0,c_white,1)

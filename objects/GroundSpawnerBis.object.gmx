@@ -25,27 +25,30 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>/// tryb edycji lub rozgrywka
+
+// wstaw komentarz
+
 if global.rm = 2 {
-ground_spawner_bis3()
+ground_spawner_bis2()
 }
 if global.rm = 3 {
-ground_spawner_bis4()
+ground_spawner_bis3()
 }
 if global.rm = 4 {
-ground_spawner_bis5()
+ground_spawner_bis4()
 }
 if global.rm = 5 {
-ground_spawner_bis6()
+ground_spawner_bis5()
 }
 if global.rm = 6 {
-ground_spawner_bis7()
+ground_spawner_bis6()
 }
 if global.rm = 7 {
-ground_spawner_bis8()
+ground_spawner_bis7()
 }
 if global.rm = 8 {
-ground_spawner_bis9()
+ground_spawner_bis8()
 }
 if global.rm = 9 {
 ground_spawner_bis10()

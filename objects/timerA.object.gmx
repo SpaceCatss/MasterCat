@@ -44,7 +44,7 @@ global.CoinSpawner = 1
 global.mouse3 = false;
 
 global.seconds = 59;
-global.minutes = 2;
+global.minutes = 5;
 
 
 global.hours = 0;

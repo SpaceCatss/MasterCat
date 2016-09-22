@@ -148,7 +148,7 @@ instance_create_ext(x,y,objectTapBisLong, sprite_width,1)
             <string>
 
 if !place_meeting(x,y,groundBisStarting){
-image_xscale += 1
+image_xscale += 0.5
 }
 else if place_meeting(x,y,groundBisStarting)
 {

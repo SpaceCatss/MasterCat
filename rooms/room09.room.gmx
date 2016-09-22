@@ -10,9 +10,9 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>global.rm = 8  //to jest zmienna, ktrą musisz wprowadzic. azdy kolejny pokoj,musi mie kolejna cyfre
+  <code>global.rm = 9  //to jest zmienna, ktrą musisz wprowadzic. azdy kolejny pokoj,musi mie kolejna cyfre
 
-room_width= audio_sound_length(song7) * 30 * WPROWADZPREDKOSCKOTA // w odpowiednim meisjcu wporwadz predko kota
+//room_width= audio_sound_length(song8) * 30 * WPROWADZPREDKOSCKOTA // w odpowiednim meisjcu wporwadz predko kota
 
 
 global.r=3 // to na stałe włącza kota nr.3, narazie tego nie ruszac.

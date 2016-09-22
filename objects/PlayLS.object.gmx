@@ -57,35 +57,35 @@ room_goto(room01)
 }
 else if global.ChoosedLevel = 2
 {
-room_goto(room03)
+room_goto(room02)
 }
 else if global.ChoosedLevel = 3
 {
-room_goto(room04)
+room_goto(room03)
 }
 else if global.ChoosedLevel = 4
 {
-room_goto(room05)
+room_goto(room04)
 }
 else if global.ChoosedLevel = 5
 {
-room_goto(room06)
+room_goto(room05)
 }
 else if global.ChoosedLevel = 6
 {
-room_goto(room07)
+room_goto(room06)
 }
 else if global.ChoosedLevel = 7
 {
-room_goto(room08)
+room_goto(room07)
 }
 else if global.ChoosedLevel = 8
 {
-room_goto(room09)
+room_goto(room08)
 }
 else if global.ChoosedLevel = 9
 {
-room_goto(room10)
+room_goto(room09)
 }
 
 }

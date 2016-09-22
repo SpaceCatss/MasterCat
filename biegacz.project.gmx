@@ -123,12 +123,12 @@
     <sound>sound\sound0</sound>
     <sound>sound\sound1</sound>
     <sound>sound\sndLaser</sound>
-    <sound>sound\sound4_Animez__-_This_Game_(In_E_flat_Advanced_Version)(re-modify)</sound>
     <sound>sound\sound5</sound>
     <sound>sound\totemy1</sound>
     <sound>sound\beat</sound>
     <sound>sound\boom</sound>
     <sound>sound\song2</sound>
+    <sound>sound\song3</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="obstacles">
@@ -625,7 +625,6 @@
     <script>scripts\ground_spawner_bis6.gml</script>
     <script>scripts\ground_spawner_bis7.gml</script>
     <script>scripts\ground_spawner_bis8.gml</script>
-    <script>scripts\ground_spawner_bis9.gml</script>
     <script>scripts\ground_spawner_bis10.gml</script>
     <script>scripts\ground_spawner_music_stretch.gml</script>
     <script>scripts\ground_spawner_ink.gml</script>
@@ -1506,6 +1505,7 @@
     <room>rooms\Win</room>
     <room>rooms\Lost</room>
     <room>rooms\room01</room>
+    <room>rooms\room02</room>
     <room>rooms\room03</room>
     <room>rooms\room04</room>
     <room>rooms\room05</room>
@@ -1513,7 +1513,6 @@
     <room>rooms\room07</room>
     <room>rooms\room08</room>
     <room>rooms\room09</room>
-    <room>rooms\room10</room>
     <room>rooms\LevelSelectionRoom</room>
     <room>rooms\WalutaExchangeGold</room>
     <room>rooms\WalutaExchangeSilver</room>

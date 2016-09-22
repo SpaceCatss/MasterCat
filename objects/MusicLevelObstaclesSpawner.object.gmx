@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///przeszkody dla room03
+            <string>///przeszkody dla room02
 
 if global.rm = 2 {
   
@@ -90,7 +90,7 @@ if global.rm = 2 {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// dla piosenki 2(room04)
+            <string>/// dla piosenki 2(room03)
 
 if global.rm = 3 {
 
@@ -146,9 +146,149 @@ if global.rm = 3 {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// dla piosenki 3(room05)
+            <string>/// dla piosenki 3(room04)
 
 if global.rm = 4 {
+
+
+//tu wklej zawartosc CTRLI i SHIFTOW
+
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// dla piosenki 4(room05)
+
+if global.rm = 5 {
+
+
+//tu wklej zawartosc CTRLI i SHIFTOW
+
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// dla piosenki 5(room06)
+
+if global.rm = 6 {
+
+
+//tu wklej zawartosc CTRLI i SHIFTOW
+
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// dla piosenki 6(room07)
+
+if global.rm = 7 {
+
+
+//tu wklej zawartosc CTRLI i SHIFTOW
+
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// dla piosenki 7(room08)
+
+if global.rm = 8 {
+
+
+//tu wklej zawartosc CTRLI i SHIFTOW
+
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// dla piosenki 8(room09)
+
+if global.rm = 9 {
 
 
 //tu wklej zawartosc CTRLI i SHIFTOW
