@@ -30,6 +30,7 @@
 if global.CanClick = true{
 global.MoveToolBar = true
 global.ChoosedLevel = 1
+global.rm = 1
 
 mouse_clear(mb_left)
 

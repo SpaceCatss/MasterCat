@@ -77,12 +77,12 @@ image_yscale = 1.5
             <string>if global.t = 10 or global.t = 9 or global.t = 8 or global.t = 7
 {
 x = view_xview[0]+(350*global.zoom);
-y = view_yview[0]+(450*global.zoom);
+y = view_yview[0]+(410*global.zoom);
 }
 else if global.t = 6 or global.t = 5 or global.t = 4 or global.t = 3 or global.t = 2 or global.t = 1 or global.t = 0
 {
 x = view_xview[0]+(300*global.zoom);
-y = view_yview[0]+(450*global.zoom);
+y = view_yview[0]+(410*global.zoom);
 }
 
 

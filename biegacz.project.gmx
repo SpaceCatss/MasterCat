@@ -1008,6 +1008,8 @@
           <object>objects\kociak</object>
           <object>objects\kociak2</object>
         </objects>
+        <object>objects\SpeedUper</object>
+        <object>objects\SpeedDumper</object>
       </objects>
     </objects>
     <object>objects\ground</object>
@@ -1155,6 +1157,8 @@
         <object>objects\addSpeed_1</object>
         <object>objects\AddOneSpeed5</object>
         <object>objects\AddOneSpeed2</object>
+        <object>objects\SpeederUI</object>
+        <object>objects\SpeedDownerUI</object>
         <object>objects\Speed_4</object>
         <object>objects\AddOneSpeed4</object>
         <object>objects\Speed_1</object>

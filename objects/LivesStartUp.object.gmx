@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.CheckpointVisited2 = false
+            <string>
+global.CheckpointVisited2 = false
 global.CheckpointVisited3 = false
 global.zoom = 1
 global.trututu = 0
@@ -62,6 +63,8 @@ global.holy = false
 global.Stopper = false
 global.abilitySuperCat = false
 
+global.SpeedUpQty = 1
+global.SpeedDownQty = 1
 global.LaserBeamLenght = 200
 global.LaserAlarm = 40
 global.LaserQTY = 2

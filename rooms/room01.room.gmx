@@ -107,17 +107,15 @@ else if global.r=9
     <instance objName="empty" x="192" y="64" name="inst_38A96757" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="timerA" x="256" y="32" name="inst_41CFF738" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="PP_spawner" x="640" y="288" name="inst_28D08659" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="livesA" x="32" y="128" name="inst_F0081BDB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="microMap" x="300" y="430" name="inst_A12B1716" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="microplayer" x="60" y="470" name="inst_07046996" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="GPS2" x="160" y="128" name="inst_BC7588C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mouse_follow" x="256" y="192" name="inst_B0C53893" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemy_slicable" x="1216" y="416" name="inst_E4810C13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="meta" x="29056" y="320" name="inst_CE3CA4D0" locked="0" code="" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
+    <instance objName="PlayerSpawner" x="64" y="416" name="inst_9E559D2A" locked="0" code="" scaleX="1.70000004768372" scaleY="1.70000004768372" colour="4294967295" rotation="0"/>
     <instance objName="InkSpawner" x="160" y="224" name="inst_493D9481" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="PossiblePointsss" x="288" y="128" name="inst_93252E1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="invi" x="0" y="960" name="inst_2FB1FB2A" locked="0" code="" scaleX="2300" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="PlayerSpawner" x="64" y="416" name="inst_9E559D2A" locked="0" code="" scaleX="1.70000004768372" scaleY="1.70000004768372" colour="4294967295" rotation="0"/>
+    <instance objName="livesA" x="32" y="128" name="inst_F0081BDB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="StarToFill" x="416" y="128" name="inst_E2F1B1EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Komar" x="768" y="256" name="inst_307C2727" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

@@ -15,7 +15,7 @@
 //room_width= audio_sound_length(song8) * 30 * WPROWADZPREDKOSCKOTA // w odpowiednim meisjcu wporwadz predko kota
 
 
-global.r=3 // to na stałe włącza kota nr.3, narazie tego nie ruszac.
+//global.r=3 // to na stałe włącza kota nr.3, narazie tego nie ruszac.
 global.StartPositionY = 4815
 
 

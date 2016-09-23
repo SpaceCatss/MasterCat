@@ -15,7 +15,7 @@
 //room_width= audio_sound_length(totemy1) * 30 * WPROWADZPREDKOSCKOTA! // w odpowiednim meisjcu wporwadz predko kota
 
 
-global.r=3 // to na stałe włącza kota nr.3, narazie tego nie ruszac.
+//global.r=3 // to na stałe włącza kota nr.3, narazie tego nie ruszac.
 global.StartPositionY = 4815
 
 
@@ -38,7 +38,7 @@ instance_create(x,y,AbilitySuperCatUI)
 }
 else if global.r=3
 {
-instance_create(64,4800,PantieCloudUI)
+instance_create(x,y,PantieCloudUI)
 
 }
 else if global.r=4
@@ -98,7 +98,7 @@ else if global.r=9
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="GPS" xview="0" yview="0" wview="800" hview="480" xport="0" yport="0" wport="800" hport="480" hborder="550" vborder="240" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="GPS" xview="0" yview="4620" wview="800" hview="480" xport="0" yport="0" wport="800" hport="480" hborder="550" vborder="240" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>

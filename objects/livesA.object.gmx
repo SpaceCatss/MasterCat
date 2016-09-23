@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.rm =2 {
+            <string>if global.rm =1 {
+snd = audio_play_sound(totemy1,10,true)}
+if global.rm =2 {
 snd = audio_play_sound(totemy1,10,true)}
 if global.rm =3 {
 snd = audio_play_sound(song2,10,true)}
@@ -117,6 +119,11 @@ global.LaserDestroyerQTY = global.LaserDestroyerQTY * 2}
 }
 }
 
+
+if global.t = 1{
+instance_create(x,y,SpeederUI)}
+if global.t = 3{
+instance_create(x,y,SpeedDownerUI)}
 
 if global.t = 10{
 instance_create(x,y,LaserUI)

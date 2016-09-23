@@ -15,7 +15,7 @@
 //room_width= audio_sound_length(song2) * 30 * 6 // w odpowiednim meisjcu wporwadz predko kota
 
 
-global.r=3 // to na stałe włącza kota nr.3, narazie tego nie ruszac.
+//global.r=3 // to na stałe włącza kota nr.3, narazie tego nie ruszac.
 global.StartPositionY = 4815
 
 
@@ -120,6 +120,8 @@ else if global.r=9
     <instance objName="PossiblePointsss" x="320" y="4800" name="inst_5B63A9DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="LoadingScreenMusic" x="0" y="4224" name="inst_84015106" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="GPS" x="214" y="4800" name="inst_4BB6AFAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SpeedUper" x="608" y="4800" name="inst_F2F8C258" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SpeedDumper" x="1472" y="4800" name="inst_A4A0553B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

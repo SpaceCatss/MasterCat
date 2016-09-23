@@ -66,46 +66,46 @@ if global.t = 1
 {
 if global.BoughtSpeed_20 = true
 {
-global.MoveAddCount +=1
+global.SpeedUpQty = 3
 if global.r=9
 {
-global.MoveAddCount +=2
+global.SpeedUpQty =6
 }
 }
 
 if global.BoughtSpeed_10 = true
 {
-global.MoveAddCount +=1
+global.SpeedUpQty = 2
 if global.r=9
 {
-global.MoveAddCount +=2
+global.SpeedUpQty = 4
 }
 }
 
 if global.BoughtSpeed_30 = true
 {
-global.MoveAddCount +=1
+global.SpeedUpQty =4
 if global.r=9
 {
-global.MoveAddCount +=2
+global.SpeedUpQty =8
 }
 }
 
 if global.BoughtSpeed_40 = true
 {
-global.MoveAddCount +=1
+global.SpeedUpQty =5
 if global.r=9
 {
-global.MoveAddCount +=2
+global.SpeedUpQty =10
 }
 }
 
 if global.BoughtSpeed_50 = true
 {
-global.MoveAddCount +=1
+global.SpeedUpQty = 6
 if global.r=9
 {
-global.MoveAddCount +=2
+global.SpeedUpQty = 12
 }
 }
 }
@@ -114,46 +114,46 @@ if global.t = 3
 {
 if global.BoughtSpeedDown_20 = true
 {
-global.MoveAddCount -=1
+global.SpeedDownQty = 3
 if global.r=9
 {
-global.MoveAddCount -=2
+global.SpeedDownQty = 6
 }
 }
 
 if global.BoughtSpeedDown_10 = true
 {
-global.MoveAddCount -=1
+global.SpeedDownQty = 2
 if global.r=9
 {
-global.MoveAddCount -=2
+global.SpeedDownQty = 4
 }
 }
 
 if global.BoughtSpeedDown_30 = true
 {
-global.MoveAddCount -=1
+global.SpeedDownQty = 4
 if global.r=9
 {
-global.MoveAddCount -=2
+global.SpeedDownQty = 8
 }
 }
 
 if global.BoughtSpeedDown_40 = true
 {
-global.MoveAddCount -=1
+global.SpeedDownQty = 5
 if global.r=9
 {
-global.MoveAddCount -=2
+global.SpeedDownQty = 10
 }
 }
 
 if global.BoughtSpeedDown_50 = true
 {
-global.MoveAddCount -=1
+global.SpeedDownQty = 6
 if global.r=9
 {
-global.MoveAddCount -=2
+global.SpeedDownQty = 12
 }
 }
 }

@@ -3,7 +3,7 @@
   <spriteName>shieldInvi</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-990</depth>
+  <depth>-9</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>global.CanClick = true
 
 image_xscale = 1.5
 image_yscale = 1.5
@@ -51,15 +51,16 @@ image_yscale = 1.5
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.t = 10 or global.t = 9 or global.t = 8 or global.t = 7
+            <string>
+if global.t = 10 or global.t = 9 or global.t = 8 or global.t = 7
 {
-x = view_xview[0]+(450*global.zoom);
-y = view_yview[0]+(550*global.zoom);
+x = view_xview[0]+(350*global.zoom);
+y = view_yview[0]+(410*global.zoom);
 }
 else if global.t = 6 or global.t = 5 or global.t = 4 or global.t = 3 or global.t = 2 or global.t = 1 or global.t = 0
 {
-x = view_xview[0]+(400*global.zoom);
-y = view_yview[0]+(550*global.zoom);
+x = view_xview[0]+(300*global.zoom);
+y = view_yview[0]+(410*global.zoom);
 }
 
 
@@ -121,14 +122,12 @@ instance_destroy()
 
 if global.t = 10 or global.t = 9 or global.t = 8 or global.t = 7
 {
-draw_sprite_ext(cloud,0,view_xview[0]+(450*global.zoom),view_yview[0]+(410*global.zoom),0.9*global.zoom,0.9*global.zoom,0,c_white,1)
+draw_sprite_ext(cloud,0,view_xview[0]+(350*global.zoom),view_yview[0]+(410*global.zoom),1*global.zoom,1*global.zoom,0,c_white,1)
 }
 else if global.t = 6 or global.t = 5 or global.t = 4 or global.t = 3 or global.t = 2 or global.t = 1 or global.t = 0
 {
-draw_sprite_ext(cloud,0,view_xview[0]+(400*global.zoom),view_yview[0]+(410*global.zoom),0.9*global.zoom,0.9*global.zoom,0,c_white,1)
+draw_sprite_ext(cloud,0,view_xview[0]+(300*global.zoom),view_yview[0]+(410*global.zoom),1*global.zoom,1*global.zoom,0,c_white,1)
 }
-
-
 
 
 </string>
