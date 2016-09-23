@@ -220,7 +220,7 @@ retreatmode += 1
 if retreatmode = 1 {skeleton_animation_set("retreat")}
 //colision players
 
-if  place_meeting(x,y,Player2) or place_meeting(x,y,Player3)
+if  place_meeting(x,y,Player2) or place_meeting(x,y,Player7)
 or place_meeting(x,y,Player4)  or place_meeting(x,y,Player5)  or place_meeting(x,y,Player6)
   or place_meeting(x,y,Player8)  or place_meeting(x,y,Player9) and global.TorpedoPlayer = false
 
@@ -257,7 +257,7 @@ image_yscale = image_yscale*1.007
 
 
 
-if place_meeting(x,y,Player7) and global.holy = false{
+if place_meeting(x,y,Player3) and global.holy = false{
 {
 CanWork = false
 }
@@ -272,7 +272,7 @@ image_yscale = image_yscale*1.007
 }
 }
 
-else if place_meeting(x,y,Player7) and global.holy = true{
+else if place_meeting(x,y,Player3) and global.holy = true{
 {
 CanWork = false
 }

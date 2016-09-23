@@ -113,7 +113,7 @@ y = view_yview[0]+(410*global.zoom);
             <kind>1</kind>
             <string>if global.CanClick = true{
 global.holy = true
-Player7.alarm[7] = 600
+Player3.alarm[6] = 600
 mouse_clear(mb_left)
 instance_destroy()
 }

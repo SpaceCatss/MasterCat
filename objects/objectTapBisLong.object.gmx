@@ -145,10 +145,15 @@ instance_create_ext(x,y,objectTapBisLong, sprite_width,1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if global.TorpedoPlayer = true
+{
+instance_create_ext(x,y,bridgeTapBisLong2,sprite_width/70,1)
+//instance_destroy()
+alarm[0]=120
+}
 
 if !place_meeting(x,y,groundBisStarting){
-image_xscale += 0.5
+image_xscale += 0.7
 }
 else if place_meeting(x,y,groundBisStarting)
 {

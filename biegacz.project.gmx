@@ -895,6 +895,7 @@
       <object>objects\groundInvisible</object>
       <object>objects\groundInvisible2</object>
       <object>objects\AbilityTimeStopUI</object>
+      <object>objects\AbilityMoonCatUI</object>
       <object>objects\AbilityFeverUI</object>
       <object>objects\AbilityCracyCowUI</object>
       <object>objects\AbilitySuperCatUI</object>
@@ -1348,6 +1349,7 @@
     <object>objects\bridgeTap</object>
     <object>objects\bridgeTapBis</object>
     <object>objects\bridgeTapBisLong</object>
+    <object>objects\bridgeTapBisLong2</object>
     <object>objects\paintBridge</object>
     <object>objects\paintBridge2</object>
     <object>objects\bridgeU</object>
@@ -1355,6 +1357,7 @@
     <object>objects\objectA</object>
     <object>objects\objectTap</object>
     <object>objects\objectTapBis</object>
+    <object>objects\objectTapBis2</object>
     <object>objects\objectTapBisLong</object>
     <object>objects\ObjectCollisionLong</object>
     <object>objects\ObstacleCreator</object>

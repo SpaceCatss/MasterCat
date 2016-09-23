@@ -89,42 +89,26 @@ y = view_yview[0]+(450*global.zoom);
           <argument>
             <kind>1</kind>
             <string>if global.CanClick = true{
+/*
 with ObjectNonTap{
 instance_change(groundInvisible2,true)}
 
 with objectTap{
 instance_change(groundInvisible2,true)}
-
+*/
 global.TorpedoPlayer = true
 
 
 
-with (player)
+with (Player3)
 {
-
-
-if global.MoveAddCount &lt; 12
-{
-global.MoveAddCount += 3
-}
-
-if global.MoveAddCount = 12
-{
-global.MoveAddCount += 2
-}
-
-if global.MoveAddCount = 13
-{
-global.MoveAddCount += 1
-}
 
 sprite_index = kottransformers;
-player.alarm[10] = 10
-player.y = player.y - 20
+Player3.alarm[10] = 10
 
 }
 
-player.alarm[11]=300
+Player3.alarm[11]=300
 
 mouse_clear(mb_left)
 instance_destroy()

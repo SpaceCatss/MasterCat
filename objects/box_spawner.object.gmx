@@ -30,7 +30,7 @@ r = irandom_range(1,140)
 if r&gt;=1 and r&lt;=140
 makethis=BoxD
 
-bomb=instance_create(x+500,irandom_range(-50,-100),makethis)
+bomb=instance_create(Player3.x+500,irandom_range(Player3.y-150,Player3.y-200),makethis)
 
 alarm[0] = irandom_range(10,40)
 alarm[1] = 300
@@ -87,7 +87,7 @@ alarm[1] = 300
 if r&gt;=1 and r&lt;=140
 makethis=BoxD
 
-bomb=instance_create(x+500,irandom_range(-50,-100),makethis)
+bomb=instance_create(Player3.x+400,irandom_range(Player3.y-150,Player3.y-200),makethis)
 
 alarm[0] = irandom_range(10,40)
 

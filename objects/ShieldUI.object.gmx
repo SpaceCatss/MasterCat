@@ -96,7 +96,7 @@ StartCounting = false
 x = view_xview[0]+(300*global.zoom);
 y = view_yview[0]+(450*global.zoom);
 }
-if instance_exists(AbilityCracyCowUI) or instance_exists(AbilityHolyUI) or instance_exists(AbilityShieldUI) or instance_exists(AbilitySuperCatUI)  or instance_exists(AbilityBoxUI) or instance_exists(PantieCloudUI) or instance_exists(AbilityTimeStopUI) or instance_exists(AbilityFeverUI)
+if instance_exists(AbilityCracyCowUI) or instance_exists(AbilityHolyUI) or instance_exists(AbilityShieldUI) or instance_exists(AbilitySuperCatUI)  or instance_exists(AbilityBoxUI) or instance_exists(PantieCloudUI) or instance_exists(AbilityTimeStopUI) or instance_exists(AbilityFeverUI) or global.MysteryBox = true
 {
 x = view_xview[0]+(250*global.zoom);
 y = view_yview[0]+(450*global.zoom);
@@ -174,7 +174,7 @@ if !instance_exists(AbilityCracyCowUI) and !instance_exists(AbilityHolyUI) and !
 {
 draw_sprite_ext(sprite225_shield_PNG1277,0,view_xview[0]+(300*global.zoom),view_yview[0]+(410*global.zoom),1*global.zoom,1*global.zoom,0,c_white,1)
 }
-if instance_exists(AbilityCracyCowUI) or instance_exists(AbilityHolyUI) or instance_exists(AbilityShieldUI) or instance_exists(AbilitySuperCatUI) or instance_exists(AbilityBoxUI) or instance_exists(PantieCloudUI) or instance_exists(AbilityTimeStopUI) or instance_exists(AbilityFeverUI)
+if instance_exists(AbilityCracyCowUI) or instance_exists(AbilityHolyUI) or instance_exists(AbilityShieldUI) or instance_exists(AbilitySuperCatUI) or instance_exists(AbilityBoxUI) or instance_exists(PantieCloudUI) or instance_exists(AbilityTimeStopUI) or instance_exists(AbilityFeverUI) or global.MysteryBox = true
 {
 draw_sprite_ext(sprite225_shield_PNG1277,0,view_xview[0]+(250*global.zoom),view_yview[0]+(410*global.zoom),1*global.zoom,1*global.zoom,0,c_white,1)
 }

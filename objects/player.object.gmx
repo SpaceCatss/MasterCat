@@ -108,7 +108,7 @@ event_inherited();
           <argument>
             <kind>1</kind>
             <string>global.TorpedoPlayer = false
-sprite_index = sprite5
+sprite_index = sprite32
 global.MoveAddCount -= 3
 </string>
           </argument>

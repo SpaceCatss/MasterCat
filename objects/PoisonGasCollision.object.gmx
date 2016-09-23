@@ -403,9 +403,17 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if CanWork =true
+            <string>if global.holy = false{
+if CanWork =true
 {
 global.LifeContener -= 20
+script_lives()
+CanWork = false
+}
+}
+if global.holy = true
+{
+global.LifeContener += 20
 script_lives()
 CanWork = false
 }

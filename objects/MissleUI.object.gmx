@@ -88,13 +88,13 @@ StartCounting = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(AbilityCracyCowUI) or instance_exists(AbilityHolyUI) or instance_exists(AbilityShieldUI) or instance_exists(AbilitySuperCatUI) or instance_exists(AbilityBoxUI) or instance_exists(PantieCloudUI) or instance_exists(AbilityTimeStopUI) or instance_exists(AbilityFeverUI)
+            <string>if instance_exists(AbilityCracyCowUI) or instance_exists(AbilityHolyUI) or instance_exists(AbilityShieldUI) or instance_exists(AbilitySuperCatUI) or instance_exists(AbilityBoxUI) or instance_exists(PantieCloudUI) or instance_exists(AbilityTimeStopUI) or instance_exists(AbilityFeverUI) or global.MysteryBox = true
 {
 x = view_xview[0]+(250*global.zoom);
 y = view_yview[0]+(410*global.zoom);
 }
 
-if !instance_exists(AbilityCracyCowUI) and !instance_exists(AbilityHolyUI) and !instance_exists(AbilityShieldUI) and !instance_exists(AbilitySuperCatUI)  and !instance_exists(AbilityBoxUI) and !instance_exists(PantieCloudUI) and !instance_exists(AbilityTimeStopUI) and !instance_exists(AbilityFeverUI)
+if !instance_exists(AbilityCracyCowUI) and !instance_exists(AbilityHolyUI) and !instance_exists(AbilityShieldUI) and !instance_exists(AbilitySuperCatUI)  and !instance_exists(AbilityBoxUI) and !instance_exists(PantieCloudUI) and !instance_exists(AbilityTimeStopUI) and !instance_exists(AbilityFeverUI) and global.MysteryBox = false
 {
 x = view_xview[0]+(300*global.zoom);
 y = view_yview[0]+(410*global.zoom);
@@ -161,12 +161,12 @@ setAlarmOff = true
           <argument>
             <kind>1</kind>
             <string>//shield icon
-if !instance_exists(AbilityCracyCowUI) and !instance_exists(AbilityHolyUI) and !instance_exists(AbilityShieldUI) and !instance_exists(AbilitySuperCatUI) and !instance_exists(AbilityBoxUI) and !instance_exists(PantieCloudUI) and !instance_exists(AbilityTimeStopUI) and !instance_exists(AbilityFeverUI)
+if !instance_exists(AbilityCracyCowUI) and !instance_exists(AbilityHolyUI) and !instance_exists(AbilityShieldUI) and !instance_exists(AbilitySuperCatUI) and !instance_exists(AbilityBoxUI) and !instance_exists(PantieCloudUI) and !instance_exists(AbilityTimeStopUI) and !instance_exists(AbilityFeverUI) and global.MysteryBox = false
 {
 draw_sprite_ext(misslek,0,view_xview[0]+(300*global.zoom),view_yview[0]+(410*global.zoom),2*global.zoom,2*global.zoom,0,c_white,1)
 }
 
-if instance_exists(AbilityCracyCowUI) or instance_exists(AbilityHolyUI) or instance_exists(AbilityShieldUI) or instance_exists(AbilitySuperCatUI) or instance_exists(AbilityBoxUI) or instance_exists(PantieCloudUI) or instance_exists(AbilityTimeStopUI) or instance_exists(AbilityFeverUI)
+if instance_exists(AbilityCracyCowUI) or instance_exists(AbilityHolyUI) or instance_exists(AbilityShieldUI) or instance_exists(AbilitySuperCatUI) or instance_exists(AbilityBoxUI) or instance_exists(PantieCloudUI) or instance_exists(AbilityTimeStopUI) or instance_exists(AbilityFeverUI) or global.MysteryBox = true
 {
 draw_sprite_ext(misslek,0,view_xview[0]+(250*global.zoom),view_yview[0]+(410*global.zoom),2*global.zoom,2*global.zoom,0,c_white,1)
 }

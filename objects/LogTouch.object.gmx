@@ -574,9 +574,17 @@ global.PlayMusic=false
 audio_play_sound(boom, 11, false);
   
 
+if global.holy = false{
 if CanWork =true
 {
 global.LifeContener -= 20
+script_lives()
+CanWork = false
+}
+}
+if global.holy = true
+{
+global.LifeContener += 20
 script_lives()
 CanWork = false
 }

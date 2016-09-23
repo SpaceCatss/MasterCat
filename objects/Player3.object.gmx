@@ -6,7 +6,7 @@
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>sprite32</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -176,6 +176,105 @@ image_yscale = 0.4
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="11">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.TorpedoPlayer = false
+
+if global.r=1
+{
+sprite_index=sprite5
+
+}
+else if global.r=2
+{
+sprite_index=cat2
+
+}
+else if global.r=3
+{
+sprite_index=sprite32
+
+}
+else if global.r=4
+{
+sprite_index=sprite225_mooncat_without
+image_xscale = 0.4
+image_yscale = 0.4
+}
+
+else if global.r=5
+{
+sprite_index=sprite226_gejmusiccat_without
+image_xscale = 0.4
+image_yscale = 0.4
+}
+
+else if global.r=6
+{
+sprite_index=sprite227_pixelcat
+image_xscale = 0.4
+image_yscale = 0.4
+}
+
+else if global.r=7
+{sprite_index=sprite228_black_dress
+image_xscale = 0.4
+image_yscale = 0.4}
+
+else if global.r=8
+{sprite_index=sprite229_shroedinger
+image_xscale = 0.4
+image_yscale = 0.4
+}
+
+else if global.r=9
+{sprite_index=sprite224_pomiocik
+image_xscale = 0.4
+image_yscale = 0.4}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>sprite_index = misslek
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="7">
       <action>
         <libid>1</libid>
@@ -218,6 +317,9 @@ movespeed = movespeedNormal
           <argument>
             <kind>1</kind>
             <string>global.canSelect = true;
+global.TorpedoPlayer = false
+global.abilitySuperCat = false
+global.holy = false
 </string>
           </argument>
         </arguments>
@@ -268,6 +370,7 @@ alarm[6]=60;
           <argument>
             <kind>1</kind>
             <string>global.ZoomOut = false
+audio_sound_pitch(livesA.snd, 1)
 
 grav = 0.5;
 movespeed = movespeedNormal
@@ -687,6 +790,40 @@ else if place_meeting(x,y+1,blocker)
 CanMove = true
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// ability super cat (torpedo player)
+
+//apecial aiblity
+if global.TorpedoPlayer = true and global.abilitySuperCat = false
+{
+
+if place_meeting(x,y,oBlock)
+{
+with (instance_nearest(x, y, oBlock ))
+{
+effect_create_above(ef_explosion, x, y, 1.4, c_gray)
+instance_destroy()}
+}
+}
 </string>
           </argument>
         </arguments>

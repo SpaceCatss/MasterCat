@@ -89,7 +89,8 @@ y = view_yview[0]+(450*global.zoom);
           <argument>
             <kind>1</kind>
             <string>if global.CanClick = true{
-
+global.TorpedoPlayer = true
+Player3.alarm[6]=250
 global.abilitySuperCat = true
 
 with ObjectNonTap{

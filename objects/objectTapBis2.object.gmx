@@ -29,26 +29,14 @@
 CanWork = true
 instance_create(x,y+200,invi)
 
-if !place_meeting(x/*+97*/,y-30,objectTapBis) 
-{
-instance_create(x+96,y,groundBisStarting)
 
-}
-if !place_meeting(x/*+97*/,y,objectTapBis) 
-{
-instance_create(x+96,y,groundBisStarting)
-
-}
 
 
 Stairs = true
 Stairscount = 1
 n = 0
 CanGenerateGround = false
-if !place_meeting(x-35,y,objectTapBis) 
-{
-instance_create(x-1,y,groundBisEnding)
-}
+
 
 
 // jesli 1-20 na 50 to obiekt sie usuwa i kreuje na swoje miejsce specjalna ziemie o wielksoci takiej jak object Tap
@@ -84,12 +72,11 @@ CanMiss = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.TorpedoPlayer = true
+            <string>if global.TorpedoPlayer = true 
 {
 instance_create(x,y,bridgeTapBis)
-global.PreviouslyActivated = true
 instance_destroy()
-
+global.PreviouslyActivated = true
 }
 
 if place_meeting(x+60,y,Player3)
