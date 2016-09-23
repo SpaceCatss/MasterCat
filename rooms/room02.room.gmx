@@ -43,7 +43,7 @@ instance_create(x,y,PantieCloudUI)
 }
 else if global.r=4
 {
-instance_create(x,y,AbilityMoonCatUI)
+instance_create(x,y,AbilityTimeStopUI)
 }
 
 else if global.r=5

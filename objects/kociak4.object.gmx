@@ -235,7 +235,16 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_xscale = 1
+            <string>if global.Stopper = false
+{
+image_xscale = 1
+}
+
+if global.Stopper = true
+{
+  
+}
+
 </string>
           </argument>
         </arguments>
@@ -354,7 +363,16 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_xscale = -1
+            <string>if global.Stopper = false
+{
+image_xscale = -1
+}
+
+if global.Stopper = true
+{
+  
+}
+
 </string>
           </argument>
         </arguments>
@@ -442,7 +460,16 @@ if (place_meeting(x,y+1,bridgeU))
 vsp = key_jump * -jumpspeed
 }
 
+
+if global.Stopper = false
+{
 y += vsp;
+}
+
+if global.Stopper = true
+{
+y += 0
+}
 </string>
           </argument>
         </arguments>
