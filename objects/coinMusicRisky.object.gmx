@@ -172,11 +172,7 @@ speed = 0
 gravity = 0
 }
 
-if global.Stopper = true
-{
-speed = 0
-gravity = 0
-}
+
 </string>
           </argument>
         </arguments>

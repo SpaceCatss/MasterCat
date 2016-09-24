@@ -894,7 +894,6 @@
       <object>objects\BoxD</object>
       <object>objects\groundInvisible</object>
       <object>objects\groundInvisible2</object>
-      <object>objects\AbilityTimeStopUI</object>
       <object>objects\AbilityMoonCatUI</object>
       <object>objects\AbilityFeverUI</object>
       <object>objects\AbilityCracyCowUI</object>
@@ -1213,6 +1212,7 @@
         <object>objects\addTimer_4</object>
         <object>objects\TimerForDisplay</object>
         <object>objects\AddTimer2</object>
+        <object>objects\AbilityTimeStopUI</object>
         <object>objects\AddTimer3</object>
         <object>objects\AddTimer1</object>
         <object>objects\addTimer_2</object>

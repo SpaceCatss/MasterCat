@@ -63,6 +63,7 @@ global.holy = false
 global.Stopper = false
 global.abilitySuperCat = false
 
+global.TimeQty = 1
 global.MysteryBox = false
 global.SpeedUpQty = 1
 global.SpeedDownQty = 1
