@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*
+            <string>
 var sprh = sprite_get_height(star2);
 var drawh = sprh * global.feverMode/ 500
 var sprw = sprite_get_width(star2);

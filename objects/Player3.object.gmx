@@ -555,7 +555,18 @@ instance_activate_object(invi);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_deactivate_region(view_xview[0],view_yview[0], view_wview[0], view_hview[0], false, true)
+            <string>if place_meeting(x+movespeed,y,groundBisStarting)
+{
+    while !place_meeting(x+sign(movespeed),y,groundBisStarting)
+{
+   x+=sign(movespeed)
+   
+}
+y-=5
+x+=2
+}
+
+instance_deactivate_region(view_xview[0],view_yview[0], view_wview[0], view_hview[0], false, true)
 instance_activate_region(view_xview[0], view_yview[0], view_wview[0], view_hview[0], true);
 
  if global.r=4 or global.r=5 or global.r=6  or global.r=7  or global.r=8  or global.r=9
