@@ -421,7 +421,7 @@ alarm[0]=90
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>shader_set(shader0)
+            <string>//shader_set(shader0)
 global.ZoomOut = true
 global.PlayMusic=false
 audio_play_sound(boom, 11, false);

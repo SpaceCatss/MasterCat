@@ -28,7 +28,7 @@
             <string>instance_create(x,y+50,coinMusicEx)
 alarm[0] = 40
 audio_play_sound(beat, 11, false);
-global.feverMode +=20
+global.feverMode +=10
 </string>
           </argument>
         </arguments>

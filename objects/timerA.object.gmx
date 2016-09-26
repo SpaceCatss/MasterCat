@@ -25,18 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.OneTimeToolFever = false
-{
-
-global.feverMode = 0
-}
-
-if global.OneTimeToolFever = true
-{
-
-global.feverMode = 500
-}
-
+            <string>
 
 
 global.coinController = 0
@@ -150,6 +139,8 @@ global.TimeQty =6
           <argument>
             <kind>1</kind>
             <string>///fever mode ink
+
+/*
 if global.feverMode &lt;500 and global.feverMode &gt;=351
 {
 
@@ -325,14 +316,14 @@ global.feverMode -=0.2
 else if !place_meeting(x,y,ground)
 global.feverMode +=0.2
 }
-
+/*
 with Player3
 {
 if place_meeting(x,y+2,ground)
 global.feverMode -=0.2
 else if !place_meeting(x,y,ground)
 global.feverMode +=0.2
-}
+}*/
 
 with Player4
 {
@@ -382,10 +373,7 @@ else if !place_meeting(x,y,ground)
 global.feverMode +=0.2
 }
 
-if global.feverMode &lt; 0
-{
-global.feverMode = 0
-}
+
 </string>
           </argument>
         </arguments>

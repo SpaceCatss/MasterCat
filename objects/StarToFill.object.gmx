@@ -25,8 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>LetItSlide=false
+            <string>global.feverMode = 0
+n=0
+LetItSlide=false
 NowStopForASecond = false
+CheckDrawing=true
 </string>
           </argument>
         </arguments>
@@ -50,6 +53,8 @@ NowStopForASecond = false
           <argument>
             <kind>1</kind>
             <string>NowStopForASecond = false
+global.feverMode = 0
+global.OneTimeToolCoinDouble = false
 </string>
           </argument>
         </arguments>
@@ -97,9 +102,11 @@ NowStopForASecond = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.feverMode = 200
+            <string>global.feverMode = 0
+CheckDrawing=true
 alarm[2]=200
 LetItSlide=false
+global.OneTimeToolCoinDouble = true
 NowStopForASecond = true
 r = irandom_range(1,6)
 // 1
@@ -160,13 +167,18 @@ instance_create(x,y,box_spawner)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = GPS.x
+            <string>n+=1
+x = GPS.x
 y=GPS.y
 
+if global.feverMode &gt;= 1
+{
+global.feverMode -= 0.15
+}
 
 if global.feverMode &gt;= 500
 {
-global.feverMode = 200
+global.feverMode = 1
 // initial bonuses
 with oBlock
 {
@@ -174,7 +186,12 @@ instance_destroy()
 }
 LetItSlide=true
 alarm[0]=30
-alarm[1]=1
+//alarm[1]=1
+}
+
+if global.feverMode &lt; 1
+{
+global.feverMode = 0
 }
 </string>
           </argument>
@@ -231,15 +248,14 @@ draw_sprite_ext(choose(bridgus),0,view_xview[0]+(392*global.zoom), view_yview[0]
 }
 }
 
-if LetItSlide=true {
+
+if LetItSlide=true and NowStopForASecond = false and CheckDrawing=true{
 
 
-draw_sprite_ext(animLetItSlide,0,view_xview[0]+(392*global.zoom), view_yview[0]+(79*global.zoom),1*global.zoom,1*global.zoom,0,c_white,1)
-
-
+draw_sprite_ext(animLetItSlide,n,view_xview[0]+(392*global.zoom), view_yview[0]+(79*global.zoom),1*global.zoom,1*global.zoom,0,c_white,1)
+//CheckDrawing=false
 
 }
-
 
 </string>
           </argument>
