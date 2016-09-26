@@ -159,6 +159,7 @@
     </sprites>
     <sprites name="abilities">
       <sprite>sprites\pixel</sprite>
+      <sprite>sprites\animLetItSlide</sprite>
       <sprite>sprites\sprite253_shroedingerbox</sprite>
       <sprite>sprites\sprite254_super_cat</sprite>
       <sprite>sprites\cloud</sprite>

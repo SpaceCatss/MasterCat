@@ -8,6 +8,141 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>LetItSlide=false
+NowStopForASecond = false
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>NowStopForASecond = false
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.feverMode = 200
+alarm[2]=200
+LetItSlide=false
+NowStopForASecond = true
+r = irandom_range(1,6)
+// 1
+if r=1 {
+instance_create(Player3.x,Player3.y,InvisibleShield)
+}
+//2
+
+if r=2 {
+global.TorpedoPlayer = true
+with (Player3)
+{
+sprite_index = kottransformers;
+Player3.alarm[10] = 10
+}
+Player3.alarm[11]=300
+}
+
+//3
+if r= 3 {
+global.TorpedoPlayer = true
+Player3.alarm[6]=250
+global.abilitySuperCat = true
+}
+//4
+if r = 4 {
+global.holy = true
+Player3.alarm[6] = 600
+}
+
+// 5
+if r=5 {
+instance_create(x,y,PantieCloud)
+}
+// 6
+if r = 6 {
+instance_create(x,y,box_spawner)
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -26,6 +161,21 @@
           <argument>
             <kind>1</kind>
             <string>x = GPS.x
+y=GPS.y
+
+
+if global.feverMode &gt;= 500
+{
+global.feverMode = 200
+// initial bonuses
+with oBlock
+{
+instance_destroy()
+}
+LetItSlide=true
+alarm[0]=30
+alarm[1]=1
+}
 </string>
           </argument>
         </arguments>
@@ -48,7 +198,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if LetItSlide=false and NowStopForASecond = false{
+
 var sprh = sprite_get_height(star2);
 var drawh = sprh * global.feverMode/ 500
 var sprw = sprite_get_width(star2);
@@ -56,6 +207,40 @@ draw_sprite_part_ext(star2, 0, 0, sprh - drawh ,sprw , drawh, view_xview[0]+(350
 
 draw_sprite_ext(star3,0,view_xview[0]+(392*global.zoom), view_yview[0]+(79*global.zoom),1*global.zoom,1*global.zoom,0,c_white,1)
 draw_text_outline(view_xview[0]+(392*global.zoom), view_yview[0]+(79*global.zoom),round(string(global.feverMode)),1,c_black,10)
+}
+
+if NowStopForASecond = true
+{
+if r = 1 {
+draw_sprite_ext(choose(pixel),0,view_xview[0]+(392*global.zoom), view_yview[0]+(79*global.zoom),1*global.zoom,1*global.zoom,0,c_white,1)
+}
+if r = 6 {
+draw_sprite_ext(choose(sprite253_shroedingerbox),0,view_xview[0]+(392*global.zoom), view_yview[0]+(79*global.zoom),1*global.zoom,1*global.zoom,0,c_white,1)
+}
+if r = 2 {
+draw_sprite_ext(choose(sprite254_super_cat),0,view_xview[0]+(392*global.zoom), view_yview[0]+(79*global.zoom),1*global.zoom,1*global.zoom,0,c_white,1)
+}
+if r = 5 {
+draw_sprite_ext(choose(cloud),0,view_xview[0]+(392*global.zoom), view_yview[0]+(79*global.zoom),1*global.zoom,1*global.zoom,0,c_white,1)
+}
+if r = 4 {
+draw_sprite_ext(choose(holy2),0,view_xview[0]+(392*global.zoom), view_yview[0]+(79*global.zoom),1*global.zoom,1*global.zoom,0,c_white,1)
+}
+if r = 3 {
+draw_sprite_ext(choose(bridgus),0,view_xview[0]+(392*global.zoom), view_yview[0]+(79*global.zoom),1*global.zoom,1*global.zoom,0,c_white,1)
+}
+}
+
+if LetItSlide=true {
+
+
+draw_sprite_ext(animLetItSlide,0,view_xview[0]+(392*global.zoom), view_yview[0]+(79*global.zoom),1*global.zoom,1*global.zoom,0,c_white,1)
+
+
+
+}
+
+
 </string>
           </argument>
         </arguments>
