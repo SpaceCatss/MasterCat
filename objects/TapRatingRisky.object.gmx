@@ -28,7 +28,13 @@
             <string>instance_create(x,y+50,coinMusicRisky)
 alarm[0] = 40
 
+if global.CountItTwice = false{
 global.feverMode +=20
+}
+if global.CountItTwice = true
+{
+global.feverMode +=40
+}
 
 audio_play_sound(beat, 11, false);
 </string>

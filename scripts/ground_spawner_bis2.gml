@@ -17,6 +17,7 @@ j = round(k*0.25)
 l = round(k * 0.5)
 m = round(k * 0.75)
 
+if global.mode = 0
 { 
 var t
 for
@@ -219,6 +220,38 @@ if t = 998 {  instance_create( room_width+70,CheckY,objectTapBis);
 }
 
 
+
+if global.mode = 1
+{ 
+var t
+for
+( t = 0; t < 999; t += 1)
+{
+// wklej
+if t = 998 {  instance_create( room_width+70,CheckY,objectTapBis);
+ instance_create( room_width-20,room_height/2,meta)
+}
+
+}
+}
+
+if global.mode = 2
+{ 
+var t
+for
+( t = 0; t < 999; t += 1)
+{
+// wklej
+if t = 998 {  instance_create( room_width+70,CheckY,objectTapBis);
+ instance_create( room_width-20,room_height/2,meta)
+}
+
+}
+}
+
+
+
+/*
   //checkpoins
 {var i
 for
@@ -249,10 +282,11 @@ else
 //instance_create(0+ (n*(t)),instance_nearest(x,y,objectTapBis).y,groundBis)
 }
 
-}
 
 }
 
+}
+*/
 
 
 

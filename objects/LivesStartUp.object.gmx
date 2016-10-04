@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.PreviouslyActivated = false
+            <string>global.mode=0
+global.CountItTwice = false
+global.ToolActivated = false
+global.PreviouslyActivated = false
 global.CheckpointVisited2 = false
 global.CheckpointVisited3 = false
 global.zoom = 1

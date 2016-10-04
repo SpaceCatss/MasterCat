@@ -66,6 +66,7 @@
     <instance objName="Button7" x="80" y="256" name="inst_3CD12382" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
     <instance objName="Button8" x="240" y="256" name="inst_1BC71EBA" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
     <instance objName="Button9" x="390" y="256" name="inst_36EC7F3B" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
+    <instance objName="hardnessSetup" x="128" y="384" name="inst_3EF91B30" locked="0" code="" scaleX="0.800000011920929" scaleY="0.800000011920929" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

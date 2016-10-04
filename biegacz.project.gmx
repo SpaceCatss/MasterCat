@@ -185,6 +185,7 @@
       <sprite>sprites\misiowski</sprite>
       <sprite>sprites\sprite236_lajka</sprite>
       <sprite>sprites\misslek</sprite>
+      <sprite>sprites\misslek3</sprite>
       <sprite>sprites\sPlayer</sprite>
       <sprite>sprites\sPlayer2</sprite>
       <sprite>sprites\misslek2</sprite>
@@ -234,6 +235,9 @@
       <sprite>sprites\sprite211_speedAd5</sprite>
       <sprite>sprites\sprite212_strzalki</sprite>
       <sprite>sprites\sprite213_tlochara</sprite>
+      <sprite>sprites\eas</sprite>
+      <sprite>sprites\mediu</sprite>
+      <sprite>sprites\har</sprite>
     </sprites>
     <sprite>sprites\sprite0</sprite>
     <sprite>sprites\pathblock</sprite>
@@ -445,10 +449,12 @@
       <sprite>sprites\sBlock</sprite>
       <sprite>sprites\sSparks</sprite>
       <sprite>sprites\sLaser</sprite>
+      <sprite>sprites\sLaserBeg</sprite>
       <sprite>sprites\sCredits_Programmer</sprite>
     </sprites>
     <sprite>sprites\black</sprite>
     <sprite>sprites\sprite303</sprite>
+    <sprite>sprites\sprite300</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -466,7 +472,6 @@
     <background>background\background8</background>
     <background>background\background9</background>
     <background>background\background10</background>
-    <backgrounds name="Group_refraction"/>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
@@ -887,6 +892,7 @@
       <object>objects\Button7</object>
       <object>objects\Button8</object>
       <object>objects\Button9</object>
+      <object>objects\hardnessSetup</object>
     </objects>
     <objects name="abilities">
       <object>objects\AbilityShieldUI</object>

@@ -29,6 +29,7 @@
 
 if global.rm = 2 {
   
+if global.mode=0 {
    instance_create( 640,4888.70,GroundSpawnerSpecial);
   instance_create( 1055,4888.70,GroundSpawnerSpecial);
   instance_create( 1495,4888.70,GroundSpawnerSpecial);
@@ -68,6 +69,18 @@ if global.rm = 2 {
   instance_create( 16185,688.63,GroundSpawnerSpecial);
   instance_create( 16665,688.63,GroundSpawnerSpecial);
   instance_create( 17180,688.63,GroundSpawnerSpecial);
+  }
+  
+  
+  if global.mode=1 {
+  //wklej
+
+  }
+   if global.mode=2 {
+  //wklej
+
+  }
+  
   
   }
 </string>
@@ -94,7 +107,7 @@ if global.rm = 2 {
 
 if global.rm = 3 {
 
-
+if global.mode=0 {
 //tu wklej zawartosc CTRLI i SHIFTOW
 /*
   instance_create( 3234,4888.70,GroundSpawnerSpecial);
@@ -125,6 +138,15 @@ if global.rm = 3 {
   instance_create( 19317,3238.93,GroundSpawnerSpecial);
   instance_create( 19431,3238.93,GroundSpawnerSpecial);
   */
+  }
+  if global.mode=1 {
+  //wklej
+
+  }
+   if global.mode=2 {
+  //wklej
+
+  }
 }
 </string>
           </argument>

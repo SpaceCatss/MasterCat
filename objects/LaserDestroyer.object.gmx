@@ -25,10 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>n = 1
+NRapid = false
+
 //global.LaserBeamLenght = 200
 //global.LaserAlarm = 40
 alarm[0] = global.LaserDestroyerAlarm 
+alarm[1] = global.LaserDestroyerAlarm-20
 //CanShoot = false
 xx = x;
 yy = y;
@@ -38,6 +41,30 @@ trail = false; //Draw fading laser(OPTIONAL)
 dispel = 1;    //Draw fading laser(OPTIONAL)
 
 image_speed = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>NRapid = true
+
 </string>
           </argument>
         </arguments>
@@ -86,6 +113,16 @@ LaserUIDestroyer.CanShoot = false
             <kind>1</kind>
             <string>x = GPS2.x
 y= GPS2.y
+
+if NRapid = false
+{
+n += 0
+}
+
+if NRapid = true
+{
+n += 1
+}
 </string>
           </argument>
         </arguments>
@@ -118,7 +155,7 @@ y= GPS2.y
 if LaserUIDestroyer.CanShoot = true {
     image_index = 1;
 
-    scrLaser(global.LaserDestroyerBeamLenght,0)
+    scrLaser(global.LaserDestroyerBeamLenght,0,n)
   
 }else{
     image_index = 0

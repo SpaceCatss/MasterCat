@@ -24,50 +24,7 @@ draw_set_alpha(1)
 Waluta.visible = false;
 
 
-global.coinController = 0
-
-if global.r=1
-{
-instance_create(x,y,AbilityCracyCowUI)
-
-}
-else if global.r=2
-{
-instance_create(x,y,AbilitySuperCatUI)
-
-}
-else if global.r=3
-{
-instance_create(64,4800,PantieCloudUI)
-
-}
-else if global.r=4
-{
-instance_create(x,y,AbilityMoonCatUI)
-}
-
-else if global.r=5
-{
-instance_create(x,y,AbilityFeverUI)
-}
-
-else if global.r=6
-{
-instance_create(x,y,AbilityShieldUI)
-}
-
-else if global.r=7
-{
-instance_create(x,y,AbilityHolyUI)
-}
-
-else if global.r=8
-{
-instance_create(x,y,AbilityBoxUI)
-}
-
-else if global.r=9
-{}</code>
+global.coinController = 0</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>0</clearViewBackground>
   <clearDisplayBuffer>0</clearDisplayBuffer>
